@@ -5,3 +5,7 @@ venv/
 .env
 .DS_Store
 tests/__pycache__/
+
+# 로컬 미리보기/임시 산출물 (docs/assets/ 의 정식 이미지는 추적)
+/_preview_*.png
+/_cand.json

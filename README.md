@@ -1,13 +1,49 @@
-# 타르코프 잠수함 패치 한글 해석 🛠️
+<div align="center">
 
-[에스케이프 프롬 타르코프(EFT)](https://www.escapefromtarkov.com/)의 **사일런트(잠수함) 코드 변경**을
-매일 자동으로 한글 번역·해석하는 정적 웹 서비스입니다.
+# 🛠️ 타르코프 잠수함 패치 한글 해석
+
+**에스케이프 프롬 타르코프의 *몰래 바뀐 게임 코드(사일런트 체인지)*를 매일 한글로 자동 번역·해석하는 정적 웹**
+
+[![Live Demo](https://img.shields.io/badge/▶_Live_Demo-바로가기-c9a24b?style=for-the-badge)](https://moriochoradio.github.io/tarkov-korean-changes/)
+
+[![GitHub Pages](https://img.shields.io/badge/Hosting-GitHub_Pages-222?logo=github)](https://moriochoradio.github.io/tarkov-korean-changes/)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![LLM](https://img.shields.io/badge/LLM-GitHub_Models_(무료)-6f42c1?logo=github)](https://docs.github.com/en/github-models)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Data](https://img.shields.io/badge/원본-tarkov--changes.com-4aa3c9)](https://changes.tarkov-changes.com/)
+
+<br/>
+
+<img src="docs/assets/preview.png" alt="사이트 미리보기" width="820" />
+
+</div>
+
+---
+
 원본 데이터는 [Tarkov Silent Changes](https://changes.tarkov-changes.com/)에서 가져오며,
 공식 패치노트와 연결되면 링크를, 연결되지 않으면 **"잠수함 패치"**로 표시합니다.
+나아가 전체 변경 이력을 대조해 각 변경이 **안정적으로 유지되는지 / 이후 갱신됐는지 / 반복되는 이벤트인지**까지 자동으로 판정합니다.
 
-> 비공식 팬 프로젝트입니다. 해석은 LLM 자동 생성이라 오류가 있을 수 있습니다.
+> ⚠️ 비공식 팬 프로젝트입니다. 해석은 LLM 자동 생성이라 오류가 있을 수 있습니다.
 
-## 동작 방식
+## ✨ 주요 기능
+
+| | 기능 | 설명 |
+|---|---|---|
+| 🔎 | **사일런트 체인지 추적** | 매일 `changes.tarkov-changes.com` 의 최신 변경을 수집 |
+| 🇰🇷 | **한글 자동 해석** | LLM 이 diff 를 풀어 "게임에서 무슨 의미인지" 설명 (before/after·영향 포함) |
+| 🌊 | **잠수함 패치 판별** | 공식 패치노트와 매칭하고, 대응 공지가 없으면 잠수함 패치로 표시 |
+| 📊 | **안정성 자동 판정** | 이력 대조로 `📌 안정 유지` / `♻️ 이후 갱신됨` / `🔁 반복 이벤트` 자동 분류 |
+| 🔁 | **반복 이벤트 탐지** | 주말 경험치 부스트·에어드랍 이벤트처럼 *켰다 껐다* 하는 토글을 자동 인식 |
+| 📚 | **과거 이력 백필** | `/list`·`/view/{id}` 로 과거 변경까지 수집·해석해 타임라인을 풍부하게 |
+| 🎨 | **반응형 다크 UI** | 글래스 카드·통계 필터·검색·부드러운 애니메이션의 정적 사이트(빌드리스) |
+
+<div align="center">
+<img src="docs/assets/preview-card.png" alt="변경 카드 상세" width="620" />
+<br/><sub>변경 카드 — 잠수함 판별 · 안정성 자동 판정 · before/after · 원문 diff</sub>
+</div>
+
+## ⚙️ 동작 방식
 
 ```
 매일 (GitHub Actions cron)
@@ -15,15 +51,45 @@
        1) scrape      changes.tarkov-changes.com/latest 최신 변경 수집
        2) patchnotes  공식 패치노트 후보 목록 확보 (수동 + 자동)
        3) interpret   LLM 으로 한글 해석 + 패치노트 매칭 → 잠수함 패치 판별
-       4) stability   전체 이력과 대조해 안정성 자동 판정(아래 참고)
+       4) stability   전체 이력과 대조해 안정성 자동 판정
        5) store       data/entries.json 에 신규 항목만 누적
        6) build       docs/data.json 생성 (사이트가 읽는 피드)
   └─ 변경분을 커밋 → GitHub Pages 가 docs/ 를 정적 호스팅
 ```
 
-정적 사이트(`docs/`)는 빌드 단계 없이 `data.json` 한 파일만 읽어 렌더링합니다.
+정적 사이트(`docs/`)는 별도 빌드 단계 없이 `data.json` 한 파일만 읽어 렌더링합니다.
 
-## 폴더 구조
+## 📊 안정성 자동 판정
+
+각 변경의 raw diff 를 `(파일, 키 경로, 이전값, 새값)` 단위로 파싱해, 전체 이력에서
+같은 키가 이후에 어떻게 바뀌는지를 보고 자동으로 분류합니다(`scripts/stability.py`).
+
+- 📌 **stable(안정 유지)** — 이 변경 이후 동일 키가 다시 바뀐 적 없음(현재까지 유지로 추정).
+- ♻️ **superseded(이후 갱신됨)** — 이후 같은 키가 다시 바뀜(되돌이는 아님). 값이 더 갱신된 상태.
+- 🔁 **recurring(반복 이벤트)** — 같은 키 값이 이전 상태로 되돌아오는 토글이 과반.
+  주말 경험치 부스트·에어드랍 이벤트처럼 **켰다 껐다 반복되는 변경**을 자동으로 잡아냅니다.
+
+> 💡 실제로 이 기능은, "영구 잠수함 패치"처럼 보이던 **경험치 배율 25 변경**이 사실은
+> *금요일 ON · 월요일 OFF* 로 반복되는 **주말 부스트**임을 데이터로 드러냈습니다.
+
+판정은 매일 파이프라인에서 자동 수행되며, 로직/이력이 바뀌면 다음으로 전체 재계산:
+
+```bash
+python scripts/recompute_stability.py
+```
+
+## 📚 과거 이력 백필(선택)
+
+`/list` 와 `/view/{id}` 로 공개된 과거 사일런트 변경을 수집해 한글 해석을 채울 수 있습니다.
+
+```bash
+# 1) 과거 원본 수집(요청 간 지연으로 정중하게)
+python scripts/backfill_harvest.py --start <최신id> --count 120 --delay 0.7
+# 2) data/backfill_interp.json 에 한글 해석 작성 후 결합·반영
+python scripts/backfill_apply.py
+```
+
+## 🗂️ 폴더 구조
 
 ```
 .
@@ -43,17 +109,18 @@
 │   └── patchnotes_manual.json # 직접 추가하는 공식 패치노트(선택)
 ├── docs/                      # ← GitHub Pages 루트
 │   ├── index.html / style.css / app.js
+│   ├── assets/                # README·OG 이미지
 │   └── data.json              # 빌드 산출물(사이트 피드)
+├── tests/
 ├── .github/workflows/daily.yml
 └── requirements.txt
 ```
 
-## 배포 (GitHub)
+## 🚀 배포 (GitHub)
 
 1. **이 폴더를 GitHub 저장소로 푸시**합니다.
 
-2. **GitHub Pages 켜기**
-   `Settings → Pages → Build and deployment`
+2. **GitHub Pages 켜기** — `Settings → Pages → Build and deployment`
    - Source: **Deploy from a branch**
    - Branch: **main** / 폴더 **`/docs`** 선택 → Save
    - 잠시 후 `https://<사용자명>.github.io/<저장소명>/` 에서 확인.
@@ -66,20 +133,17 @@
    - 모델만 바꾸고 싶다면 `Settings → Secrets and variables → Actions → Variables`:
      - `LLM_MODEL` = 예) `openai/gpt-4o`, `openai/gpt-4o-mini`, `meta/Llama-3.3-70B-Instruct`
      - `PATCHNOTES_URL` = 공식 패치노트 페이지 URL(기본: EFT 공식 뉴스)
-
    - **유료 제공자로 전환**하고 싶을 때만(선택):
      - **Variables** → `LLM_PROVIDER` = `anthropic` 또는 `openai`
      - **Secrets** → `ANTHROPIC_API_KEY` 또는 `OPENAI_API_KEY` 등록
 
-4. **워크플로 권한 확인**
-   `Settings → Actions → General → Workflow permissions` →
+4. **워크플로 권한 확인** — `Settings → Actions → General → Workflow permissions` →
    **Read and write permissions** 켜기 (봇이 결과를 커밋하려면 필요).
 
-5. **첫 실행**
-   `Actions` 탭 → "매일 타르코프 변경 해석" → **Run workflow** 로 수동 실행.
-   이후 매일 자동 실행됩니다(기본 한국시간 23시, `daily.yml` 의 cron 으로 조정).
+5. **첫 실행** — `Actions` 탭 → "매일 타르코프 변경 해석" → **Run workflow** 로 수동 실행.
+   이후 매일 자동 실행됩니다(`daily.yml` 의 cron 으로 조정).
 
-## 로컬에서 실행/테스트
+## 💻 로컬에서 실행/테스트
 
 ```bash
 pip install -r requirements.txt
@@ -99,46 +163,29 @@ cd docs && python -m http.server 8000
 #  → http://localhost:8000
 ```
 
-## 커스터마이즈 포인트
+## 🔧 커스터마이즈 포인트
 
 - **해석 품질/말투**: `scripts/interpret.py` 의 `SYSTEM_PROMPT` 와 `USER_TEMPLATE` 수정.
 - **패치노트 매칭 정확도**: `data/patchnotes_manual.json` 에 공식 공지를 직접 추가하면
   LLM 매칭 후보로 우선 사용됩니다(자동 수집이 막힐 때의 안전장치).
+- **안정성 민감도**: `scripts/stability.py` 의 `RECURRING_RATIO`(기본 0.5).
 - **노출 개수**: `pipeline.py` 의 `FEED_LIMIT`.
 - **실행 시각**: `.github/workflows/daily.yml` 의 cron.
+- **테마/디자인**: `docs/style.css` (색상 변수는 `:root` 상단).
 
-## 안정성 자동 판정
-
-각 변경의 raw diff 를 `(파일, 키 경로, 이전값, 새값)` 단위로 파싱해, 전체 이력에서
-같은 키가 이후에 어떻게 바뀌는지를 보고 자동으로 분류합니다(`scripts/stability.py`).
-
-- 📌 **stable(안정 유지)** — 이 변경 이후 동일 키가 다시 바뀐 적 없음(현재까지 유지로 추정).
-- ♻️ **superseded(이후 갱신됨)** — 이후 같은 키가 다시 바뀜(되돌이는 아님). 값이 더 갱신된 상태.
-- 🔁 **recurring(반복 이벤트)** — 같은 키 값이 이전 상태로 되돌아오는 토글이 과반.
-  주말 경험치 부스트·에어드랍 이벤트처럼 **켰다 껐다 반복되는 변경**을 자동으로 잡아냅니다.
-
-판정은 매일 파이프라인에서 자동 수행되며, 로직/이력이 바뀌면 다음으로 전체 재계산:
-
-```bash
-python scripts/recompute_stability.py
-```
-
-## 과거 이력 백필(선택)
-
-`/list` 와 `/view/{id}` 로 공개된 과거 사일런트 변경을 수집해 한글 해석을 채울 수 있습니다.
-
-```bash
-# 1) 과거 원본 수집(요청 간 지연으로 정중하게)
-python scripts/backfill_harvest.py --start <최신id> --count 120 --delay 0.7
-# 2) data/backfill_interp.json 에 한글 해석 작성 후 결합·반영
-python scripts/backfill_apply.py
-```
-
-## 한계와 주의
+## ⚠️ 한계와 주의
 
 - 비로그인 `/latest` 는 최신 1건이지만, `/list`·`/view/{id}` 로 과거 이력에도 접근할 수 있습니다
   (백필은 이를 이용). 일상 파이프라인은 매일 최신 변경을 누적하는 방식입니다.
 - 사이트 구조가 바뀌면 `scripts/scrape.py` 의 파싱을 조정해야 할 수 있습니다.
 - 기본 제공자(GitHub Models)는 무료입니다. 유료 제공자로 바꿀 때만 API 비용이 발생합니다.
 - 원본 사이트와 BSG 의 약관·robots 정책을 존중하세요. 과도한 요청을 피하기 위해 하루 1회만 호출합니다.
-```
+
+## 📜 라이선스 / 면책
+
+- 코드는 [MIT License](LICENSE) 로 배포합니다.
+- *Escape from Tarkov* 및 관련 자산의 권리는 **Battlestate Games** 에 있습니다.
+  이 프로젝트는 BSG 와 무관한 비공식 팬 제작물이며, 데이터 출처는
+  [tarkov-changes.com](https://changes.tarkov-changes.com/) 입니다.
+
+<div align="center"><sub>Made with 🛠️ for the Tarkov community</sub></div>
