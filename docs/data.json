@@ -1,77 +1,329 @@
 {
-  "generated_at": "2026-06-15T06:35:38Z",
-  "count": 1,
+  "generated_at": "2026-06-15T07:23:31Z",
+  "count": 7,
   "entries": [
     {
-      "entry_id": "1084",
+      "entry_id": "1094",
       "eft_version": "1.0.5.0.45464",
       "posted_at": "Friday, 12 June 2026 - 12:06 PM EDT",
-      "scraped_at": "2026-06-15T06:00:00Z",
-      "source_url": "https://changes.tarkov-changes.com/latest",
+      "scraped_at": "2026-06-12T16:06:00Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1094",
       "files_changed": [
         {
           "path": "client/globals/response.json",
           "count": 7
         }
       ],
-      "summary_ko": "모든 게임 에디션의 경험치 배율이 25로 통일되고, '스탠다드' 에디션 항목이 새로 추가되었습니다.",
+      "summary_ko": "[반복 이벤트] 다시 전 에디션 경험치 배율이 25로 상향(주말 부스트 ON)되고, '스탠다드' 항목이 표에 포함되었습니다.",
       "tags": [
         "경험치",
-        "밸런스"
+        "이벤트"
       ],
       "severity": "major",
       "changes": [
         {
-          "key_path": "config.exp.ExpByGameEditionMultiplier (전체)",
-          "before_ko": "에디션마다 경험치 배율이 제각각 (EoD 12, Prepare 9, Left Behind 7, Unheard 20 등)",
-          "after_ko": "모든 에디션의 SelfExpMultiplier가 25로 동일",
-          "explanation_ko": "ExpByGameEditionMultiplier는 게임 에디션(구매 등급)별로 캐릭터가 받는 추가 경험치 배율을 정의하는 값으로 추정됩니다. 기존에는 상위 에디션일수록 경험치 보너스가 컸는데, 이번 변경으로 모든 에디션이 동일하게 25로 맞춰졌습니다. 즉 '비싼 에디션을 사면 레벨업이 빠르다'는 격차가 사라지는 방향입니다.",
-          "impact_ko": "저가/스탠다드 에디션 유저는 경험치 보너스가 크게 올라가고, 상위 에디션의 레벨업 우위는 사라집니다."
-        },
-        {
-          "key_path": "ExpByGameEditionMultiplier['2'] edge_of_darkness",
-          "before_ko": "SelfExp 12 / TeamExp 0",
-          "after_ko": "SelfExp 25 / TeamExp 0",
-          "explanation_ko": "에지 오브 다크니스(EoD) 에디션의 개인 경험치 배율이 12에서 25로 약 2배 상향되었습니다. TeamExp(팀 경험치)는 0으로 유지됩니다.",
-          "impact_ko": "EoD 유저의 개인 경험치 획득이 빨라집니다."
-        },
-        {
-          "key_path": "ExpByGameEditionMultiplier['0'] left_behind",
-          "before_ko": "SelfExp 7 / TeamExp 0",
-          "after_ko": "SelfExp 25 / TeamExp 0",
-          "explanation_ko": "레프트 비하인드 에디션의 개인 경험치 배율이 7에서 25로 크게 상향되었습니다.",
-          "impact_ko": "가장 큰 폭으로 상향된 에디션 중 하나입니다."
-        },
-        {
-          "key_path": "ExpByGameEditionMultiplier['1'] prepare_for_escape",
-          "before_ko": "SelfExp 9 / TeamExp 0",
-          "after_ko": "SelfExp 25 / TeamExp 0",
-          "explanation_ko": "프리페어 포 이스케이프 에디션의 개인 경험치 배율이 9에서 25로 상향되었습니다.",
-          "impact_ko": "중하위 에디션의 레벨업 속도가 크게 개선됩니다."
-        },
-        {
-          "key_path": "ExpByGameEditionMultiplier['5'/'4'/'3'] unheard / unheard_steam / eod_tue",
-          "before_ko": "SelfExp 20 / TeamExp 20",
-          "after_ko": "SelfExp 25 / TeamExp 25",
-          "explanation_ko": "언허드 계열 및 EoD-TUE 에디션은 개인·팀 경험치 배율이 각각 20에서 25로 소폭 상향되었습니다. 이 에디션들은 팀 경험치 보너스(TeamExp)도 유지·상향됩니다.",
-          "impact_ko": "상위 에디션도 소폭 상향되어 전체적으로 경험치 인플레가 일어납니다."
-        },
-        {
-          "key_path": "ExpByGameEditionMultiplier['6'] standard (신규)",
-          "before_ko": "(항목 없음)",
-          "after_ko": "SelfExp 25 / TeamExp 0 항목 신규 추가",
-          "explanation_ko": "기존에 표에 없던 '스탠다드(standard)' 에디션 항목이 새로 추가되었고, 개인 경험치 배율 25로 설정되었습니다. 스탠다드 에디션도 다른 에디션과 동일한 개인 경험치 보너스를 받게 됨을 의미합니다.",
-          "impact_ko": "스탠다드 에디션 유저가 경험치 격차에서 동등해집니다."
+          "key_path": "globals.config.exp.ExpByGameEditionMultiplier (전 에디션)",
+          "before_ko": "EoD 12 / Prepare 9 / Left Behind 7 / Unheard·EoD-TUE 20",
+          "after_ko": "전 에디션 SelfExp 25 (언허드 계열 TeamExp 25), standard 항목 포함",
+          "explanation_ko": "5/29·6/1의 ON/OFF에 이어 다시 25로 상향된 '주말 부스트 ON' 시점입니다. 처음 본다면 영구 잠수함 패치로 오해하기 쉽지만, 직전 2주 이력을 보면 명백한 반복 이벤트입니다.",
+          "impact_ko": "이 주말 동안 전 에디션의 경험치 획득이 다시 빨라집니다."
         }
       ],
       "patch_note": {
         "matched": false,
         "title": null,
         "url": null,
-        "reason_ko": "수집된 공식 패치노트 후보에서 경험치 배율 통일을 명시한 항목을 찾지 못했습니다. 'Silent Changes' 추적기에 잡힌 변경으로, 공식 발표 없이 적용된 잠수함 패치로 분류합니다."
+        "reason_ko": "동일 키가 5/29 ON → 6/1 OFF → 6/12 ON 으로 토글되는 것이 확인되어, 영구 변경이 아닌 반복되는 주말/이벤트 경험치 부스트로 정정합니다."
       },
       "is_submarine": true,
-      "raw_text": "Files Changed: client/globals/response.json (7 changes)\n['data']['config']['exp']['ExpByGameEditionMultiplier']\n['2'] (Old) edge_of_darkness Self 12 Team 0 -> (New) Self 25 Team 0\n['0'] (Old) left_behind Self 7 Team 0 -> (New) Self 25 Team 0\n['5'] (Old) unheard_steam_edition Self 20 Team 20 -> (New) Self 25 Team 25\n['4'] (Old) unheard_edition Self 20 Team 20 -> (New) Self 25 Team 25\n['1'] (Old) prepare_for_escape Self 9 Team 0 -> (New) Self 25 Team 0\n['3'] (Old) eod_tue_edition Self 20 Team 20 -> (New) Self 25 Team 25\n['6'] (New) standard Self 25 Team 0"
+      "backfilled": true,
+      "recurring_event": true,
+      "raw_text": "Files Changed:\nclient/globals/response.json\n(7 changes)\nDated: Friday, 12 June 2026 - 12:06 PM EDT | Game Version 1.0.5.0.45464\nclient/globals/response.json\n['data']\n    ['config']\n        ['exp']\n            ['ExpByGameEditionMultiplier']\n                ['2']\n-                (Old) {\n-                      \"GameEdition\": \"edge_of_darkness\",\n-                      \"SelfExpMultiplier\": 12,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"edge_of_darkness\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['0']\n-                (Old) {\n-                      \"GameEdition\": \"left_behind\",\n-                      \"SelfExpMultiplier\": 7,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"left_behind\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['5']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_steam_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_steam_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n                ['4']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n                ['1']\n-                (Old) {\n-                      \"GameEdition\": \"prepare_for_escape\",\n-                      \"SelfExpMultiplier\": 9,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"prepare_for_escape\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['3']\n-                (Old) {\n-                      \"GameEdition\": \"eod_tue_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"eod_tue_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n+                (New) ['6']: {\n+                      \"GameEdition\": \"standard\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n← Back to all changes"
+    },
+    {
+      "entry_id": "1068",
+      "eft_version": "1.0.5.0.45272",
+      "posted_at": "Monday, 01 June 2026 - 07:15 AM EDT",
+      "scraped_at": "2026-06-01T11:15:00Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1068",
+      "files_changed": [
+        {
+          "path": "client/globals/response.json",
+          "count": 7
+        }
+      ],
+      "summary_ko": "[반복 이벤트] 주말 경험치 부스트가 종료되어 에디션별 기본 배율(EoD 12 등)로 원복되었습니다.",
+      "tags": [
+        "경험치",
+        "이벤트"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "globals.config.exp.ExpByGameEditionMultiplier (전 에디션)",
+          "before_ko": "전 에디션 25 (주말 부스트)",
+          "after_ko": "EoD 12 / Prepare 9 / Left Behind 7 / Unheard·EoD-TUE 20 (기본값 복귀)",
+          "explanation_ko": "5/29에 25로 올랐던 경험치 배율이 월요일에 원래의 에디션별 기본값으로 되돌아왔습니다. 부스트가 한시적이었음을 보여주는 변경입니다.",
+          "impact_ko": "주말 부스트가 끝나 경험치 획득 속도가 평상시로 돌아옵니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "5/29 상향 → 6/1 원복 → 6/12 재상향으로 반복되는 주말 부스트의 'OFF' 시점입니다."
+      },
+      "is_submarine": true,
+      "backfilled": true,
+      "recurring_event": true,
+      "raw_text": "Files Changed:\nclient/globals/response.json\n(7 changes)\nDated: Monday, 01 June 2026 - 07:15 AM EDT | Game Version 1.0.5.0.45272\nclient/globals/response.json\n['data']\n    ['config']\n        ['exp']\n            ['ExpByGameEditionMultiplier']\n                ['3']\n-                (Old) {\n-                      \"GameEdition\": \"eod_tue_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"eod_tue_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['1']\n-                (Old) {\n-                      \"GameEdition\": \"prepare_for_escape\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"prepare_for_escape\",\n+                      \"SelfExpMultiplier\": 9,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['2']\n-                (Old) {\n-                      \"GameEdition\": \"edge_of_darkness\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"edge_of_darkness\",\n+                      \"SelfExpMultiplier\": 12,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['4']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['0']\n-                (Old) {\n-                      \"GameEdition\": \"left_behind\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"left_behind\",\n+                      \"SelfExpMultiplier\": 7,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['5']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_steam_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_steam_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n-                (Removed) ['6']: {\n-                      \"GameEdition\": \"standard\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n← Back to all changes"
+    },
+    {
+      "entry_id": "1065",
+      "eft_version": "1.0.5.0.45272",
+      "posted_at": "Friday, 29 May 2026 - 11:06 AM EDT",
+      "scraped_at": "2026-05-29T15:06:00Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1065",
+      "files_changed": [
+        {
+          "path": "client/globals/response.json",
+          "count": 7
+        }
+      ],
+      "summary_ko": "[반복 이벤트] 금요일을 기점으로 전 에디션 경험치 배율이 25로 상향(주말 부스트 ON)되었습니다.",
+      "tags": [
+        "경험치",
+        "이벤트"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "globals.config.exp.ExpByGameEditionMultiplier (전 에디션)",
+          "before_ko": "EoD 12 / Prepare 9 / Left Behind 7 / Unheard·EoD-TUE 20",
+          "after_ko": "전 에디션 SelfExp 25 (언허드 계열은 TeamExp도 25)",
+          "explanation_ko": "모든 게임 에디션의 경험치 배율이 일시적으로 25로 통일되었습니다. 단발성 영구 변경처럼 보이지만, 실제 이력상 이 값은 주말마다 켜졌다 꺼지는 패턴을 보입니다.",
+          "impact_ko": "이 기간 동안 모든 유저의 경험치 획득이 빨라집니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "이 배율은 6/1(월) 원복, 6/12(금) 재상향으로 이어지는 '금요일 ON·월요일 OFF' 반복 패턴이 확인됩니다. 영구 밸런스가 아니라 주말/이벤트 경험치 부스트로 분류합니다."
+      },
+      "is_submarine": true,
+      "backfilled": true,
+      "recurring_event": true,
+      "raw_text": "Files Changed:\nclient/globals/response.json\n(7 changes)\nDated: Friday, 29 May 2026 - 11:06 AM EDT | Game Version 1.0.5.0.45272\nclient/globals/response.json\n['data']\n    ['config']\n        ['exp']\n            ['ExpByGameEditionMultiplier']\n                ['5']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_steam_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_steam_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n                ['2']\n-                (Old) {\n-                      \"GameEdition\": \"edge_of_darkness\",\n-                      \"SelfExpMultiplier\": 12,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"edge_of_darkness\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['3']\n-                (Old) {\n-                      \"GameEdition\": \"eod_tue_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"eod_tue_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n                ['4']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n                ['0']\n-                (Old) {\n-                      \"GameEdition\": \"left_behind\",\n-                      \"SelfExpMultiplier\": 7,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"left_behind\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['1']\n-                (Old) {\n-                      \"GameEdition\": \"prepare_for_escape\",\n-                      \"SelfExpMultiplier\": 9,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"prepare_for_escape\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n+                (New) ['6']: {\n+                      \"GameEdition\": \"standard\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n← Back to all changes"
+    },
+    {
+      "entry_id": "1059",
+      "eft_version": "1.0.5.0.45272",
+      "posted_at": "Tuesday, 26 May 2026 - 05:46 AM EDT",
+      "scraped_at": "2026-05-26T09:46:00Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1059",
+      "files_changed": [
+        {
+          "path": "client/hideout/production/recipes/response.json",
+          "count": 1
+        }
+      ],
+      "summary_ko": "은신처 '화장실(Lavatory)' 레벨1에서 RDG-2B 연막탄을 제작하는 신규 제작법이 추가되었습니다.",
+      "tags": [
+        "아이템"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "hideout.production.recipes (신규 레시피)",
+          "before_ko": "(해당 제작법 없음)",
+          "after_ko": "화장실 Lv1 → RDG-2B 연막탄 6개",
+          "explanation_ko": "재료는 염소 한 팩(Pack of chlorine)·사냥용 성냥(Hunting matches)·덕트테이프(Duct tape)·화장지(Toilet paper) 각 1개이며, 제작 시간은 3600초(1시간)로 RDG-2B 연막탄 6개를 만듭니다.",
+          "impact_ko": "잡템으로 연막탄을 자급할 수 있어, 연막을 활용하는 탈출·팀 전술의 진입장벽이 낮아집니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "은신처 제작법 추가로, 공식 패치노트 없이 적용된 잠수함 패치입니다. 단발 추가 이후 변경 없이 유지되고 있습니다."
+      },
+      "is_submarine": true,
+      "backfilled": true,
+      "recurring_event": false,
+      "raw_text": "Files Changed:\nclient/hideout/production/recipes/response.json\n(1 change)\nDated: Tuesday, 26 May 2026 - 05:46 AM EDT | Game Version 1.0.5.0.45272\nclient/hideout/production/recipes/response.json\n['data']\n    ['recipes']\n+        (New) ['_id(6a1568b4a9185da666070a24), Lavatory(lvl 1) -> RDG-2B smoke grenade']: {\n+              \"_id\": \"6a1568b4a9185da666070a24\",\n+              \"count\": 6,\n+              \"locked\": false,\n+              \"areaType\": \"Lavatory (2)\",\n+              \"isEncoded\": false,\n+              \"continuous\": false,\n+              \"endProduct\": \"RDG-2B smoke grenade\",\n+              \"requirements\": [\n+                {\n+                  \"type\": \"Area\",\n+                  \"areaType\": \"Lavatory (2)\",\n+                  \"requiredLevel\": 1\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Pack of chlorine\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Hunting matches\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Duct tape\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Toilet paper\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                }\n+              ],\n+              \"productionTime\": 3600.0,\n+              \"isCodeProduction\": false,\n+              \"productionLimitCount\": 0,\n+              \"needFuelForAllProductionTime\": false\n+            }\n← Back to all changes"
+    },
+    {
+      "entry_id": "1027",
+      "eft_version": "1.0.4.5.44573",
+      "posted_at": "Tuesday, 21 April 2026 - 06:02 AM EDT",
+      "scraped_at": "2026-04-21T10:02:00Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1027",
+      "files_changed": [
+        {
+          "path": "client/items/response.json",
+          "count": 24
+        },
+        {
+          "path": "client/globals/response.json",
+          "count": 12
+        }
+      ],
+      "summary_ko": "아틀란트 티탄 아라미드 헬멧(Rudiarius)의 헤드셋 차단이 해제되고 다수 헤드셋과의 호환 규칙이 정비되었으며, 관련 아머 프리셋이 갱신되었습니다.",
+      "tags": [
+        "아이템",
+        "밸런스"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "items.['Atlant Armour Titan Aramid helmet (Rudiarius)']._props.BlocksEarpiece",
+          "before_ko": "1 (헤드셋 착용 차단)",
+          "after_ko": "0 (헤드셋 착용 허용)",
+          "explanation_ko": "이 헬멧을 쓰면 헤드셋(이어피스)을 함께 못 쓰던 제한이 풀렸습니다. 이제 청음용 헤드셋과 병행 착용이 가능합니다.",
+          "impact_ko": "헬멧 착용 시에도 발소리 청취 이점을 챙길 수 있어 실효성이 올라갑니다."
+        },
+        {
+          "key_path": "items.['Atlant ...']._props.ConflictingItems (다수 헤드셋 추가)",
+          "before_ko": "충돌 목록 없음",
+          "after_ko": "Peltor ComTac·MSA Sordin·Ops-Core·Earmor 등 다수 헤드셋을 충돌 목록에 지정",
+          "explanation_ko": "차단을 푸는 대신, 특정 헤드셋들과는 '동시 착용 불가(ConflictingItems)'로 명시했습니다. 즉 일부 헤드셋과만 조합이 막히도록 호환/비호환 규칙을 세밀하게 정리한 것입니다.",
+          "impact_ko": "헬멧+헤드셋 조합이 가능해지되, 일부 조합은 여전히 제한됩니다."
+        },
+        {
+          "key_path": "globals.ItemPresets.[69d4389...]._parent / _items",
+          "before_ko": "기존 프리셋 구성(아라미드 삽입물 배치)",
+          "after_ko": "프리셋 부모/구성 항목 갱신",
+          "explanation_ko": "해당 헬멧의 기본 프리셋(장착 상태) 정의가 함께 수정되어, 상점·기본 형상에서의 구성과 어긋나지 않도록 맞췄습니다.",
+          "impact_ko": "기본 제공/구매 시 헬멧 구성이 새 규칙에 맞춰집니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "장비 호환 규칙 정비로, 공식 패치노트 없이 적용된 잠수함 패치입니다. 이후 타겟형 변경에서 해당 헬멧의 BlocksEarpiece 가 다시 바뀌지 않아 유지되고 있습니다."
+      },
+      "is_submarine": true,
+      "backfilled": true,
+      "recurring_event": false,
+      "raw_text": "Files Changed:\nclient/items/response.json\n(24 changes)\nclient/globals/response.json\n(12 changes)\nDated: Tuesday, 21 April 2026 - 06:02 AM EDT | Game Version 1.0.4.5.44573\nclient/items/response.json\n['data']\n    ['Atlant Armour Titan Aramid helmet (Rudiarius)']\n        ['_props']\n            ['BlocksEarpiece']\n-            (Old) 1\n+            (New) 0 (-100.00%)\n            ['ConflictingItems']\n+                (New) ['22']: Peltor ComTac II headset (OD Green)\n+                (New) ['23']: MSA Sordin Supreme PRO-X/L headset\n+                (New) ['24']: Ops-Core FAST RAC Headset\n+                (New) ['25']: TW EXFIL Peltor ComTac V headset (OD Green)\n+                (New) ['26']: TW EXFIL Peltor ComTac VI headset (Coyote Brown)\n+                (New) ['27']: Peltor ComTac VI headset (Black)\n+                (New) ['28']: TW EXFIL Peltor ComTac VI headset (Black)\n+                (New) ['29']: Peltor ComTac VI headset (Ranger Green)\n+                (New) ['30']: TW EXFIL Peltor ComTac VI headset (Ranger Green)\n+                (New) ['31']: Peltor ComTac IV Hybrid headset (Coyote Brown)\n+                (New) ['32']: Peltor ComTac V headset (OD Green)\n+                (New) ['33']: Peltor ComTac VI headset (Coyote Brown)\n+                (New) ['34']: GSSh-01 active headset\n+                (New) ['35']: Safariland Liberator HP 2.0 Hearing Protection Headset (FDE)\n+                (New) ['36']: Safariland Liberator HP 2.0 Hearing Protection Headset (Black)\n+                (New) ['37']: Safariland Liberator HP 2.0 Hearing Protection Headset (MultiCam Black)\n+                (New) ['38']: Safariland Liberator HP 2.0 Hearing Protection Headset (MultiCam)\n+                (New) ['39']: OPSMEN Earmor M32 headset\n+                (New) ['40']: OPSMEN Earmor M32 headset (White)\n+                (New) ['41']: Peltor Tactical Sport headset\n+                (New) ['42']: Walker's Razor Digital headset\n+                (New) ['43']: Walker's Razor Digital headset (Molon Labe)\n+                (New) ['44']: Walker's XCEL 500BT Digital headset\nclient/globals/response.json\n['data']\n    ['ItemPresets']\n        ['69d4389bfbed7b921804a35a']\n            ['_parent']\n-            (Old) 69d4389bfbed7b921804a366\n+            (New) 69e7413ee5ec88c29100f8a4\n            ['_items']\n                ['2']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a368\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Sofr_armor_back\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a6\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_back\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['4']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36a\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Soft_armor_right\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a8\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_right\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['1']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a367\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Soft_armor_front\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a5\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_front\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['10']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a370\",\n-                      \"_tpl\": \"Granit Br4 ballistic plate\",\n-                      \"slotId\": \"Back_plate\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ae\",\n+                      \"_tpl\": \"Granit Br4 ballistic plate\",\n+                      \"slotId\": \"Back_plate\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['5']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36b\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Groin\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a9\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Groin\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['3']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a369\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Soft_armor_left\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a7\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_left\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['8']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36e\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Shoulder_r\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ac\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Shoulder_r\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['0']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a366\",\n-                      \"_tpl\": \"FORT Gladiator-S plate carrier (Death is Inevitable)\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a4\",\n+                      \"_tpl\": \"FORT Gladiator-S plate carrier (Death is Inevitable)\"\n+                    }\n                ['7']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36d\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Shoulder_l\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ab\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Shoulder_l\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['6']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36c\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Collar\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8aa\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Collar\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['9']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36f\",\n-                      \"_tpl\": \"Granit Br4 ballistic plate\",\n-                      \"slotId\": \"Front_plate\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ad\",\n+                      \"_tpl\": \"Granit Br4 ballistic plate\",\n+                      \"slotId\": \"Front_plate\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n← Back to all changes"
+    },
+    {
+      "entry_id": "1005",
+      "eft_version": "1.0.2.5.43579",
+      "posted_at": "Thursday, 19 March 2026 - 09:13 AM EDT",
+      "scraped_at": "2026-03-19T13:13:00Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1005",
+      "files_changed": [
+        {
+          "path": "client/items/response.json",
+          "count": 2
+        },
+        {
+          "path": "client/locations/response.json",
+          "count": 18
+        }
+      ],
+      "summary_ko": "전 맵 비행기 에어드랍 출현 확률이 0.9로 대폭 상향되고 최소 인원이 1명으로 완화되었으며, 의료 에어드랍 상자 용량도 크게 늘었습니다.",
+      "tags": [
+        "맵",
+        "아이템",
+        "밸런스"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "locations.locations.*.AirdropParameters[0].PlaneAirdropChance",
+          "before_ko": "맵별 0.1~0.25 (예: Reserve 0.1, Customs 0.2, Woods 0.25)",
+          "after_ko": "모든 맵 0.9",
+          "explanation_ko": "레이드당 비행기 보급(에어드랍)이 뜰 확률입니다. 기존 10~25%에서 90%로 올라, 사실상 거의 매 레이드마다 에어드랍이 등장하게 되었습니다(Reserve는 0.1→0.9로 +800%).",
+          "impact_ko": "에어드랍 보급 경쟁/파밍 빈도가 폭발적으로 늘어납니다."
+        },
+        {
+          "key_path": "locations.locations.*.AirdropParameters[0].MinPlayersCountToSpawnAirdrop",
+          "before_ko": "6명",
+          "after_ko": "1명",
+          "explanation_ko": "에어드랍이 생성되기 위한 최소 접속 인원이 6명에서 1명으로 낮아졌습니다. 솔로나 소수 인원 레이드에서도 에어드랍이 발생합니다.",
+          "impact_ko": "한산한 시간대·솔로 플레이에서도 에어드랍을 노릴 수 있습니다."
+        },
+        {
+          "key_path": "items.['Airdrop medical crate']._props.Grids[0]._props.maxCount / minCount",
+          "before_ko": "maxCount 55 / minCount 20",
+          "after_ko": "maxCount 120 / minCount 120",
+          "explanation_ko": "의료 에어드랍 상자의 내부 수납 한도가 크게 늘었습니다. minCount까지 120으로 올라, 들어있는 물량 자체가 풍부해지는 방향입니다.",
+          "impact_ko": "의료 보급 상자의 가치가 상승합니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 공지 없이 적용된 잠수함 패치입니다. 에어드랍을 크게 늘리는 변경이라 이벤트성일 가능성도 있으나, 수집한 이력 범위에서 해당 PlaneAirdropChance 값이 다시 토글되지 않아 단발성 상향으로 분류했습니다."
+      },
+      "is_submarine": true,
+      "backfilled": true,
+      "recurring_event": false,
+      "raw_text": "Files Changed:\nclient/items/response.json\n(2 changes)\nclient/locations/response.json\n(18 changes)\nDated: Thursday, 19 March 2026 - 09:13 AM EDT | Game Version 1.0.2.5.43579\nclient/items/response.json\n['data']\n    ['Airdrop medical crate']\n        ['_props']\n            ['Grids']\n                ['0']\n                    ['_props']\n                        ['maxCount']\n-                        (Old) 55\n+                        (New) 120 (+118.18%)\n                        ['minCount']\n-                        (Old) 20\n+                        (New) 120 (+500.00%)\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Customs']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.9 (+350.00%)\n                    ['MinPlayersCountToSpawnAirdrop']\n-                    (Old) 6\n+                    (New) 1 (-83.33%)\n        ['Woods']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropChance']\n-                    (Old) 0.25\n+                    (New) 0.9 (+260.00%)\n                    ['MinPlayersCountToSpawnAirdrop']\n-                    (Old) 6\n+                    (New) 1 (-83.33%)\n        ['Lighthouse']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.9 (+350.00%)\n                    ['MinPlayersCountToSpawnAirdrop']\n-                    (Old) 6\n+                    (New) 1 (-83.33%)\n        ['Shoreline']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.9 (+350.00%)\n                    ['MinPlayersCountToSpawnAirdrop']\n-                    (Old) 6\n+                    (New) 1 (-83.33%)\n        ['Reserve']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropChance']\n-                    (Old) 0.1\n+                    (New) 0.9 (+800.00%)\n                    ['MinPlayersCountToSpawnAirdrop']\n-                    (Old) 6\n+                    (New) 1 (-83.33%)\n        ['Interchange']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.9 (+350.00%)\n                    ['MinPlayersCountToSpawnAirdrop']\n-                    (Old) 6\n+                    (New) 1 (-83.33%)\n        ['Streets']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropChance']\n-                    (Old) 0.125\n+                    (New) 0.9 (+620.00%)\n                    ['MinPlayersCountToSpawnAirdrop']\n-                    (Old) 6\n+                    (New) 1 (-83.33%)\n        ['Ground Zero (21+)']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropChance']\n-                    (Old) 0.1\n+                    (New) 0.9 (+800.00%)\n                    ['MinPlayersCountToSpawnAirdrop']\n-                    (Old) 6\n+                    (New) 1 (-83.33%)\n        ['The Labyrinth']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropChance']\n-                    (Old) 0.25\n+                    (New) 0 (-100.00%)\n                    ['MinPlayersCountToSpawnAirdrop']\n-                    (Old) 6\n+                    (New) 1 (-83.33%)\n← Back to all changes"
+    },
+    {
+      "entry_id": "991",
+      "eft_version": "1.0.2.5.43415",
+      "posted_at": "Thursday, 05 March 2026 - 10:46 AM EST",
+      "scraped_at": "2026-03-05T15:46:00Z",
+      "source_url": "https://changes.tarkov-changes.com/view/991",
+      "files_changed": [
+        {
+          "path": "client/items/response.json",
+          "count": 67
+        }
+      ],
+      "summary_ko": "다수 총기 부품(버퍼튜브·AK 스톡·대용량 탄창)의 반동·인체공학 수치가 정밀 재조정되었습니다.",
+      "tags": [
+        "무기",
+        "밸런스"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "items.*buffer tube*._props.Recoil / Ergonomics",
+          "before_ko": "AR-15 Colt/Magpul/ADAR·HK416·RPK-16 버퍼튜브: Recoil -1~-2 / Ergo 0",
+          "after_ko": "Recoil -0.5 / Ergo -0.5~-1",
+          "explanation_ko": "버퍼튜브(리시버 익스텐션)류의 '반동 감소량'이 -1~-2에서 -0.5로 줄고, 인체공학에 소폭 페널티가 붙었습니다. 반동 값이 0에 가까워질수록 감소 효과가 작아지는 것이므로, 사실상 가벼운 너프입니다.",
+          "impact_ko": "버퍼튜브만으로 반동을 줄이던 경량 세팅의 이점이 줄어듭니다."
+        },
+        {
+          "key_path": "items.['Magpul MOE Carbine rubber buttpad']._props.Recoil",
+          "before_ko": "Recoil -2",
+          "after_ko": "Recoil 0 (반동 감소 효과 제거)",
+          "explanation_ko": "마그풀 MOE 고무 버트패드의 반동 감소 효과가 완전히 사라졌습니다. 외형용 부품에 가깝게 바뀐 셈입니다.",
+          "impact_ko": "이 버트패드를 반동 목적으로 쓰던 빌드는 대체 부품이 필요합니다."
+        },
+        {
+          "key_path": "items.['AK Zenit PT-3 / PT-1 \"Klassika\" stock']._props.Recoil / Ergonomics",
+          "before_ko": "PT-3: Recoil -27 / Ergo 11,  PT-1: Recoil -26 / Ergo 9",
+          "after_ko": "PT-3: Recoil -24.5 / Ergo 12,  PT-1: Recoil -25 / Ergo 7",
+          "explanation_ko": "AK용 제니트 PT 계열 스톡의 반동 감소량이 소폭 줄었습니다(너프). 인체공학은 PT-3는 오르고 PT-1은 내려가는 등 부품별로 미세하게 엇갈리게 조정되었습니다.",
+          "impact_ko": "AK 반동 메타 스톡의 효율이 살짝 하향됩니다."
+        },
+        {
+          "key_path": "items.[60연발 탄창 SureFire MAG5-60 / Magpul PMAG D-60]._props.Ergonomics / Check·LoadUnload",
+          "before_ko": "MAG5-60: Ergo -7,  PMAG D-60: Ergo -9",
+          "after_ko": "MAG5-60: Ergo -9,  PMAG D-60: Ergo -7(장전/점검 시간도 서로 맞교환)",
+          "explanation_ko": "두 60연발 탄창의 인체공학·장전/점검 시간 수치가 서로 자리를 바꾸듯 조정되어, 같은 대용량 탄창 사이의 우열을 재정렬했습니다.",
+          "impact_ko": "60연발 탄창 선택 시 선호도가 바뀔 수 있습니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "총기 부품 수치 미세조정 67건으로, 공식 패치노트 없이 적용된 잠수함 밸런스 패치입니다. 이후 수집된 타겟형 변경에서 동일 부품들이 재조정되지 않아 안정적으로 유지된 것으로 판단됩니다."
+      },
+      "is_submarine": true,
+      "backfilled": true,
+      "recurring_event": false,
+      "raw_text": "Files Changed:\nclient/items/response.json\n(67 changes)\nDated: Thursday, 05 March 2026 - 10:46 AM EST | Game Version 1.0.2.5.43415\nclient/items/response.json\n['data']\n    ['AR-15 5.56x45 SureFire MAG5-60 STANAG 60-round magazine']\n        ['_props']\n            ['Ergonomics']\n-            (Old) -7\n+            (New) -9 (-28.57%)\n            ['CheckTimeModifier']\n-            (Old) 13\n+            (New) 10 (-23.08%)\n            ['LoadUnloadModifier']\n-            (Old) 8\n+            (New) 10 (+25.00%)\n    ['AR-15 Colt Carbine buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) -0.5 (+50.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -0.5\n    ['Magpul MOE Carbine rubber buttpad']\n        ['_props']\n            ['Recoil']\n-            (Old) -2\n+            (New) 0 (+100.00%)\n    ['AR-15 5.56x45 Magpul PMAG D-60 STANAG 60-round magazine']\n        ['_props']\n            ['Ergonomics']\n-            (Old) -9\n+            (New) -7 (+22.22%)\n            ['CheckTimeModifier']\n-            (Old) 10\n+            (New) 13 (+30.00%)\n            ['LoadUnloadModifier']\n-            (Old) 10\n+            (New) 8 (-20.00%)\n    ['AK Zenit PT-3 \"Klassika\" stock']\n        ['_props']\n            ['Recoil']\n-            (Old) -27\n+            (New) -24.5 (+9.26%)\n            ['Ergonomics']\n-            (Old) 11\n+            (New) 12 (+9.09%)\n    ['AR-15 Magpul Enhanced Receiver Extension']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) -0.5 (+50.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -1\n    ['AK Zenit PT-1 \"Klassika\" stock']\n        ['_props']\n            ['Recoil']\n-            (Old) -26\n+            (New) -25 (+3.85%)\n            ['Ergonomics']\n-            (Old) 9\n+            (New) 7 (-22.22%)\n    ['HK 416 Enhanced Buffer Tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -2\n+            (New) -0.5 (+75.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -0.5\n    ['RPK-16 buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) -0.5 (+50.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -1\n    ['AR-15 ADAR 2-15 buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) -0.5 (+50.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -1\n    ['AR-15 5.56x45 HK PM Gen.2 STANAG 30-round magazine']\n        ['_props']\n            ['Ergonomics']\n-            (Old) -2\n+            (New) -0.5 (+75.00%)\n    ['AR-15 5.56x45 TROY BattleMag STANAG 30-round magazine']\n        ['_props']\n            ['Ergonomics']\n-            (Old) -2\n+            (New) -0.5 (+75.00%)\n    ['AR-15 Strike Industries Advanced Receiver Extension']\n        ['_props']\n            ['Recoil']\n-            (Old) -2\n+            (New) -0.5 (+75.00%)\n            ['Ergonomics']\n-            (Old) 2\n+            (New) -0.5 (-125.00%)\n    ['AR-15 Strike Industries Advanced Receiver Extension (Anodized Red)']\n        ['_props']\n            ['Recoil']\n-            (Old) -2\n+            (New) -0.5 (+75.00%)\n            ['Accuracy']\n-            (Old) 5\n+            (New) 0 (-100.00%)\n            ['Velocity']\n-            (Old) 2\n+            (New) 0 (-100.00%)\n            ['Ergonomics']\n-            (Old) 2\n+            (New) -0.5 (-125.00%)\n    ['AR-10 Lantac Dragon 7.62x51 muzzle brake']\n        ['_props']\n            ['Recoil']\n-            (Old) -12\n+            (New) -10.5 (+12.50%)\n    ['AK-74M CAA AKTS AK74 buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -2\n+            (New) -0.5 (+75.00%)\n    ['AKM/AK-74 CAA AKTS buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -2\n+            (New) -0.5 (+75.00%)\n    ['AR-15 Magpul CTR Carbine stock (Black)']\n        ['_props']\n            ['Ergonomics']\n-            (Old) 12\n+            (New) 10 (-16.67%)\n    ['AR-15 Magpul CTR Carbine stock (FDE)']\n        ['_props']\n            ['Ergonomics']\n-            (Old) 12\n+            (New) 10 (-16.67%)\n    ['Mesa Tactical Crosshair Hydraulic buffer tube']\n        ['_props']\n            ['Ergonomics']\n-            (Old) -3\n+            (New) -2 (+33.33%)\n    ['AR-15 KRISS Defiance DS150 stock (Black)']\n        ['_props']\n            ['Recoil']\n-            (Old) -22\n+            (New) -21.5 (+2.27%)\n            ['Ergonomics']\n-            (Old) 9\n+            (New) 10 (+11.11%)\n    ['AR-15 Soyuz-TM buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) -0.5 (+50.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -1\n    ['AR-15 CMMG buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) -0.5 (+50.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -0.5\n    ['AKM/AK-74 Hera Arms CQR47 pistol grip/buttstock']\n        ['_props']\n            ['Recoil']\n-            (Old) -25\n+            (New) -22 (+12.00%)\n            ['Ergonomics']\n-            (Old) 16\n+            (New) 14 (-12.50%)\n    ['AK-545 buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) -0.5 (+50.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -1\n    ['AR-15 RTM ATP buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -1.5\n+            (New) -0.5 (+66.67%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -1\n    ['AR-15 Aeroknox Orion pistol grip']\n        ['_props']\n            ['Recoil']\n-            (Old) -0.8\n+            (New) -0.6 (+25.00%)\n            ['Ergonomics']\n-            (Old) 5.4\n+            (New) 4.2 (-22.22%)\n    ['AK-12 buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -3\n+            (New) -0.5 (+83.33%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -0.5\n    ['Daniel Defense TCS 12mm Buttpad ']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) 0 (+100.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) 2\n    ['Daniel Defense TCS 20mm Buttpad ']\n        ['_props']\n            ['Recoil']\n-            (Old) -2\n+            (New) -0.5 (+75.00%)\n            ['Ergonomics']\n-            (Old) -2\n+            (New) 0.5 (+125.00%)\n    ['SIG Sauer Stock Adapter Low Profile Tube (Coyote Tan)']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) -0.5 (+50.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -0.5\n    ['AKMS FAB Defense M4-AKMS P stock adapter']\n        ['_props']\n            ['Recoil']\n-            (Old) -2\n+            (New) -0.5 (+75.00%)\n            ['Ergonomics']\n-            (Old) -1\n+            (New) -2 (-100.00%)\n    ['AR-15 Colt A2 buffer tube']\n        ['_props']\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -1\n    ['AR-15 Custom Guns buffer tube']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) -0.5 (+50.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -1\n    ['AR-15 Custom Guns buffer tube (FDE)']\n        ['_props']\n            ['Recoil']\n-            (Old) -1\n+            (New) -0.5 (+50.00%)\n            ['Ergonomics']\n-            (Old) 0\n+            (New) -1\n    ['AK-74 5.45x39 Magpul PMAG 30 GEN M3 30-round magazine (FDE)']\n        ['_props']\n            ['Ergonomics']\n-            (Old) -1.5\n+            (New) -1 (+33.33%)\n    ['AR-10 KAC SR-25/Mk.11 7.62x51 sound suppressor']\n        ['_props']\n            ['Recoil']\n-            (Old) -18\n+            (New) -12 (+33.33%)\n    ['AR-10 KAC SR-25/Mk.11 7.62x51 sound suppressor (Taupe)']\n        ['_props']\n            ['Recoil']\n-            (Old) -18\n+            (New) -12 (+33.33%)\n← Back to all changes"
     }
   ]
 }

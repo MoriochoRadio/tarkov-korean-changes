@@ -75,6 +75,8 @@ function card(e) {
   const subBadge = e.is_submarine
     ? '<span class="sub-badge">🌊 잠수함 패치</span>'
     : '<span class="linked-badge">🔗 공지 연결됨</span>';
+  const eventBadge = e.recurring_event ? '<span class="event-badge">🔁 반복 이벤트</span>' : "";
+  const backfillBadge = e.backfilled ? '<span class="backfill-badge">📚 과거 백필</span>' : "";
   const tags = (e.tags || []).map((t) => `<span class="tag">${TAG_PREFIX}${esc(t)}</span>`).join("");
   const files = (e.files_changed || []).map((f) => `${esc(f.path)} (${f.count})`).join(", ");
 
@@ -84,6 +86,8 @@ function card(e) {
       <span class="toggle-hint">펼치기 ▾</span>
       <div class="badges">
         ${subBadge}
+        ${eventBadge}
+        ${backfillBadge}
         <span class="sev ${sev}">${SEV_LABEL[sev] || sev}</span>
         ${tags}
       </div>

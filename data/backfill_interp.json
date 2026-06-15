@@ -1,0 +1,202 @@
+{
+  "_comment": "과거 이력 백필용 한글 해석. 출처: changes.tarkov-changes.com/view/{id} (실제 과거 사일런트 변경). raw_text/files_changed/eft_version/posted_at 은 data/history_raw.json 에서 자동 결합됨. scraped_at 은 게시 시각(UTC 근사)으로 두어 타임라인에 시간순으로 배치.",
+  "991": {
+    "scraped_at": "2026-03-05T15:46:00Z",
+    "summary_ko": "다수 총기 부품(버퍼튜브·AK 스톡·대용량 탄창)의 반동·인체공학 수치가 정밀 재조정되었습니다.",
+    "tags": ["무기", "밸런스"],
+    "severity": "major",
+    "changes": [
+      {
+        "key_path": "items.*buffer tube*._props.Recoil / Ergonomics",
+        "before_ko": "AR-15 Colt/Magpul/ADAR·HK416·RPK-16 버퍼튜브: Recoil -1~-2 / Ergo 0",
+        "after_ko": "Recoil -0.5 / Ergo -0.5~-1",
+        "explanation_ko": "버퍼튜브(리시버 익스텐션)류의 '반동 감소량'이 -1~-2에서 -0.5로 줄고, 인체공학에 소폭 페널티가 붙었습니다. 반동 값이 0에 가까워질수록 감소 효과가 작아지는 것이므로, 사실상 가벼운 너프입니다.",
+        "impact_ko": "버퍼튜브만으로 반동을 줄이던 경량 세팅의 이점이 줄어듭니다."
+      },
+      {
+        "key_path": "items.['Magpul MOE Carbine rubber buttpad']._props.Recoil",
+        "before_ko": "Recoil -2",
+        "after_ko": "Recoil 0 (반동 감소 효과 제거)",
+        "explanation_ko": "마그풀 MOE 고무 버트패드의 반동 감소 효과가 완전히 사라졌습니다. 외형용 부품에 가깝게 바뀐 셈입니다.",
+        "impact_ko": "이 버트패드를 반동 목적으로 쓰던 빌드는 대체 부품이 필요합니다."
+      },
+      {
+        "key_path": "items.['AK Zenit PT-3 / PT-1 \"Klassika\" stock']._props.Recoil / Ergonomics",
+        "before_ko": "PT-3: Recoil -27 / Ergo 11,  PT-1: Recoil -26 / Ergo 9",
+        "after_ko": "PT-3: Recoil -24.5 / Ergo 12,  PT-1: Recoil -25 / Ergo 7",
+        "explanation_ko": "AK용 제니트 PT 계열 스톡의 반동 감소량이 소폭 줄었습니다(너프). 인체공학은 PT-3는 오르고 PT-1은 내려가는 등 부품별로 미세하게 엇갈리게 조정되었습니다.",
+        "impact_ko": "AK 반동 메타 스톡의 효율이 살짝 하향됩니다."
+      },
+      {
+        "key_path": "items.[60연발 탄창 SureFire MAG5-60 / Magpul PMAG D-60]._props.Ergonomics / Check·LoadUnload",
+        "before_ko": "MAG5-60: Ergo -7,  PMAG D-60: Ergo -9",
+        "after_ko": "MAG5-60: Ergo -9,  PMAG D-60: Ergo -7(장전/점검 시간도 서로 맞교환)",
+        "explanation_ko": "두 60연발 탄창의 인체공학·장전/점검 시간 수치가 서로 자리를 바꾸듯 조정되어, 같은 대용량 탄창 사이의 우열을 재정렬했습니다.",
+        "impact_ko": "60연발 탄창 선택 시 선호도가 바뀔 수 있습니다."
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "총기 부품 수치 미세조정 67건으로, 공식 패치노트 없이 적용된 잠수함 밸런스 패치입니다. 이후 수집된 타겟형 변경에서 동일 부품들이 재조정되지 않아 안정적으로 유지된 것으로 판단됩니다."
+    }
+  },
+  "1005": {
+    "scraped_at": "2026-03-19T13:13:00Z",
+    "summary_ko": "전 맵 비행기 에어드랍 출현 확률이 0.9로 대폭 상향되고 최소 인원이 1명으로 완화되었으며, 의료 에어드랍 상자 용량도 크게 늘었습니다.",
+    "tags": ["맵", "아이템", "밸런스"],
+    "severity": "major",
+    "changes": [
+      {
+        "key_path": "locations.locations.*.AirdropParameters[0].PlaneAirdropChance",
+        "before_ko": "맵별 0.1~0.25 (예: Reserve 0.1, Customs 0.2, Woods 0.25)",
+        "after_ko": "모든 맵 0.9",
+        "explanation_ko": "레이드당 비행기 보급(에어드랍)이 뜰 확률입니다. 기존 10~25%에서 90%로 올라, 사실상 거의 매 레이드마다 에어드랍이 등장하게 되었습니다(Reserve는 0.1→0.9로 +800%).",
+        "impact_ko": "에어드랍 보급 경쟁/파밍 빈도가 폭발적으로 늘어납니다."
+      },
+      {
+        "key_path": "locations.locations.*.AirdropParameters[0].MinPlayersCountToSpawnAirdrop",
+        "before_ko": "6명",
+        "after_ko": "1명",
+        "explanation_ko": "에어드랍이 생성되기 위한 최소 접속 인원이 6명에서 1명으로 낮아졌습니다. 솔로나 소수 인원 레이드에서도 에어드랍이 발생합니다.",
+        "impact_ko": "한산한 시간대·솔로 플레이에서도 에어드랍을 노릴 수 있습니다."
+      },
+      {
+        "key_path": "items.['Airdrop medical crate']._props.Grids[0]._props.maxCount / minCount",
+        "before_ko": "maxCount 55 / minCount 20",
+        "after_ko": "maxCount 120 / minCount 120",
+        "explanation_ko": "의료 에어드랍 상자의 내부 수납 한도가 크게 늘었습니다. minCount까지 120으로 올라, 들어있는 물량 자체가 풍부해지는 방향입니다.",
+        "impact_ko": "의료 보급 상자의 가치가 상승합니다."
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "공식 공지 없이 적용된 잠수함 패치입니다. 에어드랍을 크게 늘리는 변경이라 이벤트성일 가능성도 있으나, 수집한 이력 범위에서 해당 PlaneAirdropChance 값이 다시 토글되지 않아 단발성 상향으로 분류했습니다."
+    }
+  },
+  "1027": {
+    "scraped_at": "2026-04-21T10:02:00Z",
+    "summary_ko": "아틀란트 티탄 아라미드 헬멧(Rudiarius)의 헤드셋 차단이 해제되고 다수 헤드셋과의 호환 규칙이 정비되었으며, 관련 아머 프리셋이 갱신되었습니다.",
+    "tags": ["아이템", "밸런스"],
+    "severity": "minor",
+    "changes": [
+      {
+        "key_path": "items.['Atlant Armour Titan Aramid helmet (Rudiarius)']._props.BlocksEarpiece",
+        "before_ko": "1 (헤드셋 착용 차단)",
+        "after_ko": "0 (헤드셋 착용 허용)",
+        "explanation_ko": "이 헬멧을 쓰면 헤드셋(이어피스)을 함께 못 쓰던 제한이 풀렸습니다. 이제 청음용 헤드셋과 병행 착용이 가능합니다.",
+        "impact_ko": "헬멧 착용 시에도 발소리 청취 이점을 챙길 수 있어 실효성이 올라갑니다."
+      },
+      {
+        "key_path": "items.['Atlant ...']._props.ConflictingItems (다수 헤드셋 추가)",
+        "before_ko": "충돌 목록 없음",
+        "after_ko": "Peltor ComTac·MSA Sordin·Ops-Core·Earmor 등 다수 헤드셋을 충돌 목록에 지정",
+        "explanation_ko": "차단을 푸는 대신, 특정 헤드셋들과는 '동시 착용 불가(ConflictingItems)'로 명시했습니다. 즉 일부 헤드셋과만 조합이 막히도록 호환/비호환 규칙을 세밀하게 정리한 것입니다.",
+        "impact_ko": "헬멧+헤드셋 조합이 가능해지되, 일부 조합은 여전히 제한됩니다."
+      },
+      {
+        "key_path": "globals.ItemPresets.[69d4389...]._parent / _items",
+        "before_ko": "기존 프리셋 구성(아라미드 삽입물 배치)",
+        "after_ko": "프리셋 부모/구성 항목 갱신",
+        "explanation_ko": "해당 헬멧의 기본 프리셋(장착 상태) 정의가 함께 수정되어, 상점·기본 형상에서의 구성과 어긋나지 않도록 맞췄습니다.",
+        "impact_ko": "기본 제공/구매 시 헬멧 구성이 새 규칙에 맞춰집니다."
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "장비 호환 규칙 정비로, 공식 패치노트 없이 적용된 잠수함 패치입니다. 이후 타겟형 변경에서 해당 헬멧의 BlocksEarpiece 가 다시 바뀌지 않아 유지되고 있습니다."
+    }
+  },
+  "1059": {
+    "scraped_at": "2026-05-26T09:46:00Z",
+    "summary_ko": "은신처 '화장실(Lavatory)' 레벨1에서 RDG-2B 연막탄을 제작하는 신규 제작법이 추가되었습니다.",
+    "tags": ["아이템"],
+    "severity": "minor",
+    "changes": [
+      {
+        "key_path": "hideout.production.recipes (신규 레시피)",
+        "before_ko": "(해당 제작법 없음)",
+        "after_ko": "화장실 Lv1 → RDG-2B 연막탄 6개",
+        "explanation_ko": "재료는 염소 한 팩(Pack of chlorine)·사냥용 성냥(Hunting matches)·덕트테이프(Duct tape)·화장지(Toilet paper) 각 1개이며, 제작 시간은 3600초(1시간)로 RDG-2B 연막탄 6개를 만듭니다.",
+        "impact_ko": "잡템으로 연막탄을 자급할 수 있어, 연막을 활용하는 탈출·팀 전술의 진입장벽이 낮아집니다."
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "은신처 제작법 추가로, 공식 패치노트 없이 적용된 잠수함 패치입니다. 단발 추가 이후 변경 없이 유지되고 있습니다."
+    }
+  },
+  "1065": {
+    "scraped_at": "2026-05-29T15:06:00Z",
+    "summary_ko": "[반복 이벤트] 금요일을 기점으로 전 에디션 경험치 배율이 25로 상향(주말 부스트 ON)되었습니다.",
+    "tags": ["경험치", "이벤트"],
+    "severity": "major",
+    "recurring_event": true,
+    "changes": [
+      {
+        "key_path": "globals.config.exp.ExpByGameEditionMultiplier (전 에디션)",
+        "before_ko": "EoD 12 / Prepare 9 / Left Behind 7 / Unheard·EoD-TUE 20",
+        "after_ko": "전 에디션 SelfExp 25 (언허드 계열은 TeamExp도 25)",
+        "explanation_ko": "모든 게임 에디션의 경험치 배율이 일시적으로 25로 통일되었습니다. 단발성 영구 변경처럼 보이지만, 실제 이력상 이 값은 주말마다 켜졌다 꺼지는 패턴을 보입니다.",
+        "impact_ko": "이 기간 동안 모든 유저의 경험치 획득이 빨라집니다."
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "이 배율은 6/1(월) 원복, 6/12(금) 재상향으로 이어지는 '금요일 ON·월요일 OFF' 반복 패턴이 확인됩니다. 영구 밸런스가 아니라 주말/이벤트 경험치 부스트로 분류합니다."
+    }
+  },
+  "1068": {
+    "scraped_at": "2026-06-01T11:15:00Z",
+    "summary_ko": "[반복 이벤트] 주말 경험치 부스트가 종료되어 에디션별 기본 배율(EoD 12 등)로 원복되었습니다.",
+    "tags": ["경험치", "이벤트"],
+    "severity": "major",
+    "recurring_event": true,
+    "changes": [
+      {
+        "key_path": "globals.config.exp.ExpByGameEditionMultiplier (전 에디션)",
+        "before_ko": "전 에디션 25 (주말 부스트)",
+        "after_ko": "EoD 12 / Prepare 9 / Left Behind 7 / Unheard·EoD-TUE 20 (기본값 복귀)",
+        "explanation_ko": "5/29에 25로 올랐던 경험치 배율이 월요일에 원래의 에디션별 기본값으로 되돌아왔습니다. 부스트가 한시적이었음을 보여주는 변경입니다.",
+        "impact_ko": "주말 부스트가 끝나 경험치 획득 속도가 평상시로 돌아옵니다."
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "5/29 상향 → 6/1 원복 → 6/12 재상향으로 반복되는 주말 부스트의 'OFF' 시점입니다."
+    }
+  },
+  "1094": {
+    "scraped_at": "2026-06-12T16:06:00Z",
+    "summary_ko": "[반복 이벤트] 다시 전 에디션 경험치 배율이 25로 상향(주말 부스트 ON)되고, '스탠다드' 항목이 표에 포함되었습니다.",
+    "tags": ["경험치", "이벤트"],
+    "severity": "major",
+    "recurring_event": true,
+    "changes": [
+      {
+        "key_path": "globals.config.exp.ExpByGameEditionMultiplier (전 에디션)",
+        "before_ko": "EoD 12 / Prepare 9 / Left Behind 7 / Unheard·EoD-TUE 20",
+        "after_ko": "전 에디션 SelfExp 25 (언허드 계열 TeamExp 25), standard 항목 포함",
+        "explanation_ko": "5/29·6/1의 ON/OFF에 이어 다시 25로 상향된 '주말 부스트 ON' 시점입니다. 처음 본다면 영구 잠수함 패치로 오해하기 쉽지만, 직전 2주 이력을 보면 명백한 반복 이벤트입니다.",
+        "impact_ko": "이 주말 동안 전 에디션의 경험치 획득이 다시 빨라집니다."
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "동일 키가 5/29 ON → 6/1 OFF → 6/12 ON 으로 토글되는 것이 확인되어, 영구 변경이 아닌 반복되는 주말/이벤트 경험치 부스트로 정정합니다."
+    }
+  }
+}
