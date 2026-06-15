@@ -21,8 +21,36 @@ async function init() {
       '<div class="empty">아직 data.json 이 없습니다. 파이프라인을 한 번 실행하면 채워집니다.</div>';
     return;
   }
+  buildStats();
   wireControls();
   render();
+}
+
+function applyFilter(name) {
+  activeFilter = name;
+  document.querySelectorAll(".filter, .stat").forEach((b) =>
+    b.classList.toggle("active", b.dataset.filter === name)
+  );
+  render();
+}
+
+function buildStats() {
+  const el = document.getElementById("stats");
+  if (!el) return;
+  const n = (fn) => ALL.filter(fn).length;
+  const defs = [
+    { filter: "all", label: "전체", value: ALL.length, cls: "all" },
+    { filter: "submarine", label: "🌊 잠수함", value: n((e) => e.is_submarine), cls: "sub" },
+    { filter: "stable", label: "📌 안정", value: n((e) => e.stability === "stable"), cls: "stable" },
+    { filter: "recurring", label: "🔁 반복", value: n((e) => e.stability === "recurring"), cls: "recurring" },
+  ];
+  el.innerHTML = defs
+    .map(
+      (d) => `<button class="stat stat-${d.cls} ${d.filter === activeFilter ? "active" : ""}" data-filter="${d.filter}">
+        <span class="stat-num">${d.value}</span><span class="stat-label">${d.label}</span>
+      </button>`
+    )
+    .join("");
 }
 
 function wireControls() {
@@ -30,13 +58,8 @@ function wireControls() {
     query = e.target.value.trim().toLowerCase();
     render();
   });
-  document.querySelectorAll(".filter").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".filter").forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-      activeFilter = btn.dataset.filter;
-      render();
-    });
+  document.querySelectorAll(".filter, .stat").forEach((btn) => {
+    btn.addEventListener("click", () => applyFilter(btn.dataset.filter));
   });
 }
 
@@ -88,9 +111,9 @@ function card(e) {
   const files = (e.files_changed || []).map((f) => `${esc(f.path)} (${f.count})`).join(", ");
 
   return `
-  <article class="card">
+  <article class="card" data-sev="${esc(sev)}" data-stab="${esc(e.stability || "")}">
     <div class="card-head">
-      <span class="toggle-hint">펼치기 ▾</span>
+      <span class="chev" aria-hidden="true">⌄</span>
       <div class="badges">
         ${subBadge}
         ${stabBadge}
@@ -106,10 +129,12 @@ function card(e) {
       </div>
     </div>
     <div class="card-body">
-      ${patchNoteBlock(e)}
-      ${stabilityBlock(e)}
-      ${(e.changes || []).map(changeBlock).join("")}
-      ${rawBlock(e)}
+      <div class="card-body-inner">
+        ${patchNoteBlock(e)}
+        ${stabilityBlock(e)}
+        ${(e.changes || []).map(changeBlock).join("")}
+        ${rawBlock(e)}
+      </div>
     </div>
   </article>`;
 }
