@@ -69,8 +69,7 @@ def main() -> int:
         by_id[e["entry_id"]] = e  # 신규/갱신
     merged = list(by_id.values())
 
-    pipeline.save_entries(merged)
-    pipeline.build_feed(merged)
+    pipeline.finalize(merged)  # 안정성 자동 판정 포함 저장+피드
     print(f"[backfill] 시드제거 {removed}건 / 백필 {len(built)}건 / 총 {len(merged)}건")
     return 0
 

@@ -43,6 +43,8 @@ function wireControls() {
 function matchesFilter(e) {
   if (activeFilter === "submarine") return e.is_submarine;
   if (activeFilter === "linked") return !e.is_submarine;
+  if (activeFilter === "stable") return e.stability === "stable";
+  if (activeFilter === "recurring") return e.stability === "recurring";
   return true;
 }
 
@@ -75,7 +77,12 @@ function card(e) {
   const subBadge = e.is_submarine
     ? '<span class="sub-badge">🌊 잠수함 패치</span>'
     : '<span class="linked-badge">🔗 공지 연결됨</span>';
-  const eventBadge = e.recurring_event ? '<span class="event-badge">🔁 반복 이벤트</span>' : "";
+  const STAB_BADGE = {
+    recurring: '<span class="event-badge">🔁 반복 이벤트</span>',
+    stable: '<span class="stable-badge">📌 안정 유지</span>',
+    superseded: '<span class="superseded-badge">♻️ 이후 갱신됨</span>',
+  };
+  const stabBadge = STAB_BADGE[e.stability] || "";
   const backfillBadge = e.backfilled ? '<span class="backfill-badge">📚 과거 백필</span>' : "";
   const tags = (e.tags || []).map((t) => `<span class="tag">${TAG_PREFIX}${esc(t)}</span>`).join("");
   const files = (e.files_changed || []).map((f) => `${esc(f.path)} (${f.count})`).join(", ");
@@ -86,7 +93,7 @@ function card(e) {
       <span class="toggle-hint">펼치기 ▾</span>
       <div class="badges">
         ${subBadge}
-        ${eventBadge}
+        ${stabBadge}
         ${backfillBadge}
         <span class="sev ${sev}">${SEV_LABEL[sev] || sev}</span>
         ${tags}
@@ -100,10 +107,20 @@ function card(e) {
     </div>
     <div class="card-body">
       ${patchNoteBlock(e)}
+      ${stabilityBlock(e)}
       ${(e.changes || []).map(changeBlock).join("")}
       ${rawBlock(e)}
     </div>
   </article>`;
+}
+
+function stabilityBlock(e) {
+  if (!e.stability || !e.stability_detail_ko) return "";
+  const ICON = { recurring: "🔁", stable: "📌", superseded: "♻️" };
+  return `<div class="stability ${esc(e.stability)}">
+    ${ICON[e.stability] || "📊"} <b>안정성 자동 판정</b>
+    <div class="reason">${esc(e.stability_detail_ko)}</div>
+  </div>`;
 }
 
 function patchNoteBlock(e) {

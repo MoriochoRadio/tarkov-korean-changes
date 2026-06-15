@@ -29,9 +29,11 @@ sys.path.insert(0, str(ROOT))
 from scripts import scrape as scraper  # noqa: E402
 from scripts import patchnotes as pn  # noqa: E402
 from scripts import interpret as interp  # noqa: E402
+from scripts import stability as stab  # noqa: E402
 
 DATA_DIR = ROOT / "data"
 ENTRIES_PATH = DATA_DIR / "entries.json"
+HISTORY_PATH = DATA_DIR / "history_raw.json"
 DOCS_DIR = ROOT / "docs"
 FEED_PATH = DOCS_DIR / "data.json"
 FEED_LIMIT = 200  # 사이트에 노출할 최대 항목 수
@@ -48,6 +50,34 @@ def save_entries(entries: list[dict]) -> None:
     ENTRIES_PATH.write_text(
         json.dumps(entries, ensure_ascii=False, indent=2), encoding="utf-8"
     )
+
+
+def annotate_stability(entries: list[dict]) -> list[dict]:
+    """각 entry 에 stability/stability_detail_ko/recurring_event 를 자동 부여.
+
+    재발(토글) 탐지 정확도를 위해 data/history_raw.json 의 raw 도 인덱스에 합친다
+    (중복 entry_id 는 entries 쪽을 우선).
+    """
+    base = list(entries)
+    if HISTORY_PATH.exists():
+        try:
+            hist = json.loads(HISTORY_PATH.read_text(encoding="utf-8"))
+            have = {e.get("entry_id") for e in base}
+            base += [h for h in hist if h.get("entry_id") not in have]
+        except Exception as e:  # noqa: BLE001
+            print(f"[stability] history_raw 로드 실패(무시): {e}")
+    index = stab.build_index(base)
+    toggling = stab.toggling_keys(index)
+    for e in entries:
+        e.update(stab.assess(e, index, toggling))
+    return entries
+
+
+def finalize(entries: list[dict]) -> None:
+    """안정성 주석 → entries.json 저장 → docs/data.json 재생성."""
+    annotate_stability(entries)
+    save_entries(entries)
+    build_feed(entries)
 
 
 def build_feed(entries: list[dict]) -> None:
@@ -83,7 +113,7 @@ def run(force: bool = False, from_file: str | None = None) -> int:
 
     if raw.get("entry_id") in existing_ids and not force:
         print("[skip] 이미 처리된 변경입니다. (신규 없음)")
-        build_feed(entries)  # 피드는 항상 최신 상태로 유지
+        finalize(entries)  # 피드는 항상 최신 상태로(안정성 포함) 유지
         return 0
 
     # 2) patchnotes
@@ -98,10 +128,9 @@ def run(force: bool = False, from_file: str | None = None) -> int:
     # 4) store (신규 추가 또는 force 갱신)
     entries = [e for e in entries if e.get("entry_id") != processed.get("entry_id")]
     entries.append(processed)
-    save_entries(entries)
 
-    # 5) build
-    build_feed(entries)
+    # 5) 안정성 자동 판정 → 저장 → 피드 재생성
+    finalize(entries)
     return 0
 
 
