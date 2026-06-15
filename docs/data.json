@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-06-15T06:35:38Z",
+  "count": 1,
+  "entries": [
+    {
+      "entry_id": "1084",
+      "eft_version": "1.0.5.0.45464",
+      "posted_at": "Friday, 12 June 2026 - 12:06 PM EDT",
+      "scraped_at": "2026-06-15T06:00:00Z",
+      "source_url": "https://changes.tarkov-changes.com/latest",
+      "files_changed": [
+        {
+          "path": "client/globals/response.json",
+          "count": 7
+        }
+      ],
+      "summary_ko": "모든 게임 에디션의 경험치 배율이 25로 통일되고, '스탠다드' 에디션 항목이 새로 추가되었습니다.",
+      "tags": [
+        "경험치",
+        "밸런스"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "config.exp.ExpByGameEditionMultiplier (전체)",
+          "before_ko": "에디션마다 경험치 배율이 제각각 (EoD 12, Prepare 9, Left Behind 7, Unheard 20 등)",
+          "after_ko": "모든 에디션의 SelfExpMultiplier가 25로 동일",
+          "explanation_ko": "ExpByGameEditionMultiplier는 게임 에디션(구매 등급)별로 캐릭터가 받는 추가 경험치 배율을 정의하는 값으로 추정됩니다. 기존에는 상위 에디션일수록 경험치 보너스가 컸는데, 이번 변경으로 모든 에디션이 동일하게 25로 맞춰졌습니다. 즉 '비싼 에디션을 사면 레벨업이 빠르다'는 격차가 사라지는 방향입니다.",
+          "impact_ko": "저가/스탠다드 에디션 유저는 경험치 보너스가 크게 올라가고, 상위 에디션의 레벨업 우위는 사라집니다."
+        },
+        {
+          "key_path": "ExpByGameEditionMultiplier['2'] edge_of_darkness",
+          "before_ko": "SelfExp 12 / TeamExp 0",
+          "after_ko": "SelfExp 25 / TeamExp 0",
+          "explanation_ko": "에지 오브 다크니스(EoD) 에디션의 개인 경험치 배율이 12에서 25로 약 2배 상향되었습니다. TeamExp(팀 경험치)는 0으로 유지됩니다.",
+          "impact_ko": "EoD 유저의 개인 경험치 획득이 빨라집니다."
+        },
+        {
+          "key_path": "ExpByGameEditionMultiplier['0'] left_behind",
+          "before_ko": "SelfExp 7 / TeamExp 0",
+          "after_ko": "SelfExp 25 / TeamExp 0",
+          "explanation_ko": "레프트 비하인드 에디션의 개인 경험치 배율이 7에서 25로 크게 상향되었습니다.",
+          "impact_ko": "가장 큰 폭으로 상향된 에디션 중 하나입니다."
+        },
+        {
+          "key_path": "ExpByGameEditionMultiplier['1'] prepare_for_escape",
+          "before_ko": "SelfExp 9 / TeamExp 0",
+          "after_ko": "SelfExp 25 / TeamExp 0",
+          "explanation_ko": "프리페어 포 이스케이프 에디션의 개인 경험치 배율이 9에서 25로 상향되었습니다.",
+          "impact_ko": "중하위 에디션의 레벨업 속도가 크게 개선됩니다."
+        },
+        {
+          "key_path": "ExpByGameEditionMultiplier['5'/'4'/'3'] unheard / unheard_steam / eod_tue",
+          "before_ko": "SelfExp 20 / TeamExp 20",
+          "after_ko": "SelfExp 25 / TeamExp 25",
+          "explanation_ko": "언허드 계열 및 EoD-TUE 에디션은 개인·팀 경험치 배율이 각각 20에서 25로 소폭 상향되었습니다. 이 에디션들은 팀 경험치 보너스(TeamExp)도 유지·상향됩니다.",
+          "impact_ko": "상위 에디션도 소폭 상향되어 전체적으로 경험치 인플레가 일어납니다."
+        },
+        {
+          "key_path": "ExpByGameEditionMultiplier['6'] standard (신규)",
+          "before_ko": "(항목 없음)",
+          "after_ko": "SelfExp 25 / TeamExp 0 항목 신규 추가",
+          "explanation_ko": "기존에 표에 없던 '스탠다드(standard)' 에디션 항목이 새로 추가되었고, 개인 경험치 배율 25로 설정되었습니다. 스탠다드 에디션도 다른 에디션과 동일한 개인 경험치 보너스를 받게 됨을 의미합니다.",
+          "impact_ko": "스탠다드 에디션 유저가 경험치 격차에서 동등해집니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "수집된 공식 패치노트 후보에서 경험치 배율 통일을 명시한 항목을 찾지 못했습니다. 'Silent Changes' 추적기에 잡힌 변경으로, 공식 발표 없이 적용된 잠수함 패치로 분류합니다."
+      },
+      "is_submarine": true,
+      "raw_text": "Files Changed: client/globals/response.json (7 changes)\n['data']['config']['exp']['ExpByGameEditionMultiplier']\n['2'] (Old) edge_of_darkness Self 12 Team 0 -> (New) Self 25 Team 0\n['0'] (Old) left_behind Self 7 Team 0 -> (New) Self 25 Team 0\n['5'] (Old) unheard_steam_edition Self 20 Team 20 -> (New) Self 25 Team 25\n['4'] (Old) unheard_edition Self 20 Team 20 -> (New) Self 25 Team 25\n['1'] (Old) prepare_for_escape Self 9 Team 0 -> (New) Self 25 Team 0\n['3'] (Old) eod_tue_edition Self 20 Team 20 -> (New) Self 25 Team 25\n['6'] (New) standard Self 25 Team 0"
+    }
+  ]
+}

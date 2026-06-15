@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+"""
+Tarkov Silent Changes 스크래퍼
+
+changes.tarkov-changes.com/latest 페이지(로그인 불필요, 최신 1건 공개)를 가져와
+구조화된 JSON으로 변환한다.
+
+출력 스키마(raw):
+{
+  "scraped_at": "2026-06-15T12:00:00Z",
+  "source_url": "https://changes.tarkov-changes.com/latest",
+  "eft_version": "1.0.5.0.45464",
+  "posted_at": "Friday, 12 June 2026 - 12:06 PM EDT",
+  "files_changed": [{"path": "client/globals/response.json", "count": 7}],
+  "raw_text": "<페이지에서 추출한 diff 본문 전체>",
+  "entry_id": "1084"        # /view/{id} 가 있으면 채움, 없으면 날짜 기반 해시
+}
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+import re
+import sys
+from datetime import datetime, timezone
+
+import requests
+from bs4 import BeautifulSoup
+
+SOURCE_URL = "https://changes.tarkov-changes.com/latest"
+HEADERS = {
+    "User-Agent": "TarkovKoreanChanges/1.0 (+github pages static site; respectful daily fetch)"
+}
+
+
+def fetch_html(url: str = SOURCE_URL) -> str:
+    resp = requests.get(url, headers=HEADERS, timeout=30)
+    resp.raise_for_status()
+    return resp.text
+
+
+def parse(html: str, source_url: str = SOURCE_URL) -> dict:
+    soup = BeautifulSoup(html, "html.parser")
+    # 화면에 보이는 텍스트만 추출(스크립트/스타일 제거)
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    text = soup.get_text("\n")
+    # 빈 줄 정리
+    lines = [ln.rstrip() for ln in text.splitlines()]
+    lines = [ln for ln in lines if ln.strip() != ""]
+    body = "\n".join(lines)
+
+    eft_version = _search(r"EFT Version[:\s]*([0-9][0-9.]+)", body)
+    posted_at = _search(
+        r"Dated[:\s]*([A-Za-z]+,\s*\d{1,2}\s+[A-Za-z]+\s+\d{4}\s*-\s*[\d:]+\s*[AP]M\s*\w+)",
+        body,
+    )
+
+    files_changed = []
+    for m in re.finditer(r"([\w./-]+\.json)\s*\((\d+)\s*changes?\)", body):
+        files_changed.append({"path": m.group(1), "count": int(m.group(2))})
+
+    # diff 본문: "Files Changed" 이후 부분을 우선 사용, 없으면 전체 본문
+    diff_text = body
+    idx = body.find("Files Changed")
+    if idx != -1:
+        diff_text = body[idx:]
+
+    # /view/{id} 링크가 있으면 entry_id 로 사용
+    entry_id = None
+    link = soup.find("a", href=re.compile(r"/view/(\d+)"))
+    if link:
+        entry_id = re.search(r"/view/(\d+)", link["href"]).group(1)
+    if not entry_id:
+        seed = f"{eft_version}|{posted_at}|{body[:200]}"
+        entry_id = "h" + hashlib.sha1(seed.encode("utf-8")).hexdigest()[:10]
+
+    return {
+        "scraped_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "source_url": source_url,
+        "eft_version": eft_version,
+        "posted_at": posted_at,
+        "files_changed": files_changed,
+        "raw_text": diff_text.strip(),
+        "entry_id": entry_id,
+    }
+
+
+def _search(pattern: str, text: str) -> str | None:
+    m = re.search(pattern, text)
+    return m.group(1).strip() if m else None
+
+
+def scrape(url: str = SOURCE_URL) -> dict:
+    return parse(fetch_html(url), url)
+
+
+if __name__ == "__main__":
+    data = scrape()
+    json.dump(data, sys.stdout, ensure_ascii=False, indent=2)
+    print()

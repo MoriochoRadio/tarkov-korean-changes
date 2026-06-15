@@ -1,0 +1,5 @@
+requests>=2.31
+beautifulsoup4>=4.12
+# LLM 제공자 — 둘 중 사용하는 쪽만 있으면 됩니다.
+anthropic>=0.40
+openai>=1.40
