@@ -29,9 +29,14 @@ import requests
 from bs4 import BeautifulSoup
 
 SOURCE_URL = "https://changes.tarkov-changes.com/latest"
+VIEW_URL = "https://changes.tarkov-changes.com/view/{id}"
 HEADERS = {
     "User-Agent": "TarkovKoreanChanges/1.0 (+github pages static site; respectful daily fetch)"
 }
+
+# 소스가 게시 후 12시간 동안 콘텐츠를 디스코드 로그인 사용자에게만 공개하는 경우
+# 보이는 안내 문구. 이 문구가 있으면 실제 diff 를 받지 못한 '잠금' 상태다.
+LOCK_MARKERS = ("Access Restricted", "not logged in", "Content available 12 hours")
 
 # 일시적 서버 오류(게이트웨이/과부하)에 해당하는 상태 코드. 재시도 대상.
 RETRY_STATUS = {429, 500, 502, 503, 504}
@@ -127,8 +132,33 @@ def _search(pattern: str, text: str) -> str | None:
     return m.group(1).strip() if m else None
 
 
+def is_locked(raw_text: str | None) -> bool:
+    """소스가 접근 제한(로그인 게이트) 안내만 돌려준 상태인지 판정."""
+    if not raw_text:
+        return False
+    return any(marker in raw_text for marker in LOCK_MARKERS)
+
+
+def has_diff(raw_text: str | None) -> bool:
+    """실제 변경 본문(Files Changed 섹션)이 들어있는지."""
+    return bool(raw_text) and "Files Changed" in raw_text
+
+
 def scrape(url: str = SOURCE_URL) -> dict:
     return parse(fetch_html(url), url)
+
+
+def scrape_view(entry_id: str | int) -> dict:
+    """/view/{id} 에서 특정 변경을 직접 수집한다(잠금 해제 후 재처리용).
+
+    /view 페이지에는 self-link 가 없어 parser 가 entry_id 를 해시로 채우므로
+    실제 view id 로 덮어쓴다.
+    """
+    url = VIEW_URL.format(id=entry_id)
+    raw = parse(fetch_html(url), url)
+    raw["entry_id"] = str(entry_id)
+    raw["source_url"] = url
+    return raw
 
 
 if __name__ == "__main__":

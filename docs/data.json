@@ -1,43 +1,93 @@
 {
-  "generated_at": "2026-06-18T17:19:35Z",
-  "count": 11,
+  "generated_at": "2026-06-20T06:17:44Z",
+  "count": 12,
   "entries": [
     {
-      "entry_id": "1098",
-      "eft_version": null,
-      "posted_at": null,
-      "scraped_at": "2026-06-18T17:19:29Z",
+      "entry_id": "h0591860cc2",
+      "eft_version": "1.0.5.0.45581",
+      "posted_at": "Thursday, 18 June 2026 - 10:51 AM EDT",
+      "scraped_at": "2026-06-20T06:17:16Z",
       "source_url": "https://changes.tarkov-changes.com/latest",
-      "files_changed": [],
-      "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 9h 32m.\nLogin with Discord\n to check if you have access to early content.\n1.0.5.0.45581\n - Thursday, 18 June 2026 - 10:51 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 16 June 2026 - 11:54 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 16 June 2026 - 11:28 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 15 June 2026 - 06:17 AM EDT\n            7 change(s) detected\n1.0.5.0.45464\n - Friday, 12 June 2026 - 12:06 PM EDT\n            7 change(s) detected\n1.0.5.0.45464\n - Friday, 12 June 2026 - 05:07 AM EDT\n            39 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 02:04 PM EDT\n            16 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 11:47 AM EDT\n            13 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 06:29 AM EDT\n            2 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 06:12 AM EDT\n            3 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 10:20 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 09:45 AM EDT\n            38 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 08:54 AM EDT\n            2 change(s) detected\n1.0.5.0.45464\n - Tuesday, 09 June 2026 - 02:04 PM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 10:26 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 08:43 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 05:20 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Sunday, 07 June 2026 - 10:57 AM EDT\n            3 change(s) detected\n1.0.5.0.45464\n - Friday, 05 June 2026 - 10:46 AM EDT\n            3 change(s) detected\n1.0.5.0.45436\n - Friday, 05 June 2026 - 10:30 AM EDT\n            94 change(s) detected\n1.0.5.0.45436\n - Friday, 05 June 2026 - 10:21 AM EDT\n            1 change(s) detected\n1.0.5.0.45436\n - Friday, 05 June 2026 - 10:13 AM EDT\n            3 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 01:31 PM EDT\n            1 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 12:06 PM EDT\n            2 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 10:58 AM EDT\n            3 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 05:55 AM EDT\n            3 change(s) detected\n1.0.5.0.45383\n - Wednesday, 03 June 2026 - 10:51 AM EDT\n            2 change(s) detected\n1.0.5.0.45383\n - Wednesday, 03 June 2026 - 03:37 AM EDT\n            45 change(s) detected\n1.0.5.0.45272\n - Monday, 01 June 2026 - 03:38 PM EDT\n            3 change(s) detected\n1.0.5.0.45272\n - Monday, 01 June 2026 - 09:48 AM EDT\n            4 change(s) detected\n1.0.5.0.45272\n - Monday, 01 June 2026 - 07:15 AM EDT\n            7 change(s) detected\n1.0.5.0.45272\n - Sunday, 31 May 2026 - 05:05 PM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Friday, 29 May 2026 - 03:55 PM EDT\n            64 change(s) detected\n1.0.5.0.45272\n - Friday, 29 May 2026 - 11:06 AM EDT\n            7 change(s) detected\n1.0.5.0.45272\n - Thursday, 28 May 2026 - 11:30 AM EDT\n            470 change(s) detected\n1.0.5.0.45272\n - Thursday, 28 May 2026 - 07:16 AM EDT\n            517 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 02:12 PM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 12:53 PM EDT\n            2 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 06:36 AM EDT\n            2 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 05:46 AM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 04:30 AM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Monday, 25 May 2026 - 11:29 AM EDT\n            1005 change(s) detected\n1.0.4.9.45133\n - Friday, 22 May 2026 - 08:03 AM EDT\n            1 change(s) detected\n1.0.4.9.45133\n - Thursday, 21 May 2026 - 08:53 AM EDT\n            2 change(s) detected\n1.0.4.9.45133\n - Wednesday, 20 May 2026 - 08:32 AM EDT\n            1 change(s) detected\n1.0.4.9.45133\n - Wednesday, 20 May 2026 - 08:15 AM EDT\n            3 change(s) detected\n1.0.4.9.45133\n - Wednesday, 20 May 2026 - 07:50 AM EDT\n            276 change(s) detected\n1.0.4.9.45133\n - Tuesday, 19 May 2026 - 10:02 AM EDT\n            922 change(s) detected\n1.0.4.6.44802\n - Friday, 15 May 2026 - 12:34 PM EDT\n            1 change(s) detected\n1.0.4.6.44802\n - Friday, 15 May 2026 - 12:26 PM EDT\n            1 change(s) detected",
-      "summary_ko": "변경 내역에 대한 구체적인 정보를 제공하기 어려운 구조로 인해 변경 사항을 명확히 파악할 수 없습니다.",
-      "tags": [
-        "기타"
+      "files_changed": [
+        {
+          "path": "client/locations/response.json",
+          "count": 1
+        }
       ],
-      "severity": "minor",
+      "raw_text": "Files Changed:\nclient/locations/response.json\n(1 change)\nDated: Thursday, 18 June 2026 - 10:51 AM EDT | Game Version 1.0.5.0.45581\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Icebreaker']\n            ['exits']\n                ['0 (Heli)']\n                    ['ExfiltrationTimePVE']\n-                    (Old) 60\n+                    (New) 8 (-86.67%)",
+      "summary_ko": "아이스브레이커의 특정 탈출구(헬리콥터)에서 PVE 모드 탈출 대기 시간이 60초에서 8초로 대폭 감소했습니다.",
+      "tags": [
+        "맵",
+        "밸런스"
+      ],
+      "severity": "major",
       "changes": [
         {
-          "key_path": "미확인 (변경 사항의 구체적 내용이 없음)",
-          "before_ko": "이전 값이나 상태 정보가 확인되지 않음",
-          "after_ko": "변경된 값이나 상태 정보가 확인되지 않음",
-          "explanation_ko": "diff에 구체적인 변경 사항이 담겨 있지 않아 해당 변경이 게임에서 무엇을 의미하는지 분석할 수 없습니다. 추가 정보가 필요합니다.",
-          "impact_ko": "알 수 없는 변경 사항으로 인해 체감되는 영향은 특정하기 어렵습니다."
+          "key_path": "data.locations.Icebreaker.exits.0 (Heli).ExfiltrationTimePVE",
+          "before_ko": "PVE 모드에서 헬리콥터를 통한 탈출 대기 시간이 60초였습니다.",
+          "after_ko": "PVE 모드에서 헬리콥터를 통한 탈출 대기 시간이 8초로 줄어들었습니다.",
+          "explanation_ko": "ExfiltrationTimePVE는 플레이어가 PVE 모드에서 해당 탈출구를 사용할 때 대기해야 하는 시간을 의미합니다. 이번 변경으로 'Icebreaker' 맵의 헬리콥터 탈출구에서 대기 시간이 크게 줄어들어 빠른 탈출이 가능해졌습니다.",
+          "impact_ko": "PVE 모드에서 'Icebreaker' 맵의 헬리콥터 탈출구를 이용하는 플레이어들이 더욱 신속하게 탈출할 수 있어, 전반적인 플레이 흐름이 빨라지고 위험 부담이 감소할 것으로 예상됩니다."
         }
       ],
       "patch_note": {
         "matched": false,
         "title": null,
         "url": null,
-        "reason_ko": "diff에 명확한 정보를 포함하지 않고 있으며, 제공된 패치노트와 매칭할 수 있는 구체적인 내용이 없습니다."
+        "reason_ko": "해당 변경 사항이 최신 공개 패치노트에 명시되지 않았기 때문에 잠수함 패치로 간주됩니다."
       },
       "is_submarine": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
-      "recurring_event": false,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 1개 중 1개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
       "stability_stats": {
-        "changed_keys": 0,
-        "recurring_keys": 0,
+        "changed_keys": 1,
+        "recurring_keys": 1,
         "later_changes": 0
+      }
+    },
+    {
+      "entry_id": "1098",
+      "eft_version": "1.0.5.0.45581",
+      "posted_at": "Thursday, 18 June 2026 - 10:51 AM EDT",
+      "scraped_at": "2026-06-18T17:19:29Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1098",
+      "files_changed": [
+        {
+          "path": "client/locations/response.json",
+          "count": 1
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/locations/response.json\n(1 change)\nDated: Thursday, 18 June 2026 - 10:51 AM EDT | Game Version 1.0.5.0.45581\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Icebreaker']\n            ['exits']\n                ['0 (Heli)']\n                    ['ExfiltrationTimePVE']\n-                    (Old) 60\n+                    (New) 8 (-86.67%)\n← Back to all changes",
+      "summary_ko": "아이스브레이커 맵의 헬리콥터 탈출 지점에서 PVE 모드 탈출 시간이 60초에서 8초로 대폭 단축되었습니다.",
+      "tags": [
+        "맵",
+        "경험치"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "data.locations.Icebreaker.exits.0.ExfiltrationTimePVE",
+          "before_ko": "탈출 대기 시간 60초",
+          "after_ko": "탈출 대기 시간 8초",
+          "explanation_ko": "이 설정은 PVE(플레이어 대 환경) 모드에서 아이스브레이커 맵의 헬리콥터 탈출 지점에서 요구되는 대기 시간을 나타냅니다. 기존에는 탈출하기 위해 60초 동안 특정 지역에 머물러야 했으나, 이번 변경으로 대기 시간이 8초로 크게 줄어들어 탈출 과정이 훨씬 빨라졌습니다.",
+          "impact_ko": "PVE 모드에서 아이스브레이커 맵에서의 탈출이 더 쉬워지고, 대기 중 위험 부담이 줄어듭니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 패치노트에 해당 변경에 대한 언급이 없어 잠수함 패치로 추정됩니다."
+      },
+      "is_submarine": true,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 1개 중 1개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
+      "stability_stats": {
+        "changed_keys": 1,
+        "recurring_keys": 1,
+        "later_changes": 1
       }
     },
     {
@@ -85,32 +135,36 @@
     },
     {
       "entry_id": "1097",
-      "eft_version": null,
-      "posted_at": null,
+      "eft_version": "1.0.5.0.45581",
+      "posted_at": "Tuesday, 16 June 2026 - 11:54 AM EDT",
       "scraped_at": "2026-06-16T18:37:17Z",
-      "source_url": "https://changes.tarkov-changes.com/latest",
-      "files_changed": [],
-      "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 9h 17m.\nLogin with Discord\n to check if you have access to early content.\n1.0.5.0.45581\n - Tuesday, 16 June 2026 - 11:54 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 16 June 2026 - 11:28 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 15 June 2026 - 06:17 AM EDT\n            7 change(s) detected\n1.0.5.0.45464\n - Friday, 12 June 2026 - 12:06 PM EDT\n            7 change(s) detected\n1.0.5.0.45464\n - Friday, 12 June 2026 - 05:07 AM EDT\n            39 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 02:04 PM EDT\n            16 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 11:47 AM EDT\n            13 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 06:29 AM EDT\n            2 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 06:12 AM EDT\n            3 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 10:20 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 09:45 AM EDT\n            38 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 08:54 AM EDT\n            2 change(s) detected\n1.0.5.0.45464\n - Tuesday, 09 June 2026 - 02:04 PM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 10:26 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 08:43 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 05:20 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Sunday, 07 June 2026 - 10:57 AM EDT\n            3 change(s) detected\n1.0.5.0.45464\n - Friday, 05 June 2026 - 10:46 AM EDT\n            3 change(s) detected\n1.0.5.0.45436\n - Friday, 05 June 2026 - 10:30 AM EDT\n            94 change(s) detected\n1.0.5.0.45436\n - Friday, 05 June 2026 - 10:21 AM EDT\n            1 change(s) detected\n1.0.5.0.45436\n - Friday, 05 June 2026 - 10:13 AM EDT\n            3 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 01:31 PM EDT\n            1 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 12:06 PM EDT\n            2 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 10:58 AM EDT\n            3 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 05:55 AM EDT\n            3 change(s) detected\n1.0.5.0.45383\n - Wednesday, 03 June 2026 - 10:51 AM EDT\n            2 change(s) detected\n1.0.5.0.45383\n - Wednesday, 03 June 2026 - 03:37 AM EDT\n            45 change(s) detected\n1.0.5.0.45272\n - Monday, 01 June 2026 - 03:38 PM EDT\n            3 change(s) detected\n1.0.5.0.45272\n - Monday, 01 June 2026 - 09:48 AM EDT\n            4 change(s) detected\n1.0.5.0.45272\n - Monday, 01 June 2026 - 07:15 AM EDT\n            7 change(s) detected\n1.0.5.0.45272\n - Sunday, 31 May 2026 - 05:05 PM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Friday, 29 May 2026 - 03:55 PM EDT\n            64 change(s) detected\n1.0.5.0.45272\n - Friday, 29 May 2026 - 11:06 AM EDT\n            7 change(s) detected\n1.0.5.0.45272\n - Thursday, 28 May 2026 - 11:30 AM EDT\n            470 change(s) detected\n1.0.5.0.45272\n - Thursday, 28 May 2026 - 07:16 AM EDT\n            517 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 02:12 PM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 12:53 PM EDT\n            2 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 06:36 AM EDT\n            2 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 05:46 AM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 04:30 AM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Monday, 25 May 2026 - 11:29 AM EDT\n            1005 change(s) detected\n1.0.4.9.45133\n - Friday, 22 May 2026 - 08:03 AM EDT\n            1 change(s) detected\n1.0.4.9.45133\n - Thursday, 21 May 2026 - 08:53 AM EDT\n            2 change(s) detected\n1.0.4.9.45133\n - Wednesday, 20 May 2026 - 08:32 AM EDT\n            1 change(s) detected\n1.0.4.9.45133\n - Wednesday, 20 May 2026 - 08:15 AM EDT\n            3 change(s) detected\n1.0.4.9.45133\n - Wednesday, 20 May 2026 - 07:50 AM EDT\n            276 change(s) detected\n1.0.4.9.45133\n - Tuesday, 19 May 2026 - 10:02 AM EDT\n            922 change(s) detected\n1.0.4.6.44802\n - Friday, 15 May 2026 - 12:34 PM EDT\n            1 change(s) detected\n1.0.4.6.44802\n - Friday, 15 May 2026 - 12:26 PM EDT\n            1 change(s) detected\n1.0.4.6.44802\n - Friday, 15 May 2026 - 12:17 PM EDT\n            103 change(s) detected",
-      "summary_ko": "최근 여러 잠수함 업데이트에서 총기와 관련된 수치 및 게임 내 다양한 요소에 소폭 변경이 이루어진 것으로 보입니다.",
+      "source_url": "https://changes.tarkov-changes.com/view/1097",
+      "files_changed": [
+        {
+          "path": "client/survey/response.json",
+          "count": 1
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/survey/response.json\n(1 change)\nDated: Tuesday, 16 June 2026 - 11:54 AM EDT | Game Version 1.0.5.0.45581\nclient/survey/response.json\n+ New File Added.\n← Back to all changes",
+      "summary_ko": "새로운 client/survey/response.json 파일이 추가되었습니다.",
       "tags": [
-        "밸런스",
         "기타"
       ],
-      "severity": "minor",
+      "severity": "trivial",
       "changes": [
         {
-          "key_path": "미상",
-          "before_ko": "미상",
-          "after_ko": "미상",
-          "explanation_ko": "구체적인 내용은 공개되지 않았으나, 여러 버전에서 발견된 변경 내용으로 보아 총기 및 기타 게임 요소와 관련된 수치 또는 메커니즘 일부가 소폭 조정된 것으로 추정됩니다.",
-          "impact_ko": "플레이어가 체감하기 어려운 소규모 변경 사항일 가능성이 높습니다."
+          "key_path": "client/survey/response.json",
+          "before_ko": "이전에 해당 파일은 존재하지 않았습니다.",
+          "after_ko": "새로운 response.json 파일이 추가되었습니다.",
+          "explanation_ko": "이 파일은 일반적으로 특정 행동에 대한 플레이어의 피드백을 모으기 위한 설문 조사에 사용될 가능성이 있습니다. 아직 구체적인 파일 내용이 확인되지 않아, 게임플레이에 직접적인 영향을 미치는지 알 수 없습니다.",
+          "impact_ko": "현재로서는 플레이어의 직접적인 게임 경험에 영향을 미치지 않을 것으로 보입니다."
         }
       ],
       "patch_note": {
         "matched": false,
         "title": null,
         "url": null,
-        "reason_ko": "Diff 내용이 구체적인 패치노트와 연관된 정보를 제공하지 않고 있으며, 공식적으로 발표되지 않은 변경 사항으로 보입니다."
+        "reason_ko": "공식 패치노트에 관련 내용이 없고, 현재로서는 큰 변화로 보이지 않아 잠수함 패치로 추정됩니다."
       },
       "is_submarine": true,
       "stability": "stable",
@@ -124,46 +178,87 @@
     },
     {
       "entry_id": "1095",
-      "eft_version": null,
-      "posted_at": null,
+      "eft_version": "1.0.5.0.45464",
+      "posted_at": "Monday, 15 June 2026 - 06:17 AM EDT",
       "scraped_at": "2026-06-15T18:43:54Z",
-      "source_url": "https://changes.tarkov-changes.com/latest",
-      "files_changed": [],
-      "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 3h 33m.\nLogin with Discord\n to check if you have access to early content.\n1.0.5.0.45464\n - Monday, 15 June 2026 - 06:17 AM EDT\n            7 change(s) detected\n1.0.5.0.45464\n - Friday, 12 June 2026 - 12:06 PM EDT\n            7 change(s) detected\n1.0.5.0.45464\n - Friday, 12 June 2026 - 05:07 AM EDT\n            39 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 02:04 PM EDT\n            16 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 11:47 AM EDT\n            13 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 06:29 AM EDT\n            2 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 06:12 AM EDT\n            3 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 10:20 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 09:45 AM EDT\n            38 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 08:54 AM EDT\n            2 change(s) detected\n1.0.5.0.45464\n - Tuesday, 09 June 2026 - 02:04 PM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 10:26 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 08:43 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 05:20 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Sunday, 07 June 2026 - 10:57 AM EDT\n            3 change(s) detected\n1.0.5.0.45464\n - Friday, 05 June 2026 - 10:46 AM EDT\n            3 change(s) detected\n1.0.5.0.45436\n - Friday, 05 June 2026 - 10:30 AM EDT\n            94 change(s) detected\n1.0.5.0.45436\n - Friday, 05 June 2026 - 10:21 AM EDT\n            1 change(s) detected\n1.0.5.0.45436\n - Friday, 05 June 2026 - 10:13 AM EDT\n            3 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 01:31 PM EDT\n            1 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 12:06 PM EDT\n            2 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 10:58 AM EDT\n            3 change(s) detected\n1.0.5.0.45436\n - Thursday, 04 June 2026 - 05:55 AM EDT\n            3 change(s) detected\n1.0.5.0.45383\n - Wednesday, 03 June 2026 - 10:51 AM EDT\n            2 change(s) detected\n1.0.5.0.45383\n - Wednesday, 03 June 2026 - 03:37 AM EDT\n            45 change(s) detected\n1.0.5.0.45272\n - Monday, 01 June 2026 - 03:38 PM EDT\n            3 change(s) detected\n1.0.5.0.45272\n - Monday, 01 June 2026 - 09:48 AM EDT\n            4 change(s) detected\n1.0.5.0.45272\n - Monday, 01 June 2026 - 07:15 AM EDT\n            7 change(s) detected\n1.0.5.0.45272\n - Sunday, 31 May 2026 - 05:05 PM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Friday, 29 May 2026 - 03:55 PM EDT\n            64 change(s) detected\n1.0.5.0.45272\n - Friday, 29 May 2026 - 11:06 AM EDT\n            7 change(s) detected\n1.0.5.0.45272\n - Thursday, 28 May 2026 - 11:30 AM EDT\n            470 change(s) detected\n1.0.5.0.45272\n - Thursday, 28 May 2026 - 07:16 AM EDT\n            517 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 02:12 PM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 12:53 PM EDT\n            2 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 06:36 AM EDT\n            2 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 05:46 AM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Tuesday, 26 May 2026 - 04:30 AM EDT\n            1 change(s) detected\n1.0.5.0.45272\n - Monday, 25 May 2026 - 11:29 AM EDT\n            1005 change(s) detected\n1.0.4.9.45133\n - Friday, 22 May 2026 - 08:03 AM EDT\n            1 change(s) detected\n1.0.4.9.45133\n - Thursday, 21 May 2026 - 08:53 AM EDT\n            2 change(s) detected\n1.0.4.9.45133\n - Wednesday, 20 May 2026 - 08:32 AM EDT\n            1 change(s) detected\n1.0.4.9.45133\n - Wednesday, 20 May 2026 - 08:15 AM EDT\n            3 change(s) detected\n1.0.4.9.45133\n - Wednesday, 20 May 2026 - 07:50 AM EDT\n            276 change(s) detected\n1.0.4.9.45133\n - Tuesday, 19 May 2026 - 10:02 AM EDT\n            922 change(s) detected\n1.0.4.6.44802\n - Friday, 15 May 2026 - 12:34 PM EDT\n            1 change(s) detected\n1.0.4.6.44802\n - Friday, 15 May 2026 - 12:26 PM EDT\n            1 change(s) detected\n1.0.4.6.44802\n - Friday, 15 May 2026 - 12:17 PM EDT\n            103 change(s) detected\n1.0.4.6.44802\n - Friday, 15 May 2026 - 12:09 PM EDT\n            1 change(s) detected\n1.0.4.6.44802\n - Friday, 15 May 2026 - 12:01 PM EDT\n            1 change(s) detected",
-      "summary_ko": "발견된 변경 사항은 다양하며 정보 접근이 제한되어 자세한 분석이 어려움",
-      "tags": [
-        "기타"
+      "source_url": "https://changes.tarkov-changes.com/view/1095",
+      "files_changed": [
+        {
+          "path": "client/globals/response.json",
+          "count": 7
+        }
       ],
-      "severity": "minor",
+      "raw_text": "Files Changed:\nclient/globals/response.json\n(7 changes)\nDated: Monday, 15 June 2026 - 06:17 AM EDT | Game Version 1.0.5.0.45464\nclient/globals/response.json\n['data']\n    ['config']\n        ['exp']\n            ['ExpByGameEditionMultiplier']\n                ['4']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['3']\n-                (Old) {\n-                      \"GameEdition\": \"eod_tue_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"eod_tue_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['2']\n-                (Old) {\n-                      \"GameEdition\": \"edge_of_darkness\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"edge_of_darkness\",\n+                      \"SelfExpMultiplier\": 12,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['0']\n-                (Old) {\n-                      \"GameEdition\": \"left_behind\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"left_behind\",\n+                      \"SelfExpMultiplier\": 7,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['5']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_steam_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_steam_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['1']\n-                (Old) {\n-                      \"GameEdition\": \"prepare_for_escape\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"prepare_for_escape\",\n+                      \"SelfExpMultiplier\": 9,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n-                (Removed) ['6']: {\n-                      \"GameEdition\": \"standard\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n← Back to all changes",
+      "summary_ko": "게임 에디션별 경험치 획득 배율이 하향 조정되었고, 스탠다드(Standard) 에디션 관련 값이 제거되었습니다.",
+      "tags": [
+        "경험치",
+        "밸런스"
+      ],
+      "severity": "major",
       "changes": [
         {
-          "key_path": "1.0.5.0.45272 - Monday, 25 May 2026 - 11:29 AM EDT",
-          "before_ko": "변경 전 명확한 정보 없음",
-          "after_ko": "변경된 항목 1005개 감지",
-          "explanation_ko": "이 변경은 대규모 업데이트를 나타내며, 세부 사항이 제공되지 않아서 내용 파악이 어렵습니다. 주로 게임 내 다수의 요소가 변경되었을 가능성이 높습니다.",
-          "impact_ko": "플레이어가 한 번에 많은 수정사항을 체감할 수 있음. 구체적인 영향은 파악이 필요함."
+          "key_path": "data.config.exp.ExpByGameEditionMultiplier.4",
+          "before_ko": "unheard_edition 에디션 플레이어는 자신과 팀원이 각 25%의 추가 경험치를 획득",
+          "after_ko": "unheard_edition 에디션 플레이어는 자신과 팀원이 각 20%의 추가 경험치를 획득",
+          "explanation_ko": "unheard_edition 에디션의 추가 경험치 획득 배율이 감소하였습니다. 이는 해당 에디션 보유자가 이전보다 빠르게 레벨업하기 어려워질 수 있음을 나타냅니다.",
+          "impact_ko": "unheard_edition 플레이어의 레벨업 속도가 소폭 감소할 것입니다."
         },
         {
-          "key_path": "1.0.5.0.45464 - Wednesday, 10 June 2026 - 09:45 AM EDT",
-          "before_ko": "변경 전 명확한 정보 없음",
-          "after_ko": "변경된 항목 38개 감지",
-          "explanation_ko": "June 10 업데이트에도 약간의 콘텐츠 수정이 이루어졌습니다. 구체적인 변경 사항 정보는 아직 파악되지 않았습니다.",
-          "impact_ko": "특정 플레이 요소에 약간의 변경 사항 있음. 영향은 확인이 필요함."
+          "key_path": "data.config.exp.ExpByGameEditionMultiplier.3",
+          "before_ko": "eod_tue_edition 에디션 플레이어는 자신과 팀원이 각 25%의 추가 경험치를 획득",
+          "after_ko": "eod_tue_edition 에디션 플레이어는 자신과 팀원이 각 20%의 추가 경험치를 획득",
+          "explanation_ko": "eod_tue_edition 에디션의 추가 경험치 획득 배율이 감소한 변경입니다. 팀 보너스를 고려했을 때 소폭의 하향 조정으로 보여집니다.",
+          "impact_ko": "eod_tue_edition 플레이어의 경험치 이득이 약간 줄어듭니다."
+        },
+        {
+          "key_path": "data.config.exp.ExpByGameEditionMultiplier.2",
+          "before_ko": "edge_of_darkness 에디션 플레이어는 자신만 25% 추가 경험치를 획득",
+          "after_ko": "edge_of_darkness 에디션 플레이어는 자신만 12% 추가 경험치를 획득",
+          "explanation_ko": "edge_of_darkness 에디션의 경험치 보너스가 절반 이상 감소했습니다. 게임 내 최상위 에디션으로 여겨지던 점을 고려하면 이는 큰 하향으로 보입니다.",
+          "impact_ko": "edge_of_darkness 에디션 플레이어의 레벨업 효율성이 대폭 감소합니다."
+        },
+        {
+          "key_path": "data.config.exp.ExpByGameEditionMultiplier.0",
+          "before_ko": "left_behind 에디션 플레이어는 자신만 25% 추가 경험치를 획득",
+          "after_ko": "left_behind 에디션 플레이어는 자신만 7% 추가 경험치를 획득",
+          "explanation_ko": "left_behind 에디션은 중간급 가격대의 에디션인데도, 보너스 획득량이 크게 하락했습니다. 이는 해당 에디션의 가성비를 감소시킬 수 있습니다.",
+          "impact_ko": "left_behind 에디션 플레이어의 레벨업 속도가 크게 느려질 것입니다."
+        },
+        {
+          "key_path": "data.config.exp.ExpByGameEditionMultiplier.5",
+          "before_ko": "unheard_steam_edition 에디션 플레이어는 자신과 팀원이 각 25%의 추가 경험치를 획득",
+          "after_ko": "unheard_steam_edition 에디션 플레이어는 자신과 팀원이 각 20%의 추가 경험치를 획득",
+          "explanation_ko": "unheard_steam_edition 에디션도 추가 경험치 획득 배율이 감소했습니다. 이는 소폭의 변경으로 보입니다.",
+          "impact_ko": "unheard_steam_edition 플레이어의 레벨업 속도가 약간 줄어들 것입니다."
+        },
+        {
+          "key_path": "data.config.exp.ExpByGameEditionMultiplier.1",
+          "before_ko": "prepare_for_escape 에디션 플레이어는 자신만 25% 추가 경험치를 획득",
+          "after_ko": "prepare_for_escape 에디션 플레이어는 자신만 9% 추가 경험치를 획득",
+          "explanation_ko": "prepare_for_escape 에디션의 경험치 보너스가 대폭 축소되었습니다. 기존 대비 경험치 이득이 64% 감소한 것으로 보입니다.",
+          "impact_ko": "prepare_for_escape 에디션 플레이어는 경험치를 거의 얻지 못하게 되어 게임 진행 속도가 느려질 것입니다."
+        },
+        {
+          "key_path": "data.config.exp.ExpByGameEditionMultiplier.6",
+          "before_ko": "스탠다드 에디션 플레이어는 자신만 25% 추가 경험치를 획득",
+          "after_ko": "값이 제거됨",
+          "explanation_ko": "스탠다드 에디션에서 추가 경험치 배율이 완전히 삭제되었습니다. 이는 스탠다드 에디션 사용자에게 경험치 보너스가 더 이상 주어지지 않음을 의미합니다.",
+          "impact_ko": "스탠다드 에디션 플레이어는 게임 진행 속도가 매우 느려질 것입니다."
         }
       ],
       "patch_note": {
         "matched": false,
         "title": null,
         "url": null,
-        "reason_ko": "은밀한 변경(diff) 내용이 모호하고, 공식 패치노트와 일치하는 정보가 없음. 구체적인 변경 사항 공개 대기 중."
+        "reason_ko": "공식 패치노트에서 해당 변경 사항이 언급되지 않았으므로 잠수함 패치로 간주됩니다."
       },
       "is_submarine": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
-      "recurring_event": false,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 6개 중 5개가 값이 이전 상태로 되돌아오는 토글 키(83%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
       "stability_stats": {
-        "changed_keys": 0,
-        "recurring_keys": 0,
+        "changed_keys": 6,
+        "recurring_keys": 5,
         "later_changes": 0
       }
     },
@@ -205,11 +300,11 @@
       "recurring_event": true,
       "raw_text": "Files Changed:\nclient/globals/response.json\n(7 changes)\nDated: Friday, 12 June 2026 - 12:06 PM EDT | Game Version 1.0.5.0.45464\nclient/globals/response.json\n['data']\n    ['config']\n        ['exp']\n            ['ExpByGameEditionMultiplier']\n                ['2']\n-                (Old) {\n-                      \"GameEdition\": \"edge_of_darkness\",\n-                      \"SelfExpMultiplier\": 12,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"edge_of_darkness\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['0']\n-                (Old) {\n-                      \"GameEdition\": \"left_behind\",\n-                      \"SelfExpMultiplier\": 7,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"left_behind\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['5']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_steam_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_steam_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n                ['4']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n                ['1']\n-                (Old) {\n-                      \"GameEdition\": \"prepare_for_escape\",\n-                      \"SelfExpMultiplier\": 9,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"prepare_for_escape\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['3']\n-                (Old) {\n-                      \"GameEdition\": \"eod_tue_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"eod_tue_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n+                (New) ['6']: {\n+                      \"GameEdition\": \"standard\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n← Back to all changes",
       "stability": "recurring",
-      "stability_detail_ko": "변경 키 6개 중 4개가 값이 이전 상태로 되돌아오는 토글 키(67%) — 반복/이벤트성으로 자동 판정.",
+      "stability_detail_ko": "변경 키 6개 중 5개가 값이 이전 상태로 되돌아오는 토글 키(83%) — 반복/이벤트성으로 자동 판정.",
       "stability_stats": {
         "changed_keys": 6,
-        "recurring_keys": 4,
-        "later_changes": 0
+        "recurring_keys": 5,
+        "later_changes": 6
       }
     },
     {
@@ -250,11 +345,11 @@
       "recurring_event": true,
       "raw_text": "Files Changed:\nclient/globals/response.json\n(7 changes)\nDated: Monday, 01 June 2026 - 07:15 AM EDT | Game Version 1.0.5.0.45272\nclient/globals/response.json\n['data']\n    ['config']\n        ['exp']\n            ['ExpByGameEditionMultiplier']\n                ['3']\n-                (Old) {\n-                      \"GameEdition\": \"eod_tue_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"eod_tue_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['1']\n-                (Old) {\n-                      \"GameEdition\": \"prepare_for_escape\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"prepare_for_escape\",\n+                      \"SelfExpMultiplier\": 9,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['2']\n-                (Old) {\n-                      \"GameEdition\": \"edge_of_darkness\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"edge_of_darkness\",\n+                      \"SelfExpMultiplier\": 12,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['4']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['0']\n-                (Old) {\n-                      \"GameEdition\": \"left_behind\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"left_behind\",\n+                      \"SelfExpMultiplier\": 7,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['5']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_steam_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_steam_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n-                (Removed) ['6']: {\n-                      \"GameEdition\": \"standard\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n← Back to all changes",
       "stability": "recurring",
-      "stability_detail_ko": "변경 키 6개 중 4개가 값이 이전 상태로 되돌아오는 토글 키(67%) — 반복/이벤트성으로 자동 판정.",
+      "stability_detail_ko": "변경 키 6개 중 5개가 값이 이전 상태로 되돌아오는 토글 키(83%) — 반복/이벤트성으로 자동 판정.",
       "stability_stats": {
         "changed_keys": 6,
-        "recurring_keys": 4,
-        "later_changes": 6
+        "recurring_keys": 5,
+        "later_changes": 12
       }
     },
     {
@@ -295,11 +390,11 @@
       "recurring_event": true,
       "raw_text": "Files Changed:\nclient/globals/response.json\n(7 changes)\nDated: Friday, 29 May 2026 - 11:06 AM EDT | Game Version 1.0.5.0.45272\nclient/globals/response.json\n['data']\n    ['config']\n        ['exp']\n            ['ExpByGameEditionMultiplier']\n                ['5']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_steam_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_steam_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n                ['2']\n-                (Old) {\n-                      \"GameEdition\": \"edge_of_darkness\",\n-                      \"SelfExpMultiplier\": 12,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"edge_of_darkness\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['3']\n-                (Old) {\n-                      \"GameEdition\": \"eod_tue_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"eod_tue_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n                ['4']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_edition\",\n-                      \"SelfExpMultiplier\": 20,\n-                      \"TeamExpMultiplier\": 20\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_edition\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 25\n+                    }\n                ['0']\n-                (Old) {\n-                      \"GameEdition\": \"left_behind\",\n-                      \"SelfExpMultiplier\": 7,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"left_behind\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['1']\n-                (Old) {\n-                      \"GameEdition\": \"prepare_for_escape\",\n-                      \"SelfExpMultiplier\": 9,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"prepare_for_escape\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n+                (New) ['6']: {\n+                      \"GameEdition\": \"standard\",\n+                      \"SelfExpMultiplier\": 25,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n← Back to all changes",
       "stability": "recurring",
-      "stability_detail_ko": "변경 키 6개 중 4개가 값이 이전 상태로 되돌아오는 토글 키(67%) — 반복/이벤트성으로 자동 판정.",
+      "stability_detail_ko": "변경 키 6개 중 5개가 값이 이전 상태로 되돌아오는 토글 키(83%) — 반복/이벤트성으로 자동 판정.",
       "stability_stats": {
         "changed_keys": 6,
-        "recurring_keys": 4,
-        "later_changes": 12
+        "recurring_keys": 5,
+        "later_changes": 18
       }
     },
     {

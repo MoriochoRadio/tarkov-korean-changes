@@ -91,7 +91,9 @@ function renderHero() {
   if (!ALL.length) { el.hidden = true; return; }
   const e = ALL[0];
   const sev = e.severity || "minor";
-  const kind = e.is_submarine
+  const kind = e.locked
+    ? '<span class="badge badge-lock">🔒 공개 대기</span>'
+    : e.is_submarine
     ? '<span class="badge badge-intel">🌊 잠수함 패치</span>'
     : '<span class="badge badge-signal">🔗 공지 연결</span>';
   const headline = e.summary_ko || "(요약 없음)";
@@ -313,7 +315,9 @@ function render() {
 /* ---------- 카드 ---------- */
 function card(e) {
   const sev = e.severity || "minor";
-  const kind = e.is_submarine
+  const kind = e.locked
+    ? '<span class="badge badge-lock">🔒 공개 대기</span>'
+    : e.is_submarine
     ? '<span class="badge badge-intel">🌊 잠수함</span>'
     : '<span class="badge badge-signal">🔗 공지 연결</span>';
   const back = e.backfilled ? '<span class="badge badge-backfill">📚 과거 백필</span>' : "";
@@ -345,7 +349,8 @@ function card(e) {
     </div>
     <div class="card-body">
       <div class="card-body-inner">
-        ${patchNoteBlock(e)}
+        ${lockedBlock(e)}
+        ${e.locked ? "" : patchNoteBlock(e)}
         ${stabilityBlock(e)}
         ${(e.changes || []).map(changeBlock).join("")}
         ${rawBlock(e)}
@@ -355,6 +360,16 @@ function card(e) {
       </div>
     </div>
   </article>`;
+}
+
+function lockedBlock(e) {
+  if (!e.locked) return "";
+  return `<div class="panel-block locked-block">
+    🔒 <b>공개 대기 중</b> — 원본(tarkov-changes)이 게시 후 12시간 동안 비공개라
+    아직 변경 내용을 받지 못했습니다. 실제 변경은 존재하며, 잠금이 풀리면 다음 자동 갱신 때
+    한글 해석이 채워집니다.
+    <div class="reason">원본에서 확인: ${esc((e.files_changed || []).map((f) => f.path + " (" + f.count + ")").join(", ") || "변경 감지됨")}</div>
+  </div>`;
 }
 
 function stabBadge(stab) {

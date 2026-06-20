@@ -163,6 +163,7 @@ a:hover { color: var(--amber-hi); }
 .badge-recurring { color: var(--amber-hi); background: rgba(232,178,58,0.12); box-shadow: 0 0 16px -5px var(--amber); }
 .badge-super { color: #b9b9b0; background: rgba(160,160,150,0.1); }
 .badge-backfill { color: #cfc9b6; background: rgba(150,140,120,0.1); }
+.badge-lock { color: var(--amber-hi); background: rgba(232,178,58,0.1); }
 
 .sev { color: #15130a; border: none; font-weight: 700; }
 .sev.major { background: linear-gradient(180deg, #f0876d, var(--alert)); }
@@ -404,6 +405,7 @@ main { padding: 14px 0 60px; }
 .stability.recurring { border-left-color: var(--amber); }
 .stability.stable { border-left-color: var(--signal); }
 .stability.superseded { border-left-color: #6e6c60; }
+.locked-block { border-left-color: var(--amber); background: rgba(232,178,58,0.06); }
 
 .change {
   border: 1px solid var(--line); border-radius: var(--radius);

@@ -45,6 +45,67 @@ def load_entries() -> list[dict]:
     return []
 
 
+def make_locked_entry(raw: dict) -> dict:
+    """접근 제한(로그인 게이트) 상태의 변경을 LLM 호출 없이 '공개 대기' 항목으로 만든다.
+
+    원본 식별 정보는 보존해 두고, 잠금이 풀리면 reprocess_locked 가 /view/{id} 로
+    다시 수집해 실제 해석으로 교체한다.
+    """
+    return {
+        "entry_id": raw.get("entry_id"),
+        "eft_version": raw.get("eft_version"),
+        "posted_at": raw.get("posted_at"),
+        "scraped_at": raw.get("scraped_at"),
+        "source_url": raw.get("source_url"),
+        "files_changed": raw.get("files_changed", []),
+        "raw_text": raw.get("raw_text", ""),
+        "locked": True,
+        "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. "
+                      "잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
+        "tags": ["공개대기"],
+        "severity": "trivial",
+        "changes": [],
+        "patch_note": {
+            "matched": False, "title": None, "url": None,
+            "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다.",
+        },
+        "is_submarine": True,
+    }
+
+
+def reprocess_locked(entries: list[dict], notes: list[dict]) -> bool:
+    """이전에 '공개 대기'로 보류된 항목을 /view/{id} 로 재수집한다.
+
+    잠금이 풀려 실제 변경 본문이 보이면 LLM 해석으로 교체하고, 아직 잠겨 있으면
+    그대로 둔다. 정렬이 흔들리지 않도록 원래 scraped_at 은 보존한다.
+    반환값: 하나라도 갱신했으면 True.
+    """
+    changed = False
+    for i, e in enumerate(entries):
+        if not e.get("locked"):
+            continue
+        eid = e.get("entry_id")
+        if not eid or not str(eid).isdigit():
+            print(f"[reprocess] {eid}: view id 가 아니어서 재수집 불가 — 유지")
+            continue
+        try:
+            raw = scraper.scrape_view(eid)
+        except Exception as ex:  # noqa: BLE001
+            print(f"[reprocess] {eid}: 재수집 실패(유지) — {ex}")
+            continue
+        rt = raw.get("raw_text", "")
+        if scraper.is_locked(rt) or not scraper.has_diff(rt):
+            print(f"[reprocess] {eid}: 아직 잠김 — 유지")
+            continue
+        processed = interp.interpret(raw, notes)
+        processed.pop("locked", None)
+        processed["scraped_at"] = e.get("scraped_at") or processed.get("scraped_at")
+        entries[i] = processed
+        changed = True
+        print(f"[reprocess] {eid}: 잠금 해제 → 재해석 완료 ({processed.get('summary_ko','')[:36]})")
+    return changed
+
+
 def save_entries(entries: list[dict]) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     ENTRIES_PATH.write_text(
@@ -110,26 +171,38 @@ def run(force: bool = False, from_file: str | None = None) -> int:
 
     entries = load_entries()
     existing_ids = {e.get("entry_id") for e in entries}
+    is_new = raw.get("entry_id") not in existing_ids
+    locked_now = scraper.is_locked(raw.get("raw_text", ""))
 
-    if raw.get("entry_id") in existing_ids and not force:
+    # 패치노트는 LLM 해석이 필요할 때만(잠금/재처리 포함) 1회 수집
+    notes_cache: list[dict] | None = None
+
+    def get_notes() -> list[dict]:
+        nonlocal notes_cache
+        if notes_cache is None:
+            notes_cache = pn.get_patch_notes()
+            print(f"[patchnotes] 후보 {len(notes_cache)}건")
+        return notes_cache
+
+    # 2) 최신 변경 처리
+    if locked_now and is_new:
+        # 접근 제한 상태 — LLM 호출 없이 '공개 대기'로 보류(쓸데없는 placeholder 해석 방지)
+        entries.append(make_locked_entry(raw))
+        print(f"[lock] 최신({raw.get('entry_id')})이 접근 제한 — 공개 대기로 보류")
+    elif is_new or force:
+        processed = interp.interpret(raw, get_notes())
+        flag = "잠수함패치" if processed.get("is_submarine") else "공지연결됨"
+        print(f"[interpret] {flag} / {processed.get('summary_ko','')[:40]}")
+        entries = [e for e in entries if e.get("entry_id") != processed.get("entry_id")]
+        entries.append(processed)
+    else:
         print("[skip] 이미 처리된 변경입니다. (신규 없음)")
-        finalize(entries)  # 피드는 항상 최신 상태로(안정성 포함) 유지
-        return 0
 
-    # 2) patchnotes
-    notes = pn.get_patch_notes()
-    print(f"[patchnotes] 후보 {len(notes)}건")
+    # 3) 이전에 보류된 '공개 대기' 항목 재처리(잠금 풀렸으면 실제 해석으로 교체)
+    if any(e.get("locked") for e in entries):
+        reprocess_locked(entries, get_notes())
 
-    # 3) interpret
-    processed = interp.interpret(raw, notes)
-    flag = "잠수함패치" if processed.get("is_submarine") else "공지연결됨"
-    print(f"[interpret] {flag} / {processed.get('summary_ko','')[:40]}")
-
-    # 4) store (신규 추가 또는 force 갱신)
-    entries = [e for e in entries if e.get("entry_id") != processed.get("entry_id")]
-    entries.append(processed)
-
-    # 5) 안정성 자동 판정 → 저장 → 피드 재생성
+    # 4) 안정성 자동 판정 → 저장 → 피드 재생성
     finalize(entries)
     return 0
 
