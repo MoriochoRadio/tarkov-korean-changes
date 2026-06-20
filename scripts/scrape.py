@@ -22,6 +22,7 @@ import hashlib
 import json
 import re
 import sys
+import time
 from datetime import datetime, timezone
 
 import requests
@@ -32,11 +33,46 @@ HEADERS = {
     "User-Agent": "TarkovKoreanChanges/1.0 (+github pages static site; respectful daily fetch)"
 }
 
+# 일시적 서버 오류(게이트웨이/과부하)에 해당하는 상태 코드. 재시도 대상.
+RETRY_STATUS = {429, 500, 502, 503, 504}
+MAX_RETRIES = 4          # 최초 1회 + 재시도. 총 시도 횟수.
+BACKOFF_BASE = 3.0       # 대기 시간(초): 3, 6, 12 ... 지수 백오프.
+
 
 def fetch_html(url: str = SOURCE_URL) -> str:
-    resp = requests.get(url, headers=HEADERS, timeout=30)
-    resp.raise_for_status()
-    return resp.text
+    """페이지 HTML을 가져온다.
+
+    외부 소스가 502/503 같은 일시 장애나 네트워크 오류를 내는 경우가 있어,
+    일시적 오류에 한해 지수 백오프로 재시도한다. 영구 오류(404 등)는 즉시 중단.
+    """
+    last_exc: Exception | None = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=30)
+            if resp.status_code in RETRY_STATUS:
+                resp.raise_for_status()  # 아래 except 에서 재시도 처리
+            resp.raise_for_status()      # 그 외 오류 코드는 그대로 예외
+            return resp.text
+        except (requests.exceptions.HTTPError,
+                requests.exceptions.ConnectionError,
+                requests.exceptions.Timeout) as exc:
+            # HTTPError 중 재시도 대상이 아닌 코드는 즉시 중단
+            status = getattr(getattr(exc, "response", None), "status_code", None)
+            if isinstance(exc, requests.exceptions.HTTPError) and status not in RETRY_STATUS:
+                raise
+            last_exc = exc
+            if attempt < MAX_RETRIES:
+                wait = BACKOFF_BASE * (2 ** (attempt - 1))
+                print(
+                    f"[scrape] 일시적 오류(시도 {attempt}/{MAX_RETRIES}, "
+                    f"status={status}): {exc} -> {wait:.0f}초 후 재시도",
+                    file=sys.stderr,
+                )
+                time.sleep(wait)
+    # 모든 재시도 소진
+    raise RuntimeError(
+        f"{MAX_RETRIES}회 시도 후에도 소스를 가져오지 못했습니다: {url}"
+    ) from last_exc
 
 
 def parse(html: str, source_url: str = SOURCE_URL) -> dict:
