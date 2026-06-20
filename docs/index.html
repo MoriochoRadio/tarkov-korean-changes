@@ -3,70 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>타르코프 잠수함 패치 한글 해석</title>
-  <meta name="description" content="에스케이프 프롬 타르코프의 사일런트(잠수함) 코드 변경을 매일 한글로 번역·해석합니다. 공식 패치노트와 연결되지 않으면 잠수함 패치로 표시합니다." />
-  <meta property="og:title" content="타르코프 잠수함 패치 한글 해석" />
-  <meta property="og:description" content="EFT 코드 변경을 매일 한글로 해석. 오늘 타르코프는 무엇이 바뀌었나?" />
+  <title>SILENT.CHANGES // 타르코프 잠수함 패치 인텔</title>
+  <meta name="description" content="에스케이프 프롬 타르코프의 사일런트(잠수함) 코드 변경을 매일 가로채 한글로 해석합니다. 공식 패치노트와 연결되지 않으면 잠수함 패치로 표시합니다." />
+  <meta property="og:title" content="SILENT.CHANGES — 타르코프 잠수함 패치 인텔" />
+  <meta property="og:description" content="EFT 코드 변경을 매일 가로채 한글로 해석. 오늘 타르코프는 무엇이 몰래 바뀌었나?" />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#100f0b" />
+  <meta name="theme-color" content="#0a0b08" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Bebas+Neue&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="bg-fx" aria-hidden="true">
     <div class="bg-grid"></div>
-    <div class="bg-glow bg-glow-gold"></div>
-    <div class="bg-glow bg-glow-teal"></div>
+    <div class="bg-glow"></div>
+    <div class="bg-scan"></div>
     <div class="bg-vignette"></div>
   </div>
-  <div class="topbar" aria-hidden="true"></div>
 
-  <header class="site-header">
+  <a class="skip-link" href="#feed">본문으로 건너뛰기</a>
+
+  <!-- ============ HUD 상단 단말기 헤더 ============ -->
+  <header class="hud">
     <div class="wrap">
-      <div class="brand">
-        <span class="brand-mark">🛠️</span>
-        <h1>타르코프 잠수함 패치 <span>한글 해석</span></h1>
+      <div class="hud-strip">
+        <span class="hud-status" id="feed-status">
+          <span class="dot" aria-hidden="true"></span><span>FEED ACTIVE</span>
+        </span>
+        <span class="hud-sep" aria-hidden="true">//</span>
+        <span class="hud-sync" id="generated-at">SYNC ····</span>
+        <span class="hud-spacer"></span>
+        <a class="hud-src" href="https://changes.tarkov-changes.com/latest" target="_blank" rel="noopener">SOURCE: tarkov-changes ↗</a>
       </div>
-      <p class="tagline">
-        에스케이프 프롬 타르코프의 <strong>몰래 바뀐 게임 코드(사일런트 체인지)</strong>를
-        매일 한글로 풀어드립니다. 공식 공지와 연결되면 링크를, 아니면
-        <span class="sub-badge inline">잠수함 패치</span>로 표시합니다.
-      </p>
-      <div id="stats" class="stats"></div>
-      <div class="meta-row">
-        <span id="generated-at" class="muted">불러오는 중…</span>
-        <a class="src-link" href="https://changes.tarkov-changes.com/latest" target="_blank" rel="noopener">원본: Tarkov Silent Changes ↗</a>
+
+      <div class="hud-title">
+        <span class="callsign">EFT // 인텔 피드</span>
+        <h1>SILENT<span class="dot-glyph">.</span>CHANGES</h1>
+        <p class="tagline">
+          에스케이프 프롬 타르코프의 <strong>몰래 바뀐 게임 코드(사일런트 체인지)</strong>를
+          매일 가로채 한글로 해석합니다. 공식 공지와 연결되면 출처를, 아니면
+          <span class="badge badge-intel inline">잠수함 패치</span>로 분류합니다.
+        </p>
       </div>
     </div>
   </header>
 
-  <nav class="controls-bar">
+  <!-- ============ 히어로: 최신 가로챈 전송 ============ -->
+  <section class="hero" id="hero" aria-label="최신 변경" hidden></section>
+
+  <!-- ============ 리드아웃: 통계 + 활동 그래프 ============ -->
+  <section class="readout wrap" aria-label="요약 통계">
+    <div id="stats" class="stats" role="group" aria-label="분류별 카운트"></div>
+    <figure class="spark" id="spark" aria-hidden="true">
+      <figcaption class="spark-cap">ACTIVITY · 가로챈 변경 추이</figcaption>
+      <div class="spark-bars" id="spark-bars"></div>
+    </figure>
+  </section>
+
+  <!-- ============ 컨트롤 바 ============ -->
+  <nav class="controls-bar" aria-label="검색 및 필터">
     <div class="wrap controls">
       <div class="search-wrap">
-        <span class="search-icon" aria-hidden="true">🔍</span>
-        <input id="search" type="search" placeholder="검색 (요약·태그·키 경로)" />
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="검색 — 요약 · 태그 · 키 경로  ( / )" autocomplete="off" />
+        <kbd class="search-kbd" aria-hidden="true">/</kbd>
       </div>
-      <div class="filters">
-        <button class="filter active" data-filter="all">전체</button>
-        <button class="filter" data-filter="submarine">🌊 잠수함 패치</button>
-        <button class="filter" data-filter="linked">🔗 공지 연결됨</button>
-        <button class="filter" data-filter="stable">📌 안정 유지</button>
-        <button class="filter" data-filter="recurring">🔁 반복 이벤트</button>
+      <div class="control-group">
+        <label class="sort-wrap">
+          <span class="sort-label">정렬</span>
+          <select id="sort" aria-label="정렬 기준">
+            <option value="newest">최신순</option>
+            <option value="severity">심각도순</option>
+            <option value="changes">변경량순</option>
+          </select>
+        </label>
+        <button id="expand-all" class="ghost-btn" type="button" aria-pressed="false">전체 펼치기</button>
       </div>
     </div>
+    <div class="wrap filters" id="filters" role="group" aria-label="필터">
+      <button class="chip active" data-filter="all">전체</button>
+      <button class="chip" data-filter="submarine">🌊 잠수함</button>
+      <button class="chip" data-filter="linked">🔗 공지 연결</button>
+      <button class="chip" data-filter="stable">📌 안정 유지</button>
+      <button class="chip" data-filter="recurring">🔁 반복 이벤트</button>
+      <span class="chip-sep" aria-hidden="true"></span>
+      <button class="chip sev-chip" data-sev="major">큰 변화</button>
+      <button class="chip sev-chip" data-sev="minor">보통</button>
+      <button class="chip sev-chip" data-sev="trivial">사소함</button>
+    </div>
   </nav>
+
+  <div class="wrap result-line"><span id="result-count" class="muted"></span></div>
 
   <main id="feed" class="wrap"></main>
 
   <footer class="wrap">
     <p class="muted">
-      이 사이트는 팬 제작 비공식 프로젝트이며, 해석은 LLM 자동 생성으로 오류가 있을 수 있습니다.
+      팬 제작 비공식 프로젝트입니다. 해석은 LLM 자동 생성이라 오류가 있을 수 있습니다.
       원본 데이터 출처: <a href="https://changes.tarkov-changes.com/" target="_blank" rel="noopener">tarkov-changes.com</a>.
     </p>
+    <p class="muted small">SILENT.CHANGES // 매일 자동 갱신 · GitHub Pages</p>
   </footer>
+
+  <button id="to-top" class="to-top" type="button" aria-label="맨 위로" hidden>↑</button>
 
   <script src="app.js"></script>
 </body>
