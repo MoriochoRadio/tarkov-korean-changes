@@ -26,7 +26,9 @@ async function init() {
   showSkeleton();
   let feed;
   try {
-    const res = await fetch("data.json?_=" + Date.now());
+    // 캐시버스터를 쓰지 않는다 — 매 방문 전체 재다운로드를 유발했음.
+    // 갱신 여부는 피드의 generated_at 으로 충분하고, Pages 는 max-age=600이라 최대 10분 지연.
+    const res = await fetch("data.json");
     if (!res.ok) throw new Error("HTTP " + res.status);
     feed = await res.json();
   } catch (e) {

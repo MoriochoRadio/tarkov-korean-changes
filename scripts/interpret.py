@@ -21,6 +21,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 
 # GitHub Models 엔드포인트(OpenAI 호환). 무료, 하루 1회 호출엔 한도 충분.
 GITHUB_MODELS_BASE = "https://models.github.ai/inference"
@@ -94,15 +95,32 @@ def _format_patchnotes(patch_notes: list[dict]) -> str:
     return "\n".join(out)
 
 
+def total_changes(raw: dict) -> int:
+    return sum(
+        f.get("count", 0) for f in raw.get("files_changed", [])
+        if isinstance(f.get("count"), int)
+    )
+
+
 def build_prompt(raw: dict, patch_notes: list[dict]) -> str:
     files = ", ".join(
         f"{f['path']} {f['count']}건" for f in raw.get("files_changed", [])
     ) or "미상"
+    total = total_changes(raw)
+    rt = (raw.get("raw_text") or "")
+    # 와이프급 대형 패치는 본문이 수 MB — 앞부분만 보고 "사소한 변경"으로 오판하지 않도록
+    # 총 변경 규모와 잘림 사실을 명시한다.
+    raw_block = rt[:12000]
+    if len(rt) > 12000:
+        raw_block += (
+            f"\n...[본문이 매우 커서 앞부분만 제공됨 — 실제 변경은 총 {total}건. "
+            "규모(severity) 판단은 이 총계를 기준으로 할 것]"
+        )
     return USER_TEMPLATE.format(
         eft_version=raw.get("eft_version") or "미상",
         posted_at=raw.get("posted_at") or "미상",
-        files=files,
-        raw_text=(raw.get("raw_text") or "")[:12000],
+        files=f"{files} (총 {total}건)",
+        raw_text=raw_block,
         patchnotes_block=_format_patchnotes(patch_notes),
     )
 
@@ -148,6 +166,7 @@ def _call_github(system: str, user: str, model: str) -> str:
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
+        response_format={"type": "json_object"},
     )
     return resp.choices[0].message.content
 
@@ -202,16 +221,31 @@ def interpret(raw: dict, patch_notes: list[dict] | None = None) -> dict:
         result = _stub(raw)
     else:
         prompt = build_prompt(raw, patch_notes)
-        if provider == "github":
-            text = _call_github(SYSTEM_PROMPT, prompt, model)
-        elif provider == "openai":
-            text = _call_openai(SYSTEM_PROMPT, prompt, model)
-        else:
-            text = _call_anthropic(SYSTEM_PROMPT, prompt, model)
-        result = _extract_json(text)
+        callers = {"github": _call_github, "openai": _call_openai}
+        call = callers.get(provider, _call_anthropic)
+        # 429/일시 5xx나 비-JSON 응답 한 번에 런 전체가 죽지 않도록 재시도
+        last_exc: Exception | None = None
+        result = None
+        for attempt in range(3):
+            try:
+                result = _extract_json(call(SYSTEM_PROMPT, prompt, model))
+                break
+            except Exception as exc:  # noqa: BLE001
+                last_exc = exc
+                if attempt < 2:
+                    print(f"[interpret] LLM 호출/파싱 실패(시도 {attempt + 1}/3): {exc} — 15초 후 재시도")
+                    time.sleep(15)
+        if result is None:
+            raise RuntimeError(f"LLM 해석 3회 실패: {last_exc}") from last_exc
 
     pn = result.get("patch_note") or {}
     result["is_submarine"] = not bool(pn.get("matched"))
+
+    # 대형 패치(와이프 등)를 앞 12KB만 보고 minor로 오판하는 것을 코드에서 교정
+    total = total_changes(raw)
+    if total >= 500 and result.get("severity") != "major":
+        result["severity"] = "major"
+        result["severity_note_ko"] = f"변경 총 {total}건 — 규모 기준 자동 상향"
 
     merged = {
         "entry_id": raw.get("entry_id"),

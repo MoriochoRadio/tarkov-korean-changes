@@ -40,8 +40,10 @@ LOCK_MARKERS = ("Access Restricted", "not logged in", "Content available 12 hour
 
 # 일시적 서버 오류(게이트웨이/과부하)에 해당하는 상태 코드. 재시도 대상.
 RETRY_STATUS = {429, 500, 502, 503, 504}
-MAX_RETRIES = 4          # 최초 1회 + 재시도. 총 시도 횟수.
-BACKOFF_BASE = 3.0       # 대기 시간(초): 3, 6, 12 ... 지수 백오프.
+# 2026-06-19: 총 21초 백오프로는 수 분짜리 502 장애를 못 넘겨 런이 실패했음.
+# 하루 1회 실행이므로 몇 분 기다리는 비용은 무시 가능 — 총 ~2.5분까지 버틴다.
+MAX_RETRIES = 5          # 최초 1회 + 재시도. 총 시도 횟수.
+BACKOFF_BASE = 10.0      # 대기 시간(초): 10, 20, 40, 80 ... 지수 백오프.
 
 
 def fetch_html(url: str = SOURCE_URL) -> str:
