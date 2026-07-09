@@ -1,36 +1,91 @@
 {
-  "generated_at": "2026-07-08T16:13:39Z",
-  "count": 23,
+  "generated_at": "2026-07-09T16:58:54Z",
+  "count": 24,
   "entries": [
     {
-      "entry_id": "1128",
-      "eft_version": null,
-      "posted_at": null,
-      "scraped_at": "2026-07-08T16:13:29Z",
+      "entry_id": "h70b075762e",
+      "eft_version": "1.0.6.0.46010",
+      "posted_at": "Wednesday, 08 July 2026 - 09:18 AM EDT",
+      "scraped_at": "2026-07-09T16:58:43Z",
       "source_url": "https://changes.tarkov-changes.com/latest",
-      "files_changed": [],
-      "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 9h 5m.\nLogin with Discord\n to check if you have access to early content.\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 09:18 AM EDT\n            1 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 09:01 AM EDT\n            2 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 08:10 AM EDT\n            10 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 07:36 AM EDT\n            2 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 06:16 AM EDT\n            2 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 04:42 AM EDT\n            2 change(s) detected\n1.0.6.0.45949\n - Tuesday, 07 July 2026 - 03:06 PM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Tuesday, 07 July 2026 - 09:41 AM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Tuesday, 07 July 2026 - 08:32 AM EDT\n            4 change(s) detected\n1.0.6.0.45949\n - Monday, 06 July 2026 - 12:51 PM EDT\n            13 change(s) detected\n1.0.6.0.45949\n - Monday, 06 July 2026 - 03:41 AM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Sunday, 05 July 2026 - 02:40 PM EDT\n            135 change(s) detected\n1.0.6.0.45949\n - Sunday, 05 July 2026 - 03:00 AM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Friday, 03 July 2026 - 12:14 PM EDT\n            8120 change(s) detected\n1.0.5.0.45581\n - Wednesday, 01 July 2026 - 03:43 PM EDT\n            3 change(s) detected\n1.0.5.0.45581\n - Wednesday, 01 July 2026 - 07:26 AM EDT\n            153 change(s) detected\n1.0.5.0.45581\n - Wednesday, 01 July 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Monday, 29 June 2026 - 10:26 AM EDT\n            11 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 10:26 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 10:17 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 09:17 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 04:26 AM EDT\n            4 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 03:00 PM EDT\n            3 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 12:00 PM EDT\n            180 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 11:43 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 08:00 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 06:08 AM EDT\n            2 change(s) detected\n1.0.5.0.45581\n - Wednesday, 24 June 2026 - 05:34 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 23 June 2026 - 06:17 AM EDT\n            2 change(s) detected\n1.0.5.0.45581\n - Tuesday, 23 June 2026 - 03:43 AM EDT\n            2 change(s) detected\n1.0.5.0.45581\n - Thursday, 18 June 2026 - 10:51 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 16 June 2026 - 11:54 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 16 June 2026 - 11:28 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 15 June 2026 - 06:17 AM EDT\n            7 change(s) detected\n1.0.5.0.45464\n - Friday, 12 June 2026 - 12:06 PM EDT\n            7 change(s) detected\n1.0.5.0.45464\n - Friday, 12 June 2026 - 05:07 AM EDT\n            39 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 02:04 PM EDT\n            16 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 11:47 AM EDT\n            13 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 06:29 AM EDT\n            2 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 06:12 AM EDT\n            3 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 10:20 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 09:45 AM EDT\n            38 change(s) detected\n1.0.5.0.45464\n - Wednesday, 10 June 2026 - 08:54 AM EDT\n            2 change(s) detected\n1.0.5.0.45464\n - Tuesday, 09 June 2026 - 02:04 PM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 10:26 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 08:43 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 08 June 2026 - 05:20 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Sunday, 07 June 2026 - 10:57 AM EDT\n            3 change(s) detected\n1.0.5.0.45464\n - Friday, 05 June 2026 - 10:46 AM EDT\n            3 change(s) detected\n1.0.5.0.45436\n - Friday, 05 June 2026 - 10:30 AM EDT\n            94 change(s) detected",
-      "locked": true,
-      "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
-      "tags": [
-        "공개대기"
+      "files_changed": [
+        {
+          "path": "client/globals/response.json",
+          "count": 1
+        }
       ],
-      "severity": "trivial",
-      "changes": [],
+      "raw_text": "Files Changed:\nclient/globals/response.json\n(1 change)\nDated: Wednesday, 08 July 2026 - 09:18 AM EDT | Game Version 1.0.6.0.46010\nclient/globals/response.json\n['data']\n    ['config']\n        ['ExtensionsSettings']\n            ['Enabled']\n-            (Old) 0\n+            (New) 1",
+      "summary_ko": "'ExtensionsSettings' 설정이 비활성화에서 활성화로 변경되었습니다.",
+      "tags": [
+        "기타"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data.config.ExtensionsSettings.Enabled",
+          "before_ko": "'Enabled' 값이 0으로 설정되어 있어 확장 설정이 비활성 상태였음",
+          "after_ko": "'Enabled' 값이 1로 설정되어 확장 설정이 활성화됨",
+          "explanation_ko": "'ExtensionsSettings'는 서버 또는 클라이언트 환경에서 특정 확장 기능을 사용할지를 제어하는 것으로 추정됩니다. 이번 변경으로 인해 그러한 확장 기능이 활성화된 것으로 보입니다.",
+          "impact_ko": "직접적인 플레이 흐름 변화는 없으나, 백그라운드 동작이나 추가 기능 테스트에 영향을 줄 수 있음"
+        }
+      ],
       "patch_note": {
         "matched": false,
         "title": null,
         "url": null,
-        "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+        "reason_ko": "공식 패치노트에는 관련된 언급이 없어, 변경 사항이 잠수함 패치로 추정됨"
       },
       "is_submarine": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
-      "recurring_event": false,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 1개 중 1개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
       "stability_stats": {
-        "changed_keys": 0,
-        "recurring_keys": 0,
+        "changed_keys": 1,
+        "recurring_keys": 1,
         "later_changes": 0
+      }
+    },
+    {
+      "entry_id": "1128",
+      "eft_version": "1.0.6.0.46010",
+      "posted_at": "Wednesday, 08 July 2026 - 09:18 AM EDT",
+      "scraped_at": "2026-07-08T16:13:29Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1128",
+      "files_changed": [
+        {
+          "path": "client/globals/response.json",
+          "count": 1
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/globals/response.json\n(1 change)\nDated: Wednesday, 08 July 2026 - 09:18 AM EDT | Game Version 1.0.6.0.46010\nclient/globals/response.json\n['data']\n    ['config']\n        ['ExtensionsSettings']\n            ['Enabled']\n-            (Old) 0\n+            (New) 1\n← Back to all changes",
+      "summary_ko": "'ExtensionsSettings' 설정이 비활성화에서 활성화로 변경됨",
+      "tags": [
+        "기타"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data.config.ExtensionsSettings.Enabled",
+          "before_ko": "기능이 비활성화 (값: 0)",
+          "after_ko": "기능이 활성화 (값: 1)",
+          "explanation_ko": "'ExtensionsSettings.Enabled'은 특정 확장 기능 또는 추가 기능의 활성/비활성 상태를 제어하는 설정으로 보입니다. 업데이트 이후 해당 설정이 활성화되었으므로 새로운 기능이 활성화되었거나 기존에 숨겨져 있던 기능이 동작을 시작했을 가능성이 있습니다.",
+          "impact_ko": "현재로서는 플레이어가 즉각 체감할 영향은 불분명하지만, 새로운 요소 추가 가능성이 있습니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "해당 변경에 대해 공식 패치노트에서 언급된 내용을 찾을 수 없으므로 잠수함 패치로 보임."
+      },
+      "is_submarine": true,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 1개 중 1개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
+      "stability_stats": {
+        "changed_keys": 1,
+        "recurring_keys": 1,
+        "later_changes": 1
       }
     },
     {
