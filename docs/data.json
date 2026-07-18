@@ -1,34 +1,105 @@
 {
-  "generated_at": "2026-07-17T15:51:55Z",
-  "count": 28,
+  "generated_at": "2026-07-18T15:26:44Z",
+  "count": 29,
   "entries": [
     {
-      "entry_id": "1140",
-      "eft_version": null,
-      "posted_at": null,
-      "scraped_at": "2026-07-17T15:51:54Z",
+      "entry_id": "h408cf497c6",
+      "eft_version": "1.0.6.5.46221",
+      "posted_at": "Friday, 17 July 2026 - 03:59 PM EDT",
+      "scraped_at": "2026-07-18T15:26:32Z",
       "source_url": "https://changes.tarkov-changes.com/latest",
-      "files_changed": [],
-      "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 9h 35m.\nLogin with Discord\n to check if you have access to early content.\n1.0.6.5.46189\n - Friday, 17 July 2026 - 09:27 AM EDT\n            3 change(s) detected\n1.0.6.5.46189\n - Friday, 17 July 2026 - 09:19 AM EDT\n            10 change(s) detected\n1.0.6.5.46189\n - Wednesday, 15 July 2026 - 07:50 AM EDT\n            1 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 04:43 PM EDT\n            2 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 03:51 PM EDT\n            3 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 02:17 PM EDT\n            8 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 12:08 PM EDT\n            2 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 11:34 AM EDT\n            15 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 11:17 AM EDT\n            8 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 10:34 AM EDT\n            8 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 09:52 AM EDT\n            6 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 08:52 AM EDT\n            329 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 09:18 AM EDT\n            1 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 09:01 AM EDT\n            2 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 08:10 AM EDT\n            10 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 07:36 AM EDT\n            2 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 06:16 AM EDT\n            2 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 04:42 AM EDT\n            2 change(s) detected\n1.0.6.0.45949\n - Tuesday, 07 July 2026 - 03:06 PM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Tuesday, 07 July 2026 - 09:41 AM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Tuesday, 07 July 2026 - 08:32 AM EDT\n            4 change(s) detected\n1.0.6.0.45949\n - Monday, 06 July 2026 - 12:51 PM EDT\n            13 change(s) detected\n1.0.6.0.45949\n - Monday, 06 July 2026 - 03:41 AM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Sunday, 05 July 2026 - 02:40 PM EDT\n            135 change(s) detected\n1.0.6.0.45949\n - Sunday, 05 July 2026 - 03:00 AM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Friday, 03 July 2026 - 12:14 PM EDT\n            8120 change(s) detected\n1.0.5.0.45581\n - Wednesday, 01 July 2026 - 03:43 PM EDT\n            3 change(s) detected\n1.0.5.0.45581\n - Wednesday, 01 July 2026 - 07:26 AM EDT\n            153 change(s) detected\n1.0.5.0.45581\n - Wednesday, 01 July 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Monday, 29 June 2026 - 10:26 AM EDT\n            11 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 10:26 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 10:17 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 09:17 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 04:26 AM EDT\n            4 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 03:00 PM EDT\n            3 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 12:00 PM EDT\n            180 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 11:43 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 08:00 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 06:08 AM EDT\n            2 change(s) detected\n1.0.5.0.45581\n - Wednesday, 24 June 2026 - 05:34 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 23 June 2026 - 06:17 AM EDT\n            2 change(s) detected\n1.0.5.0.45581\n - Tuesday, 23 June 2026 - 03:43 AM EDT\n            2 change(s) detected\n1.0.5.0.45581\n - Thursday, 18 June 2026 - 10:51 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 16 June 2026 - 11:54 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 16 June 2026 - 11:28 AM EDT\n            1 change(s) detected\n1.0.5.0.45464\n - Monday, 15 June 2026 - 06:17 AM EDT\n            7 change(s) detected\n1.0.5.0.45464\n - Friday, 12 June 2026 - 12:06 PM EDT\n            7 change(s) detected\n1.0.5.0.45464\n - Friday, 12 June 2026 - 05:07 AM EDT\n            39 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 02:04 PM EDT\n            16 change(s) detected\n1.0.5.0.45464\n - Thursday, 11 June 2026 - 11:47 AM EDT\n            13 change(s) detected",
-      "locked": true,
-      "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
-      "tags": [
-        "공개대기"
+      "files_changed": [
+        {
+          "path": "client/locale/en/response.json",
+          "count": 1
+        }
       ],
-      "severity": "trivial",
-      "changes": [],
+      "raw_text": "Files Changed:\nclient/locale/en/response.json\n(1 change)\nDated: Friday, 17 July 2026 - 03:59 PM EDT | Game Version 1.0.6.5.46221\nclient/locale/en/response.json\n['data']\n    ['offer.69cbd4a684269806bde55f43.description']\n-    (Old) Tarkov in-game currency pack for purchases in Expansion Hub with a 35% bonus value.\n-\n-        Includes: 20 000 TC + 5 250 TC bonus.\n-\n-        The final price is calculated based on the selected payment method and your account region.\n+    (New) Tarkov in-game currency pack for purchases in Expansion Hub with a 35% bonus value.\n+\n+        Includes: 15 000 TC + 5 250 TC bonus.\n+\n+        The final price is calculated based on the selected payment method and your account region.",
+      "summary_ko": "확장 허브(Expansion Hub)에서 구매 가능한 게임 내 화폐 팩의 기본 제공량이 줄어들었습니다.",
+      "tags": [
+        "거래상"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data.offer.69cbd4a684269806bde55f43.description",
+          "before_ko": "확장 허브에서 구매 가능한 화폐 팩으로, 20,000 TC와 5,250 TC의 추가 보너스를 포함하며 최종 가격은 결제 방법 및 계정 지역에 따라 계산됨.",
+          "after_ko": "확장 허브에서 구매 가능한 화폐 팩으로, 15,000 TC와 5,250 TC의 추가 보너스를 포함하며 최종 가격은 결제 방법 및 계정 지역에 따라 계산됨.",
+          "explanation_ko": "확장 허브에서 제공하던 게임 화폐 팩의 기본 TC 제공량이 이전보다 감소했습니다. 보너스 TC는 동일하게 유지되었지만, 전체적으로 한 팩으로 얻을 수 있는 총 TC 양이 감소하여 가격과 효율 면에서 영향을 줄 수 있습니다.",
+          "impact_ko": "화폐 팩 구매 시 기본 제공량 감소로 인해 같은 비용으로 얻을 수 있는 TC가 줄어들어 상대적으로 효율이 낮아졌습니다."
+        }
+      ],
       "patch_note": {
         "matched": false,
         "title": null,
         "url": null,
-        "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+        "reason_ko": "이 변경에 대한 언급이 현재 공개된 패치노트에서는 발견되지 않아 잠수함 패치로 추정됩니다."
+      },
+      "is_submarine": true,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 1개 중 1개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
+      "stability_stats": {
+        "changed_keys": 1,
+        "recurring_keys": 1,
+        "later_changes": 0
+      }
+    },
+    {
+      "entry_id": "1140",
+      "eft_version": "1.0.6.5.46189",
+      "posted_at": "Friday, 17 July 2026 - 09:27 AM EDT",
+      "scraped_at": "2026-07-17T15:51:54Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1140",
+      "files_changed": [
+        {
+          "path": "client/trading/api/traderSettings/response.json",
+          "count": 3
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/trading/api/traderSettings/response.json\n(3 changes)\nDated: Friday, 17 July 2026 - 09:27 AM EDT | Game Version 1.0.6.5.46189\nclient/trading/api/traderSettings/response.json\n['data']\n    ['Therapist']\n        ['items_sell']\n            ['2']\n                ['id_list']\n+                    (New) ['15']: TerraGroup Labs access keycard\n            ['4']\n                ['id_list']\n+                    (New) ['11']: TerraGroup Labs access keycard\n    ['Mechanic']\n        ['items_sell']\n            ['1']\n                ['id_list']\n+                    (New) ['111']: TerraGroup Labs access keycard\n← Back to all changes",
+      "summary_ko": "테라그룹 연구소 접근 카드가 세 명의 상인(치료사, 메커닉)에게 새롭게 추가 판매됨.",
+      "tags": [
+        "거래상",
+        "아이템",
+        "밸런스"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "['data']['Therapist']['items_sell']['2']['id_list']['15']",
+          "before_ko": "치료사에게 해당 아이템이 없었음.",
+          "after_ko": "치료사가 테라그룹 연구소 접근 카드(TerraGroup Labs access keycard)를 새롭게 판매.",
+          "explanation_ko": "이번 변경으로 치료사의 판매 목록에 테라그룹 연구소 키카드가 추가되었습니다. 이는 기존에 이 아이템을 얻기 어려웠던 일부 초보자들에게 새로운 구매 경로를 제공합니다.",
+          "impact_ko": "중급 이상의 플레이어에게 연구소 진입이 다소 용이해질 수 있음."
+        },
+        {
+          "key_path": "['data']['Therapist']['items_sell']['4']['id_list']['11']",
+          "before_ko": "치료사에게 해당 아이템이 없었음.",
+          "after_ko": "치료사가 테라그룹 연구소 접근 카드(TerraGroup Labs access keycard)를 새롭게 판매.",
+          "explanation_ko": "치료사의 또 다른 판매 슬롯에도 테라그룹 연구소 키카드가 추가되었습니다. 동일 상인이 여러 슬롯에서 카드를 제공함으로써 초보자와 숙련 플레이어 모두의 수요를 충족하려는 의도로 추정됩니다.",
+          "impact_ko": "연구소 키카드의 수급이 안정화되고 가격 인하 가능성이 있음."
+        },
+        {
+          "key_path": "['data']['Mechanic']['items_sell']['1']['id_list']['111']",
+          "before_ko": "메커닉에게 해당 아이템이 없었음.",
+          "after_ko": "메커닉이 테라그룹 연구소 접근 카드(TerraGroup Labs access keycard)를 새롭게 판매.",
+          "explanation_ko": "메커닉 역시 테라그룹 연구소 키카드를 이제 판매합니다. 이는 연구소 키카드가 특정 상인이나 퀘스트에 지나치게 의존하지 않도록 조정된 것으로 보입니다.",
+          "impact_ko": "연구소 입장을 준비하는 과정이 여러 경로로 분산되어 편리성이 향상됨."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "이 변경사항은 공식 패치노트에 언급되지 않았고 상인 데이터만 조정되었으므로 잠수함 패치로 보임."
       },
       "is_submarine": true,
       "stability": "stable",
       "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
       "recurring_event": false,
       "stability_stats": {
-        "changed_keys": 0,
+        "changed_keys": 3,
         "recurring_keys": 0,
         "later_changes": 0
       }
@@ -500,12 +571,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(토글 키 1개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 84,
-        "recurring_keys": 0,
-        "later_changes": 1
+        "recurring_keys": 1,
+        "later_changes": 2
       }
     },
     {
