@@ -278,7 +278,7 @@
     "stability_stats": {
       "changed_keys": 6,
       "recurring_keys": 6,
-      "later_changes": 24
+      "later_changes": 36
     }
   },
   {
@@ -323,7 +323,7 @@
     "stability_stats": {
       "changed_keys": 6,
       "recurring_keys": 6,
-      "later_changes": 18
+      "later_changes": 30
     }
   },
   {
@@ -368,7 +368,7 @@
     "stability_stats": {
       "changed_keys": 6,
       "recurring_keys": 6,
-      "later_changes": 12
+      "later_changes": 24
     }
   },
   {
@@ -454,7 +454,7 @@
     "stability_stats": {
       "changed_keys": 6,
       "recurring_keys": 6,
-      "later_changes": 6
+      "later_changes": 18
     }
   },
   {
@@ -1958,37 +1958,185 @@
     "stability_stats": {
       "changed_keys": 6,
       "recurring_keys": 6,
-      "later_changes": 0
+      "later_changes": 6
     }
   },
   {
     "entry_id": "1146",
-    "eft_version": null,
-    "posted_at": null,
+    "eft_version": "1.0.6.5.46221",
+    "posted_at": "Monday, 27 July 2026 - 09:09 AM EDT",
     "scraped_at": "2026-07-27T16:36:40Z",
-    "source_url": "https://changes.tarkov-changes.com/latest",
-    "files_changed": [],
-    "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 8h 32m.\nLogin with Discord\n to check if you have access to early content.\n1.0.6.5.46221\n - Monday, 27 July 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.0.6.5.46221\n - Friday, 24 July 2026 - 12:12 PM EDT\n            7 change(s) detected\n1.0.6.5.46221\n - Friday, 24 July 2026 - 07:49 AM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Sunday, 19 July 2026 - 09:19 AM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Friday, 17 July 2026 - 03:59 PM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Friday, 17 July 2026 - 01:16 PM EDT\n            3 change(s) detected\n1.0.6.5.46189\n - Friday, 17 July 2026 - 09:27 AM EDT\n            3 change(s) detected\n1.0.6.5.46189\n - Friday, 17 July 2026 - 09:19 AM EDT\n            10 change(s) detected\n1.0.6.5.46189\n - Wednesday, 15 July 2026 - 07:50 AM EDT\n            1 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 04:43 PM EDT\n            2 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 03:51 PM EDT\n            3 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 02:17 PM EDT\n            8 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 12:08 PM EDT\n            2 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 11:34 AM EDT\n            15 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 11:17 AM EDT\n            8 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 10:34 AM EDT\n            8 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 09:52 AM EDT\n            6 change(s) detected\n1.0.6.5.46168\n - Tuesday, 14 July 2026 - 08:52 AM EDT\n            329 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 09:18 AM EDT\n            1 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 09:01 AM EDT\n            2 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 08:10 AM EDT\n            10 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 07:36 AM EDT\n            2 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 06:16 AM EDT\n            2 change(s) detected\n1.0.6.0.46010\n - Wednesday, 08 July 2026 - 04:42 AM EDT\n            2 change(s) detected\n1.0.6.0.45949\n - Tuesday, 07 July 2026 - 03:06 PM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Tuesday, 07 July 2026 - 09:41 AM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Tuesday, 07 July 2026 - 08:32 AM EDT\n            4 change(s) detected\n1.0.6.0.45949\n - Monday, 06 July 2026 - 12:51 PM EDT\n            13 change(s) detected\n1.0.6.0.45949\n - Monday, 06 July 2026 - 03:41 AM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Sunday, 05 July 2026 - 02:40 PM EDT\n            135 change(s) detected\n1.0.6.0.45949\n - Sunday, 05 July 2026 - 03:00 AM EDT\n            1 change(s) detected\n1.0.6.0.45949\n - Friday, 03 July 2026 - 12:14 PM EDT\n            8120 change(s) detected\n1.0.5.0.45581\n - Wednesday, 01 July 2026 - 03:43 PM EDT\n            3 change(s) detected\n1.0.5.0.45581\n - Wednesday, 01 July 2026 - 07:26 AM EDT\n            153 change(s) detected\n1.0.5.0.45581\n - Wednesday, 01 July 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Monday, 29 June 2026 - 10:26 AM EDT\n            11 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 10:26 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 10:17 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 09:17 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Friday, 26 June 2026 - 04:26 AM EDT\n            4 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 03:00 PM EDT\n            3 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 12:00 PM EDT\n            180 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 11:43 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 08:00 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Thursday, 25 June 2026 - 06:08 AM EDT\n            2 change(s) detected\n1.0.5.0.45581\n - Wednesday, 24 June 2026 - 05:34 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 23 June 2026 - 06:17 AM EDT\n            2 change(s) detected\n1.0.5.0.45581\n - Tuesday, 23 June 2026 - 03:43 AM EDT\n            2 change(s) detected\n1.0.5.0.45581\n - Thursday, 18 June 2026 - 10:51 AM EDT\n            1 change(s) detected\n1.0.5.0.45581\n - Tuesday, 16 June 2026 - 11:54 AM EDT\n            1 change(s) detected",
-    "locked": true,
-    "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
-    "tags": [
-      "공개대기"
+    "source_url": "https://changes.tarkov-changes.com/view/1146",
+    "files_changed": [
+      {
+        "path": "client/globals/response.json",
+        "count": 7
+      }
     ],
-    "severity": "trivial",
-    "changes": [],
+    "raw_text": "Files Changed:\nclient/globals/response.json\n(7 changes)\nDated: Monday, 27 July 2026 - 09:09 AM EDT | Game Version 1.0.6.5.46221\nclient/globals/response.json\n['data']\n    ['config']\n        ['exp']\n            ['ExpByGameEditionMultiplier']\n                ['1']\n-                (Old) {\n-                      \"GameEdition\": \"prepare_for_escape\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"prepare_for_escape\",\n+                      \"SelfExpMultiplier\": 9,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['4']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['5']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_steam_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_steam_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['3']\n-                (Old) {\n-                      \"GameEdition\": \"eod_tue_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"eod_tue_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['0']\n-                (Old) {\n-                      \"GameEdition\": \"left_behind\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"left_behind\",\n+                      \"SelfExpMultiplier\": 7,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['2']\n-                (Old) {\n-                      \"GameEdition\": \"edge_of_darkness\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"edge_of_darkness\",\n+                      \"SelfExpMultiplier\": 12,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n-                (Removed) ['6']: {\n-                      \"GameEdition\": \"standard\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n← Back to all changes",
+    "summary_ko": "게임 에디션별 경험치 획득 배율이 전반적으로 감소했습니다.",
+    "tags": [
+      "경험치",
+      "밸런스"
+    ],
+    "severity": "major",
+    "changes": [
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.1",
+        "before_ko": "'준비된 탈출(Prepare for Escape)' 에디션에서 자기 경험치 배율이 25였습니다.",
+        "after_ko": "'준비된 탈출(Prepare for Escape)' 에디션에서 자기 경험치 배율이 9로 줄었습니다.",
+        "explanation_ko": "이 값은 해당 에디션을 사용 중인 플레이어가 개인적으로 얻는 경험치의 배율을 나타냅니다. 이번 변경으로 해당 에디션 플레이어는 이전보다 경험치 상승 속도가 훨씬 느리게 느껴질 것입니다.",
+        "impact_ko": "플레이어가 느끼는 레벨링 속도가 크게 줄어듭니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.4",
+        "before_ko": "'Unheard Edition'에서 자기 및 팀 경험치 배율이 각각 25였습니다.",
+        "after_ko": "'Unheard Edition'에서 자기 및 팀 경험치 배율이 각각 20으로 줄었습니다.",
+        "explanation_ko": "이 에디션의 양쪽 경험치 획득 배율이 줄어들어 레벨업이 다소 느려질 것입니다. 팀 게임에서도 비슷한 영향을 받을 수 있습니다.",
+        "impact_ko": "팀 플레이와 솔로 플레이 모두 경험치 획득량이 다소 감소합니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.5",
+        "before_ko": "'Unheard Steam Edition'에서 자기 및 팀 경험치 배율이 각각 25였습니다.",
+        "after_ko": "'Unheard Steam Edition'에서 자기 및 팀 경험치 배율이 각각 20으로 줄었습니다.",
+        "explanation_ko": "위와 동일하게 이 에디션의 경험치 획득량이 줄어듭니다. 특히 팀 게임에서의 이익이 감소했습니다.",
+        "impact_ko": "팀 또는 솔로에서 모두 레벨업이 덜 원활하게 진행됩니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.3",
+        "before_ko": "'EOD TUE Edition'에서 자기 및 팀 경험치 배율이 각각 25였습니다.",
+        "after_ko": "'EOD TUE Edition'에서 자기 및 팀 경험치 배율이 각각 20으로 줄었습니다.",
+        "explanation_ko": "다른 상위 에디션들과 마찬가지로, 더 높은 비용을 지불한 플레이어도 이번 변경으로 경험치 감소를 겪게 됩니다.",
+        "impact_ko": "유료 고급 에디션 구매자의 경험치 획득이 감소됩니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.0",
+        "before_ko": "'뒤에 남겨진(Left Behind)' 에디션에서 자기 경험치 배율이 25였습니다.",
+        "after_ko": "'뒤에 남겨진(Left Behind)' 에디션에서 자기 경험치 배율이 7로 줄었습니다.",
+        "explanation_ko": "이 에디션의 경험치 배율 감소가 가장 크며, 해당 에디션 플레이어에게 매우 강하게 레벨링 감소가 체감될 것입니다.",
+        "impact_ko": "레벨 업 속도가 대폭 줄어 게임 진행이 더뎌질 것입니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.2",
+        "before_ko": "'어둠의 끝(Edge of Darkness)' 에디션에서 자기 경험치 배율이 25였습니다.",
+        "after_ko": "'어둠의 끝(Edge of Darkness)' 에디션에서 자기 경험치 배율이 12로 줄었습니다.",
+        "explanation_ko": "최상위 에디션의 배율도 눈에 띄게 줄어, 레벨 업 속도에 직접적인 영향을 줍니다. 특히 솔로 플레이에서 체감이 큽니다.",
+        "impact_ko": "비교적 적은 경험치 배율로 인해 해당 에디션의 장점 일부가 감소될 것입니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.6",
+        "before_ko": "'기본(Standard)' 에디션에서 자기 경험치 배율이 25였습니다.",
+        "after_ko": "이 키가 제거되어 더 이상 기본 에디션에 명시적인 경험치 배율 데이터가 없습니다.",
+        "explanation_ko": "기본(Standard) 에디션의 배율 정보가 사라져, 기본 에디션 사용자의 경험치 증가 방식이 불확실하거나 기본값으로 처리될 가능성이 있습니다.",
+        "impact_ko": "기본 사용자 경험치 배율이 감소했거나 기본값으로 변동되었을 가능성이 큽니다."
+      }
+    ],
     "patch_note": {
       "matched": false,
       "title": null,
       "url": null,
-      "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+      "reason_ko": "공식 패치노트나 변경 사항 발표 없이 이 변경이 이루어진 것으로 보입니다."
     },
     "is_submarine": true,
-    "stability": "stable",
-    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
-    "recurring_event": false,
+    "stability": "recurring",
+    "stability_detail_ko": "변경 키 6개 중 6개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+    "recurring_event": true,
     "stability_stats": {
-      "changed_keys": 0,
-      "recurring_keys": 0,
+      "changed_keys": 6,
+      "recurring_keys": 6,
+      "later_changes": 12
+    }
+  },
+  {
+    "entry_id": "hf2126d8244",
+    "eft_version": "1.0.6.5.46221",
+    "posted_at": "Monday, 27 July 2026 - 09:09 AM EDT",
+    "scraped_at": "2026-07-28T16:17:08Z",
+    "source_url": "https://changes.tarkov-changes.com/latest",
+    "files_changed": [
+      {
+        "path": "client/globals/response.json",
+        "count": 7
+      }
+    ],
+    "raw_text": "Files Changed:\nclient/globals/response.json\n(7 changes)\nDated: Monday, 27 July 2026 - 09:09 AM EDT | Game Version 1.0.6.5.46221\nclient/globals/response.json\n['data']\n    ['config']\n        ['exp']\n            ['ExpByGameEditionMultiplier']\n                ['1']\n-                (Old) {\n-                      \"GameEdition\": \"prepare_for_escape\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"prepare_for_escape\",\n+                      \"SelfExpMultiplier\": 9,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['4']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['5']\n-                (Old) {\n-                      \"GameEdition\": \"unheard_steam_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"unheard_steam_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['3']\n-                (Old) {\n-                      \"GameEdition\": \"eod_tue_edition\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 25\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"eod_tue_edition\",\n+                      \"SelfExpMultiplier\": 20,\n+                      \"TeamExpMultiplier\": 20\n+                    }\n                ['0']\n-                (Old) {\n-                      \"GameEdition\": \"left_behind\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"left_behind\",\n+                      \"SelfExpMultiplier\": 7,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n                ['2']\n-                (Old) {\n-                      \"GameEdition\": \"edge_of_darkness\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }\n+                (New) {\n+                      \"GameEdition\": \"edge_of_darkness\",\n+                      \"SelfExpMultiplier\": 12,\n+                      \"TeamExpMultiplier\": 0\n+                    }\n-                (Removed) ['6']: {\n-                      \"GameEdition\": \"standard\",\n-                      \"SelfExpMultiplier\": 25,\n-                      \"TeamExpMultiplier\": 0\n-                    }",
+    "summary_ko": "여러 에디션의 경험치 획득 배율이 변경되었습니다.",
+    "tags": [
+      "경험치",
+      "밸런스"
+    ],
+    "severity": "major",
+    "changes": [
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.1.SelfExpMultiplier",
+        "before_ko": "25배 경험치 획득",
+        "after_ko": "9배 경험치 획득",
+        "explanation_ko": "'Prepare For Escape' 에디션의 개인 경험치 획득 배율이 기존 25배에서 9배로 조정되었습니다. 이로 인해 해당 에디션 유저의 레벨업 속도가 대폭 하락할 것으로 보입니다.",
+        "impact_ko": "'Prepare For Escape' 에디션을 보유한 플레이어의 레벨업 속도가 느려질 것입니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.4.SelfExpMultiplier",
+        "before_ko": "25배 경험치 획득",
+        "after_ko": "20배 경험치 획득",
+        "explanation_ko": "'Unheard Edition'의 개인 경험치 획득 배율이 25에서 20으로 하향되었습니다. 변경 폭이 크지 않아 체감은 덜할 수 있으나, 속도는 감소합니다.",
+        "impact_ko": "'Unheard Edition' 플레이어는 이전보다 약간 느리게 레벨업할 것입니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.4.TeamExpMultiplier",
+        "before_ko": "25배 팀 경험치 획득",
+        "after_ko": "20배 팀 경험치 획득",
+        "explanation_ko": "'Unheard Edition'의 팀 경험치 획득 배율이 25에서 20으로 하향되었습니다. 팀 플레이로 얻는 경험치가 다소 감소할 것입니다.",
+        "impact_ko": "'Unheard Edition'의 팀 경험치 배율 하향으로 팀 레벨업도 느려질 것입니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.5.SelfExpMultiplier",
+        "before_ko": "25배 경험치 획득",
+        "after_ko": "20배 경험치 획득",
+        "explanation_ko": "'Unheard Steam Edition'의 개인 경험치 획득 배율이 25에서 20으로 소폭 감소되었습니다. 레벨업의 총 시간소요가 다소 늘어나게 됩니다.",
+        "impact_ko": "'Unheard Steam Edition' 플레이어의 레벨업 속도가 이전보다 조금 느려질 것입니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.3.SelfExpMultiplier",
+        "before_ko": "25배 경험치 획득",
+        "after_ko": "20배 경험치 획득",
+        "explanation_ko": "'EOD (Edge of Darkness) Tue Edition'의 개인 경험치 배율이 25에서 20으로 하향되었습니다. 상위 에디션의 배율 하향은 플레이 속도 변화에 영향을 줄 수 있습니다.",
+        "impact_ko": "'EOD Tue Edition'의 사용자도 레벨업이 소폭 느려질 것입니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.0.SelfExpMultiplier",
+        "before_ko": "25배 경험치 획득",
+        "after_ko": "7배 경험치 획득",
+        "explanation_ko": "'Left Behind' 에디션의 개인 경험치 획득 배율이 기존 25배에서 7배로 대폭 하향되었습니다. 레벨업 속도가 크게 감소할 것으로 보입니다.",
+        "impact_ko": "'Left Behind' 에디션의 유저들은 레벨업을 위해 훨씬 더 많은 시간을 투자해야 할 것입니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.2.SelfExpMultiplier",
+        "before_ko": "25배 경험치 획득",
+        "after_ko": "12배 경험치 획득",
+        "explanation_ko": "'Edge of Darkness' 에디션의 개인 경험치 획득 배율이 기존 25배에서 12배로 절반 이하로 하향되었습니다. 높은 등급 혜택이 축소되었습니다.",
+        "impact_ko": "상위 등급인 'Edge of Darkness' 유저들도 기존 대비 레벨업이 훨씬 느려질 것입니다."
+      },
+      {
+        "key_path": "data.config.exp.ExpByGameEditionMultiplier.6",
+        "before_ko": "Standard 에디션의 경험치 배율이 25배로 설정됨",
+        "after_ko": "Standard 에디션의 경험치 배율 항목 삭제",
+        "explanation_ko": "'Standard Edition'의 경험치 배율 항목이 삭제되었습니다. 이 변경은 해당 에디션의 경험치 밸런스를 완전히 초기화하거나 무의미화했을 가능성이 있습니다.",
+        "impact_ko": "'Standard Edition'은 더 이상 경험치 배율 설정이 없으며 다른 방식으로 변경될 여지가 있습니다."
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "공식 패치노트에서 해당 변경 내용을 찾아볼 수 없어, 잠수함 패치로 보입니다."
+    },
+    "is_submarine": true,
+    "stability": "recurring",
+    "stability_detail_ko": "변경 키 6개 중 6개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+    "recurring_event": true,
+    "stability_stats": {
+      "changed_keys": 6,
+      "recurring_keys": 6,
       "later_changes": 0
     }
   }
