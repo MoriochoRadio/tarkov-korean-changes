@@ -78,6 +78,26 @@
 python scripts/recompute_stability.py
 ```
 
+## 🧭 왜 이렇게 만들었나 — 기술 선택 Q&A
+
+**Q. 왜 Python인가?**
+A. 이 프로젝트의 핵심은 HTML 스크래핑(`requests` + `BeautifulSoup`), 정규식 기반 diff 파싱(`scripts/stability.py`), JSON 가공 — 전부 Python 이 가장 적은 코드로 해결되는 일입니다. 외부 의존성은 사실상 2개(requests, beautifulsoup4)뿐이라 GitHub Actions 러너에서 `pip install` 한 번으로 매일 재현 가능하게 돌아갑니다.
+
+**Q. 데이터(게임 코드 diff)는 어디서 어떻게 얻나? 왜 그 방식인가?**
+A. 공식 API 가 없어서, [tarkov-changes.com](https://changes.tarkov-changes.com/)이 비로그인으로 공개하는 `/latest`(최신 1건)와 `/view/{id}`(과거 이력) 페이지를 파싱합니다. 원본 사이트에 부담을 주지 않도록 **하루 1회만** 요청하고(백필도 요청 간 지연 삽입, 식별 가능한 User-Agent 명시), 502 같은 일시 장애는 지수 백오프로 넘기되 `/latest` 특성상 **이틀 연속 실패 시에만** 런을 실패시켜 유실 위험이 실제일 때만 알림을 받습니다.
+
+**Q. 왜 정적 웹(빌드리스)인가?**
+A. 데이터가 하루 한 번만 바뀌므로 서버·DB·프레임워크가 전부 과잉입니다. 파이프라인이 `docs/data.json` 한 파일만 생성하면 바닐라 JS 가 그걸 읽어 렌더링하고, GitHub Pages 가 무료로 호스팅 — 운영 비용과 관리 포인트가 0에 수렴합니다.
+
+**Q. "안정성 자동 판정"은 왜 필요했고 어떻게 구현했나?**
+A. 잠수함 패치는 공지가 없어서 "이 변경이 지금도 유효한가?"를 알 수 없다는 게 진짜 문제였습니다. 그래서 diff 를 `(파일, 키 경로, 이전값, 새값)` 단위로 파싱해 전체 이력의 키별 타임라인 인덱스를 만들고, 같은 키가 이후 다시 바뀌는지 / 값이 이전 상태로 되돌아오는(토글) 키가 과반인지로 `stable / superseded / recurring` 을 자동 분류합니다(`scripts/stability.py`). 이 로직이 "영구 패치처럼 보이던 경험치 배율 변경"이 사실 주말마다 켰다 꺼지는 이벤트임을 데이터로 증명했습니다.
+
+**Q. 왜 GitHub Actions 인가?**
+A. 하루 1회 cron 배치에 상시 서버는 필요 없고, Actions 는 수집 → LLM 해석 → 결과 커밋 → Pages 배포까지 한 플랫폼에서 무료로 끝납니다. 자동 제공되는 `GITHUB_TOKEN` 하나로 커밋 권한과 GitHub Models 호출(`permissions: contents: write, models: read`)을 모두 해결하므로 별도 시크릿 관리도 없습니다. cron 을 정각이 아닌 14:23 UTC 로 잡은 것도 GitHub cron 혼잡 시간대의 1~2시간 지연을 실측 후 회피한 결과입니다.
+
+**Q. LLM 은 왜 GitHub Models 를 기본으로 했나?**
+A. 하루 1회 호출이라 무료 한도로 충분하고, Actions 의 `GITHUB_TOKEN` 을 그대로 쓰므로 API 키 등록·비용·유출 걱정이 전부 사라집니다. 다만 `scripts/interpret.py` 를 provider 추상화로 만들어 환경변수 하나로 Anthropic/OpenAI 전환이 가능하고, 키가 없으면 스텁 모드로 파이프라인이 끊기지 않게 했습니다. LLM 호출이 실패해도 그날 항목을 "해석 대기"로 보류해 두었다가 다음 실행에서 자동 재시도합니다.
+
 ## 📚 과거 이력 백필(선택)
 
 `/list` 와 `/view/{id}` 로 공개된 과거 사일런트 변경을 수집해 한글 해석을 채울 수 있습니다.
