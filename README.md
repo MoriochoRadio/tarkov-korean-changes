@@ -2,6 +2,8 @@
 
 # 🛠️ 타르코프 잠수함 패치 한글 해석
 
+🇰🇷 한국어 · 🇬🇧 [English](README.en.md)
+
 **에스케이프 프롬 타르코프의 *몰래 바뀐 게임 코드(사일런트 체인지)*를 매일 한글로 자동 번역·해석하는 정적 웹**
 
 [![Live Demo](https://img.shields.io/badge/▶_Live_Demo-바로가기-c9a24b?style=for-the-badge)](https://moriochoradio.github.io/tarkov-korean-changes/)
