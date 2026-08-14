@@ -23,10 +23,14 @@ import os
 import re
 import time
 
-# GitHub Models 엔드포인트(OpenAI 호환). 무료, 하루 1회 호출엔 한도 충분.
+# GitHub Models 엔드포인트(OpenAI 호환). ⚠️ 2026-08 retirement brownout 진행 중 —
+# 410(github_models_retirement_brownout)을 반환하며 곧 영구 종료. Groq 로 이전함.
 GITHUB_MODELS_BASE = "https://models.github.ai/inference"
+# Groq 엔드포인트(OpenAI 호환). 무료 티어, 하루 1회 호출엔 한도 충분.
+GROQ_BASE = "https://api.groq.com/openai/v1"
 
 DEFAULT_MODELS = {
+    "groq": "openai/gpt-oss-120b",  # Groq 무료 티어 (K-FinAgentEval 에서 검증된 모델)
     "github": "openai/gpt-4o",      # GitHub Models 는 'publisher/model' 형식
     "anthropic": "claude-opus-4-8",
     "openai": "gpt-4o",
@@ -155,11 +159,27 @@ def _call_openai(system: str, user: str, model: str) -> str:
 
 
 def _call_github(system: str, user: str, model: str) -> str:
-    """GitHub Models (무료). OpenAI SDK 를 base_url 만 바꿔 재사용한다."""
+    """GitHub Models (서비스 종료 수순 — groq 로 이전됨). OpenAI SDK 를 base_url 만 바꿔 재사용."""
     from openai import OpenAI
 
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     client = OpenAI(base_url=GITHUB_MODELS_BASE, api_key=token)
+    resp = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
+        ],
+        response_format={"type": "json_object"},
+    )
+    return resp.choices[0].message.content
+
+
+def _call_groq(system: str, user: str, model: str) -> str:
+    """Groq (무료 티어). OpenAI SDK 를 base_url 만 바꿔 재사용한다."""
+    from openai import OpenAI
+
+    client = OpenAI(base_url=GROQ_BASE, api_key=os.environ["GROQ_API_KEY"])
     resp = client.chat.completions.create(
         model=model,
         messages=[
@@ -207,10 +227,13 @@ def _extract_json(text: str) -> dict:
 
 def interpret(raw: dict, patch_notes: list[dict] | None = None) -> dict:
     patch_notes = patch_notes or []
-    provider = os.environ.get("LLM_PROVIDER", "github").lower()
+    # 기본 provider: GROQ_API_KEY 가 있으면 groq, 없으면 github(구 경로, 종료 수순)
+    default_provider = "groq" if os.environ.get("GROQ_API_KEY") else "github"
+    provider = (os.environ.get("LLM_PROVIDER") or default_provider).lower()
     model = os.environ.get("LLM_MODEL") or DEFAULT_MODELS.get(provider, "")
 
     keys = {
+        "groq": os.environ.get("GROQ_API_KEY"),
         "github": os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN"),
         "anthropic": os.environ.get("ANTHROPIC_API_KEY"),
         "openai": os.environ.get("OPENAI_API_KEY"),
@@ -221,7 +244,7 @@ def interpret(raw: dict, patch_notes: list[dict] | None = None) -> dict:
         result = _stub(raw)
     else:
         prompt = build_prompt(raw, patch_notes)
-        callers = {"github": _call_github, "openai": _call_openai}
+        callers = {"groq": _call_groq, "github": _call_github, "openai": _call_openai}
         call = callers.get(provider, _call_anthropic)
         # 429/일시 5xx나 비-JSON 응답 한 번에 런 전체가 죽지 않도록 재시도
         last_exc: Exception | None = None

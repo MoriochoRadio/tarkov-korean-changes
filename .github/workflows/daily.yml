@@ -9,7 +9,7 @@ on:
 
 permissions:
   contents: write   # data/ 와 docs/ 변경을 커밋하기 위해 필요
-  models: read      # GitHub Models(무료 LLM) 호출에 필요
+  models: read      # (구) GitHub Models 폴백용 — Groq 이전 완료 후 제거 가능
 
 concurrency:
   group: daily-pipeline
@@ -33,11 +33,14 @@ jobs:
 
       - name: 파이프라인 실행 (스크래핑→해석→빌드)
         env:
-          # 기본: GitHub Models(무료). GITHUB_TOKEN 은 자동 제공됨.
-          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'github' }}
+          # 기본: Groq(무료 티어) — GitHub Models 가 2026-08 retirement brownout 으로
+          # 410 을 반환해 이전함. GROQ_API_KEY 시크릿 등록 시 스크립트가 자동으로
+          # groq 를 선택한다(키 없으면 구 github 경로 → 실패하지만 스텁 커밋은 방지).
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
           LLM_MODEL: ${{ vars.LLM_MODEL }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # 유료 제공자로 바꾸고 싶을 때만 아래 Secret 을 등록하세요(선택).
+          # 다른 제공자로 바꾸고 싶을 때만 아래 Secret 을 등록하세요(선택).
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PATCHNOTES_URL: ${{ vars.PATCHNOTES_URL }}
