@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T17:53:00Z",
+  "generated_at": "2026-09-10T17:46:05Z",
   "count": 47,
   "entries": [
     {
@@ -122,12 +122,12 @@
         "reason_ko": "공식 패치노트에 해당 내용이 없으며, 대규모 파일 추가·수정으로 판단되는 비공식(잠수함) 업데이트입니다."
       },
       "is_submarine": true,
-      "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 0회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+      "stability": "stable",
+      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
       "recurring_event": false,
       "stability_stats": {
-        "changed_keys": 1328,
-        "recurring_keys": 2,
+        "changed_keys": 233,
+        "recurring_keys": 0,
         "later_changes": 0
       }
     },
@@ -427,13 +427,13 @@
         "reason_ko": "공식 패치노트에 해당 내용이 없으며, 클라이언트 로케일 파일에만 추가된 것으로 보아 잠수함(비공식) 패치로 판단됩니다"
       },
       "is_submarine": true,
-      "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability": "stable",
+      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 1
+        "later_changes": 0
       }
     },
     {
@@ -630,7 +630,7 @@
       "stability_stats": {
         "changed_keys": 47,
         "recurring_keys": 30,
-        "later_changes": 1
+        "later_changes": 0
       }
     },
     {
@@ -1529,12 +1529,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 2,
         "recurring_keys": 0,
-        "later_changes": 2
+        "later_changes": 1
       }
     },
     {
@@ -1606,12 +1606,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 84,
         "recurring_keys": 2,
-        "later_changes": 6
+        "later_changes": 5
       }
     },
     {
@@ -2127,12 +2127,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 33회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 32회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 51,
         "recurring_keys": 22,
-        "later_changes": 33
+        "later_changes": 32
       }
     },
     {
