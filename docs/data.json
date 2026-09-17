@@ -1,7 +1,99 @@
 {
-  "generated_at": "2026-09-16T18:15:39Z",
-  "count": 49,
+  "generated_at": "2026-09-17T18:22:09Z",
+  "count": 50,
   "entries": [
+    {
+      "entry_id": "h45eea3ca41",
+      "eft_version": "1.1.5.0.47426",
+      "posted_at": "Wednesday, 16 September 2026 - 05:29 PM EDT",
+      "scraped_at": "2026-09-17T18:22:03Z",
+      "source_url": "https://changes.tarkov-changes.com/latest",
+      "files_changed": [
+        {
+          "path": "client/items/response.json",
+          "count": 210
+        },
+        {
+          "path": "client/globals/response.json",
+          "count": 9
+        },
+        {
+          "path": "client/locale/en/response.json",
+          "count": 37
+        },
+        {
+          "path": "client/locations/response.json",
+          "count": 378
+        },
+        {
+          "path": "client/customization/response.json",
+          "count": 4
+        },
+        {
+          "path": "client/achievement/list/response.json",
+          "count": 2
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/items/response.json\n(210 changes)\nclient/globals/response.json\n(9 changes)\nclient/locale/en/response.json\n(37 changes)\nclient/locations/response.json\n(378 changes)\nclient/customization/response.json\n(4 changes)\nclient/achievement/list/response.json\n(2 changes)\nDated: Wednesday, 16 September 2026 - 05:29 PM EDT | Game Version 1.1.5.0.47426\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Woods']\n            ['SpawnPointParams']\n                ['282 (c02f671e-8f5a-41fb-8e4a-735fb377d2d3)']\n-                (Old) {\n-                      \"Id\": \"c82d2b76-ad46-4624-825e-975a6d40fcf4\",\n-                      \"Sides\": [\n-                        \"Pmc\"\n-                      ],\n-                      \"Position\": {\n-                        \"x\": -229.28,\n-                        \"y\": 5.19,\n-                        \"z\": 86.93\n-                      },\n-                      \"Rotation\": 112.027237,\n-                      \"Categories\": [\n-                        \"Coop\",\n-                        \"Opposite\"\n-                      ],\n-                      \"BotZoneName\": \"\",\n-                      \"CorePointId\": 0,\n-                      \"Infiltration\": \"Old Station\",\n-                      \"ColliderParams\": {\n-                        \"_props\": {\n-                          \"Center\": {\n-                            \"x\": 0,\n-                            \"y\": 0,\n-                            \"z\": 0\n-                          },\n-                          \"Radius\": 100\n-                        },\n-                        \"_parent\": \"SpawnSphereParams\"\n-                      },\n-                      \"DelayToCanSpawnSec\": 4\n-                    }\n+                (New) {\n+                      \"Id\": \"c02f671e-8f5a-41fb-8e4a-735fb377d2d3\",\n+                      \"Sides\": [\n+                        \"Pmc\"\n+                      ],\n+                      \"Position\": {\n+                        \"x\": -24.789,\n+                        \"y\": 22.953,\n+                        \"z\": -304.759\n+                      },\n+                      \"Rotation\": 353.636353,\n+                      \"Categories\": [\n+                        \"Coop\",\n+                        \"Group\"\n+                      ],\n+                      \"BotZoneName\": \"\",\n+                      \"CorePointId\": 0,\n+                      \"Infiltration\": \"Old Station\",\n+                      \"ColliderParams\": {\n+                        \"_props\": {\n+                          \"Center\": {\n+                            \"x\": 0,\n+                            \"y\": 0,\n+                            \"z\": 0\n+                          },\n+                          \"Radius\": 70\n+                        },\n+                        \"_parent\": \"SpawnSphereParams\"\n+                      },\n+                      \"DelayToCanSpawnSec\": 4\n+                    }\n                ['244 (aa0b3f92-4b91-42b0-888d-7c038ebf8276)']\n-                (Old) {\n-                      \"Id\": \"b3d5e29b-907c-4578-b168-d6097f18dcfb\",\n-                      \"Sides\": [\n-                        \"Savage\"\n-                      ],\n-                      \"Position\": {\n-                        \"x\": -523.649,\n-                        \"y\": -1.80375385,\n-                        \"z\": 276.935\n-                      },\n-                      \"Rotation\": 164.48,\n-                      \"Categories\": [\n-                        \"Player\",\n-                        \"BotPmc\"\n-                      ],\n-                      \"BotZoneName\": \"ZoneRedHouse\",\n-                      \"CorePointId\": 6,\n-                      \"Infiltration\": \"\",\n-                      \"ColliderParams\": {\n-                        \"_props\": {\n-                          \"Center\": {\n-                            \"x\": 0,\n-                            \"y\": 0,\n-                            \"z\": 0\n-                          },\n-                          \"Radius\": 158.9\n-                        },\n-                        \"_parent\": \"SpawnSphereParams\"\n-                      },\n-                      \"DelayToCanSpawnSec\": 4\n-                    }\n+                (New) {\n+                      \"Id\": \"aa0b3f92-4b91-42b0-888d-7c038ebf8276\",\n+                      \"Sides\": [\n+                        \"Pmc\"\n+                      ],\n+                      \"Position\": {\n+                        \"x\": -615,\n+                        \"y\": 14.66,\n+                        \"z\": -328.990021\n+                      },\n+                      \"Rotation\": 44.72,\n+                      \"Categories\": [\n+                        \"Player\"\n+                      ],\n+                      \"BotZoneName\": \"\",\n+                      \"CorePointId\": 0,\n+                      \"Infiltration\": \"Old Station\",\n+                      \"ColliderParams\": {\n+                        \"_props\": {\n+                          \"Center\": {\n+                            \"x\": 0,\n+                            \"y\": 0,\n+                            \"z\": 0\n+                          },\n+                          \"Radius\": 70\n+                        },\n+                        \"_parent\": \"SpawnSphereParams\"\n+                      },\n+                      \"DelayToCanSpawnSec\": 4\n+                    }\n                ['190 (8c155c54-7862-4e31-8d20-422228ec0a45)']\n-                (Old) {\n-                      \"Id\": \"922c0b4f-5177-448b-8ab3-b8df4f82aa12\",\n-                      \"Sides\": [\n-                        \"Pmc\"\n-                      ],\n-                      \"Position\": {\n-                        \"x\": -418.82,\n-                        \"y\": 11.874,\n-                        \"z\": -515.23\n-                      },\n-                      \"Rotation\": 14.210001,\n-                      \"Categories\": [\n-                        \"Player\"\n-                      ],\n-                      \"BotZoneName\": \"\",\n-                      \"CorePointId\": 0,\n-                      \"Infiltration\": \"Old Station\",\n-                      \"ColliderParams\": {\n-                        \"_props\": {\n-                          \"Center\": {\n-                            \"x\": 0,\n-                            \"y\": 0,\n-                            \"z\": 0\n-                          },\n-                          \"Radius\": 70\n-                        },\n-                        \"_parent\": \"SpawnSphereParams\"\n-                      },\n-                      \"DelayToCanSpawnSec\": 4\n-                    }\n+                (New) {\n+                      \"Id\": \"8c155c54-7862-4e31-8d20-422228ec0a45\",\n+                      \"Sides\": [\n+                        \"Savage\"\n+                      ],\n+                      \"Position\": {\n+                        \"x\": -346.46,\n+                        \"y\": -8.213105,\n+                        \"z\": 131.01\n+                      },\n+                      \"Rotation\": 0,\n+                      \"Categories\": [\n+                        \"Player\",\n+                        \"Bot\"\n+                      ],\n+                      \"BotZoneName\": \"ZoneRoad\",\n+                      \"CorePointId\": 6,\n+                      \"Infiltration\": \"\",\n+                      \"ColliderParams\": {\n+                        \"_props\": {\n+                          \"Center\": {\n+                            \"x\": 0,\n+                            \"y\": 0,\n+                            \"z\": 0\n+                          },\n+                          \"Radius\": 250\n+                        },\n+                        \"_parent\": \"SpawnSphereParams\"\n+                      },\n+                      \"DelayToCanSpawnSec\": 4\n+                    }\n                ['268 (b729e198-7090-43c7-9155-43b78adc93e9)']\n-                (Old) {\n-                      \"Id\": \"c047a076-7425-4c63-ac40-75be5226847c\",\n-                      \"Sides\": [\n-                        \"Pmc\"\n-                      ],\n-                      \"Position\": {\n-                        \"x\": 391.61,\n-                        \"y\": 13.62,\n-                        \"z\": -400.750031\n-                      },\n-                      \"Rotation\": 287.12,\n-                      \"Categories\": [\n-                        \"Player\"\n-                      ],\n-                      \"BotZoneName\": \"\",\n-                      \"CorePointId\": 0,\n-                      \"Infiltration\": \"House\",\n-                      \"ColliderParams\": {\n-                        \"_props\": {\n-                          \"Center\": {\n-                            \"x\": 0,\n-                            \"y\": 0,\n-                            \"z\": 0\n-                          },\n-                          \"Radius\": 70\n-                        },\n-                        \"_parent\": \"SpawnSphereParams\"\n-                      },\n-                      \"DelayToCanSpawnSec\": 4\n-                    }\n+                (New) {\n+                      \"Id\": \"b729e198-7090-43c7-9155-43b78adc93e9\",\n+                      \"Sides\": [\n+                        \"Pmc\"\n+                      ],\n+                      \"Position\": {\n+                        \"x\": -223.47,\n+                        \"y\": 3.73,\n+                        \"z\": 99.92\n+                      },\n+                      \"Rotation\": 112.027237,\n+                      \"Categories\": [\n+                        \"Coop\",\n+                        \"Opposite\"\n+                      ],\n+                      \"BotZoneName\": \"\",\n+                      \"CorePointId\": 0,\n+                      \"Infiltration\": \"Old Station\",\n+                      \"ColliderParams\": {\n+                        \"_props\": {\n+                          \"Center\": {\n+                            \"x\": 0,\n+                            \"y\": 0,\n+                            \"z\": 0\n+                          },\n+                          \"Radius\": 100\n+                        },\n+                        \"_parent\": \"SpawnSphereParams\"\n+                      },\n+                      \"DelayToCanSpawnSec\": 4\n+                    }\n                ['140 (67d0d572-2520-4b48-a719-631efde7646f)']\n-                (Old) {\n-                      \"Id\": \"69c6da14-8dae-4c58-a826-59df5093a19d\",\n-                      \"Sides\": [\n-                        \"Pmc\"\n-                      ],\n-                      \"Position\": {\n-                        \"x\": -359.34,\n-                        \"y\": 0.9434962,\n-                        \"z\": 236.44\n-                      },\n-                      \"Rotation\": 129.42,\n-                      \"Categories\": [\n-                        \"Player\"\n-                      ],\n-                      \"BotZoneName\": \"\",\n-                      \"CorePointId\": 0,\n-                      \"Infiltration\": \"Old Station\",\n-                      \"ColliderParams\": {\n-                        \"_props\": {\n-                          \"Center\": {\n-                            \"x\": 0,\n-                            \"y\": 0,\n-                            \"z\": 0\n-                          },\n-                          \"Radius\": 70\n-                        },\n-                        \"_parent\": \"SpawnSphereParams\"\n-                      },\n-                      \"DelayToCanSpawnSec\": 4\n-                    }\n+                (New) {\n+                      \"Id\": \"67d0d572-2520-4b48-a719-631efde7646f\",\n+                      \"Sides\": [\n+                        \"Savage\"\n+                      ],\n+                      \"Position\": {\n+                        \"x\": 307.94,\n+                        \"y\": -0.642738,\n+                        \"z\": -159.809982\n+                      },\n+                      \"Rotation\": 1.62999988,\n+                      \"Categories\": [\n+                        \"Player\",\n+                        \"Bot\",\n+                        \"Boss\"\n+                      ],\n+                      \"BotZoneName\": \"ZoneMiniHouse\",\n+                      \"CorePointId\": 4,\n+                      \"Infiltration\": \"\",\n+                      \"ColliderParams\": {\n+                        \"_props\": {\n+                          \"Center\": {\n+                            \"x\": 0,\n+                            \"y\": 0,\n+                            \"z\": 0\n+                          },\n+                          \"Radius\": 249.4\n+                        },\n+                        \"_parent\": \"SpawnSphereParams\"\n+                      },\n+                      \"DelayToCanSpawnSec\": 4\n+                    }\n                ['121 (5707c8d8-2121-4dfe-8270-1f9216bd5975)']\n-                (Old) {\n-                      \"Id\": \"583d3cc8-2a34-461c-9ec7-0376e23f4e72\",\n-                      \"Sides\": [\n-                        \"Pmc\"\n-                      ],\n-                      \"Position\": {\n-                        \"x\": 283.31,\n-                        \"y\": -0.82,\n-                        \"z\": -48.99\n-                      },\n-                      \"Rotation\": 268.0896,\n-                      \"Categories\": [\n-                        \"Coop\",\n-                        \"Opposite\"\n-                      ],\n-                      \"BotZoneName\": \"\",\n-                      \"CorePointId\": 0,\n-                      \"Infiltration\": \"House\",\n-                      \"ColliderParams\": {\n-                        \"_props\": {\n-                          \"Center\": {\n-                            \"x\": 0,\n-                            \"y\": 0,\n-                            \"z\": 0\n-                          },\n-                          \"Radius\": 100\n-                        },\n-                        \"_parent\": \"SpawnSphereParams\"\n-                      },\n-                      \"DelayToCanSpawnSec\": 4\n-                    }\n+                (New) {\n+                      \"Id\": \"5707c8d8-2121-4dfe-8270-1f9216bd5975\",\n+                      \"Sides\": [\n+                        \"Savage\"\n+                      ],\n+                      \"Position\": {\n+                        \"x\": -109.97,\n+                        \"y\": -13.2336187,\n+                        \"z\": 240.99\n+                      },\n+                      \"Rotation\": 212.4,\n+                      \"Categories\": [\n+                        \"Player\",\n+                        \"Bot\",\n+                        \"Boss\"\n+                      ],\n+                      \"BotZoneName\": \"ZoneRoad\",\n+                      \"CorePointId\": 9,\n+                      \"Infiltration\": \"\",\n+                      \"ColliderParams\": {\n+                        \"_props\": {\n+                          \"Center\": {\n+                            \"x\": 0,\n+                            \"y\": 0,\n+                            \"z\": 0\n+                          },\n+                          \"Radius\": 40\n+                        },\n+                        \"_parent\": \"SpawnSphereParams\"\n+                      },\n+                      \"DelayToCanSpawnSec\": 4\n+                    }\n                ['92 (3f919a03-c2cb-4365-ab86-cf95f0ed6b32)']\n-                (Old) {\n-                      \"Id\": \"41c028f0-8d95-4bc1-9a0b-4b42f9b455af\",\n-                      \"Sides\": [\n-                        \"Savage\"\n-                      ],\n-                      \"Position\": {\n-                        \"x\": -308.06,\n-                        \"y\": 13.7899971,\n-                        \"z\": -410.29\n-                      },\n-                      \"Rotation\": 236.87,\n-                      \"Categories\": [\n-                        \"Player\",\n-                        \"Bot\"\n-                      ],\n-                      \"BotZoneName\": \"ZoneStoneBunker\",\n-                      \"CorePointId\": 23,\n-                      \"Infiltration\": \"\",\n-                      \"ColliderParams\": {\n-                        \"_props\": {\n-                          \"Center\": {\n-                            \"x\": 0,\n-                            \"y\": 0,\n-                            \"z\": 0\n-                          },\n-                          \"Radius\": 60\n-                        },\n-                        \"_parent\": \"SpawnSphereParams\"\n-                      },\n-                      \"DelayToCanSpawnSec\": 4\n-                    }\n+                (New) {\n+                      \"Id\": \"3f919a03-c2cb-4365-ab86-cf95f0ed6b32\",\n+                      \"Sides\": [\n+                        \"Pmc\"\n+                      ],\n+                      \"Position\": {\n+                        \"x\": -516.65,\n+                        \"y\": 7.2753315,\n+                        \"z\": 146.29\n+                      },\n+                      \"Rotation\": 0.08,\n+                      \"Categories\": [\n+                        \"Player\"\n+                      ],\n+                      \"BotZoneName\": \"\",\n+                      \"CorePointId\": 0,\n+                      \"Infiltration\": \"Old Station\",\n+                      \"ColliderParams\": {\n+                        \"_props\": {\n+                          \"Center\": {\n+                            \"x\": 0,\n+                            \"y\": 0,\n+                            \"z\": 0\n+                          },\n+                          \"Radius\": 50\n+                        },\n+                        \"_parent\": \"SpawnSphereParams\"\n+                      },\n+                      \"DelayToCanSpawnSec\": 4\n+                    }\n                ['345 (eaeca1b5-b44c-44fa-8a31-8f3d54a23ae2)']\n-                (Old) {\n-                      \"Id\": \"f10701b0-ee96-4f9b-94db-8007bc90fb07\",\n-                      \"Sides\": [\n-                        \"Pmc\"\n-                      ],\n-                      \"Position\": {\n-                        \"x\": 234.960022,\n-                        \"y\": 26.92,\n-                        \"z\": -314.58\n-                      },\n-                      \"Rotation\": 287.12,\n-                      \"Categories\": [\n-                        \"Player\"\n-                      ],\n-                      \"BotZoneName\": \"\",\n-                      \"CorePointId\": 0,\n-                      \"Infiltration\": \"House\",\n-                      \"ColliderParams\": {\n-                        \"_props\": {\n-                          \"Center\": {\n-                            \"x\": 0,\n-                            \"y\": 0,\n-                            \"z\": 0\n-                          },\n-                          \"Radius\": 70\n-                        },\n-                        \"_parent\": \"SpawnSphereParams\"\n-                      },\n-                      \"DelayToCanSpawnSec\": 4\n-                    }\n+                (New) {\n+                      \"Id\": \"eaeca1b5-b44c-44fa-8a31-8f3d54a23ae2\",\n+                      \"Sides\": [\n+                        \"Pmc\"\n+                      ],\n+                      \"Position\": {\n+                        \"x\": -526.74,\n+                        \"y\": 11.2439995,\n+                        \"z\": 86.8600159\n+                      },\n+                      \"Rotation\": 130.67,\n+                      \"Categories\": [\n+                        \"Player\"\n+                      ],\n+                      \"BotZoneName\": \"\",\n+                      \"CorePointId\": 0,\n+                      \"Infiltration\": \"Old Station\",\n+                      \"ColliderParams\": {\n+                        \"_props\": {\n+                          \"Center\": {\n+                            \"x\": 0,\n+                            \"y\": 0,\n+                            \"z\": 0\n+                          },\n+                          \"Radius\": 70\n+                        },\n+                        \"_parent\": \"SpawnSphereParams\"\n+                      },\n+                      \"DelayToCanSpawnSec\": 4\n+                    }\n                ['146 (6ad78ac0-3047-4a3e-9761-3660c7426e48)']\n-                (Old) {\n-                      \"Id\": \"6be733e4-43b2-4b8c-bdb9-9bebb8934b7b\",\n-                      \"Sides\": [\n-                        \"Savage\"\n-                      ],\n-                      \"Position\": {\n-                        \"x\": -613.220032,\n-                        \"y\": 8.136056,\n-                        \"z\": 142.59\n-                      },\n-                      \"Rotation\": 267.975922,\n-                      \"Categories\": [\n-                        \"Bot\",\n-                        \"Boss\"\n-                      ],\n-                      \"BotZoneName\": \"ZoneDepo\",\n-              \n\n…(원문이 매우 커서 잘렸습니다 — 전체는 원본 링크에서 확인)",
+      "summary_ko": "Woods 맵의 스폰 포인트 위치, 소속 측(Side), 카테고리 및 스폰 반경 등이 전반적으로 재조정되었습니다.",
+      "tags": [
+        "맵",
+        "밸런스"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "client/locations/response.json → data → locations → Woods → SpawnPointParams → 282",
+          "before_ko": "Pmc 전용 스폰 포인트가 -229.28,5.19,86.93 위치에 있으며 반경 100m, 카테고리 ‘Coop, Opposite’",
+          "after_ko": "Pmc 전용 스폰 포인트가 -24.789,22.953,-304.759 위치로 이동하고 반경이 70m로 축소, 카테고리가 ‘Coop, Group’으로 변경",
+          "explanation_ko": "해당 스폰 포인트는 협동 플레이(PMC)용으로, 기존에는 Old Station 지역 근처에 있었으나 이제 Woods의 서쪽 지역으로 이동했습니다. 반경 축소와 카테고리 변경은 스폰 인원 제한 및 팀 구성을 조정합니다.",
+          "impact_ko": "플레이어는 기존 스폰 지역에서 더 이상 스폰되지 않으며, 새로운 위치에서 팀원을 만나게 됩니다."
+        },
+        {
+          "key_path": "client/locations/response.json → data → locations → Woods → SpawnPointParams → 244",
+          "before_ko": "Savage(Scav) 전용 스폰 포인트가 -523.649,-1.804,276.935 위치에 반경 158.9m, ‘Player, BotPmc’ 카테고리",
+          "after_ko": "Pmc 전용 스폰 포인트가 -615,14.66,-328.99 위치에 반경 70m, ‘Player’ 카테고리만 남음",
+          "explanation_ko": "이 포인트는 기존에 Scav과 PMC가 섞여 스폰되던 장소였으며, 이제는 PMC 전용으로 전환되고 스폰 영역이 크게 축소되었습니다.",
+          "impact_ko": "Scav 플레이어는 해당 지역에서 스폰되지 않으며, PMC 플레이어는 더 제한된 구역에서만 스폰됩니다."
+        },
+        {
+          "key_path": "client/locations/response.json → data → locations → Woods → SpawnPointParams → 190",
+          "before_ko": "Pmc 전용 스폰 포인트가 -418.82,11.874,-515.23 위치에 반경 70m, ‘Player’ 카테고리",
+          "after_ko": "Savage 전용 스폰 포인트가 -346.46,-8.213,131.01 위치에 반경 250m, ‘Player, Bot’ 카테고리와 ‘ZoneRoad’ 구역 지정",
+          "explanation_ko": "이전에는 PMC만 스폰되던 지점이 Scav(야생) 전용으로 바뀌고, 스폰 반경이 크게 확대돼 더 많은 Scav이 해당 지역에 등장합니다.",
+          "impact_ko": "PMC는 이 지점에서 사라지고, Scav이 많이 출현해 전투 환경이 변합니다."
+        },
+        {
+          "key_path": "client/locations/response.json → data → locations → Woods → SpawnPointParams → 268",
+          "before_ko": "Pmc 전용 스폰 포인트가 391.61,13.62,-400.75 위치에 반경 70m, ‘Player’ 카테고리",
+          "after_ko": "Pmc 전용 스폰 포인트가 -223.47,3.73,99.92 위치에 반경 100m, ‘Coop, Opposite’ 카테고리와 ‘Old Station’ 침투 지정",
+          "explanation_ko": "스폰 위치가 중앙 부근으로 이동하고 반경이 확대돼 더 많은 플레이어가 동시에 스폰될 수 있게 되었습니다. ‘Coop, Opposite’ 카테고리는 협동과 대전 상황을 동시에 지원합니다.",
+          "impact_ko": "플레이어는 기존 위치 대신 새로운 중심 지점에서 스폰되어 전투 흐름이 바뀝니다."
+        },
+        {
+          "key_path": "client/locations/response.json → data → locations → Woods → SpawnPointParams → 140",
+          "before_ko": "Pmc 전용 스폰 포인트가 -359.34,0.943,236.44 위치에 반경 70m, ‘Player’ 카테고리",
+          "after_ko": "Savage 전용 스폰 포인트가 307.94,-0.643,-159.81 위치에 반경 250m, ‘Player, Bot, Boss’ 카테고리와 ‘ZoneMiniHouse’ 지정",
+          "explanation_ko": "이 스폰 포인트는 이제 Scav 및 보스 AI가 등장할 수 있는 고위험 구역으로 바뀌었으며, 스폰 반경이 크게 늘어나 다양한 적이 동시에 나타날 수 있습니다.",
+          "impact_ko": "해당 구역에서 보스 및 다수의 Scav이 출현해 난이도가 상승합니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "제공된 diff는 공식 패치노트와 직접 연결되는 내용이 없으며, 주로 지도 스폰 포인트 조정이라는 잠수함(비공개) 패치로 판단됩니다."
+      },
+      "is_submarine": true,
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 0회 변경됨(토글 키 1개) — 값이 더 갱신됨.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 422,
+        "recurring_keys": 1,
+        "later_changes": 0
+      }
+    },
     {
       "entry_id": "h6033d67e01",
       "eft_version": "1.1.5.0.47242",
@@ -273,13 +365,13 @@
         "reason_ko": "공식 패치노트에 해당 내용이 없으며, 대규모 파일 추가·수정으로 판단되는 비공식(잠수함) 업데이트입니다."
       },
       "is_submarine": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 233,
         "recurring_keys": 0,
-        "later_changes": 0
+        "later_changes": 1
       }
     },
     {
@@ -578,13 +670,13 @@
         "reason_ko": "공식 패치노트에 해당 내용이 없으며, 클라이언트 로케일 파일에만 추가된 것으로 보아 잠수함(비공식) 패치로 판단됩니다"
       },
       "is_submarine": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 0
+        "later_changes": 1
       }
     },
     {
@@ -654,13 +746,13 @@
         "reason_ko": "제공된 diff에 대응되는 공식 패치노트가 확인되지 않아 잠수함(비공개) 패치로 판단했습니다."
       },
       "is_submarine": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 5,
         "recurring_keys": 0,
-        "later_changes": 0
+        "later_changes": 3
       }
     },
     {
@@ -1680,12 +1772,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 2,
         "recurring_keys": 0,
-        "later_changes": 1
+        "later_changes": 2
       }
     },
     {
@@ -1757,12 +1849,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 84,
         "recurring_keys": 2,
-        "later_changes": 5
+        "later_changes": 6
       }
     },
     {
@@ -2278,12 +2370,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 32회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 33회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 51,
         "recurring_keys": 22,
-        "later_changes": 32
+        "later_changes": 33
       }
     },
     {
