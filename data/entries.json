@@ -126,7 +126,7 @@
     "stability_stats": {
       "changed_keys": 20,
       "recurring_keys": 18,
-      "later_changes": 6
+      "later_changes": 8
     }
   },
   {
@@ -3128,32 +3128,253 @@
   },
   {
     "entry_id": "1189",
-    "eft_version": null,
-    "posted_at": null,
+    "eft_version": "1.1.5.1.47510",
+    "posted_at": "Saturday, 26 September 2026 - 09:48 AM EDT",
     "scraped_at": "2026-09-26T17:49:18Z",
-    "source_url": "https://changes.tarkov-changes.com/latest",
-    "files_changed": [],
-    "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 7h 58m.\nLogin with Discord\n to check if you have access to early content.\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Tuesday, 01 September 2026 - 02:15 PM EDT\n            6 change(s) detected\n1.1.0.1.46911\n - Monday, 24 August 2026 - 04:46 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Sunday, 23 August 2026 - 10:55 AM EDT\n            22 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 07:26 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 04:52 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 03:26 PM EDT\n            11 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 09:09 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 13 August 2026 - 02:17 PM EDT\n            14 change(s) detected\n1.1.0.1.46699\n - Thursday, 13 August 2026 - 08:00 AM EDT\n            10 change(s) detected\n1.1.0.1.46699\n - Wednesday, 12 August 2026 - 05:09 AM EDT\n            28 change(s) detected\n1.1.0.1.46699\n - Monday, 10 August 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:43 AM EDT\n            12 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:26 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Saturday, 08 August 2026 - 05:00 PM EDT\n            24 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 02:34 PM EDT\n            35 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 11:51 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 09:17 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 05:17 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:34 PM EDT\n            8 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:26 PM EDT\n            26 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 01:26 PM EDT\n            41 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 08:17 AM EDT\n            65 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:09 PM EDT\n            1 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:00 PM EDT\n            26 change(s) detected\n1.1.0.0.46624\n - Wednesday, 05 August 2026 - 06:08 AM EDT\n            14 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 10:43 AM EDT\n            38 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 05:00 AM EDT\n            1 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 04:43 AM EDT\n            2 change(s) detected\n1.1.0.0.46608\n - Monday, 03 August 2026 - 01:46 PM EDT\n            1 change(s) detected\n1.1.0.0.46608\n - Monday, 03 August 2026 - 01:07 PM EDT\n            6949 change(s) detected\n1.0.6.5.46221\n - Saturday, 01 August 2026 - 05:02 AM EDT\n            9 change(s) detected\n1.0.6.5.46221\n - Friday, 31 July 2026 - 07:57 AM EDT\n            13 change(s) detected\n1.0.6.5.46221\n - Thursday, 30 July 2026 - 03:01 AM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Wednesday, 29 July 2026 - 07:21 AM EDT\n            47 change(s) detected\n1.0.6.5.46221\n - Monday, 27 July 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.0.6.5.46221\n - Friday, 24 July 2026 - 12:12 PM EDT\n            7 change(s) detected\n1.0.6.5.46221\n - Friday, 24 July 2026 - 07:49 AM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Sunday, 19 July 2026 - 09:19 AM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Friday, 17 July 2026 - 03:59 PM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Friday, 17 July 2026 - 01:16 PM EDT\n            3 change(s) detected\n1.0.6.5.46189\n - Friday, 17 July 2026 - 09:27 AM EDT\n            3 change(s) detected",
-    "locked": true,
-    "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
-    "tags": [
-      "공개대기"
+    "source_url": "https://changes.tarkov-changes.com/view/1189",
+    "files_changed": [
+      {
+        "path": "client/items/response.json",
+        "count": 3
+      },
+      {
+        "path": "client/locations/response.json",
+        "count": 9
+      }
     ],
-    "severity": "trivial",
-    "changes": [],
+    "raw_text": "Files Changed:\nclient/items/response.json\n(3 changes)\nclient/locations/response.json\n(9 changes)\nDated: Saturday, 26 September 2026 - 09:48 AM EDT | Game Version 1.1.5.1.47510\nclient/items/response.json\n['data']\n    ['Airdrop common supply crate']\n        ['_props']\n            ['Grids']\n                ['0 (main)']\n                    ['_props']\n                        ['cellsV']\n-                        (Old) 12\n+                        (New) 20 (+66.67%)\n                        ['maxCount']\n-                        (Old) 43\n+                        (New) 60 (+39.53%)\n                        ['minCount']\n-                        (Old) 18\n+                        (New) 40 (+122.22%)\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Lighthouse']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 1,500\n+                    (New) 2,100 (+40.00%)\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 10 (+100.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.85 (+325.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 180 (-80.00%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 30 (-90.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 180 (-70.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 800\n+                    (New) 600 (-25.00%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 700\n+                    (New) 480 (-31.43%)\n                    ['AirdropPointDeactivateDistance']\n-                    (Old) 50\n+                    (New) 10 (-80.00%)\n← Back to all changes",
+    "summary_ko": "에어드랍 크래프트와 라이트하우스 맵의 에어드랍 파라미터가 전반적으로 확대·가속화되어 에어드랍 횟수와 아이템 수량이 크게 증가했습니다.",
+    "tags": [
+      "아이템",
+      "맵",
+      "밸런스"
+    ],
+    "severity": "major",
+    "changes": [
+      {
+        "key_path": "data.Airdrop common supply crate._props.Grids[0]._props.cellsV",
+        "before_ko": "이전값: 12칸",
+        "after_ko": "변경값: 20칸",
+        "explanation_ko": "cellsV는 에어드랍 크래프트 내부의 세로 슬롯 수를 의미합니다. 슬롯 수가 늘어나면 크래프트에 배치될 아이템 종류와 수가 증가합니다.",
+        "impact_ko": "플레이어가 에어드랍 상자를 열었을 때 더 많은 아이템을 찾을 확률이 높아집니다."
+      },
+      {
+        "key_path": "data.Airdrop common supply crate._props.Grids[0]._props.maxCount",
+        "before_ko": "이전값: 43개",
+        "after_ko": "변경값: 60개",
+        "explanation_ko": "maxCount는 크래프트에 들어갈 수 있는 아이템의 최대 개수를 정의합니다. 상한선이 상승하면 상자당 최대 아이템 양이 늘어납니다.",
+        "impact_ko": "한 번의 에어드랍으로 획득 가능한 아이템 총량이 증가합니다."
+      },
+      {
+        "key_path": "data.Airdrop common supply crate._props.Grids[0]._props.minCount",
+        "before_ko": "이전값: 18개",
+        "after_ko": "변경값: 40개",
+        "explanation_ko": "minCount는 크래프트에 최소히 들어가는 아이템 개수를 의미합니다. 최소치가 크게 올라가면서 상자마다 일정 수준 이상의 아이템이 보장됩니다.",
+        "impact_ko": "에어드랍 상자를 열 때 최소 아이템 양이 크게 늘어나게 됩니다."
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters[0].PlaneAirdropEnd",
+        "before_ko": "이전값: 1500미터",
+        "after_ko": "변경값: 2100미터",
+        "explanation_ko": "PlaneAirdropEnd는 비행기 에어드랍이 종료되는 거리(플레이어와 비행기의 거리)이며, 값이 커질수록 비행기 이동 구간이 넓어집니다.",
+        "impact_ko": "에어드랍 비행기가 더 넓은 구역을 지나며 에어드랍 위치가 다양해집니다."
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters[0].PlaneAirdropMax",
+        "before_ko": "이전값: 5번",
+        "after_ko": "변경값: 10번",
+        "explanation_ko": "PlaneAirdropMax는 라이트하우스 맵에서 비행기 에어드랍이 최대 몇 번 발생할 수 있는지를 정의합니다.",
+        "impact_ko": "한 라운드에 에어드랍이 두 배로 늘어나 에어드랍을 활용할 기회가 많아집니다."
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters[0].PlaneAirdropChance",
+        "before_ko": "이전값: 0.2 (20% 확률)",
+        "after_ko": "변경값: 0.85 (85% 확률)",
+        "explanation_ko": "PlaneAirdropChance는 비행기 에어드랍이 실제로 발생할 확률을 나타냅니다. 85%로 상승하면 거의 매번 에어드랍이 실행됩니다.",
+        "impact_ko": "에어드랍이 거의 확정적으로 발생해 라이트하우스에서의 전투 흐름이 크게 바뀝니다."
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters[0].PlaneAirdropStartMax",
+        "before_ko": "이전값: 900미터",
+        "after_ko": "변경값: 180미터",
+        "explanation_ko": "PlaneAirdropStartMax는 비행기 에어드랍이 시작될 수 있는 최대 거리이며, 크게 감소하면 비행기가 플레이어에 더 가까이 접근합니다.",
+        "impact_ko": "플레이어가 비행기 근처에 있어야 에어드랍을 기대하게 됩니다."
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters[0].PlaneAirdropStartMin",
+        "before_ko": "이전값: 300미터",
+        "after_ko": "변경값: 30미터",
+        "explanation_ko": "PlaneAirdropStartMin은 비행기 에어드랍이 시작될 수 있는 최소 거리이며, 감소하면 비행기가 거의 바로 위에서 떨어집니다.",
+        "impact_ko": "에어드랍 위치가 플레이어와 매우 근접해 위험성이 증가합니다."
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters[0].UnsuccessfulTryPenalty",
+        "before_ko": "이전값: 600초",
+        "after_ko": "변경값: 180초",
+        "explanation_ko": "UnsuccessfulTryPenalty는 에어드랍 시도가 실패했을 때 적용되는 쿨다운 시간입니다. 짧아지면 재시도가 빨라집니다.",
+        "impact_ko": "에어드랍 실패 후 재시도가 더 자주 가능해집니다."
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters[0].PlaneAirdropCooldownMax",
+        "before_ko": "이전값: 800초",
+        "after_ko": "변경값: 600초",
+        "explanation_ko": "PlaneAirdropCooldownMax는 에어드랍 사이의 최대 대기시간이며, 감소하면 에어드랍 간격이 짧아집니다.",
+        "impact_ko": "에어드랍 주기가 전반적으로 빨라집니다."
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters[0].PlaneAirdropCooldownMin",
+        "before_ko": "이전값: 700초",
+        "after_ko": "변경값: 480초",
+        "explanation_ko": "PlaneAirdropCooldownMin은 에어드랍 사이 최소 대기시간으로, 감소하면 가장 짧은 간격도 짧아집니다.",
+        "impact_ko": "에어드랍이 최소 480초마다 발생할 수 있어 빈도가 높아집니다."
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters[0].AirdropPointDeactivateDistance",
+        "before_ko": "이전값: 50미터",
+        "after_ko": "변경값: 10미터",
+        "explanation_ko": "AirdropPointDeactivateDistance는 플레이어가 에어드랍 지점에서 멀어졌을 때 해당 포인트가 비활성화되는 거리입니다. 감소하면 멀리 떠나도 포인트가 유지됩니다.",
+        "impact_ko": "에어드랍 지점에서 멀리 이동해도 포인트가 사라지지 않아 전략적 활용도가 늘어납니다."
+      }
+    ],
     "patch_note": {
       "matched": false,
       "title": null,
       "url": null,
-      "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+      "reason_ko": "공식 패치노트에 해당 변경사항이 없으며, 사일런트(잠수함) 패치로 판단됩니다."
     },
     "is_submarine": true,
-    "stability": "stable",
-    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
-    "recurring_event": false,
+    "stability": "recurring",
+    "stability_detail_ko": "변경 키 12개 중 12개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+    "recurring_event": true,
     "stability_stats": {
-      "changed_keys": 0,
-      "recurring_keys": 0,
+      "changed_keys": 12,
+      "recurring_keys": 12,
+      "later_changes": 12
+    }
+  },
+  {
+    "entry_id": "h45453ff46b",
+    "eft_version": "1.1.5.1.47510",
+    "posted_at": "Saturday, 26 September 2026 - 09:48 AM EDT",
+    "scraped_at": "2026-09-27T18:32:21Z",
+    "source_url": "https://changes.tarkov-changes.com/latest",
+    "files_changed": [
+      {
+        "path": "client/items/response.json",
+        "count": 3
+      },
+      {
+        "path": "client/locations/response.json",
+        "count": 9
+      }
+    ],
+    "raw_text": "Files Changed:\nclient/items/response.json\n(3 changes)\nclient/locations/response.json\n(9 changes)\nDated: Saturday, 26 September 2026 - 09:48 AM EDT | Game Version 1.1.5.1.47510\nclient/items/response.json\n['data']\n    ['Airdrop common supply crate']\n        ['_props']\n            ['Grids']\n                ['0 (main)']\n                    ['_props']\n                        ['cellsV']\n-                        (Old) 12\n+                        (New) 20 (+66.67%)\n                        ['maxCount']\n-                        (Old) 43\n+                        (New) 60 (+39.53%)\n                        ['minCount']\n-                        (Old) 18\n+                        (New) 40 (+122.22%)\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Lighthouse']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 1,500\n+                    (New) 2,100 (+40.00%)\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 10 (+100.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.85 (+325.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 180 (-80.00%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 30 (-90.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 180 (-70.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 800\n+                    (New) 600 (-25.00%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 700\n+                    (New) 480 (-31.43%)\n                    ['AirdropPointDeactivateDistance']\n-                    (Old) 50\n+                    (New) 10 (-80.00%)",
+    "summary_ko": "라이트하우스 맵의 에어드롭 빈도와 보급 상자 슬롯 수가 크게 늘어나고, 에어드롭 관련 파라미터가 전반적으로 조정되었습니다.",
+    "tags": [
+      "아이템",
+      "맵",
+      "밸런스"
+    ],
+    "severity": "major",
+    "changes": [
+      {
+        "key_path": "data.Airdrop common supply crate._props.Grids.0 (main)._props.cellsV",
+        "before_ko": "그리드 셀 수 12칸",
+        "after_ko": "그리드 셀 수 20칸",
+        "explanation_ko": "이 값은 에어드롭 보급 상자 안에 배치 가능한 아이템 슬롯 수를 의미합니다. 슬롯이 늘어나면 하나의 상자에 더 많은 아이템을 담을 수 있어 보급 효율이 상승합니다.",
+        "impact_ko": "플레이어는 하나의 에어드롭 상자에서 더 많은 아이템을 얻을 수 있습니다"
+      },
+      {
+        "key_path": "data.Airdrop common supply crate._props.Grids.0 (main)._props.maxCount",
+        "before_ko": "상자당 최대 아이템 수 43개",
+        "after_ko": "상자당 최대 아이템 수 60개",
+        "explanation_ko": "maxCount는 보급 상자에 랜덤으로 들어갈 수 있는 아이템의 최대 개수를 정의합니다. 증가로 인해 상자당 더 많은 종류의 아이템이 포함될 확률이 높아집니다.",
+        "impact_ko": "에어드롭 상자에서 얻는 아이템 종류와 양이 증가합니다"
+      },
+      {
+        "key_path": "data.Airdrop common supply crate._props.Grids.0 (main)._props.minCount",
+        "before_ko": "상자당 최소 아이템 수 18개",
+        "after_ko": "상자당 최소 아이템 수 40개",
+        "explanation_ko": "minCount는 보급 상자에 최소로 들어갈 아이템 개수를 지정합니다. 값이 크게 올라가면 상자마다 최소한 더 많은 아이템이 제공됩니다.",
+        "impact_ko": "에어드롭 상자를 열면 최소 아이템 수가 늘어나 보상이 보장됩니다"
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters.0.PlaneAirdropEnd",
+        "before_ko": "에어드롭 종료 거리 1500m",
+        "after_ko": "에어드롭 종료 거리 2100m",
+        "explanation_ko": "PlaneAirdropEnd는 비행기가 에어드롭을 멈추는 최외곽 거리입니다. 범위가 확대돼 플레이어가 더 넓은 지역에서 에어드롭을 받을 수 있습니다.",
+        "impact_ko": "라이트하우스 전역에서 에어드롭을 찾을 가능성이 커집니다"
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters.0.PlaneAirdropMax",
+        "before_ko": "한 번에 최대 에어드롭 수 5개",
+        "after_ko": "한 번에 최대 에어드롭 수 10개",
+        "explanation_ko": "PlaneAirdropMax는 비행기가 동시에 투하할 수 있는 에어드롭 수를 정의합니다. 두 배로 늘어나 한 번에 더 많은 보급 상자가 하늘에서 떨어집니다.",
+        "impact_ko": "한 번의 에어드롭 시 보급 상자 수가 증가합니다"
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters.0.PlaneAirdropChance",
+        "before_ko": "에어드롭 발생 확률 0.2%",
+        "after_ko": "에어드롭 발생 확률 0.85%",
+        "explanation_ko": "PlaneAirdropChance는 라이트하우스에서 에어드롭이 발생할 확률을 의미합니다. 4배 이상 상승해 에어드롭이 훨씬 자주 등장합니다.",
+        "impact_ko": "에어드롭을 마주할 확률이 크게 높아집니다"
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters.0.PlaneAirdropStartMax",
+        "before_ko": "에어드롭 시작 최대 거리 900m",
+        "after_ko": "에어드롭 시작 최대 거리 180m",
+        "explanation_ko": "StartMax는 비행기가 에어드롭을 시작할 수 있는 최대 거리 제한입니다. 크게 감소해 비행기가 더 가까운 지점에서만 에어드롭을 시작합니다.",
+        "impact_ko": "에어드롭 시작 지점이 지도 중앙에 더 가깝게 집중됩니다"
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters.0.PlaneAirdropStartMin",
+        "before_ko": "에어드롭 시작 최소 거리 300m",
+        "after_ko": "에어드롭 시작 최소 거리 30m",
+        "explanation_ko": "StartMin은 에어드롭 시작 최소 거리이며, 감소하면 비행기가 매우 근접한 위치에서 에어드롭을 시작합니다.",
+        "impact_ko": "에어드롭이 플레이어와 더욱 가까운 거리에서 투하됩니다"
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters.0.UnsuccessfulTryPenalty",
+        "before_ko": "실패 시 페널티 600초",
+        "after_ko": "실패 시 페널티 180초",
+        "explanation_ko": "UnsuccessfulTryPenalty는 에어드롭 시도가 실패했을 때 대기 시간이 늘어나는 시간을 의미합니다. 감소하면 실패 후 재시도가 빨라집니다.",
+        "impact_ko": "에어드롭 실패 후 재시도가 더 빨라집니다"
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters.0.PlaneAirdropCooldownMax",
+        "before_ko": "에어드롭 쿨다운 최대 800초",
+        "after_ko": "에어드롭 쿨다운 최대 600초",
+        "explanation_ko": "쿨다운은 연속 에어드롭 사이의 최소 대기 시간을 제한합니다. 최대값이 감소해 전체적인 에어드롭 빈도가 상승합니다.",
+        "impact_ko": "에어드롭 사이 간격이 짧아집니다"
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters.0.PlaneAirdropCooldownMin",
+        "before_ko": "에어드롭 쿨다운 최소 700초",
+        "after_ko": "에어드롭 쿨다운 최소 480초",
+        "explanation_ko": "최소 쿨다운이 감소하면 가장 짧은 간격으로도 에어드롭이 가능해집니다.",
+        "impact_ko": "에어드롭 최소 간격이 줄어듭니다"
+      },
+      {
+        "key_path": "data.locations.Lighthouse.AirdropParameters.0.AirdropPointDeactivateDistance",
+        "before_ko": "에어드롭 포인트 비활성화 거리 50m",
+        "after_ko": "에어드롭 포인트 비활성화 거리 10m",
+        "explanation_ko": "플레이어가 포인트에서 일정 거리 이상 벗어나면 해당 에어드롭 포인트가 비활성화됩니다. 거리 감소로 포인트 유지가 쉬워집니다.",
+        "impact_ko": "에어드롭 포인트를 더 오래 유지할 수 있습니다"
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "제공된 공식 패치노트와 일치하는 항목이 없어 잠수함(비공식) 패치로 판단되었습니다."
+    },
+    "is_submarine": true,
+    "stability": "recurring",
+    "stability_detail_ko": "변경 키 12개 중 12개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+    "recurring_event": true,
+    "stability_stats": {
+      "changed_keys": 12,
+      "recurring_keys": 12,
       "later_changes": 0
     }
   }
