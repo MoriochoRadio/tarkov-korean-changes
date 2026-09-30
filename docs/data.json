@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T05:54:39Z",
+  "generated_at": "2026-09-30T06:00:50Z",
   "count": 47,
   "entries": [
     {
@@ -229,8 +229,8 @@
       },
       "interpreter": "groq:openai/gpt-oss-120b",
       "is_submarine": true,
-      "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 0회 변경됨(토글 키 18개) — 값이 더 갱신됨.",
+      "stability": "stable",
+      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 63,
