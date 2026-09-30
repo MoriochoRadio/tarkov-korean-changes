@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T06:00:50Z",
-  "count": 47,
+  "generated_at": "2026-09-30T06:07:10Z",
+  "count": 49,
   "entries": [
     {
       "entry_id": "1190",
@@ -892,6 +892,74 @@
       }
     },
     {
+      "entry_id": "1180",
+      "eft_version": "1.1.0.1.46911",
+      "posted_at": "Tuesday, 01 September 2026 - 02:15 PM EDT",
+      "scraped_at": "2026-09-30T06:06:00Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1180",
+      "files_changed": [
+        {
+          "path": "client/items/response.json",
+          "count": 1
+        },
+        {
+          "path": "client/settings/response.json",
+          "count": 1
+        },
+        {
+          "path": "client/locale/en/response.json",
+          "count": 4
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/items/response.json\n(1 change)\nclient/settings/response.json\n(1 change)\nclient/locale/en/response.json\n(4 changes)\nDated: Tuesday, 01 September 2026 - 02:15 PM EDT | Game Version 1.1.0.1.46911\nclient/items/response.json\n['data']\n+    (New) ['Testing area blueprint flash drive']: {\n+          \"_id\": \"Testing area blueprint flash drive\",\n+          \"_name\": \"item_flash_card_slider_ref\",\n+          \"_type\": \"Item\",\n+          \"_props\": {\n+            \"Name\": \"flashdrive\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"assets/content/items/infosubject/item_flash_card_slider.bundle\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 0.1,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": true,\n+            \"RarityPvE\": \"Not_exist\",\n+            \"ShortName\": \"flashdrive\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"Description\": \"flashdrive\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 30,\n+            \"NotShownInSlot\": false,\n+            \"BackgroundColor\": \"yellow\",\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"AnimationVariantsNumber\": 0,\n+            \"IsSecretExitRequirement\": false,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_proto\": \"Broken GPhone smartphone\",\n+          \"_parent\": \"Info\"\n+        }\nclient/settings/response.json\n['data']\n    ['config']\n        ['NotifierLobbyPercentage']\n-        (Old) 30\n+        (New) 70 (+133.33%)\nclient/locale/en/response.json\n['data']\n+    (New) ['6a91840a740be0cff50e0310 name']: Preliminary Survey\n+    (New) ['6a919148d1f99fb50b0f3113 Name']: Testing area blueprint flash drive\n+    (New) ['6a919148d1f99fb50b0f3113 ShortName']: Test area\n+    (New) ['6a919148d1f99fb50b0f3113 Description']: This Sliderkey flash drive may contain layouts and zoning plans for the area of the laboratory where various tests were planned. The real question is why Ref might need the Labs plans...\n← Back to all changes",
+      "summary_ko": "테스트 구역 설계도 플래시드라이브 아이템이 추가되고 로비 알림 비율이 30%에서 70%로 상승했으며, 해당 아이템의 영문명·짧은명·설명이 로케일에 추가되었습니다",
+      "tags": [
+        "아이템",
+        "UI"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "client/items/response.json['data']['Testing area blueprint flash drive']",
+          "before_ko": "해당 아이템이 존재하지 않음",
+          "after_ko": "새 아이템 'flashdrive'가 추가됨 (무게 0.1, 스택 1, 퀘스트 아이템, 판매 가능 등)",
+          "explanation_ko": "이 아이템은 테스트 구역 설계도를 담은 플래시드라이브로, 퀘스트 아이템이며 인벤토리에서 1개만 보관할 수 있습니다. 무게가 가볍고, 래그페어에서 판매 및 구매가 가능합니다. 아이템 설명과 색상이 노란색으로 지정돼 있어 시각적으로 구분됩니다.",
+          "impact_ko": "퀘스트 진행 시 새로운 아이템을 획득·사용할 수 있게 됩니다"
+        },
+        {
+          "key_path": "client/settings/response.json['data']['config']['NotifierLobbyPercentage']",
+          "before_ko": "30% (기존 로비 알림 표시 비율)",
+          "after_ko": "70% (새 로비 알림 표시 비율) (+133.33%)",
+          "explanation_ko": "NotifierLobbyPercentage는 로비 화면에서 알림이 표시되는 확률을 의미합니다. 값이 30에서 70으로 올랐으므로, 로비에 들어갔을 때 알림을 더 자주 보게 됩니다.",
+          "impact_ko": "플레이어는 로비에서 알림을 더 자주 확인하게 됩니다"
+        },
+        {
+          "key_path": "client/locale/en/response.json['data']['6a919148d1f99fb50b0f3113']",
+          "before_ko": "해당 로케일 키가 존재하지 않음",
+          "after_ko": "Name: \"Testing area blueprint flash drive\", ShortName: \"Test area\", Description: \"This Sliderkey flash drive may contain layouts and zoning plans for the area of the laboratory where various tests were planned...\"이 추가됨",
+          "explanation_ko": "새 아이템에 대한 영문 이름, 짧은 이름, 상세 설명이 로케일 파일에 등록되었습니다. 이는 게임 내 UI와 아이템 설명에 표시됩니다.",
+          "impact_ko": "아이템 정보를 영문으로 확인할 수 있게 됩니다"
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 패치노트와 일치하는 공지가 없으며, 게시 시점과 내용이 잠수함(비공개) 패치로 판단됩니다"
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "backfilled": true,
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 3,
+        "recurring_keys": 0,
+        "later_changes": 4
+      }
+    },
+    {
       "entry_id": "1179",
       "eft_version": "1.1.0.1.46911",
       "posted_at": "Monday, 24 August 2026 - 04:46 AM EDT",
@@ -927,12 +995,204 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 2
+        "later_changes": 3
+      }
+    },
+    {
+      "entry_id": "1178",
+      "eft_version": "1.1.0.1.46911",
+      "posted_at": "Sunday, 23 August 2026 - 10:55 AM EDT",
+      "scraped_at": "2026-09-30T06:06:04Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1178",
+      "files_changed": [
+        {
+          "path": "client/locations/response.json",
+          "count": 22
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/locations/response.json\n(22 changes)\nDated: Sunday, 23 August 2026 - 10:55 AM EDT | Game Version 1.1.0.1.46911\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Factory Day']\n            ['BossLocationSpawn']\n                ['Tagilla']\n                    ['BossChance']\n-                    (Old) 30\n+                    (New) 35 (+16.67%)\n        ['Customs']\n            ['BossLocationSpawn']\n                ['Reshala']\n                    ['BossChance']\n-                    (Old) 45\n+                    (New) 60 (+33.33%)\n                ['Goons (Knight)']\n                    ['BossChance']\n-                    (Old) 15\n+                    (New) 20 (+33.33%)\n                ['Partisan']\n                    ['BossChance']\n-                    (Old) 10\n+                    (New) 15 (+50.00%)\n                ['Cultist']\n                    ['BossChance']\n-                    (Old) 10\n+                    (New) 20 (+100.00%)\n        ['Woods']\n            ['BossLocationSpawn']\n                ['Shturman']\n                    ['BossChance']\n-                    (Old) 45\n+                    (New) 60 (+33.33%)\n                ['Goons (Knight)']\n                    ['BossChance']\n-                    (Old) 15\n+                    (New) 20 (+33.33%)\n                ['Partisan']\n                    ['BossChance']\n-                    (Old) 10\n+                    (New) 15 (+50.00%)\n                ['Cultist']\n                    ['BossChance']\n-                    (Old) 10\n+                    (New) 20 (+100.00%)\n        ['Lighthouse']\n            ['BossLocationSpawn']\n                ['Goons (Knight)']\n                    ['BossChance']\n-                    (Old) 15\n+                    (New) 20 (+33.33%)\n                ['Partisan']\n                    ['BossChance']\n-                    (Old) 10\n+                    (New) 15 (+50.00%)\n        ['Shoreline']\n            ['BossLocationSpawn']\n                ['Sanitar']\n                    ['BossChance']\n-                    (Old) 45\n+                    (New) 60 (+33.33%)\n                ['Goons (Knight)']\n                    ['BossChance']\n-                    (Old) 15\n+                    (New) 20 (+33.33%)\n                ['Partisan']\n                    ['BossChance']\n-                    (Old) 10\n+                    (New) 15 (+50.00%)\n                ['Cultist']\n                    ['BossChance']\n-                    (Old) 5\n+                    (New) 17 (+240.00%)\n        ['Reserve']\n            ['BossLocationSpawn']\n                ['Glukhar']\n                    ['BossChance']\n-                    (Old) 30\n+                    (New) 35 (+16.67%)\n        ['Interchange']\n            ['BossLocationSpawn']\n                ['Killa']\n                    ['BossChance']\n-                    (Old) 45\n+                    (New) 60 (+33.33%)\n                ['Tagilla']\n                    ['BossChance']\n-                    (Old) 25\n+                    (New) 35 (+40.00%)\n        ['Streets']\n            ['BossLocationSpawn']\n                ['Kaban']\n                    ['BossChance']\n-                    (Old) 45\n+                    (New) 60 (+33.33%)\n                ['Kolontay']\n                    ['BossChance']\n-                    (Old) 45\n+                    (New) 60 (+33.33%)\n        ['Factory Night']\n            ['BossLocationSpawn']\n                ['Tagilla']\n                    ['BossChance']\n-                    (Old) 45\n+                    (New) 60 (+33.33%)\n                ['Cultist']\n                    ['BossChance']\n-                    (Old) 4\n+                    (New) 8 (+100.00%)\n← Back to all changes",
+      "summary_ko": "다수 맵의 보스 및 적군 스폰 확률이 전반적으로 상승했습니다.",
+      "tags": [
+        "밸런스"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data.locations.Factory Day.BossLocationSpawn.Tagilla.BossChance",
+          "before_ko": "30",
+          "after_ko": "35 (+16.67%)",
+          "explanation_ko": "팩토리(낮)에서 태길라 보스가 스폰되는 확률을 의미합니다. 기존 30%에서 35%로 상승했습니다.",
+          "impact_ko": "태길라 보스를 마주칠 확률이 약간 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Customs.BossLocationSpawn.Reshala.BossChance",
+          "before_ko": "45",
+          "after_ko": "60 (+33.33%)",
+          "explanation_ko": "커스텀에서 레샬라 보스가 스폰되는 확률을 나타냅니다. 45%에서 60%로 크게 올랐습니다.",
+          "impact_ko": "레샬라 보스를 마주칠 가능성이 크게 높아집니다."
+        },
+        {
+          "key_path": "data.locations.Customs.BossLocationSpawn.Goons (Knight).BossChance",
+          "before_ko": "15",
+          "after_ko": "20 (+33.33%)",
+          "explanation_ko": "커스텀에서 나이트(고른) 적군이 스폰되는 확률입니다. 15%→20%로 상승했습니다.",
+          "impact_ko": "고른 적을 마주칠 확률이 약간 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Customs.BossLocationSpawn.Partisan.BossChance",
+          "before_ko": "10",
+          "after_ko": "15 (+50.00%)",
+          "explanation_ko": "커스텀에서 파르티잔 적이 스폰되는 확률을 의미합니다. 10%→15%로 상승했습니다.",
+          "impact_ko": "파르티잔 적을 마주칠 확률이 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Customs.BossLocationSpawn.Cultist.BossChance",
+          "before_ko": "10",
+          "after_ko": "20 (+100.00%)",
+          "explanation_ko": "커스텀에서 컬트 적이 스폰되는 확률입니다. 10%에서 20%로 두 배가 되었습니다.",
+          "impact_ko": "컬트 적을 마주칠 확률이 크게 늘어납니다."
+        },
+        {
+          "key_path": "data.locations.Woods.BossLocationSpawn.Shturman.BossChance",
+          "before_ko": "45",
+          "after_ko": "60 (+33.33%)",
+          "explanation_ko": "우즈에서 슈트르만 보스가 스폰되는 확률을 나타냅니다. 45%→60%로 상승했습니다.",
+          "impact_ko": "슈트르만 보스를 마주칠 확률이 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Woods.BossLocationSpawn.Goons (Knight).BossChance",
+          "before_ko": "15",
+          "after_ko": "20 (+33.33%)",
+          "explanation_ko": "우즈에서 고른 적이 스폰되는 확률이며, 15%→20%로 상승했습니다.",
+          "impact_ko": "고른 적을 마주칠 확률이 약간 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Woods.BossLocationSpawn.Partisan.BossChance",
+          "before_ko": "10",
+          "after_ko": "15 (+50.00%)",
+          "explanation_ko": "우즈에서 파르티잔 적이 스폰되는 확률이 10%에서 15%로 상승했습니다.",
+          "impact_ko": "파르티잔 적을 마주칠 확률이 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Woods.BossLocationSpawn.Cultist.BossChance",
+          "before_ko": "10",
+          "after_ko": "20 (+100.00%)",
+          "explanation_ko": "우즈에서 컬트 적이 스폰되는 확률이 10%에서 20%로 두 배가 되었습니다.",
+          "impact_ko": "컬트 적을 마주칠 확률이 크게 늘어납니다."
+        },
+        {
+          "key_path": "data.locations.Lighthouse.BossLocationSpawn.Goons (Knight).BossChance",
+          "before_ko": "15",
+          "after_ko": "20 (+33.33%)",
+          "explanation_ko": "라이트하우스에서 고른 적이 스폰되는 확률이 15%→20%로 상승했습니다.",
+          "impact_ko": "고른 적을 마주칠 확률이 약간 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Lighthouse.BossLocationSpawn.Partisan.BossChance",
+          "before_ko": "10",
+          "after_ko": "15 (+50.00%)",
+          "explanation_ko": "라이트하우스에서 파르티잔 적이 스폰되는 확률이 10%에서 15%로 상승했습니다.",
+          "impact_ko": "파르티잔 적을 마주칠 확률이 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Shoreline.BossLocationSpawn.Sanitar.BossChance",
+          "before_ko": "45",
+          "after_ko": "60 (+33.33%)",
+          "explanation_ko": "쇼어라인에서 사니타르 보스가 스폰되는 확률을 의미합니다. 45%→60%로 상승했습니다.",
+          "impact_ko": "사니타르 보스를 마주칠 확률이 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Shoreline.BossLocationSpawn.Goons (Knight).BossChance",
+          "before_ko": "15",
+          "after_ko": "20 (+33.33%)",
+          "explanation_ko": "쇼어라인에서 고른 적 스폰 확률이 15%에서 20%로 상승했습니다.",
+          "impact_ko": "고른 적을 마주칠 확률이 약간 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Shoreline.BossLocationSpawn.Partisan.BossChance",
+          "before_ko": "10",
+          "after_ko": "15 (+50.00%)",
+          "explanation_ko": "쇼어라인에서 파르티잔 적 스폰 확률이 10%→15%로 상승했습니다.",
+          "impact_ko": "파르티잔 적을 마주칠 확률이 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Shoreline.BossLocationSpawn.Cultist.BossChance",
+          "before_ko": "5",
+          "after_ko": "17 (+240.00%)",
+          "explanation_ko": "쇼어라인에서 컬트 적 스폰 확률이 5%에서 17%로 크게 상승했습니다.",
+          "impact_ko": "컬트 적을 마주칠 확률이 크게 늘어납니다."
+        },
+        {
+          "key_path": "data.locations.Reserve.BossLocationSpawn.Glukhar.BossChance",
+          "before_ko": "30",
+          "after_ko": "35 (+16.67%)",
+          "explanation_ko": "리저브에서 글루카르 보스 스폰 확률이 30%→35%로 상승했습니다.",
+          "impact_ko": "글루카르 보스를 마주칠 확률이 약간 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Interchange.BossLocationSpawn.Killa.BossChance",
+          "before_ko": "45",
+          "after_ko": "60 (+33.33%)",
+          "explanation_ko": "인터체인지에서 킬라 보스 스폰 확률이 45%→60%로 상승했습니다.",
+          "impact_ko": "킬라 보스를 마주칠 확률이 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Interchange.BossLocationSpawn.Tagilla.BossChance",
+          "before_ko": "25",
+          "after_ko": "35 (+40.00%)",
+          "explanation_ko": "인터체인지에서 태길라 보스 스폰 확률이 25%에서 35%로 상승했습니다.",
+          "impact_ko": "태길라 보스를 마주칠 확률이 크게 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Streets.BossLocationSpawn.Kaban.BossChance",
+          "before_ko": "45",
+          "after_ko": "60 (+33.33%)",
+          "explanation_ko": "스트리트에서 카반 보스 스폰 확률이 45%→60%로 상승했습니다.",
+          "impact_ko": "카반 보스를 마주칠 확률이 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Streets.BossLocationSpawn.Kolontay.BossChance",
+          "before_ko": "45",
+          "after_ko": "60 (+33.33%)",
+          "explanation_ko": "스트리트에서 콜론타이 보스 스폰 확률이 45%→60%로 상승했습니다.",
+          "impact_ko": "콜론타이 보스를 마주칠 확률이 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Factory Night.BossLocationSpawn.Tagilla.BossChance",
+          "before_ko": "45",
+          "after_ko": "60 (+33.33%)",
+          "explanation_ko": "팩토리(밤)에서 태길라 보스 스폰 확률이 45%→60%로 상승했습니다.",
+          "impact_ko": "밤 팩토리에서 태길라 보스를 마주칠 확률이 증가합니다."
+        },
+        {
+          "key_path": "data.locations.Factory Night.BossLocationSpawn.Cultist.BossChance",
+          "before_ko": "4",
+          "after_ko": "8 (+100.00%)",
+          "explanation_ko": "팩토리(밤)에서 컬트 적 스폰 확률이 4%에서 8%로 두 배가 되었습니다.",
+          "impact_ko": "밤 팩토리에서 컬트 적을 마주칠 확률이 크게 늘어납니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 패치노트에 해당 보스 스폰 확률 조정 내용이 언급되지 않아 잠수함(비공식) 패치로 판단됩니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "backfilled": true,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 22개 중 19개가 값이 이전 상태로 되돌아오는 토글 키(86%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
+      "stability_stats": {
+        "changed_keys": 22,
+        "recurring_keys": 19,
+        "later_changes": 0
       }
     },
     {
@@ -971,12 +1231,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 3
+        "later_changes": 4
       }
     },
     {
@@ -1014,13 +1274,13 @@
         "reason_ko": "공식 패치노트에 해당 내용이 없으며, 클라이언트 로케일 파일에만 추가된 것으로 보아 잠수함(비공식) 패치로 판단됩니다"
       },
       "is_submarine": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 0
+        "later_changes": 1
       }
     },
     {
@@ -1217,7 +1477,7 @@
       "stability_stats": {
         "changed_keys": 47,
         "recurring_keys": 30,
-        "later_changes": 0
+        "later_changes": 17
       }
     },
     {
@@ -1891,12 +2151,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 2,
         "recurring_keys": 0,
-        "later_changes": 1
+        "later_changes": 2
       }
     },
     {
@@ -1968,12 +2228,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 84,
         "recurring_keys": 2,
-        "later_changes": 4
+        "later_changes": 5
       }
     },
     {
@@ -2254,7 +2514,7 @@
       "stability_stats": {
         "changed_keys": 41,
         "recurring_keys": 21,
-        "later_changes": 4
+        "later_changes": 6
       }
     },
     {
@@ -2489,12 +2749,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 32회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 35회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 51,
         "recurring_keys": 22,
-        "later_changes": 32
+        "later_changes": 35
       }
     },
     {
