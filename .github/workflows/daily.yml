@@ -9,7 +9,6 @@ on:
 
 permissions:
   contents: write   # data/ 와 docs/ 변경을 커밋하기 위해 필요
-  models: read      # (구) GitHub Models 폴백용 — Groq 이전 완료 후 제거 가능
 
 concurrency:
   group: daily-pipeline
@@ -21,10 +20,10 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: 체크아웃
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: 파이썬 설정
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -33,17 +32,18 @@ jobs:
 
       - name: 파이프라인 실행 (스크래핑→해석→빌드)
         env:
-          # 기본: Groq(무료 티어) — GitHub Models 가 2026-08 retirement brownout 으로
-          # 410 을 반환해 이전함. GROQ_API_KEY 시크릿 등록 시 스크립트가 자동으로
-          # groq 를 선택한다(키 없으면 구 github 경로 → 실패하지만 스텁 커밋은 방지).
+          # 기본: Groq(무료 티어). 모델은 실행 때마다 Groq 활성 모델 목록에서 자동 선택하므로
+          # 무료 모델이 폐지돼도 코드 수정이 필요 없다. 특정 모델 고정은 Variables 의 GROQ_MODEL(선택).
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL }}
           LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
           LLM_MODEL: ${{ vars.LLM_MODEL }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # 다른 제공자로 바꾸고 싶을 때만 아래 Secret 을 등록하세요(선택).
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PATCHNOTES_URL: ${{ vars.PATCHNOTES_URL }}
+          # 사람 조치가 필요한 상황(키 인증 실패·쓸 수 있는 모델 없음 등)을 기록 → 마지막 단계가 판정
+          ALERT_FILE: ${{ runner.temp }}/needs_human.txt
         run: python pipeline.py
 
       - name: 변경분 커밋
@@ -58,3 +58,17 @@ jobs:
             git pull --rebase origin main  # 수동 커밋과 겹칠 때 non-fast-forward 방어
             git push
           fi
+
+      - name: 사람 조치 필요 여부 확인
+        # 커밋·배포가 끝난 뒤에만 런을 실패시킨다 — 데이터는 매일 반영되고(60일 무활동으로
+        # schedule 이 꺼지는 것도 방지), 사람이 봐야 할 때만 GitHub 이 소유자에게 실패 메일을 보낸다.
+        # 일시 오류(429/5xx/네트워크)는 스크립트가 재시도·보류로 흡수하므로 여기 오지 않는다.
+        run: |
+          f="${{ runner.temp }}/needs_human.txt"
+          if [ -s "$f" ]; then
+            while IFS= read -r line; do
+              if [ -n "$line" ]; then echo "::error::사람 조치 필요 — ${line//%/%25}"; fi
+            done < "$f"
+            exit 1
+          fi
+          echo "사람 조치 필요 없음"

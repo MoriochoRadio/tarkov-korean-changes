@@ -10,7 +10,7 @@
 
 [![GitHub Pages](https://img.shields.io/badge/Hosting-GitHub_Pages-222?logo=github)](https://moriochoradio.github.io/tarkov-korean-changes/)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![LLM](https://img.shields.io/badge/LLM-GitHub_Models_(무료)-6f42c1?logo=github)](https://docs.github.com/en/github-models)
+[![LLM](https://img.shields.io/badge/LLM-Groq_(무료·모델_자동_선택)-f55036)](https://console.groq.com/docs/models)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Data](https://img.shields.io/badge/원본-tarkov--changes.com-4aa3c9)](https://changes.tarkov-changes.com/)
 
@@ -95,10 +95,10 @@ A. 데이터가 하루 한 번만 바뀌므로 서버·DB·프레임워크가 �
 A. 잠수함 패치는 공지가 없어서 "이 변경이 지금도 유효한가?"를 알 수 없다는 게 진짜 문제였습니다. 그래서 diff 를 `(파일, 키 경로, 이전값, 새값)` 단위로 파싱해 전체 이력의 키별 타임라인 인덱스를 만들고, 같은 키가 이후 다시 바뀌는지 / 값이 이전 상태로 되돌아오는(토글) 키가 과반인지로 `stable / superseded / recurring` 을 자동 분류합니다(`scripts/stability.py`). 이 로직이 "영구 패치처럼 보이던 경험치 배율 변경"이 사실 주말마다 켰다 꺼지는 이벤트임을 데이터로 증명했습니다.
 
 **Q. 왜 GitHub Actions 인가?**
-A. 하루 1회 cron 배치에 상시 서버는 필요 없고, Actions 는 수집 → LLM 해석 → 결과 커밋 → Pages 배포까지 한 플랫폼에서 무료로 끝납니다. 자동 제공되는 `GITHUB_TOKEN` 하나로 커밋 권한과 GitHub Models 호출(`permissions: contents: write, models: read`)을 모두 해결하므로 별도 시크릿 관리도 없습니다. cron 을 정각이 아닌 14:23 UTC 로 잡은 것도 GitHub cron 혼잡 시간대의 1~2시간 지연을 실측 후 회피한 결과입니다.
+A. 하루 1회 cron 배치에 상시 서버는 필요 없고, Actions 는 수집 → LLM 해석 → 결과 커밋 → Pages 배포까지 한 플랫폼에서 무료로 끝납니다. 커밋 권한은 자동 제공되는 `GITHUB_TOKEN`(`permissions: contents: write`)으로, LLM 호출은 `GROQ_API_KEY` 시크릿 하나로 해결합니다. 사람이 봐야 하는 상황(키 인증 실패, 쓸 수 있는 모델 없음, 수집 이틀 연속 실패, 보류 항목 3일 이상 정체)에서만 **커밋·배포를 마친 뒤** 마지막 단계가 실패해 GitHub 실패 메일로 알림을 받습니다. cron 을 정각이 아닌 14:23 UTC 로 잡은 것도 GitHub cron 혼잡 시간대의 1~2시간 지연을 실측 후 회피한 결과입니다.
 
-**Q. LLM 은 왜 GitHub Models 를 기본으로 했나?**
-A. 하루 1회 호출이라 무료 한도로 충분하고, Actions 의 `GITHUB_TOKEN` 을 그대로 쓰므로 API 키 등록·비용·유출 걱정이 전부 사라집니다. 다만 `scripts/interpret.py` 를 provider 추상화로 만들어 환경변수 하나로 Anthropic/OpenAI 전환이 가능하고, 키가 없으면 스텁 모드로 파이프라인이 끊기지 않게 했습니다. LLM 호출이 실패해도 그날 항목을 "해석 대기"로 보류해 두었다가 다음 실행에서 자동 재시도합니다.
+**Q. LLM 은 왜 Groq 이고, 모델은 어떻게 고르나?**
+A. 하루 1회 호출이라 Groq 무료 티어로 충분합니다. 다만 무료 모델은 수개월 단위로 사라져서(2026년 여름 GitHub Models 폐지, Groq llama-3.3-70b 종료) 그때마다 코드를 고쳐야 했기에 **모델 자동 선택**으로 바꿨습니다. 실행 때마다 Groq 활성 모델 목록을 조회해 선호 순서(`gpt-oss-120b` → `qwen3.8-27b` → `gpt-oss-20b` → 그 외 gpt-oss/qwen/kimi/llama 계열)로 시도하고, 폐지·미존재 오류면 다음 후보로, 모델이 거부하는 파라미터는 빼고 재시도합니다. 해석한 모델은 각 항목의 `interpreter` 필드에 남습니다. 429/5xx 같은 일시 오류는 재시도로 흡수하고, 그래도 실패하면 그날 항목을 "해석 대기"로 보류했다가 다음 실행에서 자동 재시도합니다 — 키 무효·쓸 수 있는 모델 없음처럼 **사람 조치가 필요할 때만** 실패 메일이 옵니다. `scripts/interpret.py` 는 provider 추상화라 환경변수 하나로 Anthropic/OpenAI 전환도 가능합니다.
 
 ## 📚 과거 이력 백필(선택)
 
@@ -147,16 +147,18 @@ python scripts/backfill_apply.py
    - Branch: **main** / 폴더 **`/docs`** 선택 → Save
    - 잠시 후 `https://<사용자명>.github.io/<저장소명>/` 에서 확인.
 
-3. **LLM 설정 — 기본은 GitHub Models(무료, 키 불필요)** 🎉
-   별도 설정 없이 바로 동작합니다. 워크플로가 GitHub Actions 가 자동 제공하는
-   `GITHUB_TOKEN` 으로 [GitHub Models](https://docs.github.com/en/github-models)를
-   호출하기 때문에 **API 키 등록도, 비용도 없습니다.** (하루 1회 호출이라 무료 한도로 충분)
+3. **LLM 설정 — Groq 무료 티어, 모델 자동 선택** 🎉
+   [Groq](https://console.groq.com/keys)에서 무료 API 키를 발급해
+   `Settings → Secrets and variables → Actions → Secrets` 에 `GROQ_API_KEY` 로 등록하면 끝입니다.
+   모델은 실행 때마다 활성 목록에서 자동으로 고르므로 **무료 모델이 폐지돼도 손댈 필요가 없습니다.**
+   (하루 1회 호출이라 무료 한도로 충분) 키 인증 실패·쓸 수 있는 모델 없음처럼 사람 조치가
+   필요한 상황에서만 워크플로가 커밋·배포 후 실패해 GitHub 실패 메일이 옵니다.
 
-   - 모델만 바꾸고 싶다면 `Settings → Secrets and variables → Actions → Variables`:
-     - `LLM_MODEL` = 예) `openai/gpt-4o`, `openai/gpt-4o-mini`, `meta/Llama-3.3-70B-Instruct`
+   - 선택 설정은 `Settings → Secrets and variables → Actions → Variables`:
+     - `GROQ_MODEL` = 특정 모델 고정, 예) `openai/gpt-oss-120b` (목록에서 사라지면 자동 선택으로 복귀)
      - `PATCHNOTES_URL` = 공식 패치노트 페이지 URL(기본: EFT 공식 뉴스)
    - **유료 제공자로 전환**하고 싶을 때만(선택):
-     - **Variables** → `LLM_PROVIDER` = `anthropic` 또는 `openai`
+     - **Variables** → `LLM_PROVIDER` = `anthropic` 또는 `openai` (모델은 `LLM_MODEL`)
      - **Secrets** → `ANTHROPIC_API_KEY` 또는 `OPENAI_API_KEY` 등록
 
 4. **워크플로 권한 확인** — `Settings → Actions → General → Workflow permissions` →
@@ -170,8 +172,8 @@ python scripts/backfill_apply.py
 ```bash
 pip install -r requirements.txt
 
-# 1) GitHub Models 로 자동 해석 (무료) — GitHub 토큰만 있으면 됨
-export GITHUB_TOKEN=ghp_...               # models:read 권한이 있는 토큰
+# 1) Groq 로 자동 해석 (무료 티어, 모델 자동 선택)
+export GROQ_API_KEY=gsk_...
 python pipeline.py
 
 # 1-b) 유료 제공자로 해석
@@ -200,7 +202,7 @@ cd docs && python -m http.server 8000
 - 비로그인 `/latest` 는 최신 1건이지만, `/list`·`/view/{id}` 로 과거 이력에도 접근할 수 있습니다
   (백필은 이를 이용). 일상 파이프라인은 매일 최신 변경을 누적하는 방식입니다.
 - 사이트 구조가 바뀌면 `scripts/scrape.py` 의 파싱을 조정해야 할 수 있습니다.
-- 기본 제공자(GitHub Models)는 무료입니다. 유료 제공자로 바꿀 때만 API 비용이 발생합니다.
+- 기본 제공자(Groq 무료 티어)는 무료입니다. 유료 제공자로 바꿀 때만 API 비용이 발생합니다.
 - 원본 사이트와 BSG 의 약관·robots 정책을 존중하세요. 과도한 요청을 피하기 위해 하루 1회만 호출합니다.
 
 ## 📜 라이선스 / 면책

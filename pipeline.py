@@ -20,7 +20,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -44,6 +46,15 @@ FEED_LIMIT = 200  # 사이트에 노출할 최대 항목 수
 RAW_TEXT_STORE_LIMIT = 100_000  # data/entries.json 보존 상한(stability 파싱용 여유)
 RAW_TEXT_FEED_LIMIT = 20_000    # docs/data.json(사이트 전송) 상한
 TRUNC_NOTICE = "\n\n…(원문이 매우 커서 잘렸습니다 — 전체는 원본 링크에서 확인)"
+
+HELD_TAG = "해석대기"  # LLM 실패로 보류된 항목 표식 — 원문은 이미 있으므로 재수집 없이 재해석
+RAW_KEYS = ("entry_id", "eft_version", "posted_at", "scraped_at", "source_url",
+            "files_changed", "raw_text")
+# 보류(공개 대기/해석 대기) 항목이 이 기간 넘게 안 풀리면 재시도로 해결되지 않는 문제로 보고 알린다
+STALE_HELD_DAYS = 3
+# 사람 조치가 필요한 상황(수집 장기 실패 등). interpret.NEEDS_HUMAN 과 합쳐 런 끝에 보고하고,
+# ALERT_FILE 이 지정되면(워크플로) 거기에 기록 → 커밋·배포 뒤 마지막 단계가 런을 실패시킨다.
+ALERTS: list[str] = []
 
 
 def clip_raw(text: str | None, limit: int) -> str:
@@ -88,10 +99,12 @@ def make_locked_entry(raw: dict) -> dict:
 
 
 def reprocess_locked(entries: list[dict], notes: list[dict]) -> bool:
-    """이전에 '공개 대기'로 보류된 항목을 /view/{id} 로 재수집한다.
+    """이전에 보류된 항목을 다시 처리한다.
 
-    잠금이 풀려 실제 변경 본문이 보이면 LLM 해석으로 교체하고, 아직 잠겨 있으면
-    그대로 둔다. 정렬이 흔들리지 않도록 원래 scraped_at 은 보존한다.
+    - '공개 대기'(원본 잠금): /view/{id} 로 재수집해 잠금이 풀렸으면 LLM 해석으로 교체.
+    - '해석 대기'(LLM 실패): 저장해 둔 원문으로 바로 재해석(재수집 불필요 — 해시 ID 도 복구).
+    LLM 이 또 실패하면 보류를 유지하고 다음 실행에서 다시 시도한다(런은 계속 진행).
+    정렬이 흔들리지 않도록 원래 scraped_at 은 보존한다.
     반환값: 하나라도 갱신했으면 True.
     """
     changed = False
@@ -99,19 +112,28 @@ def reprocess_locked(entries: list[dict], notes: list[dict]) -> bool:
         if not e.get("locked"):
             continue
         eid = e.get("entry_id")
-        if not eid or not str(eid).isdigit():
-            print(f"[reprocess] {eid}: view id 가 아니어서 재수집 불가 — 유지")
-            continue
+        stored = e.get("raw_text") or ""
+        if (HELD_TAG in (e.get("tags") or []) and scraper.has_diff(stored)
+                and not scraper.is_locked(stored)):
+            raw = {k: e.get(k) for k in RAW_KEYS}
+        else:
+            if not eid or not str(eid).isdigit():
+                print(f"[reprocess] {eid}: view id 가 아니어서 재수집 불가 — 유지")
+                continue
+            try:
+                raw = scraper.scrape_view(eid)
+            except Exception as ex:  # noqa: BLE001
+                print(f"[reprocess] {eid}: 재수집 실패(유지) — {ex}")
+                continue
+            rt = raw.get("raw_text", "")
+            if scraper.is_locked(rt) or not scraper.has_diff(rt):
+                print(f"[reprocess] {eid}: 아직 잠김 — 유지")
+                continue
         try:
-            raw = scraper.scrape_view(eid)
+            processed = interp.interpret(raw, notes)
         except Exception as ex:  # noqa: BLE001
-            print(f"[reprocess] {eid}: 재수집 실패(유지) — {ex}")
+            print(f"[reprocess] {eid}: 해석 실패(보류 유지, 다음 실행 때 재시도) — {ex}")
             continue
-        rt = raw.get("raw_text", "")
-        if scraper.is_locked(rt) or not scraper.has_diff(rt):
-            print(f"[reprocess] {eid}: 아직 잠김 — 유지")
-            continue
-        processed = interp.interpret(raw, notes)
         processed.pop("locked", None)
         processed["scraped_at"] = e.get("scraped_at") or processed.get("scraped_at")
         entries[i] = processed
@@ -224,9 +246,12 @@ def run(force: bool = False, from_file: str | None = None) -> int:
         except Exception as ex:  # noqa: BLE001
             # 업스트림 장애(수 분 이상 지속되는 502 등) — 기존 데이터로 피드는 재생성하고,
             # 1회성이면 조용히 넘어간다. /latest 는 최신 1건만 보여줘 이틀 연속이면
-            # 유실 위험이 실제가 되므로 그때만 런을 실패시켜 알림을 받는다.
+            # 유실 위험이 실제가 되므로 그때만 '사람 조치 필요'로 보고해 알림을 받는다
+            # (커밋은 그대로 진행되고, 워크플로 마지막 단계가 런을 실패시킨다).
             fails = _scrape_failures()
             print(f"[scrape] 실패({fails}일 연속): {ex}")
+            if fails >= 2:
+                ALERTS.append(f"원본 수집 {fails}일 연속 실패 — /latest 특성상 유실 위험: {ex}")
             entries = load_entries()
             if any(e.get("locked") for e in entries):
                 try:
@@ -234,7 +259,7 @@ def run(force: bool = False, from_file: str | None = None) -> int:
                 except Exception as ex2:  # noqa: BLE001
                     print(f"[reprocess] 보류 항목 재처리 실패(무시): {ex2}")
             finalize(entries)
-            return 1 if fails >= 2 else 0
+            return 0
         _scrape_failures(reset=True)
         print(f"[scrape] entry_id={raw.get('entry_id')} ver={raw.get('eft_version')}")
 
@@ -278,12 +303,12 @@ def run(force: bool = False, from_file: str | None = None) -> int:
             processed = interp.interpret(raw, get_notes())
         except Exception as ex:  # noqa: BLE001
             # LLM 쪽 장애로 그날 항목이 통째로 빠지지 않게 '해석 대기'로 보류.
-            # locked=True 라 숫자 ID면 다음 실행의 reprocess_locked 가 자동 재시도한다.
+            # locked=True 라 다음 실행의 reprocess_locked 가 저장된 원문으로 자동 재시도한다.
             print(f"[interpret] 실패 — 해석 보류로 저장, 다음 실행 때 재시도: {ex}")
             held = make_locked_entry(raw)
             held["summary_ko"] = ("⏳ 해석 대기 중 — 자동 해석이 일시적으로 실패해 "
                                   "다음 갱신 때 다시 시도합니다.")
-            held["tags"] = ["해석대기"]
+            held["tags"] = [HELD_TAG]
             held["patch_note"]["reason_ko"] = "LLM 호출 실패로 아직 분석하지 않았습니다."
             entries = [e for e in entries if e.get("entry_id") != held.get("entry_id")]
             entries.append(held)
@@ -295,13 +320,50 @@ def run(force: bool = False, from_file: str | None = None) -> int:
     else:
         print("[skip] 이미 처리된 변경입니다. (신규 없음)")
 
-    # 3) 이전에 보류된 '공개 대기' 항목 재처리(잠금 풀렸으면 실제 해석으로 교체)
+    # 3) 이전에 보류된 '공개/해석 대기' 항목 재처리(풀렸으면 실제 해석으로 교체).
+    #    여기서 무엇이 실패해도 수집분 저장·커밋·배포는 계속되어야 한다.
     if any(e.get("locked") for e in entries):
-        reprocess_locked(entries, get_notes())
+        try:
+            reprocess_locked(entries, get_notes())
+        except Exception as ex:  # noqa: BLE001
+            print(f"[reprocess] 보류 항목 재처리 실패(무시): {ex}")
 
     # 4) 안정성 자동 판정 → 저장 → 피드 재생성
     finalize(entries)
     return 0
+
+
+def stale_held(entries: list[dict], days: int = STALE_HELD_DAYS) -> list[str]:
+    """보류 상태가 days 일 넘게 풀리지 않은 항목 — 재시도로 해결되지 않는 문제의 신호."""
+    now = datetime.now(timezone.utc)
+    out = []
+    for e in entries:
+        if not e.get("locked"):
+            continue
+        try:
+            t = datetime.strptime(e.get("scraped_at") or "", "%Y-%m-%dT%H:%M:%SZ")
+        except ValueError:
+            continue
+        age = (now - t.replace(tzinfo=timezone.utc)).days
+        if age >= days:
+            out.append(f"{e.get('entry_id')}({'/'.join(e.get('tags') or [])} {age}일째)")
+    return out
+
+
+def report_alerts(entries: list[dict]) -> None:
+    """사람 조치가 필요한 상황만 모아 출력하고, ALERT_FILE 이 있으면 기록한다.
+
+    일시 오류는 여기 오지 않는다(재시도·보류로 흡수). 신규 변경이 없는 날도 정상.
+    """
+    stale = stale_held(entries)
+    if stale:
+        ALERTS.append(f"보류 항목이 {STALE_HELD_DAYS}일 넘게 풀리지 않음: {', '.join(stale)}")
+    msgs = [m.replace("\n", " ") for m in dict.fromkeys(ALERTS + interp.NEEDS_HUMAN)]
+    for m in msgs:
+        print(f"[alert] 사람 조치 필요: {m}")
+    path = os.environ.get("ALERT_FILE")
+    if path and msgs:
+        Path(path).write_text("\n".join(msgs) + "\n", encoding="utf-8")
 
 
 def main() -> int:
@@ -309,7 +371,9 @@ def main() -> int:
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--from-file")
     args = ap.parse_args()
-    return run(force=args.force, from_file=args.from_file)
+    rc = run(force=args.force, from_file=args.from_file)
+    report_alerts(load_entries())
+    return rc
 
 
 if __name__ == "__main__":

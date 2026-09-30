@@ -10,7 +10,7 @@
 
 [![GitHub Pages](https://img.shields.io/badge/Hosting-GitHub_Pages-222?logo=github)](https://moriochoradio.github.io/tarkov-korean-changes/)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![LLM](https://img.shields.io/badge/LLM-GitHub_Models_(무료)-6f42c1?logo=github)](https://docs.github.com/en/github-models)
+[![LLM](https://img.shields.io/badge/LLM-Groq_(free·auto_model_selection)-f55036)](https://console.groq.com/docs/models)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Data](https://img.shields.io/badge/원본-tarkov--changes.com-4aa3c9)](https://changes.tarkov-changes.com/)
 
@@ -95,10 +95,10 @@ A. The data changes only once a day, so a server, database, and framework are al
 A. Silent changes come with no announcement, so the real problem was that you couldn't tell "is this change still in effect?" So I parse diffs into `(file, key path, old value, new value)` units, build a per-key timeline index over the full history, and auto-classify as `stable / superseded / recurring` based on whether the same key changes again later, or whether toggles reverting to a previous value form the majority (`scripts/stability.py`). This logic proved with data that an "XP multiplier change that looked like a permanent patch" was actually an event switching on and off every weekend.
 
 **Q. Why GitHub Actions?**
-A. A once-a-day cron batch needs no always-on server, and Actions covers collect → LLM interpretation → commit results → Pages deploy on one platform, for free. The automatically provided `GITHUB_TOKEN` alone handles both commit permission and GitHub Models calls (`permissions: contents: write, models: read`), so there's no separate secret management either. Setting the cron to 14:23 UTC rather than on the hour was also the result of measuring, then avoiding, the 1–2 hour delays of GitHub's congested cron slots.
+A. A once-a-day cron batch needs no always-on server, and Actions covers collect → LLM interpretation → commit results → Pages deploy on one platform, for free. Commit permission comes from the automatically provided `GITHUB_TOKEN` (`permissions: contents: write`), and LLM calls need just one secret, `GROQ_API_KEY`. Only when a human needs to look (key authentication failure, no usable model, two consecutive days of scrape failures, held entries stuck for 3+ days) does the last step fail **after the commit and deploy are done**, so the alert arrives as GitHub's failure email. Setting the cron to 14:23 UTC rather than on the hour was also the result of measuring, then avoiding, the 1–2 hour delays of GitHub's congested cron slots.
 
-**Q. Why GitHub Models as the default LLM?**
-A. With one call a day, the free tier is plenty, and since it uses Actions' `GITHUB_TOKEN` as-is, worries about API key registration, cost, and leakage all disappear. That said, `scripts/interpret.py` is built with a provider abstraction so a single environment variable switches to Anthropic/OpenAI, and without a key it runs in stub mode so the pipeline never breaks. Even if an LLM call fails, that day's entries are held as "pending interpretation" and automatically retried on the next run.
+**Q. Why Groq, and how is the model chosen?**
+A. With one call a day, Groq's free tier is plenty. But free models disappear on a scale of months (in summer 2026, GitHub Models was retired and Groq's llama-3.3-70b was shut down), and each time the code had to be fixed — so I switched to **automatic model selection**. Every run queries Groq's list of active models and tries them in order of preference (`gpt-oss-120b` → `qwen3.8-27b` → `gpt-oss-20b` → other gpt-oss/qwen/kimi/llama models), moving to the next candidate on a retired/not-found error and retrying without any parameter a model rejects. The model that produced each interpretation is recorded in the entry's `interpreter` field. Transient errors such as 429/5xx are absorbed by retries; if it still fails, that day's entry is held as "pending interpretation" and automatically retried on the next run — a failure email arrives **only when a human needs to act**, such as an invalid key or no usable model. `scripts/interpret.py` is built with a provider abstraction, so a single environment variable also switches to Anthropic/OpenAI.
 
 ## 📚 Historical Backfill (Optional)
 
@@ -147,17 +147,19 @@ python scripts/backfill_apply.py
    - Branch: **main** / folder **`/docs`** → Save
    - After a moment, check `https://<username>.github.io/<repo-name>/`.
 
-3. **LLM setup — GitHub Models by default (free, no key required)** 🎉
-   It works out of the box with no extra configuration. The workflow calls
-   [GitHub Models](https://docs.github.com/en/github-models) with the `GITHUB_TOKEN`
-   automatically provided by GitHub Actions, so **there is no API key registration and no cost.**
-   (One call a day, so the free tier is plenty.)
+3. **LLM setup — Groq free tier, automatic model selection** 🎉
+   Get a free API key from [Groq](https://console.groq.com/keys) and register it as `GROQ_API_KEY`
+   under `Settings → Secrets and variables → Actions → Secrets` — that's it.
+   The model is picked automatically from the active list on every run, so **there's nothing to change
+   when a free model is retired.** (One call a day, so the free tier is plenty.) Only in situations that
+   need a human — key authentication failure, no usable model — does the workflow fail after committing
+   and deploying, which sends GitHub's failure email.
 
-   - To change just the model, go to `Settings → Secrets and variables → Actions → Variables`:
-     - `LLM_MODEL` = e.g. `openai/gpt-4o`, `openai/gpt-4o-mini`, `meta/Llama-3.3-70B-Instruct`
+   - Optional settings under `Settings → Secrets and variables → Actions → Variables`:
+     - `GROQ_MODEL` = pin a specific model, e.g. `openai/gpt-oss-120b` (falls back to automatic selection if it disappears from the list)
      - `PATCHNOTES_URL` = URL of the official patch notes page (default: EFT official news)
    - Only if you want to **switch to a paid provider** (optional):
-     - **Variables** → `LLM_PROVIDER` = `anthropic` or `openai`
+     - **Variables** → `LLM_PROVIDER` = `anthropic` or `openai` (model via `LLM_MODEL`)
      - **Secrets** → register `ANTHROPIC_API_KEY` or `OPENAI_API_KEY`
 
 4. **Check workflow permissions** — `Settings → Actions → General → Workflow permissions` →
@@ -171,8 +173,8 @@ python scripts/backfill_apply.py
 ```bash
 pip install -r requirements.txt
 
-# 1) Automatic interpretation with GitHub Models (free) — all you need is a GitHub token
-export GITHUB_TOKEN=ghp_...               # a token with models:read permission
+# 1) Automatic interpretation with Groq (free tier, automatic model selection)
+export GROQ_API_KEY=gsk_...
 python pipeline.py
 
 # 1-b) Interpret with a paid provider
@@ -201,7 +203,7 @@ cd docs && python -m http.server 8000
 - The no-login `/latest` page shows only the single most recent change, but past history is also accessible
   via `/list` and `/view/{id}` (the backfill uses this). The everyday pipeline accumulates the latest change daily.
 - If the site's structure changes, the parsing in `scripts/scrape.py` may need adjusting.
-- The default provider (GitHub Models) is free. API costs arise only if you switch to a paid provider.
+- The default provider (Groq free tier) is free. API costs arise only if you switch to a paid provider.
 - Respect the source site's and BSG's terms of service and robots policies. To avoid excessive requests, calls are made only once a day.
 
 ## 📜 License / Disclaimer

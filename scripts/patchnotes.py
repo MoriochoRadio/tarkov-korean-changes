@@ -21,8 +21,9 @@ import os
 import re
 from pathlib import Path
 
-DEFAULT_PATCHNOTES_URL = os.environ.get(
-    "PATCHNOTES_URL", "https://www.escapefromtarkov.com/news"
+# 워크플로는 미설정 Variable 을 빈 문자열로 넘기므로 get(키, 기본값)이 아니라 `or` 로 기본값 적용
+DEFAULT_PATCHNOTES_URL = (
+    os.environ.get("PATCHNOTES_URL") or "https://www.escapefromtarkov.com/news"
 )
 MANUAL_PATH = Path(__file__).resolve().parent.parent / "data" / "patchnotes_manual.json"
 HEADERS = {"User-Agent": "TarkovKoreanChanges/1.0 (+github pages static site)"}
