@@ -10,6 +10,7 @@ tarkov-changes diff(raw_text)를 (파일, 키경로, 이전값, 새값) 단위�
   - "stable"     : 이 변경 이후 동일 키가 다시 바뀐 적 없음 → 현재까지 유지
   - "superseded" : 이후 동일 키가 다시 바뀜(되돌이는 아님) → 값이 더 갱신됨
   - "recurring"  : 동일 키 값이 이전 상태로 되돌아오는 토글이 관찰됨 → 반복(이벤트성)
+  - "unknown"    : diff 에서 키를 하나도 파싱하지 못함 → 판정 불가(배지·카운트 제외)
 
 부가:
   - recurring 이면 recurring_event=True 로 표시할 수 있다(주말 부스트 등).
@@ -18,6 +19,7 @@ tarkov-changes diff(raw_text)를 (파일, 키경로, 이전값, 새값) 단위�
 from __future__ import annotations
 
 import re
+from datetime import datetime, timedelta, timezone
 from typing import Iterable
 
 # 순수 경로 라인:  들여쓰기 + ['key']  (단, +/- 마커나 (Old)/(New) 가 없는 줄)
@@ -113,11 +115,52 @@ def parse_changes(raw_text: str) -> list[dict]:
     return out
 
 
+_MONTHS = {m: i for i, m in enumerate(
+    ("january", "february", "march", "april", "may", "june", "july",
+     "august", "september", "october", "november", "december"), start=1)}
+# 원본 게시 시각은 미 동부 시간(EDT/EST) 표기
+_TZ_HOURS = {"EDT": -4, "EST": -5, "UTC": 0, "GMT": 0}
+_POSTED_RE = re.compile(
+    r"(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})(?:\s*-\s*(\d{1,2}):(\d{2})\s*([AP]M))?\s*([A-Z]{3,4})?", re.I
+)
+
+
+def entry_time(entry: dict) -> float:
+    """정렬용 시각(UTC epoch 초). 원본 게시 시각(posted_at) 우선, 없으면 수집 시각(scraped_at), 둘 다 없으면 0.
+
+    예: "Tuesday, 29 September 2026 - 11:41 AM EDT"
+    """
+    m = _POSTED_RE.search(entry.get("posted_at") or "")
+    if m and m.group(2).lower() in _MONTHS:
+        hour = int(m.group(4) or 12)
+        ampm = (m.group(6) or "").upper()
+        if ampm == "PM" and hour < 12:
+            hour += 12
+        elif ampm == "AM" and hour == 12:
+            hour = 0
+        try:
+            local = datetime(int(m.group(3)), _MONTHS[m.group(2).lower()], int(m.group(1)),
+                             hour, int(m.group(5) or 0))
+        except ValueError:
+            local = None
+        if local is not None:
+            offset = _TZ_HOURS.get((m.group(7) or "").upper(), -5)
+            return (local - timedelta(hours=offset)).replace(tzinfo=timezone.utc).timestamp()
+    try:
+        return datetime.strptime(entry.get("scraped_at") or "", "%Y-%m-%dT%H:%M:%SZ") \
+            .replace(tzinfo=timezone.utc).timestamp()
+    except ValueError:
+        return 0.0
+
+
 def _order_key(entry: dict):
+    """타임라인 순서: 원본 게시 시각 → 숫자 view id → 해시 id.
+
+    예전에는 숫자 ID 를 전부 앞에, 해시 ID 를 전부 뒤에 둬 7월 해시 항목이 9월 숫자 항목보다
+    '나중'으로 취급됐다(재변경·토글 판정 역전). ID 종류와 무관하게 시각으로 정렬한다.
+    """
     eid = str(entry.get("entry_id", ""))
-    if eid.isdigit():
-        return (0, int(eid))
-    return (1, entry.get("scraped_at") or "", eid)
+    return (entry_time(entry), int(eid) if eid.isdigit() else float("inf"), eid)
 
 
 def build_index(entries: Iterable[dict]) -> dict[str, list[dict]]:
@@ -181,7 +224,11 @@ def assess(entry: dict, index: dict[str, list[dict]], toggling: set[str] | None 
 
     frac = (len(recurring_keys) / total) if total else 0.0
 
-    if total and frac >= RECURRING_RATIO:
+    if total == 0:
+        # 키를 하나도 파싱하지 못했으면 '재변경 없음'이 아니라 판단 근거가 없는 것 — stable 로 두지 않는다
+        stability = "unknown"
+        detail = "변경 내용을 키 단위로 해석하지 못해 안정성을 판정하지 않았습니다."
+    elif frac >= RECURRING_RATIO:
         stability = "recurring"
         detail = (
             f"변경 키 {total}개 중 {len(recurring_keys)}개가 값이 이전 상태로 되돌아오는 "

@@ -50,6 +50,7 @@ TRUNC_NOTICE = "\n\n…(원문이 매우 커서 잘렸습니다 — 전체는 �
 HELD_TAG = "해석대기"  # LLM 실패로 보류된 항목 표식 — 원문은 이미 있으므로 재수집 없이 재해석
 RAW_KEYS = ("entry_id", "eft_version", "posted_at", "scraped_at", "source_url",
             "files_changed", "raw_text")
+STABILITY_FIELDS = ("stability", "stability_detail_ko", "recurring_event", "stability_stats")
 # 보류(공개 대기/해석 대기) 항목이 이 기간 넘게 안 풀리면 재시도로 해결되지 않는 문제로 보고 알린다
 STALE_HELD_DAYS = 3
 # 사람 조치가 필요한 상황(수집 장기 실패 등). interpret.NEEDS_HUMAN 과 합쳐 런 끝에 보고하고,
@@ -94,7 +95,8 @@ def make_locked_entry(raw: dict) -> dict:
             "matched": False, "title": None, "url": None,
             "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다.",
         },
-        "is_submarine": True,
+        # 아직 분석 전이라 잠수함 여부를 모른다(True 로 두면 잠수함 카운트에 섞였음)
+        "is_submarine": None,
     }
 
 
@@ -168,6 +170,11 @@ def annotate_stability(entries: list[dict]) -> list[dict]:
     index = stab.build_index(base)
     toggling = stab.toggling_keys(index)
     for e in entries:
+        if e.get("locked"):
+            # 보류(공개/해석 대기) 항목은 diff 가 없거나 아직 해석 전 — 판정하지 않는다(배지·카운트 제외)
+            for k in STABILITY_FIELDS:
+                e.pop(k, None)
+            continue
         e.update(stab.assess(e, index, toggling))
     return entries
 
@@ -181,10 +188,8 @@ def finalize(entries: list[dict]) -> None:
 
 def build_feed(entries: list[dict]) -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    # 최신순 정렬(scraped_at 기준, 없으면 그대로)
-    ordered = sorted(
-        entries, key=lambda e: e.get("scraped_at") or "", reverse=True
-    )[:FEED_LIMIT]
+    # 최신순 정렬 — 원본 게시 시각 기준(자동 백필 항목은 수집 시각이 게시보다 한참 늦다)
+    ordered = sorted(entries, key=stab.entry_time, reverse=True)[:FEED_LIMIT]
     # 사이트 피드에는 더 짧은 상한 적용(entries.json 원본은 그대로 둠)
     ordered = [
         {**e, "raw_text": clip_raw(e.get("raw_text"), RAW_TEXT_FEED_LIMIT)}

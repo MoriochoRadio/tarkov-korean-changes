@@ -113,7 +113,7 @@ function renderHero() {
       <div class="hero-meta">
         ${kind}
         <span class="sev ${sev}">${SEV_LABEL[sev] || sev}</span>
-        ${stabBadge(e.stability)}
+        ${e.locked ? "" : stabBadge(e.stability)}
       </div>
       <div class="hero-foot">
         <button class="hero-cta" type="button" id="hero-cta">전체 해석 열기 ▾</button>
@@ -154,9 +154,10 @@ function buildStats() {
   const n = (fn) => ALL.filter(fn).length;
   const defs = [
     { filter: "all", label: "전체 기록", value: ALL.length },
-    { filter: "submarine", label: "🌊 잠수함", value: n((e) => e.is_submarine) },
-    { filter: "stable", label: "📌 안정 유지", value: n((e) => e.stability === "stable") },
-    { filter: "recurring", label: "🔁 반복", value: n((e) => e.stability === "recurring") },
+    // 보류(공개/해석 대기) 항목은 아직 분석 전 — 분류 카운트에서 제외(matchesFilter 와 같은 기준)
+    { filter: "submarine", label: "🌊 잠수함", value: n((e) => !e.locked && e.is_submarine) },
+    { filter: "stable", label: "📌 안정 유지", value: n((e) => !e.locked && e.stability === "stable") },
+    { filter: "recurring", label: "🔁 반복", value: n((e) => !e.locked && e.stability === "recurring") },
   ];
   el.innerHTML = defs
     .map(
@@ -250,6 +251,7 @@ function toggleExpandAll() {
 
 /* ---------- 필터/정렬/렌더 ---------- */
 function matchesFilter(e) {
+  if (e.locked && activeFilter !== "all") return false; // 분석 전 보류 항목은 '전체'에서만
   if (activeFilter === "submarine" && !e.is_submarine) return false;
   if (activeFilter === "linked" && e.is_submarine) return false;
   if (activeFilter === "stable" && e.stability !== "stable") return false;
@@ -337,7 +339,7 @@ function card(e) {
       </div>
       <div class="badges">
         ${kind}
-        ${stabBadge(e.stability)}
+        ${e.locked ? "" : stabBadge(e.stability)}
         ${back}
         <span class="sev ${sev}">${SEV_LABEL[sev] || sev}</span>
         ${tags}
@@ -384,7 +386,7 @@ function stabBadge(stab) {
 }
 
 function stabilityBlock(e) {
-  if (!e.stability || !e.stability_detail_ko) return "";
+  if (e.locked || !e.stability || !e.stability_detail_ko) return "";
   const ICON = { recurring: "🔁", stable: "📌", superseded: "♻️" };
   return `<div class="panel-block stability ${esc(e.stability)}">
     ${ICON[e.stability] || "📊"} <b>안정성 자동 판정</b>
