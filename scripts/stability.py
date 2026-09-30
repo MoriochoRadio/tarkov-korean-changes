@@ -234,7 +234,9 @@ def assess(entry: dict, index: dict[str, list[dict]], toggling: set[str] | None 
             f"변경 키 {total}개 중 {len(recurring_keys)}개가 값이 이전 상태로 되돌아오는 "
             f"토글 키({frac*100:.0f}%) — 반복/이벤트성으로 자동 판정."
         )
-    elif later_changes > 0 or recurring_keys:
+    elif later_changes > 0:
+        # README 정의: superseded = 이후 같은 키가 또 바뀜. 토글 키가 일부(과반 미만) 섞였다는 것만으로는
+        # 해당하지 않는다 — 예전엔 최신 항목도 '이후 0회 변경됨 — 값이 더 갱신됨'으로 모순 판정됐음
         stability = "superseded"
         note = f"토글 키 {len(recurring_keys)}개" if recurring_keys else "되돌이는 아님"
         detail = f"이후 동일 키가 다시 {later_changes}회 변경됨({note}) — 값이 더 갱신됨."
