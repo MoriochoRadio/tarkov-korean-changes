@@ -66,6 +66,11 @@ class LLMError(RuntimeError):
         self.needs_human = needs_human
 
 
+def gave_up() -> str | None:
+    """이번 실행에서 LLM 해석을 포기했으면 그 사유(이후 호출은 즉시 실패) — 백필 중단·대기 생략 판단용."""
+    return _GROQ["gave_up"]
+
+
 def _need_human(msg: str) -> None:
     if msg not in NEEDS_HUMAN:
         NEEDS_HUMAN.append(msg)

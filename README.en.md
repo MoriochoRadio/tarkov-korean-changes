@@ -50,7 +50,8 @@ Going further, the full change history is cross-referenced to automatically dete
 ```
 Daily (GitHub Actions cron)
   └─ pipeline.py
-       1) scrape      collect the latest change from changes.tarkov-changes.com/latest
+       1) scrape      find new changes on changes.tarkov-changes.com/list (latest 50) and collect them via /view/{id}
+                      + auto-backfill up to 2 missed past changes per run
        2) patchnotes  gather candidate official patch notes (manual + automatic)
        3) interpret   Korean interpretation via LLM + patch-note matching → silent-patch detection
        4) stability   cross-reference full history for automatic stability classification
@@ -86,7 +87,7 @@ python scripts/recompute_stability.py
 A. The core of this project is HTML scraping (`requests` + `BeautifulSoup`), regex-based diff parsing (`scripts/stability.py`), and JSON processing — all things Python solves with the least code. There are effectively only 2 external dependencies (requests, beautifulsoup4), so a single `pip install` on a GitHub Actions runner makes it reproducible every day.
 
 **Q. Where does the data (game code diffs) come from, and why that approach?**
-A. There is no official API, so I parse the `/latest` (single most recent change) and `/view/{id}` (past history) pages that [tarkov-changes.com](https://changes.tarkov-changes.com/) exposes without login. To avoid burdening the source site, requests are made **only once a day** (the backfill also inserts delays between requests and declares an identifiable User-Agent), transient failures like 502s are handled with exponential backoff, and given the nature of `/latest`, a run only fails **after two consecutive days of failure** — so alerts fire only when the risk of data loss is real.
+A. There is no official API, so I parse the `/list` (id, version and post time of the latest 50 changes) and `/view/{id}` (individual change) pages that [tarkov-changes.com](https://changes.tarkov-changes.com/) exposes without login (`/latest` is only a fallback when the list can't be fetched). Reading only `/latest` (single most recent change) used to miss changes when two or more were posted in a day, and during the lock period it collected changes without a view id so the same change was stored twice — switching to the list means every entry is stored under its numeric view id, and missed past changes are filled in a few per run. To avoid burdening the source site, requests are made **only once a day** (the backfill also inserts delays between requests and declares an identifiable User-Agent), transient failures like 502/530 are handled with exponential backoff, and since the list shows the latest 50 changes a day or two of outage loses nothing, so a run only fails **after two consecutive days of failure** to flag a possible block or site-structure change.
 
 **Q. Why a static (buildless) web app?**
 A. The data changes only once a day, so a server, database, and framework are all overkill. The pipeline generates just one file, `docs/data.json`; vanilla JS reads and renders it, and GitHub Pages hosts it for free — operating cost and maintenance surface both converge to zero.
@@ -102,7 +103,7 @@ A. With one call a day, Groq's free tier is plenty. But free models disappear on
 
 ## 📚 Historical Backfill (Optional)
 
-You can collect past silent changes exposed via `/list` and `/view/{id}` and fill in Korean interpretations.
+The daily pipeline automatically interprets and fills in changes missing from the latest 50 shown on `/list`, up to 2 per run (`BACKFILL_PER_RUN` in `pipeline.py`). For older history, collect it via `/view/{id}` as below and fill in Korean interpretations.
 
 ```bash
 # 1) Harvest past raw data (politely, with delays between requests)
@@ -200,8 +201,8 @@ cd docs && python -m http.server 8000
 
 ## ⚠️ Limitations and Caveats
 
-- The no-login `/latest` page shows only the single most recent change, but past history is also accessible
-  via `/list` and `/view/{id}` (the backfill uses this). The everyday pipeline accumulates the latest change daily.
+- The no-login `/list` page shows only the latest 50 changes. The everyday pipeline collects new changes from it and auto-backfills missing ones;
+  older history is backfilled manually with `scripts/backfill_harvest.py` (`/view/{id}`).
 - If the site's structure changes, the parsing in `scripts/scrape.py` may need adjusting.
 - The default provider (Groq free tier) is free. API costs arise only if you switch to a paid provider.
 - Respect the source site's and BSG's terms of service and robots policies. To avoid excessive requests, calls are made only once a day.

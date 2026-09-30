@@ -50,7 +50,8 @@
 ```
 매일 (GitHub Actions cron)
   └─ pipeline.py
-       1) scrape      changes.tarkov-changes.com/latest 최신 변경 수집
+       1) scrape      changes.tarkov-changes.com/list(최근 50건)에서 새 변경을 찾아 /view/{id} 로 수집
+                      + 목록에 있는데 빠진 과거 변경을 실행마다 2건씩 자동 백필
        2) patchnotes  공식 패치노트 후보 목록 확보 (수동 + 자동)
        3) interpret   LLM 으로 한글 해석 + 패치노트 매칭 → 잠수함 패치 판별
        4) stability   전체 이력과 대조해 안정성 자동 판정
@@ -86,7 +87,7 @@ python scripts/recompute_stability.py
 A. 이 프로젝트의 핵심은 HTML 스크래핑(`requests` + `BeautifulSoup`), 정규식 기반 diff 파싱(`scripts/stability.py`), JSON 가공 — 전부 Python 이 가장 적은 코드로 해결되는 일입니다. 외부 의존성은 사실상 2개(requests, beautifulsoup4)뿐이라 GitHub Actions 러너에서 `pip install` 한 번으로 매일 재현 가능하게 돌아갑니다.
 
 **Q. 데이터(게임 코드 diff)는 어디서 어떻게 얻나? 왜 그 방식인가?**
-A. 공식 API 가 없어서, [tarkov-changes.com](https://changes.tarkov-changes.com/)이 비로그인으로 공개하는 `/latest`(최신 1건)와 `/view/{id}`(과거 이력) 페이지를 파싱합니다. 원본 사이트에 부담을 주지 않도록 **하루 1회만** 요청하고(백필도 요청 간 지연 삽입, 식별 가능한 User-Agent 명시), 502 같은 일시 장애는 지수 백오프로 넘기되 `/latest` 특성상 **이틀 연속 실패 시에만** 런을 실패시켜 유실 위험이 실제일 때만 알림을 받습니다.
+A. 공식 API 가 없어서, [tarkov-changes.com](https://changes.tarkov-changes.com/)이 비로그인으로 공개하는 `/list`(최근 50건의 id·버전·게시 시각)와 `/view/{id}`(개별 변경) 페이지를 파싱합니다(`/latest` 는 목록 수집이 실패할 때의 폴백). 예전에는 `/latest`(최신 1건)만 읽어 하루에 2건 이상 올라오면 앞의 것을 놓쳤고, 잠금 중엔 view id 없이 수집돼 같은 변경이 두 번 저장됐습니다 — 목록 기준으로 바꿔 항상 숫자 view id 로 저장하고, 놓친 과거분은 실행마다 소량씩 자동으로 채웁니다. 원본 사이트에 부담을 주지 않도록 **하루 1회만** 요청하고(백필도 요청 간 지연 삽입, 식별 가능한 User-Agent 명시), 502·530 같은 일시 장애는 지수 백오프로 넘기고, 목록이 최근 50건을 보여줘 하루 이틀 장애로는 유실되지 않으므로 **이틀 연속 실패 시에만** 런을 실패시켜 차단·구조 변경 가능성을 알립니다.
 
 **Q. 왜 정적 웹(빌드리스)인가?**
 A. 데이터가 하루 한 번만 바뀌므로 서버·DB·프레임워크가 전부 과잉입니다. 파이프라인이 `docs/data.json` 한 파일만 생성하면 바닐라 JS 가 그걸 읽어 렌더링하고, GitHub Pages 가 무료로 호스팅 — 운영 비용과 관리 포인트가 0에 수렴합니다.
@@ -102,7 +103,7 @@ A. 하루 1회 호출이라 Groq 무료 티어로 충분합니다. 다만 무료
 
 ## 📚 과거 이력 백필(선택)
 
-`/list` 와 `/view/{id}` 로 공개된 과거 사일런트 변경을 수집해 한글 해석을 채울 수 있습니다.
+일상 파이프라인이 `/list` 에 보이는 최근 50건 중 빠진 것을 실행마다 2건씩(`pipeline.py` 의 `BACKFILL_PER_RUN`) 자동으로 해석해 채웁니다. 그보다 오래된 이력은 아래처럼 `/view/{id}` 로 수집해 한글 해석을 채울 수 있습니다.
 
 ```bash
 # 1) 과거 원본 수집(요청 간 지연으로 정중하게)
@@ -199,8 +200,8 @@ cd docs && python -m http.server 8000
 
 ## ⚠️ 한계와 주의
 
-- 비로그인 `/latest` 는 최신 1건이지만, `/list`·`/view/{id}` 로 과거 이력에도 접근할 수 있습니다
-  (백필은 이를 이용). 일상 파이프라인은 매일 최신 변경을 누적하는 방식입니다.
+- 비로그인 `/list` 는 최근 50건만 보여줍니다. 일상 파이프라인은 이 목록 기준으로 새 변경을 받고 빠진 것을 자동 백필하며,
+  그보다 오래된 이력은 `scripts/backfill_harvest.py`(`/view/{id}`)로 수동 백필합니다.
 - 사이트 구조가 바뀌면 `scripts/scrape.py` 의 파싱을 조정해야 할 수 있습니다.
 - 기본 제공자(Groq 무료 티어)는 무료입니다. 유료 제공자로 바꿀 때만 API 비용이 발생합니다.
 - 원본 사이트와 BSG 의 약관·robots 정책을 존중하세요. 과도한 요청을 피하기 위해 하루 1회만 호출합니다.
