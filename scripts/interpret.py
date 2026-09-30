@@ -28,6 +28,7 @@ import json
 import os
 import re
 import time
+from datetime import datetime
 
 # Groq 엔드포인트(OpenAI 호환). 무료 티어, 하루 1회 호출엔 한도 충분.
 GROQ_BASE = "https://api.groq.com/openai/v1"
@@ -84,6 +85,10 @@ SYSTEM_PROMPT = """당신은 '에스케이프 프롬 타르코프(EFT)' 게임�
 - 전문 용어는 한국 타르코프 커뮤니티에서 통용되는 표현을 우선 사용하되, 처음 나오면 괄호로 원어를 병기합니다.
 - 추측이 필요한 부분은 단정하지 말고 "추정"이라고 명시합니다.
 - 과장 없이 사실 위주로, 그러나 초보자도 '이게 게임에서 무슨 의미인지' 알 수 있게 씁니다.
+- 수치는 원문 diff 의 숫자를 그대로 옮기고 절대 바꾸거나 새로 만들지 않습니다.
+  확률·비율을 뜻하는 0~1 사이 값(키 이름에 Chance·Probability·Ratio 등이 있거나 문맥상 비율인 값)은
+  ×100 해서 %로 표기하고 원문 값을 괄호로 병기합니다 — 예: 0.2 → 0.85 는 "20%(0.2) → 85%(0.85)"
+  ("0.2% → 0.85%" 는 틀림). 원문이 이미 퍼센트 단위인 값(예: …Percentage 10 → 20)은 그대로 %로 씁니다.
 - 반드시 유효한 JSON 하나만 출력합니다. 코드펜스나 설명 문장을 절대 덧붙이지 마세요."""
 
 USER_TEMPLATE = """## 분석할 사일런트 변경 (raw diff)
@@ -123,11 +128,55 @@ EFT 버전: {eft_version}
 }}
 
 patch_note.matched 가 false 이면 잠수함 패치입니다(코드에서 자동 처리).
+matched=true 는 후보 공지가 이 변경과 같은 시기(게시일 전후 며칠)의 패치이고, 공지 내용이 이 diff 의
+변경(또는 그 변경이 속한 업데이트 내용)을 실제로 다룰 때만입니다. 공지에 언급되지 않은 수치 조정이나
+공지 며칠 뒤 따로 올라온 조정은 잠수함 패치(false)입니다. title·url 은 후보 목록의 값을 그대로 쓰세요.
 """
 
 
-def _format_patchnotes(patch_notes: list[dict]) -> str:
+NOTE_WINDOW_DAYS = 2   # 게시일 전후 이 일수 안의 공지만 매칭 후보로(날짜 없는 공지는 항상 포함)
+NOTE_MAX = 3           # 프롬프트에 넣을 후보 공지 수 상한(Groq 무료 TPM 절약)
+_POSTED_DATE_RE = re.compile(r"(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})")
+
+
+def _posted_date(posted_at: str | None):
+    m = _POSTED_DATE_RE.search(posted_at or "")
+    if not m:
+        return None
+    try:
+        return datetime.strptime(" ".join(m.groups()), "%d %B %Y").date()
+    except ValueError:
+        return None
+
+
+def relevant_notes(raw: dict, patch_notes: list[dict]) -> list[dict]:
+    """매칭 후보를 이 변경과 같은 시기의 공지로 좁힌다(게시일 ±NOTE_WINDOW_DAYS, 가까운 순).
+
+    예전에는 목록 앞 15건을 그대로 넘겨, 과거 항목(백필)에는 그 시기 공지가 빠지고 최신 항목에는
+    무관한 공지가 섞였다. 게시일을 모르면 최신 공지 NOTE_MAX 건.
+    """
+    posted = _posted_date(raw.get("posted_at"))
+    ver = raw.get("eft_version") or ""
+    scored = []
+    for i, p in enumerate(patch_notes or []):
+        try:
+            d = datetime.strptime(str(p.get("date") or ""), "%Y-%m-%d").date()
+        except ValueError:
+            d = None
+        same_ver = 0 if ver and p.get("version") == ver else 1
+        if posted is None or d is None:
+            scored.append((0 if d is None else 1, same_ver, i, p))   # 날짜 없는 공지(수동 등)는 항상 후보
+        elif abs((d - posted).days) <= NOTE_WINDOW_DAYS:
+            scored.append((abs((d - posted).days), same_ver, i, p))
+    scored.sort(key=lambda t: t[:3])
+    return [t[3] for t in scored[:NOTE_MAX]]
+
+
+def _format_patchnotes(patch_notes: list[dict], collected: bool = True) -> str:
     if not patch_notes:
+        if collected:
+            return (f"(이 변경 게시일 전후 {NOTE_WINDOW_DAYS}일 안의 공식 패치노트 없음 "
+                    "— 잠수함 패치로 판단)")
         return "(수집된 공식 패치노트 없음 — 매칭 후보가 없으면 잠수함 패치로 판단)"
     out = []
     for p in patch_notes[:15]:
@@ -165,7 +214,8 @@ def build_prompt(raw: dict, patch_notes: list[dict]) -> str:
         posted_at=raw.get("posted_at") or "미상",
         files=f"{files} (총 {total}건)",
         raw_text=raw_block,
-        patchnotes_block=_format_patchnotes(patch_notes),
+        patchnotes_block=_format_patchnotes(relevant_notes(raw, patch_notes),
+                                            collected=bool(patch_notes)),
     )
 
 
@@ -565,6 +615,11 @@ def interpret(raw: dict, patch_notes: list[dict] | None = None) -> dict:
         print(f"[interpret] 검증 경고: 원문에 없는 수치 {unverified} — 해석 확인 권장")
 
     pn = result.get("patch_note") or {}
+    if pn.get("matched") and provider != "stub" and not relevant_notes(raw, patch_notes):
+        # 후보 공지를 하나도 주지 않았는데 '연결됨'이라고 하면 지어낸 매칭이다
+        pn.update(matched=False, title=None, url=None,
+                  reason_ko="같은 시기의 공식 패치노트 후보가 없어 잠수함 패치로 처리했습니다.")
+        result["patch_note"] = pn
     result["is_submarine"] = not bool(pn.get("matched"))
 
     # 대형 패치(와이프 등)를 앞 12KB만 보고 minor로 오판하는 것을 코드에서 교정

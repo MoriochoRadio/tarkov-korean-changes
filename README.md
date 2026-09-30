@@ -52,7 +52,7 @@
   └─ pipeline.py
        1) scrape      changes.tarkov-changes.com/list(최근 50건)에서 새 변경을 찾아 /view/{id} 로 수집
                       + 목록에 있는데 빠진 과거 변경을 실행마다 2건씩 자동 백필
-       2) patchnotes  공식 패치노트 후보 목록 확보 (수동 + 자동)
+       2) patchnotes  공식 패치노트 후보 목록 확보 (수동 + EFT 위키 체인지로그)
        3) interpret   LLM 으로 한글 해석 + 패치노트 매칭 → 잠수함 패치 판별
        4) stability   전체 이력과 대조해 안정성 자동 판정
        5) store       data/entries.json 에 신규 항목만 누적
@@ -157,7 +157,7 @@ python scripts/backfill_apply.py
 
    - 선택 설정은 `Settings → Secrets and variables → Actions → Variables`:
      - `GROQ_MODEL` = 특정 모델 고정, 예) `openai/gpt-oss-120b` (목록에서 사라지면 자동 선택으로 복귀)
-     - `PATCHNOTES_URL` = 공식 패치노트 페이지 URL(기본: EFT 공식 뉴스)
+     - `PATCHNOTES_URL` = 추가로 링크를 긁을 패치노트 페이지 URL(기본은 비워 둠 — 공식 패치노트는 EFT 위키 체인지로그 API 로 자동 수집)
    - **유료 제공자로 전환**하고 싶을 때만(선택):
      - **Variables** → `LLM_PROVIDER` = `anthropic` 또는 `openai` (모델은 `LLM_MODEL`)
      - **Secrets** → `ANTHROPIC_API_KEY` 또는 `OPENAI_API_KEY` 등록

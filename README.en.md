@@ -52,7 +52,7 @@ Daily (GitHub Actions cron)
   └─ pipeline.py
        1) scrape      find new changes on changes.tarkov-changes.com/list (latest 50) and collect them via /view/{id}
                       + auto-backfill up to 2 missed past changes per run
-       2) patchnotes  gather candidate official patch notes (manual + automatic)
+       2) patchnotes  gather candidate official patch notes (manual + EFT wiki changelog)
        3) interpret   Korean interpretation via LLM + patch-note matching → silent-patch detection
        4) stability   cross-reference full history for automatic stability classification
        5) store       append only new entries to data/entries.json
@@ -158,7 +158,7 @@ python scripts/backfill_apply.py
 
    - Optional settings under `Settings → Secrets and variables → Actions → Variables`:
      - `GROQ_MODEL` = pin a specific model, e.g. `openai/gpt-oss-120b` (falls back to automatic selection if it disappears from the list)
-     - `PATCHNOTES_URL` = URL of the official patch notes page (default: EFT official news)
+     - `PATCHNOTES_URL` = an extra patch-notes page to scrape links from (leave empty by default — official patch notes are collected automatically via the EFT wiki changelog API)
    - Only if you want to **switch to a paid provider** (optional):
      - **Variables** → `LLM_PROVIDER` = `anthropic` or `openai` (model via `LLM_MODEL`)
      - **Secrets** → register `ANTHROPIC_API_KEY` or `OPENAI_API_KEY`
