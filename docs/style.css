@@ -261,8 +261,12 @@ a:hover { color: var(--amber-hi); }
   font-size: 0.68rem; color: var(--txt-dim); margin-bottom: 12px;
 }
 .spark-bars {
-  flex: 1; display: flex; align-items: flex-end; gap: 4px; min-height: 64px;
+  flex: 1; display: flex; align-items: flex-end; min-height: 64px;
   min-width: 0; overflow: hidden;
+  /* 간격은 막대 수(--n, --gaps = n-1 — app.js buildSpark)에 맞춰 준다: 여유가 있으면 4px 그대로,
+     막대가 3px 밑으로 좁아질 만큼 많아지면 간격을 줄이되 최소 '칸 폭의 30%'는 간격으로 남긴다.
+     → 항목이 200개여도 375px 에서 막대 1px 이상(고정 4px 이면 ~75개부터 막대 폭 0). */
+  gap: min(4px, max(calc(30% / var(--n, 1)), calc((100% - 3px * var(--n, 1)) / var(--gaps, 1))));
 }
 .spark-bar {
   /* <button> 의 UA 기본 padding(1px 6px)·border(2px)가 막대마다 16px 최소폭을 만들었음 → 리셋 */

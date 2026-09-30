@@ -188,6 +188,9 @@ function countUp(node) {
 function buildSpark() {
   const el = $("#spark-bars");
   const items = [...ALL].sort((a, b) => a._ts - b._ts); // 시간 오름차순
+  // 막대 수에 따라 CSS 가 간격을 줄인다(style.css .spark-bars) — 항목이 많아도 막대가 폭 0으로 사라지지 않게
+  el.style.setProperty("--n", Math.max(1, items.length));
+  el.style.setProperty("--gaps", Math.max(1, items.length - 1));
   const max = Math.max(1, ...items.map((e) => e._mag));
   el.innerHTML = items
     .map((e) => {
