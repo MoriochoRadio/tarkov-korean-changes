@@ -126,7 +126,7 @@
     "stability_stats": {
       "changed_keys": 20,
       "recurring_keys": 18,
-      "later_changes": 8
+      "later_changes": 22
     }
   },
   {
@@ -3249,7 +3249,7 @@
     "stability_stats": {
       "changed_keys": 12,
       "recurring_keys": 12,
-      "later_changes": 12
+      "later_changes": 36
     }
   },
   {
@@ -3375,37 +3375,402 @@
     "stability_stats": {
       "changed_keys": 12,
       "recurring_keys": 12,
-      "later_changes": 0
+      "later_changes": 12
     }
   },
   {
     "entry_id": "1190",
-    "eft_version": null,
-    "posted_at": null,
+    "eft_version": "1.1.5.1.47510",
+    "posted_at": "Tuesday, 29 September 2026 - 11:41 AM EDT",
     "scraped_at": "2026-09-29T19:30:08Z",
-    "source_url": "https://changes.tarkov-changes.com/latest",
-    "files_changed": [],
-    "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 8h 11m.\nLogin with Discord\n to check if you have access to early content.\n1.1.5.1.47510\n - Tuesday, 29 September 2026 - 11:41 AM EDT\n            63 change(s) detected\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Tuesday, 01 September 2026 - 02:15 PM EDT\n            6 change(s) detected\n1.1.0.1.46911\n - Monday, 24 August 2026 - 04:46 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Sunday, 23 August 2026 - 10:55 AM EDT\n            22 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 07:26 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 04:52 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 03:26 PM EDT\n            11 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 09:09 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 13 August 2026 - 02:17 PM EDT\n            14 change(s) detected\n1.1.0.1.46699\n - Thursday, 13 August 2026 - 08:00 AM EDT\n            10 change(s) detected\n1.1.0.1.46699\n - Wednesday, 12 August 2026 - 05:09 AM EDT\n            28 change(s) detected\n1.1.0.1.46699\n - Monday, 10 August 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:43 AM EDT\n            12 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:26 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Saturday, 08 August 2026 - 05:00 PM EDT\n            24 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 02:34 PM EDT\n            35 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 11:51 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 09:17 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 05:17 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:34 PM EDT\n            8 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:26 PM EDT\n            26 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 01:26 PM EDT\n            41 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 08:17 AM EDT\n            65 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:09 PM EDT\n            1 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:00 PM EDT\n            26 change(s) detected\n1.1.0.0.46624\n - Wednesday, 05 August 2026 - 06:08 AM EDT\n            14 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 10:43 AM EDT\n            38 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 05:00 AM EDT\n            1 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 04:43 AM EDT\n            2 change(s) detected\n1.1.0.0.46608\n - Monday, 03 August 2026 - 01:46 PM EDT\n            1 change(s) detected\n1.1.0.0.46608\n - Monday, 03 August 2026 - 01:07 PM EDT\n            6949 change(s) detected\n1.0.6.5.46221\n - Saturday, 01 August 2026 - 05:02 AM EDT\n            9 change(s) detected\n1.0.6.5.46221\n - Friday, 31 July 2026 - 07:57 AM EDT\n            13 change(s) detected\n1.0.6.5.46221\n - Thursday, 30 July 2026 - 03:01 AM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Wednesday, 29 July 2026 - 07:21 AM EDT\n            47 change(s) detected\n1.0.6.5.46221\n - Monday, 27 July 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.0.6.5.46221\n - Friday, 24 July 2026 - 12:12 PM EDT\n            7 change(s) detected\n1.0.6.5.46221\n - Friday, 24 July 2026 - 07:49 AM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Sunday, 19 July 2026 - 09:19 AM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Friday, 17 July 2026 - 03:59 PM EDT\n            1 change(s) detected\n1.0.6.5.46221\n - Friday, 17 July 2026 - 01:16 PM EDT\n            3 change(s) detected",
-    "locked": true,
-    "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
-    "tags": [
-      "공개대기"
+    "source_url": "https://changes.tarkov-changes.com/view/1190",
+    "files_changed": [
+      {
+        "path": "client/items/response.json",
+        "count": 6
+      },
+      {
+        "path": "client/globals/response.json",
+        "count": 1
+      },
+      {
+        "path": "client/locations/response.json",
+        "count": 56
+      }
     ],
-    "severity": "trivial",
-    "changes": [],
+    "raw_text": "Files Changed:\nclient/items/response.json\n(6 changes)\nclient/globals/response.json\n(1 change)\nclient/locations/response.json\n(56 changes)\nDated: Tuesday, 29 September 2026 - 11:41 AM EDT | Game Version 1.1.5.1.47510\nclient/items/response.json\n['data']\n    ['Airdrop common supply crate']\n        ['_props']\n            ['Grids']\n                ['0 (main)']\n                    ['_props']\n                        ['cellsV']\n-                        (Old) 20\n+                        (New) 12 (-40.00%)\n                        ['maxCount']\n-                        (Old) 60\n+                        (New) 43 (-28.33%)\n                        ['minCount']\n-                        (Old) 40\n+                        (New) 18 (-55.00%)\n    ['BD dogtag •| Ferrum']\n        ['_props']\n            ['LootExperience']\n-            (Old) 20\n+            (New) 200 (+900.00%)\n    ['BD dogtag •|| Green']\n        ['_props']\n            ['LootExperience']\n-            (Old) 20\n+            (New) 200 (+900.00%)\n    ['BD dogtag •||| Red']\n        ['_props']\n            ['LootExperience']\n-            (Old) 20\n+            (New) 200 (+900.00%)\nclient/globals/response.json\n['data']\n    ['bot_presets']\n+        (New) ['36']: {\n+              \"Role\": \"exUsecFree\",\n+              \"UseThis\": true,\n+              \"COEF_IF_MOVE\": 1.3,\n+              \"HearingSense\": 0.8,\n+              \"VisibleAngle\": 70,\n+              \"BotDifficulty\": \"normal\",\n+              \"VisibleDistance\": 125,\n+              \"ScatteringPerMeter\": 0.09,\n+              \"FIRST_CONTACT_ADD_SEC\": 0.9,\n+              \"SCATTERING_DIST_MODIF\": 0.8,\n+              \"VISIBILITY_CHANGE_SPEED\": 1.25,\n+              \"MAX_AIMING_UPGRADE_BY_TIME\": 0.85\n+            }\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Customs']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 1,200\n+                    (New) 1,500 (+25.00%)\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 2 (-60.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.15 (-25.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 600 (-33.33%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 180 (-40.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 300 (-50.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 700\n+                    (New) 900 (+28.57%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 600\n+                    (New) 780 (+30.00%)\n        ['Woods']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 1,200\n+                    (New) 1,500 (+25.00%)\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 3 (-40.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.12 (-40.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 480 (-46.67%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 180 (-40.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 240 (-60.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 800\n+                    (New) 780 (-2.50%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 700\n+                    (New) 600 (-14.29%)\n                    ['AirdropPointDeactivateDistance']\n-                    (Old) 50\n+                    (New) 100 (+100.00%)\n        ['Lighthouse']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 2,100\n+                    (New) 1,500 (-28.57%)\n                    ['PlaneAirdropMax']\n-                    (Old) 10\n+                    (New) 2 (-80.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.85\n+                    (New) 0.15 (-82.35%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 180\n+                    (New) 600 (+233.33%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 30\n+                    (New) 180 (+500.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 180\n+                    (New) 300 (+66.67%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 600\n+                    (New) 850 (+41.67%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 480\n+                    (New) 700 (+45.83%)\n                    ['AirdropPointDeactivateDistance']\n-                    (Old) 10\n+                    (New) 75 (+650.00%)\n        ['Shoreline']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 3 (-40.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.1 (-50.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 600 (-33.33%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 180 (-40.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 240 (-60.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 1,000\n+                    (New) 840 (-16.00%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 900\n+                    (New) 660 (-26.67%)\n                    ['AirdropPointDeactivateDistance']\n-                    (Old) 50\n+                    (New) 100 (+100.00%)\n        ['Reserve']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 2 (-60.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.15 (-25.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 600 (-33.33%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 180 (-40.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 300 (-50.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 800\n+                    (New) 900 (+12.50%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 700\n+                    (New) 780 (+11.43%)\n                    ['AirdropPointDeactivateDistance']\n-                    (Old) 50\n+                    (New) 75 (+50.00%)\n        ['Interchange']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 1,800\n+                    (New) 1,500 (-16.67%)\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 2 (-60.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.14 (-30.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 600 (-33.33%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 240 (-20.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 300 (-50.00%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 800\n+                    (New) 780 (-2.50%)\n        ['Streets']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 2,700\n+                    (New) 2,100 (-22.22%)\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 2 (-60.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.13 (-35.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 720 (-20.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 400\n+                    (New) 360 (-10.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 800\n+                    (New) 1,080 (+35.00%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 700\n+                    (New) 900 (+28.57%)\n← Back to all changes",
+    "summary_ko": "에어드롭 상자 크기와 수량 감소, 도그태그 경험치 10배 상승, 전역 봇 프리셋 추가, 전 맵의 에어드롭 스폰·시간·거리 파라미터 전반적인 조정",
+    "tags": [
+      "아이템",
+      "맵",
+      "밸런스"
+    ],
+    "severity": "major",
+    "changes": [
+      {
+        "key_path": "items.Airdrop common supply crate._props.Grids.0._props.cellsV",
+        "before_ko": "20칸",
+        "after_ko": "12칸",
+        "explanation_ko": "에어드롭 상자의 격자(cell) 수가 기존 20에서 12로 감소했습니다. 격자 수가 적으면 상자 내부에 들어갈 아이템 슬롯이 줄어듭니다.",
+        "impact_ko": "플레이어가 에어드롭 상자에서 얻을 수 있는 아이템 양이 감소합니다."
+      },
+      {
+        "key_path": "items.Airdrop common supply crate._props.Grids.0._props.maxCount",
+        "before_ko": "60개",
+        "after_ko": "43개",
+        "explanation_ko": "한 번에 스폰될 수 있는 해당 상자의 최대 개수가 60에서 43으로 줄었습니다.",
+        "impact_ko": "맵 전체에 배치되는 에어드롭 상자 수가 감소합니다."
+      },
+      {
+        "key_path": "items.Airdrop common supply crate._props.Grids.0._props.minCount",
+        "before_ko": "40개",
+        "after_ko": "18개",
+        "explanation_ko": "에어드롭 상자의 최소 스폰 개수가 40에서 18로 크게 낮아졌습니다.",
+        "impact_ko": "에어드롭 상자가 적게 나타나, 전투 초기 자원 확보가 어려워집니다."
+      },
+      {
+        "key_path": "items.BD dogtag •| Ferrum._props.LootExperience",
+        "before_ko": "20 XP",
+        "after_ko": "200 XP",
+        "explanation_ko": "도그태그를 획득했을 때 주어지는 경험치가 10배인 200으로 증가했습니다.",
+        "impact_ko": "도그태그 수집을 통한 레벨 상승 속도가 빨라집니다."
+      },
+      {
+        "key_path": "items.BD dogtag •|| Green._props.LootExperience",
+        "before_ko": "20 XP",
+        "after_ko": "200 XP",
+        "explanation_ko": "그린 등급 도그태그의 경험치 보상이 10배로 상승했습니다.",
+        "impact_ko": "그린 도그태그 수집 시 레벨 상승이 크게 개선됩니다."
+      },
+      {
+        "key_path": "items.BD dogtag •||| Red._props.LootExperience",
+        "before_ko": "20 XP",
+        "after_ko": "200 XP",
+        "explanation_ko": "레드 등급 도그태그의 경험치 보상이 10배로 증가했습니다.",
+        "impact_ko": "레드 도그태그를 통한 레벨 상승이 크게 빨라집니다."
+      },
+      {
+        "key_path": "globals.bot_presets.36",
+        "before_ko": "없음",
+        "after_ko": "새로운 봇 프리셋 (exUsecFree) 추가",
+        "explanation_ko": "새로운 봇 프리셋이 추가돼 이동 속도, 청각 감도, 시야 각도 등 여러 파라미터가 정의되었습니다. 이는 AI 적의 행동 방식을 조정합니다.",
+        "impact_ko": "특정 라운드에서 새로운 유형의 AI 적이 등장해 전투 흐름이 변할 수 있습니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropEnd",
+        "before_ko": "1,200m",
+        "after_ko": "1,500m",
+        "explanation_ko": "에어드롭 비행기가 최대로 비행할 수 있는 거리(끝점)가 1,200에서 1,500미터로 늘어났습니다.",
+        "impact_ko": "에어드롭 스폰 위치가 더 넓은 구역에 걸쳐 나타날 수 있습니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropMax",
+        "before_ko": "5회",
+        "after_ko": "2회",
+        "explanation_ko": "한 라운드당 최대 에어드롭 횟수가 5에서 2로 크게 감소했습니다.",
+        "impact_ko": "에어드롭을 통한 보급 횟수가 크게 줄어듭니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropChance",
+        "before_ko": "0.2",
+        "after_ko": "0.15",
+        "explanation_ko": "에어드롭이 발생할 확률이 20%에서 15%로 낮아졌습니다.",
+        "impact_ko": "에어드롭이 발생할 가능성이 감소합니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropStartMax",
+        "before_ko": "900m",
+        "after_ko": "600m",
+        "explanation_ko": "에어드롭 시작 가능한 최대 거리(시작점)가 900에서 600미터로 감소했습니다.",
+        "impact_ko": "에어드롭 시작 지점이 맵 중앙에 더 가깝게 제한됩니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropStartMin",
+        "before_ko": "300m",
+        "after_ko": "180m",
+        "explanation_ko": "에어드롭 시작 가능한 최소 거리도 300에서 180미터로 감소했습니다.",
+        "impact_ko": "에어드롭 시작 구역이 전체적으로 축소됩니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.UnsuccessfulTryPenalty",
+        "before_ko": "600s",
+        "after_ko": "300s",
+        "explanation_ko": "에어드롭 시도 실패 시 적용되는 페널티 시간이 절반으로 줄었습니다.",
+        "impact_ko": "실패 후 재시도가 더 빨리 가능해집니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropCooldownMax",
+        "before_ko": "700s",
+        "after_ko": "900s",
+        "explanation_ko": "에어드롭 쿨다운 최대 시간이 700에서 900초로 늘어났습니다.",
+        "impact_ko": "에어드롭 사이 간격이 길어집니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropCooldownMin",
+        "before_ko": "600s",
+        "after_ko": "780s",
+        "explanation_ko": "에어드롭 최소 쿨다운도 600에서 780초로 증가했습니다.",
+        "impact_ko": "에어드롭 재출현이 늦어집니다."
+      },
+      {
+        "key_path": "locations.Woods.AirdropParameters.0.AirdropPointDeactivateDistance",
+        "before_ko": "50m",
+        "after_ko": "100m",
+        "explanation_ko": "플레이어가 에어드롭 포인트에서 멀어지면 비활성화되는 거리 기준이 50에서 100미터로 확대되었습니다.",
+        "impact_ko": "에어드롭 포인트를 더 멀리서도 이용할 수 있게 됩니다."
+      },
+      {
+        "key_path": "locations.Lighthouse.AirdropParameters.0.PlaneAirdropMax",
+        "before_ko": "10회",
+        "after_ko": "2회",
+        "explanation_ko": "라이트하우스 맵에서 에어드롭 최대 횟수가 10에서 2로 크게 감소했습니다.",
+        "impact_ko": "라이트하우스에서 에어드롭 보급이 매우 제한됩니다."
+      },
+      {
+        "key_path": "locations.Lighthouse.AirdropParameters.0.PlaneAirdropChance",
+        "before_ko": "0.85",
+        "after_ko": "0.15",
+        "explanation_ko": "에어드롭 발생 확률이 85%에서 15%로 급감했습니다.",
+        "impact_ko": "라이트하우스에서 에어드롭이 거의 발생하지 않을 확률이 높아집니다."
+      },
+      {
+        "key_path": "locations.Lighthouse.AirdropParameters.0.PlaneAirdropStartMax",
+        "before_ko": "180m",
+        "after_ko": "600m",
+        "explanation_ko": "에어드롭 시작 가능한 최대 거리가 180에서 600미터로 크게 늘어났습니다.",
+        "impact_ko": "에어드롭 시작 지점이 맵 외곽까지 확대됩니다."
+      },
+      {
+        "key_path": "locations.Lighthouse.AirdropParameters.0.PlaneAirdropStartMin",
+        "before_ko": "30m",
+        "after_ko": "180m",
+        "explanation_ko": "시작 최소 거리도 30에서 180미터로 증가했습니다.",
+        "impact_ko": "에어드롭 시작 구역이 중앙에서 멀어집니다."
+      },
+      {
+        "key_path": "locations.Lighthouse.AirdropParameters.0.UnsuccessfulTryPenalty",
+        "before_ko": "180s",
+        "after_ko": "300s",
+        "explanation_ko": "실패 페널티가 180초에서 300초로 늘어났습니다.",
+        "impact_ko": "에어드롭 실패 후 재시도가 더 오래 지연됩니다."
+      },
+      {
+        "key_path": "locations.Lighthouse.AirdropParameters.0.PlaneAirdropCooldownMax",
+        "before_ko": "600s",
+        "after_ko": "850s",
+        "explanation_ko": "최대 쿨다운이 600에서 850초로 증가했습니다.",
+        "impact_ko": "에어드롭 재출현 간격이 크게 늘어납니다."
+      },
+      {
+        "key_path": "locations.Lighthouse.AirdropParameters.0.PlaneAirdropCooldownMin",
+        "before_ko": "480s",
+        "after_ko": "700s",
+        "explanation_ko": "최소 쿨다운도 480에서 700초로 상승했습니다.",
+        "impact_ko": "에어드롭이 더 오래 기다려야 합니다."
+      },
+      {
+        "key_path": "locations.Lighthouse.AirdropParameters.0.AirdropPointDeactivateDistance",
+        "before_ko": "10m",
+        "after_ko": "75m",
+        "explanation_ko": "비활성화 거리 기준이 10에서 75미터로 크게 확대되었습니다.",
+        "impact_ko": "플레이어가 포인트에서 멀리 떨어져도 에어드롭을 사용할 수 있습니다."
+      },
+      {
+        "key_path": "locations.Shoreline.AirdropParameters.0.PlaneAirdropMax",
+        "before_ko": "5회",
+        "after_ko": "3회",
+        "explanation_ko": "쇼어라인 맵에서 에어드롭 최대 횟수가 5에서 3으로 감소했습니다.",
+        "impact_ko": "에어드롭 보급이 줄어듭니다."
+      },
+      {
+        "key_path": "locations.Shoreline.AirdropParameters.0.PlaneAirdropChance",
+        "before_ko": "0.2",
+        "after_ko": "0.1",
+        "explanation_ko": "에어드롭 발생 확률이 절반인 0.1로 낮아졌습니다.",
+        "impact_ko": "에어드롭이 덜 자주 발생합니다."
+      },
+      {
+        "key_path": "locations.Shoreline.AirdropParameters.0.PlaneAirdropCooldownMax",
+        "before_ko": "1,000s",
+        "after_ko": "840s",
+        "explanation_ko": "최대 쿨다운이 1,000에서 840초로 감소했습니다.",
+        "impact_ko": "에어드롭 재출현 간격이 약간 짧아집니다."
+      }
+    ],
     "patch_note": {
       "matched": false,
       "title": null,
       "url": null,
-      "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+      "reason_ko": "매칭 결과가 없어 잠수함 패치로 처리했습니다."
     },
+    "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
-    "stability": "stable",
-    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
-    "recurring_event": false,
+    "stability": "recurring",
+    "stability_detail_ko": "변경 키 63개 중 63개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+    "recurring_event": true,
     "stability_stats": {
-      "changed_keys": 0,
-      "recurring_keys": 0,
+      "changed_keys": 63,
+      "recurring_keys": 63,
+      "later_changes": 75
+    }
+  },
+  {
+    "entry_id": "h6a0b641154",
+    "eft_version": "1.1.5.1.47510",
+    "posted_at": "Tuesday, 29 September 2026 - 11:41 AM EDT",
+    "scraped_at": "2026-09-30T04:27:51Z",
+    "source_url": "https://changes.tarkov-changes.com/latest",
+    "files_changed": [
+      {
+        "path": "client/items/response.json",
+        "count": 6
+      },
+      {
+        "path": "client/globals/response.json",
+        "count": 1
+      },
+      {
+        "path": "client/locations/response.json",
+        "count": 56
+      }
+    ],
+    "raw_text": "Files Changed:\nclient/items/response.json\n(6 changes)\nclient/globals/response.json\n(1 change)\nclient/locations/response.json\n(56 changes)\nDated: Tuesday, 29 September 2026 - 11:41 AM EDT | Game Version 1.1.5.1.47510\nclient/items/response.json\n['data']\n    ['Airdrop common supply crate']\n        ['_props']\n            ['Grids']\n                ['0 (main)']\n                    ['_props']\n                        ['cellsV']\n-                        (Old) 20\n+                        (New) 12 (-40.00%)\n                        ['maxCount']\n-                        (Old) 60\n+                        (New) 43 (-28.33%)\n                        ['minCount']\n-                        (Old) 40\n+                        (New) 18 (-55.00%)\n    ['BD dogtag •| Ferrum']\n        ['_props']\n            ['LootExperience']\n-            (Old) 20\n+            (New) 200 (+900.00%)\n    ['BD dogtag •|| Green']\n        ['_props']\n            ['LootExperience']\n-            (Old) 20\n+            (New) 200 (+900.00%)\n    ['BD dogtag •||| Red']\n        ['_props']\n            ['LootExperience']\n-            (Old) 20\n+            (New) 200 (+900.00%)\nclient/globals/response.json\n['data']\n    ['bot_presets']\n+        (New) ['36']: {\n+              \"Role\": \"exUsecFree\",\n+              \"UseThis\": true,\n+              \"COEF_IF_MOVE\": 1.3,\n+              \"HearingSense\": 0.8,\n+              \"VisibleAngle\": 70,\n+              \"BotDifficulty\": \"normal\",\n+              \"VisibleDistance\": 125,\n+              \"ScatteringPerMeter\": 0.09,\n+              \"FIRST_CONTACT_ADD_SEC\": 0.9,\n+              \"SCATTERING_DIST_MODIF\": 0.8,\n+              \"VISIBILITY_CHANGE_SPEED\": 1.25,\n+              \"MAX_AIMING_UPGRADE_BY_TIME\": 0.85\n+            }\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Customs']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 1,200\n+                    (New) 1,500 (+25.00%)\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 2 (-60.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.15 (-25.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 600 (-33.33%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 180 (-40.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 300 (-50.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 700\n+                    (New) 900 (+28.57%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 600\n+                    (New) 780 (+30.00%)\n        ['Woods']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 1,200\n+                    (New) 1,500 (+25.00%)\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 3 (-40.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.12 (-40.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 480 (-46.67%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 180 (-40.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 240 (-60.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 800\n+                    (New) 780 (-2.50%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 700\n+                    (New) 600 (-14.29%)\n                    ['AirdropPointDeactivateDistance']\n-                    (Old) 50\n+                    (New) 100 (+100.00%)\n        ['Lighthouse']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 2,100\n+                    (New) 1,500 (-28.57%)\n                    ['PlaneAirdropMax']\n-                    (Old) 10\n+                    (New) 2 (-80.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.85\n+                    (New) 0.15 (-82.35%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 180\n+                    (New) 600 (+233.33%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 30\n+                    (New) 180 (+500.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 180\n+                    (New) 300 (+66.67%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 600\n+                    (New) 850 (+41.67%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 480\n+                    (New) 700 (+45.83%)\n                    ['AirdropPointDeactivateDistance']\n-                    (Old) 10\n+                    (New) 75 (+650.00%)\n        ['Shoreline']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 3 (-40.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.1 (-50.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 600 (-33.33%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 180 (-40.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 240 (-60.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 1,000\n+                    (New) 840 (-16.00%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 900\n+                    (New) 660 (-26.67%)\n                    ['AirdropPointDeactivateDistance']\n-                    (Old) 50\n+                    (New) 100 (+100.00%)\n        ['Reserve']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 2 (-60.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.15 (-25.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 600 (-33.33%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 180 (-40.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 300 (-50.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 800\n+                    (New) 900 (+12.50%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 700\n+                    (New) 780 (+11.43%)\n                    ['AirdropPointDeactivateDistance']\n-                    (Old) 50\n+                    (New) 75 (+50.00%)\n        ['Interchange']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 1,800\n+                    (New) 1,500 (-16.67%)\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 2 (-60.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.14 (-30.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 600 (-33.33%)\n                    ['PlaneAirdropStartMin']\n-                    (Old) 300\n+                    (New) 240 (-20.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 600\n+                    (New) 300 (-50.00%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 800\n+                    (New) 780 (-2.50%)\n        ['Streets']\n            ['AirdropParameters']\n                ['0']\n                    ['PlaneAirdropEnd']\n-                    (Old) 2,700\n+                    (New) 2,100 (-22.22%)\n                    ['PlaneAirdropMax']\n-                    (Old) 5\n+                    (New) 2 (-60.00%)\n                    ['PlaneAirdropChance']\n-                    (Old) 0.2\n+                    (New) 0.13 (-35.00%)\n                    ['PlaneAirdropStartMax']\n-                    (Old) 900\n+                    (New) 720 (-20.00%)\n                    ['UnsuccessfulTryPenalty']\n-                    (Old) 400\n+                    (New) 360 (-10.00%)\n                    ['PlaneAirdropCooldownMax']\n-                    (Old) 800\n+                    (New) 1,080 (+35.00%)\n                    ['PlaneAirdropCooldownMin']\n-                    (Old) 700\n+                    (New) 900 (+28.57%)",
+    "summary_ko": "에어드롭 상자 크기와 수량 감소, 도그태그 경험치 10배 상승, 신규 AI 프리유스케 프리셋 추가, 전 맵의 에어드롭 스폰 파라미터 전반적인 조정",
+    "tags": [
+      "아이템",
+      "경험치",
+      "맵",
+      "밸런스"
+    ],
+    "severity": "major",
+    "changes": [
+      {
+        "key_path": "items.Airdrop common supply crate._props.Grids.0.cellsV",
+        "before_ko": "20칸",
+        "after_ko": "12칸",
+        "explanation_ko": "에어드롭 상자 내부 그리드(칸)의 세로 길이가 20에서 12로 감소했습니다. 이는 상자에 들어갈 아이템 수를 제한합니다.",
+        "impact_ko": "플레이어가 에어드롭에서 얻을 수 있는 아이템 양이 크게 줄어듭니다."
+      },
+      {
+        "key_path": "items.Airdrop common supply crate._props.Grids.0.maxCount",
+        "before_ko": "60개",
+        "after_ko": "43개",
+        "explanation_ko": "상자에 동시에 존재할 수 있는 최대 아이템 수가 60에서 43으로 감소했습니다.",
+        "impact_ko": "에어드롭 상자당 아이템 종류와 수가 감소합니다."
+      },
+      {
+        "key_path": "items.Airdrop common supply crate._props.Grids.0.minCount",
+        "before_ko": "40개",
+        "after_ko": "18개",
+        "explanation_ko": "상자에 최소로 들어갈 아이템 수가 40에서 18로 낮아졌습니다.",
+        "impact_ko": "에어드롭 상자에서 최소 보상이 크게 줄어듭니다."
+      },
+      {
+        "key_path": "items.BD dogtag •| Ferrum._props.LootExperience",
+        "before_ko": "20 XP",
+        "after_ko": "200 XP",
+        "explanation_ko": "도그태그를 획득했을 때 주어지는 경험치가 10배 상승했습니다. 다른 색상의 도그태그도 동일하게 적용됩니다.",
+        "impact_ko": "도그태그 수집을 통한 레벨 상승 속도가 크게 빨라집니다."
+      },
+      {
+        "key_path": "globals.bot_presets.36",
+        "before_ko": "새 프리셋 없음",
+        "after_ko": "exUsecFree 프리셋 추가 (시청각 감지, 이동 속도, 시야 등 조정)",
+        "explanation_ko": "새로운 AI 프리셋이 추가돼, 이동 시 소음 감소(0.8), 시야각 70°, 시야거리 125m 등으로 일반 난이도에서 행동합니다.",
+        "impact_ko": "새로운 AI 유형이 등장해 전투 전략에 변화를 줍니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropEnd",
+        "before_ko": "1,200m",
+        "after_ko": "1,500m",
+        "explanation_ko": "에어드롭 비행기가 최대로 비행할 수 있는 거리(끝점)가 1,200에서 1,500미터로 늘어났습니다.",
+        "impact_ko": "에어드롭 스폰 위치가 더 넓은 구역에 걸쳐 나타날 수 있습니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropMax",
+        "before_ko": "5회",
+        "after_ko": "2회",
+        "explanation_ko": "한 라운드에서 발생할 수 있는 에어드롭 횟수가 5에서 2로 감소했습니다.",
+        "impact_ko": "에어드롭을 통한 고가 아이템 획득 기회가 줄어듭니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropChance",
+        "before_ko": "0.2 (20%)",
+        "after_ko": "0.15 (15%)",
+        "explanation_ko": "에어드롭이 발생할 기본 확률이 20%에서 15%로 낮아졌습니다.",
+        "impact_ko": "에어드롭이 등장할 확률이 감소합니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.PlaneAirdropStartMin",
+        "before_ko": "300m",
+        "after_ko": "180m",
+        "explanation_ko": "에어드롭 시작 최소 거리(플레인 시작점)가 300에서 180미터로 줄어들었습니다.",
+        "impact_ko": "에어드롭이 더 가까운 거리에서 시작될 가능성이 높아집니다."
+      },
+      {
+        "key_path": "locations.Customs.AirdropParameters.0.UnsuccessfulTryPenalty",
+        "before_ko": "600m",
+        "after_ko": "300m",
+        "explanation_ko": "에어드롭 시도 실패 시 적용되는 패널티 거리가 절반으로 감소했습니다.",
+        "impact_ko": "실패 후 재시도까지의 거리 제한이 완화됩니다."
+      },
+      {
+        "key_path": "locations.Woods.AirdropParameters.0.AirdropPointDeactivateDistance",
+        "before_ko": "50m",
+        "after_ko": "100m",
+        "explanation_ko": "플레이어가 에어드롭 포인트에서 멀어지면 비활성화되는 거리 기준이 50에서 100미터로 늘어났습니다.",
+        "impact_ko": "에어드롭 포인트를 더 오래 유지할 수 있습니다."
+      },
+      {
+        "key_path": "locations.Lighthouse.AirdropParameters.0.PlaneAirdropChance",
+        "before_ko": "0.85 (85%)",
+        "after_ko": "0.15 (15%)",
+        "explanation_ko": "라이트하우스 맵에서 에어드롭 발생 확률이 크게 감소했습니다.",
+        "impact_ko": "라이트하우스에서 에어드롭을 기대하기 어려워집니다."
+      },
+      {
+        "key_path": "locations.Lighthouse.AirdropParameters.0.PlaneAirdropStartMax",
+        "before_ko": "180m",
+        "after_ko": "600m",
+        "explanation_ko": "에어드롭 시작 최대 거리가 180에서 600미터로 크게 늘어났습니다.",
+        "impact_ko": "에어드롭이 더 멀리서 시작될 수 있어 위치 예측이 어려워집니다."
+      },
+      {
+        "key_path": "locations.Shoreline.AirdropParameters.0.PlaneAirdropCooldownMin",
+        "before_ko": "1,000s",
+        "after_ko": "840s",
+        "explanation_ko": "에어드롭 재시작 최소 대기시간이 1,000초에서 840초로 감소했습니다.",
+        "impact_ko": "에어드롭이 조금 더 자주 발생할 가능성이 있습니다."
+      },
+      {
+        "key_path": "locations.Interchange.AirdropParameters.0.PlaneAirdropChance",
+        "before_ko": "0.2 (20%)",
+        "after_ko": "0.14 (14%)",
+        "explanation_ko": "인터체인지 맵에서 에어드롭 발생 확률이 20%에서 14%로 낮아졌습니다.",
+        "impact_ko": "에어드롭을 통한 보급 획득이 어려워집니다."
+      },
+      {
+        "key_path": "locations.Streets.AirdropParameters.0.PlaneAirdropCooldownMax",
+        "before_ko": "400s",
+        "after_ko": "360s",
+        "explanation_ko": "스트리트 맵에서 에어드롭 재시작 최대 대기시간이 400초에서 360초로 감소했습니다.",
+        "impact_ko": "에어드롭이 약간 더 자주 나타날 수 있습니다."
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "제공된 diff는 공식 패치노트와 직접 매칭되는 항목이 없으며, 사일런트(잠수함) 업데이트로 추정됩니다."
+    },
+    "interpreter": "groq:openai/gpt-oss-120b",
+    "is_submarine": true,
+    "stability": "recurring",
+    "stability_detail_ko": "변경 키 63개 중 63개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+    "recurring_event": true,
+    "stability_stats": {
+      "changed_keys": 63,
+      "recurring_keys": 63,
       "later_changes": 0
     }
   }
