@@ -222,10 +222,11 @@ a:hover { color: var(--amber-hi); }
 
 /* ---------- 리드아웃 ---------- */
 .readout {
-  display: grid; grid-template-columns: 1fr; gap: 18px;
+  /* minmax(0,…): 1fr 의 최소폭(auto=min-content)이 막대 수만큼 커져 375px 에서 가로로 잘리던 문제 */
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px;
   margin: 26px auto 4px;
 }
-@media (min-width: 760px) { .readout { grid-template-columns: 1.1fr 1fr; align-items: stretch; } }
+@media (min-width: 760px) { .readout { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: stretch; } }
 
 .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .stat {
@@ -261,9 +262,12 @@ a:hover { color: var(--amber-hi); }
 }
 .spark-bars {
   flex: 1; display: flex; align-items: flex-end; gap: 4px; min-height: 64px;
+  min-width: 0; overflow: hidden;
 }
 .spark-bar {
-  flex: 1; min-width: 4px; background: var(--amber-dim); border-radius: 2px 2px 0 0;
+  /* <button> 의 UA 기본 padding(1px 6px)·border(2px)가 막대마다 16px 최소폭을 만들었음 → 리셋 */
+  padding: 0; border: 0; min-width: 0;
+  flex: 1; background: var(--amber-dim); border-radius: 2px 2px 0 0;
   cursor: pointer; opacity: 0.55; transition: opacity .15s, transform .15s, height .5s ease;
   transform-origin: bottom;
 }
