@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-03T18:04:42Z",
-  "count": 60,
+  "generated_at": "2026-10-04T18:14:55Z",
+  "count": 62,
   "entries": [
     {
       "entry_id": "1225",
@@ -2651,6 +2651,289 @@
         "changed_keys": 24,
         "recurring_keys": 0,
         "later_changes": 44
+      }
+    },
+    {
+      "entry_id": "1166",
+      "eft_version": "1.1.0.0.46657",
+      "posted_at": "Friday, 07 August 2026 - 02:34 PM EDT",
+      "scraped_at": "2026-10-04T18:13:44Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1166",
+      "files_changed": [
+        {
+          "path": "client/globals/response.json",
+          "count": 8
+        },
+        {
+          "path": "client/locations/response.json",
+          "count": 26
+        },
+        {
+          "path": "client/trading/api/traderSettings/response.json",
+          "count": 1
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/globals/response.json\n(8 changes)\nclient/locations/response.json\n(26 changes)\nclient/trading/api/traderSettings/response.json\n(1 change)\nDated: Friday, 07 August 2026 - 02:34 PM EDT | Game Version 1.1.0.0.46657\nclient/globals/response.json\n['data']\n    ['config']\n        ['RestrictionsInRaid']\n            ['252 (Financial documents)']\n                ['MaxInRaid']\n-                (Old) 3\n+                (New) 10 (+233.33%)\n            ['253 (PMC personnel files)']\n                ['MaxInRaid']\n-                (Old) 3\n+                (New) 10 (+233.33%)\n            ['254 (Project documentation)']\n                ['MaxInRaid']\n-                (Old) 3\n+                (New) 10 (+233.33%)\n            ['255 (Blueprints and technical documentation)']\n                ['MaxInRaid']\n-                (Old) 3\n+                (New) 10 (+233.33%)\n            ['256 (Test documentation)']\n                ['MaxInRaid']\n-                (Old) 3\n+                (New) 10 (+233.33%)\n            ['257 (User documentation)']\n                ['MaxInRaid']\n-                (Old) 3\n+                (New) 10 (+233.33%)\n            ['258 (Medical documents)']\n                ['MaxInRaid']\n-                (Old) 3\n+                (New) 10 (+233.33%)\n            ['259 (Technical documentation)']\n                ['MaxInRaid']\n-                (Old) 3\n+                (New) 10 (+233.33%)\nclient/trading/api/traderSettings/response.json\n['data']\n    ['Jaeger']\n        ['items_sell']\n            ['3']\n                ['id_list']\n+                    (New) ['70']: Tripwire installation kit\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Factory Day']\n            ['maxItemCountInLocation']\n                ['4 (Project documentation)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['5 (Blueprints and technical documentation)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['Customs']\n            ['maxItemCountInLocation']\n                ['11 (Project documentation)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['12 (Financial documents)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['Woods']\n            ['maxItemCountInLocation']\n                ['4 (Test documentation)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['5 (Technical documentation)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['Lighthouse']\n            ['maxItemCountInLocation']\n                ['9 (PMC personnel files)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['10 (Technical documentation)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['Shoreline']\n            ['maxItemCountInLocation']\n                ['5 (Test documentation)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['6 (Technical documentation)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['Reserve']\n            ['maxItemCountInLocation']\n                ['11 (PMC personnel files)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['12 (Project documentation)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['Interchange']\n            ['maxItemCountInLocation']\n                ['5 (Blueprints and technical documentation)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['6 (Financial documents)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['Streets']\n            ['maxItemCountInLocation']\n                ['18 (Financial documents)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['19 (User documentation)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['Factory Night']\n            ['maxItemCountInLocation']\n                ['5 (Project documentation)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n-                (Removed) ['6 (Blueprints and technical documentation)']: {\n-                      \"Value\": 1,\n-                      \"TemplateId\": \"Blueprints and technical documentation\"\n-                    }\n        ['Labs']\n            ['maxItemCountInLocation']\n                ['4 (User documentation)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['5 (Medical documents)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['Ground Zero (1-20)']\n            ['maxItemCountInLocation']\n                ['4 (User documentation)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['5 (Medical documents)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['Ground Zero (21+)']\n            ['maxItemCountInLocation']\n                ['5 (Medical documents)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['6 (User documentation)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n        ['The Labyrinth']\n            ['maxItemCountInLocation']\n                ['16 (Blueprints and technical documentation)']\n                    ['Value']\n-                    (Old) 2\n+                    (New) 3 (+50.00%)\n                ['17 (Medical documents)']\n                    ['Value']\n-                    (Old) 1\n+                    (New) 3 (+200.00%)\n← Back to all changes",
+      "summary_ko": "다수의 문서 아이템 및 해당 맵 내 최대 스폰 수가 크게 증가하고, Jaeger가 트립와이어 설치 키트를 판매하도록 추가되었습니다.",
+      "tags": [
+        "아이템",
+        "밸런스",
+        "맵"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "data.config.RestrictionsInRaid.252 (Financial documents).MaxInRaid",
+          "before_ko": "레이드 내 최대 3개",
+          "after_ko": "레이드 내 최대 10개 (+233.33%)",
+          "explanation_ko": "레이다 중에 금융 문서 아이템을 최대 3개까지만 찾을 수 있었으나, 이제 최대 10개까지 스폰됩니다. 이는 해당 아이템을 더 많이 확보할 수 있게 합니다.",
+          "impact_ko": "문서 아이템 수집이 쉬워져 퀘스트와 거래에 유리해집니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.253 (PMC personnel files).MaxInRaid",
+          "before_ko": "레이드 내 최대 3개",
+          "after_ko": "레이드 내 최대 10개 (+233.33%)",
+          "explanation_ko": "PMC 인원 파일도 동일하게 스폰 수가 3→10으로 늘어나며, 해당 문서 기반 퀘스트 진행이 수월해집니다.",
+          "impact_ko": "관련 퀘스트 수행 시 아이템 부족 현상이 감소합니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.254 (Project documentation).MaxInRaid",
+          "before_ko": "레이드 내 최대 3개",
+          "after_ko": "레이드 내 최대 10개 (+233.33%)",
+          "explanation_ko": "프로젝트 문서의 레이드 내 최대 보유량이 3에서 10으로 확대되었습니다.",
+          "impact_ko": "프로젝트 문서 수집이 더 쉬워집니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.255 (Blueprints and technical documentation).MaxInRaid",
+          "before_ko": "레이드 내 최대 3개",
+          "after_ko": "레이드 내 최대 10개 (+233.33%)",
+          "explanation_ko": "청사진 및 기술 문서의 최대 보유량이 3→10으로 증가했습니다.",
+          "impact_ko": "청사진 수집이 용이해집니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.256 (Test documentation).MaxInRaid",
+          "before_ko": "레이드 내 최대 3개",
+          "after_ko": "레이드 내 최대 10개 (+233.33%)",
+          "explanation_ko": "시험 문서의 최대 보유량이 3에서 10으로 늘어났습니다.",
+          "impact_ko": "시험 문서 관련 퀘스트 진행이 수월해집니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.257 (User documentation).MaxInRaid",
+          "before_ko": "레이드 내 최대 3개",
+          "after_ko": "레이드 내 최대 10개 (+233.33%)",
+          "explanation_ko": "사용자 문서의 최대 보유량이 3→10으로 확대되었습니다.",
+          "impact_ko": "사용자 문서 수집이 쉬워집니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.258 (Medical documents).MaxInRaid",
+          "before_ko": "레이드 내 최대 3개",
+          "after_ko": "레이드 내 최대 10개 (+233.33%)",
+          "explanation_ko": "의료 문서의 최대 보유량이 3에서 10으로 증가했습니다.",
+          "impact_ko": "의료 문서 관련 퀘스트가 더 원활해집니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.259 (Technical documentation).MaxInRaid",
+          "before_ko": "레이드 내 최대 3개",
+          "after_ko": "레이드 내 최대 10개 (+233.33%)",
+          "explanation_ko": "기술 문서의 최대 보유량이 3→10으로 늘어났습니다.",
+          "impact_ko": "기술 문서 수집이 쉬워집니다."
+        },
+        {
+          "key_path": "data.locations.Factory Day.maxItemCountInLocation.4 (Project documentation).Value",
+          "before_ko": "맵 내 최대 2개",
+          "after_ko": "맵 내 최대 3개 (+50.00%)",
+          "explanation_ko": "Factory Day 맵에서 프로젝트 문서가 스폰되는 최대 수가 2→3으로 증가했습니다.",
+          "impact_ko": "해당 맵에서 문서 아이템을 더 많이 찾을 수 있습니다."
+        },
+        {
+          "key_path": "data.locations.Factory Day.maxItemCountInLocation.5 (Blueprints and technical documentation).Value",
+          "before_ko": "맵 내 최대 1개",
+          "after_ko": "맵 내 최대 3개 (+200.00%)",
+          "explanation_ko": "Factory Day 맵에서 청사진·기술 문서의 스폰 수가 1→3으로 크게 늘었습니다.",
+          "impact_ko": "청사진 수집이 크게 쉬워집니다."
+        },
+        {
+          "key_path": "data.locations.Customs.maxItemCountInLocation.11 (Project documentation).Value",
+          "before_ko": "맵 내 최대 2개",
+          "after_ko": "맵 내 최대 3개 (+50.00%)",
+          "explanation_ko": "Customs 맵에서 프로젝트 문서 스폰 수가 2→3으로 증가했습니다.",
+          "impact_ko": "Customs에서 문서 아이템 확보가 용이해집니다."
+        },
+        {
+          "key_path": "data.locations.Customs.maxItemCountInLocation.12 (Financial documents).Value",
+          "before_ko": "맵 내 최대 1개",
+          "after_ko": "맵 내 최대 3개 (+200.00%)",
+          "explanation_ko": "Customs 맵에서 금융 문서 스폰 수가 1→3으로 크게 늘었습니다.",
+          "impact_ko": "금융 문서 수집이 쉬워집니다."
+        },
+        {
+          "key_path": "data.locations.Woods.maxItemCountInLocation.4 (Test documentation).Value",
+          "before_ko": "맵 내 최대 2개",
+          "after_ko": "맵 내 최대 3개 (+50.00%)",
+          "explanation_ko": "Woods 맵에서 시험 문서 스폰 수가 2→3으로 증가했습니다.",
+          "impact_ko": "Woods에서 시험 문서 확보가 용이합니다."
+        },
+        {
+          "key_path": "data.locations.Woods.maxItemCountInLocation.5 (Technical documentation).Value",
+          "before_ko": "맵 내 최대 1개",
+          "after_ko": "맵 내 최대 3개 (+200.00%)",
+          "explanation_ko": "Woods 맵에서 기술 문서 스폰 수가 1→3으로 크게 늘었습니다.",
+          "impact_ko": "기술 문서 수집이 쉬워집니다."
+        },
+        {
+          "key_path": "data.locations.Lighthouse.maxItemCountInLocation.9 (PMC personnel files).Value",
+          "before_ko": "맵 내 최대 2개",
+          "after_ko": "맵 내 최대 3개 (+50.00%)",
+          "explanation_ko": "Lighthouse 맵에서 PMC 인원 파일 스폰 수가 2→3으로 증가했습니다.",
+          "impact_ko": "Lighthouse에서 해당 문서 확보가 쉬워집니다."
+        },
+        {
+          "key_path": "data.locations.Lighthouse.maxItemCountInLocation.10 (Technical documentation).Value",
+          "before_ko": "맵 내 최대 1개",
+          "after_ko": "맵 내 최대 3개 (+200.00%)",
+          "explanation_ko": "Lighthouse 맵에서 기술 문서 스폰 수가 1→3으로 크게 늘었습니다.",
+          "impact_ko": "기술 문서 수집이 용이합니다."
+        },
+        {
+          "key_path": "data.locations.Shoreline.maxItemCountInLocation.5 (Test documentation).Value",
+          "before_ko": "맵 내 최대 2개",
+          "after_ko": "맵 내 최대 3개 (+50.00%)",
+          "explanation_ko": "Shoreline 맵에서 시험 문서 스폰 수가 2→3으로 증가했습니다.",
+          "impact_ko": "Shoreline에서 시험 문서 확보가 쉬워집니다."
+        },
+        {
+          "key_path": "data.locations.Shoreline.maxItemCountInLocation.6 (Technical documentation).Value",
+          "before_ko": "맵 내 최대 1개",
+          "after_ko": "맵 내 최대 3개 (+200.00%)",
+          "explanation_ko": "Shoreline 맵에서 기술 문서 스폰 수가 1→3으로 크게 늘었습니다.",
+          "impact_ko": "기술 문서 수집이 쉬워집니다."
+        },
+        {
+          "key_path": "data.locations.Reserve.maxItemCountInLocation.11 (PMC personnel files).Value",
+          "before_ko": "맵 내 최대 2개",
+          "after_ko": "맵 내 최대 3개 (+50.00%)",
+          "explanation_ko": "Reserve 맵에서 PMC 인원 파일 스폰 수가 2→3으로 증가했습니다.",
+          "impact_ko": "Reserve에서 해당 문서 확보가 용이합니다."
+        },
+        {
+          "key_path": "data.locations.Reserve.maxItemCountInLocation.12 (Project documentation).Value",
+          "before_ko": "맵 내 최대 1개",
+          "after_ko": "맵 내 최대 3개 (+200.00%)",
+          "explanation_ko": "Reserve 맵에서 프로젝트 문서 스폰 수가 1→3으로 크게 늘었습니다.",
+          "impact_ko": "프로젝트 문서 수집이 쉬워집니다."
+        },
+        {
+          "key_path": "data.locations.Interchange.maxItemCountInLocation.5 (Blueprints and technical documentation).Value",
+          "before_ko": "맵 내 최대 2개",
+          "after_ko": "맵 내 최대 3개 (+50.00%)",
+          "explanation_ko": "Interchange 맵에서 청사진·기술 문서 스폰 수가 2→3으로 증가했습니다.",
+          "impact_ko": "청사진 확보가 용이합니다."
+        },
+        {
+          "key_path": "data.locations.Interchange.maxItemCountInLocation.6 (Financial documents).Value",
+          "before_ko": "맵 내 최대 1개",
+          "after_ko": "맵 내 최대 3개 (+200.00%)",
+          "explanation_ko": "Interchange 맵에서 금융 문서 스폰 수가 1→3으로 크게 늘었습니다.",
+          "impact_ko": "금융 문서 수집이 쉬워집니다."
+        },
+        {
+          "key_path": "data.locations.Streets.maxItemCountInLocation.18 (Financial documents).Value",
+          "before_ko": "맵 내 최대 2개",
+          "after_ko": "맵 내 최대 3개 (+50.00%)",
+          "explanation_ko": "Streets 맵에서 금융 문서 스폰 수가 2→3으로 증가했습니다.",
+          "impact_ko": "Streets에서 금융 문서 확보가 용이합니다."
+        },
+        {
+          "key_path": "data.locations.Streets.maxItemCountInLocation.19 (User documentation).Value",
+          "before_ko": "맵 내 최대 1개",
+          "after_ko": "맵 내 최대 3개 (+200.00%)",
+          "explanation_ko": "Streets 맵에서 사용자 문서 스폰 수가 1→3으로 크게 늘었습니다.",
+          "impact_ko": "사용자 문서 수집이 쉬워집니다."
+        },
+        {
+          "key_path": "data.locations.Factory Night.maxItemCountInLocation.5 (Project documentation).Value",
+          "before_ko": "맵 내 최대 2개",
+          "after_ko": "맵 내 최대 3개 (+50.00%)",
+          "explanation_ko": "Factory Night 맵에서 프로젝트 문서 스폰 수가 2→3으로 증가했습니다.",
+          "impact_ko": "Project documentation 확보가 쉬워집니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "매칭 결과가 없어 잠수함 패치로 처리했습니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "backfilled": true,
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 66회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 34,
+        "recurring_keys": 0,
+        "later_changes": 66
+      }
+    },
+    {
+      "entry_id": "1165",
+      "eft_version": "1.1.0.0.46657",
+      "posted_at": "Friday, 07 August 2026 - 11:51 AM EDT",
+      "scraped_at": "2026-10-04T18:13:51Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1165",
+      "files_changed": [
+        {
+          "path": "client/items/response.json",
+          "count": 3
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/items/response.json\n(3 changes)\nDated: Friday, 07 August 2026 - 11:51 AM EDT | Game Version 1.1.0.0.46657\nclient/items/response.json\n['data']\n    ['5.8x42mm DBP191']\n        ['_props']\n            ['PenetrationPower']\n-            (Old) 32\n+            (New) 39 (+21.88%)\n    ['5.8x42mm DBX95']\n        ['_props']\n            ['ammoRec']\n-            (Old) 5\n+            (New) -5 (-200.00%)\n            ['ammoAccr']\n-            (Old) 3\n+            (New) -3 (-200.00%)\n← Back to all changes",
+      "summary_ko": "5.8x42mm DBP191 탄약의 관통력이 21.88% 상승하고, DBX95 탄약의 탄약 회수와 정확도가 -200%로 감소했습니다.",
+      "tags": [
+        "밸런스",
+        "아이템"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "data['5.8x42mm DBP191']._props.PenetrationPower",
+          "before_ko": "32",
+          "after_ko": "39 (+21.88%)",
+          "explanation_ko": "PenetrationPower(관통력)는 탄약이 방탄복이나 장갑을 뚫는 능력을 나타냅니다. 값이 32에서 39로 상승하면 같은 탄환으로 더 높은 등급의 방어구를 관통할 수 있게 됩니다.",
+          "impact_ko": "DBP191을 사용할 때 방어구를 더 쉽게 뚫어 전투 효율이 상승합니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DBX95']._props.ammoRec",
+          "before_ko": "5",
+          "after_ko": "-5 (-200%)",
+          "explanation_ko": "ammoRec은 탄약 회수(재장전 시 회수되는 탄약 수)를 의미합니다. 값이 -5가 되면 탄약을 회수하는 대신 오히려 감소하게 됩니다.",
+          "impact_ko": "DBX95를 사용할 때 탄약이 줄어들어 총탄 관리가 어려워집니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DBX95']._props.ammoAccr",
+          "before_ko": "3",
+          "after_ko": "-3 (-200%)",
+          "explanation_ko": "ammoAccr은 탄약 정확도 보정값을 나타냅니다. 음수 값으로 바뀌면 탄약의 정확도가 크게 감소합니다.",
+          "impact_ko": "DBX95의 사격 정확도가 크게 떨어져 전투 효율이 감소합니다."
+        }
+      ],
+      "patch_note": {
+        "matched": true,
+        "title": "Made balancing changes to the stats of 5.8x42 ammunition.",
+        "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(7_August_2026)",
+        "reason_ko": "공식 패치노트에 5.8x42mm 탄약 스탯 조정이 언급되어 있어 이번 diff와 일치합니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": false,
+      "backfilled": true,
+      "stability": "stable",
+      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 3,
+        "recurring_keys": 0,
+        "later_changes": 0
       }
     },
     {
