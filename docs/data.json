@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-04T18:14:55Z",
-  "count": 62,
+  "generated_at": "2026-10-05T21:33:07Z",
+  "count": 64,
   "entries": [
     {
       "entry_id": "1225",
@@ -951,7 +951,7 @@
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 10,
-        "recurring_keys": 0,
+        "recurring_keys": 1,
         "later_changes": 0
       }
     },
@@ -1809,11 +1809,11 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(토글 키 1개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 8,
-        "recurring_keys": 0,
+        "recurring_keys": 1,
         "later_changes": 3
       }
     },
@@ -2934,6 +2934,258 @@
         "changed_keys": 3,
         "recurring_keys": 0,
         "later_changes": 0
+      }
+    },
+    {
+      "entry_id": "1164",
+      "eft_version": "1.1.0.0.46657",
+      "posted_at": "Friday, 07 August 2026 - 09:17 AM EDT",
+      "scraped_at": "2026-10-05T21:31:57Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1164",
+      "files_changed": [
+        {
+          "path": "client/items/response.json",
+          "count": 22
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/items/response.json\n(22 changes)\nDated: Friday, 07 August 2026 - 09:17 AM EDT | Game Version 1.1.0.0.46657\nclient/items/response.json\n['data']\n    ['AR-15 High Standard M4SS Stock']\n        ['_props']\n            ['Recoil']\n-            (Old) -21\n+            (New) -20.5 (+2.38%)\n    ['AR-15 LMT SOPMOD stock']\n        ['_props']\n            ['Ergonomics']\n-            (Old) 5\n+            (New) 7 (+40.00%)\n    ['AR-15 Colt M16A1 Type 7 stock']\n        ['_props']\n            ['Ergonomics']\n-            (Old) 4\n+            (New) 3 (-25.00%)\n    ['AR-15 Colt N1 Stock']\n        ['_props']\n            ['Recoil']\n-            (Old) -21\n+            (New) -20.5 (+2.38%)\n    ['AR-15 KAC SASS stock (Taupe)']\n        ['_props']\n            ['Ergonomics']\n-            (Old) 3\n+            (New) 2 (-33.33%)\n    ['5.8x42mm DBP191']\n        ['_props']\n            ['Damage']\n-            (Old) 56\n+            (New) 53 (-5.36%)\n            ['ammoRec']\n-            (Old) -5\n+            (New) -3 (+40.00%)\n            ['ammoAccr']\n-            (Old) 3\n+            (New) 0 (-100.00%)\n            ['ArmorDamage']\n-            (Old) 46\n+            (New) 43 (-6.52%)\n    ['AR-15 LMT SOPMOD stock (FDE)']\n        ['_props']\n            ['Ergonomics']\n-            (Old) 5\n+            (New) 7 (+40.00%)\n    ['5.8x42mm DBX95']\n        ['_props']\n            ['ammoRec']\n-            (Old) 0\n+            (New) 5\n            ['ammoAccr']\n-            (Old) 0\n+            (New) 3\n            ['PenetrationPower']\n-            (Old) 29\n+            (New) 33 (+13.79%)\n    ['5.8x42mm DVC12']\n        ['_props']\n            ['ammoRec']\n-            (Old) 5\n+            (New) 12 (+140.00%)\n            ['ammoAccr']\n-            (Old) 0\n+            (New) -5\n            ['ArmorDamage']\n-            (Old) 55\n+            (New) 60 (+9.09%)\n            ['PenetrationPower']\n-            (Old) 49\n+            (New) 52 (+6.12%)\n    ['5.8x42mm DVX12']\n        ['_props']\n            ['Damage']\n-            (Old) 50\n+            (New) 48 (-4.00%)\n            ['ammoRec']\n-            (Old) 5\n+            (New) 9 (+80.00%)\n            ['ammoAccr']\n-            (Old) 0\n+            (New) -8\n            ['ArmorDamage']\n-            (Old) 52\n+            (New) 54 (+3.85%)\n            ['PenetrationPower']\n-            (Old) 46\n+            (New) 47 (+2.17%)\n← Back to all changes",
+      "summary_ko": "여러 AR-15 총열용 스톡과 5.8x42mm 탄약의 반동·인체공학·피해·관통·탄약 회수·탄약 정확도·갑옷 피해 수치가 소폭 조정되었습니다.",
+      "tags": [
+        "밸런스",
+        "아이템"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data['AR-15 High Standard M4SS Stock']._props.Recoil",
+          "before_ko": "반동 -21",
+          "after_ko": "반동 -20.5",
+          "explanation_ko": "반동 값은 총을 발사했을 때 무기가 위아래로 흔들리는 정도를 나타냅니다. 값이 -20.5로 상승(덜 부정)하면 반동이 약간 감소합니다.",
+          "impact_ko": "조준 안정성이 약간 향상됩니다."
+        },
+        {
+          "key_path": "data['AR-15 LMT SOPMOD stock']._props.Ergonomics",
+          "before_ko": "인체공학 5",
+          "after_ko": "인체공학 7",
+          "explanation_ko": "인체공학 수치는 무기를 잡았을 때의 편안함과 조작 속도에 영향을 줍니다. 값이 40% 상승하면 조작이 더 수월해집니다.",
+          "impact_ko": "조작 속도가 빨라져 전투 효율이 소폭 증가합니다."
+        },
+        {
+          "key_path": "data['AR-15 Colt M16A1 Type 7 stock']._props.Ergonomics",
+          "before_ko": "인체공학 4",
+          "after_ko": "인체공학 3",
+          "explanation_ko": "인체공학 수치가 감소하면 무기를 다루는 데 약간 더 불편해집니다.",
+          "impact_ko": "조작 속도가 약간 느려집니다."
+        },
+        {
+          "key_path": "data['AR-15 Colt N1 Stock']._props.Recoil",
+          "before_ko": "반동 -21",
+          "after_ko": "반동 -20.5",
+          "explanation_ko": "반동이 -20.5로 완화돼 기존보다 약간 안정적인 사격이 가능합니다.",
+          "impact_ko": "조준 유지가 약간 쉬워집니다."
+        },
+        {
+          "key_path": "data['AR-15 KAC SASS stock (Taupe)']._props.Ergonomics",
+          "before_ko": "인체공학 3",
+          "after_ko": "인체공학 2",
+          "explanation_ko": "인체공학 수치가 33% 감소해 해당 스톡의 조작성이 낮아졌습니다.",
+          "impact_ko": "조작이 약간 불편해집니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DBP191']._props.Damage",
+          "before_ko": "피해 56",
+          "after_ko": "피해 53",
+          "explanation_ko": "탄환의 기본 피해량이 5.36% 감소했습니다.",
+          "impact_ko": "같은 부위에 가한 피해가 약간 줄어듭니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DBP191']._props.ammoRec",
+          "before_ko": "탄약 회수 -5",
+          "after_ko": "탄약 회수 -3",
+          "explanation_ko": "탄약 회수(탄환 회수) 보정치가 -5에서 -3으로 상승(덜 불리)했습니다.",
+          "impact_ko": "탄약 회수 효율이 약간 개선됩니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DBP191']._props.ammoAccr",
+          "before_ko": "탄약 정확도 3",
+          "after_ko": "탄약 정확도 0",
+          "explanation_ko": "탄약 정확도 보정치가 100% 감소해 탄환이 더 정확해졌습니다.",
+          "impact_ko": "탄환이 목표에 더 잘 맞습니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DBP191']._props.ArmorDamage",
+          "before_ko": "갑옷 피해 46",
+          "after_ko": "갑옷 피해 43",
+          "explanation_ko": "갑옷에 입히는 피해가 6.52% 감소했습니다.",
+          "impact_ko": "갑옷을 관통할 때 입히는 피해가 약간 줄어듭니다."
+        },
+        {
+          "key_path": "data['AR-15 LMT SOPMOD stock (FDE)']._props.Ergonomics",
+          "before_ko": "인체공학 5",
+          "after_ko": "인체공학 7",
+          "explanation_ko": "인체공학 수치가 40% 상승해 조작성이 개선되었습니다.",
+          "impact_ko": "조작 속도가 빨라집니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DBX95']._props.ammoRec",
+          "before_ko": "탄약 회수 0",
+          "after_ko": "탄약 회수 5",
+          "explanation_ko": "탄약 회수 보정치가 5로 상승해 탄환 회수 효율이 크게 증가했습니다.",
+          "impact_ko": "탄약 회수량이 크게 늘어납니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DBX95']._props.ammoAccr",
+          "before_ko": "탄약 정확도 0",
+          "after_ko": "탄약 정확도 3",
+          "explanation_ko": "탄약 정확도 보정치가 3으로 상승해 탄환이 약간 덜 정확해집니다.",
+          "impact_ko": "사격 정확도가 약간 감소합니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DBX95']._props.PenetrationPower",
+          "before_ko": "관통력 29",
+          "after_ko": "관통력 33",
+          "explanation_ko": "관통력이 13.79% 상승해 방탄복 등을 더 쉽게 관통합니다.",
+          "impact_ko": "관통력이 향상됩니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DVC12']._props.ammoRec",
+          "before_ko": "탄약 회수 5",
+          "after_ko": "탄약 회수 12",
+          "explanation_ko": "탄약 회수 보정치가 140% 상승해 회수 효율이 크게 증가했습니다.",
+          "impact_ko": "탄약 회수량이 크게 늘어납니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DVC12']._props.ammoAccr",
+          "before_ko": "탄약 정확도 0",
+          "after_ko": "탄약 정확도 -5",
+          "explanation_ko": "탄약 정확도 보정치가 -5가 되어 탄환이 더 정확해집니다.",
+          "impact_ko": "사격 정확도가 향상됩니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DVC12']._props.ArmorDamage",
+          "before_ko": "갑옷 피해 55",
+          "after_ko": "갑옷 피해 60",
+          "explanation_ko": "갑옷에 입히는 피해가 9.09% 증가했습니다.",
+          "impact_ko": "갑옷을 관통할 때 입히는 피해가 늘어납니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DVC12']._props.PenetrationPower",
+          "before_ko": "관통력 49",
+          "after_ko": "관통력 52",
+          "explanation_ko": "관통력이 6.12% 상승했습니다.",
+          "impact_ko": "관통력이 약간 향상됩니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DVX12']._props.Damage",
+          "before_ko": "피해 50",
+          "after_ko": "피해 48",
+          "explanation_ko": "피해가 4% 감소했습니다.",
+          "impact_ko": "같은 부위에 가하는 피해가 약간 줄어듭니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DVX12']._props.ammoRec",
+          "before_ko": "탄약 회수 5",
+          "after_ko": "탄약 회수 9",
+          "explanation_ko": "탄약 회수 보정치가 80% 상승해 회수 효율이 증가했습니다.",
+          "impact_ko": "탄약 회수량이 늘어납니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DVX12']._props.ammoAccr",
+          "before_ko": "탄약 정확도 0",
+          "after_ko": "탄약 정확도 -8",
+          "explanation_ko": "탄약 정확도 보정치가 -8이 되어 탄환이 더 정확해집니다.",
+          "impact_ko": "사격 정확도가 크게 향상됩니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DVX12']._props.ArmorDamage",
+          "before_ko": "갑옷 피해 52",
+          "after_ko": "갑옷 피해 54",
+          "explanation_ko": "갑옷에 입히는 피해가 3.85% 증가했습니다.",
+          "impact_ko": "갑옷을 관통할 때 입히는 피해가 약간 늘어납니다."
+        },
+        {
+          "key_path": "data['5.8x42mm DVX12']._props.PenetrationPower",
+          "before_ko": "관통력 46",
+          "after_ko": "관통력 47",
+          "explanation_ko": "관통력이 2.17% 상승했습니다.",
+          "impact_ko": "관통력이 약간 향상됩니다."
+        }
+      ],
+      "patch_note": {
+        "matched": true,
+        "title": "Made balancing changes to the stats of some stocks; Made balancing changes to the stats of 5.8x42 ammunition.",
+        "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(7_August_2026)",
+        "reason_ko": "공식 패치노트에 스톡과 5.8x42mm 탄약 수치 조정이 명시되어 있어 diff와 일치합니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": false,
+      "backfilled": true,
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 22,
+        "recurring_keys": 0,
+        "later_changes": 2
+      }
+    },
+    {
+      "entry_id": "1163",
+      "eft_version": "1.1.0.0.46657",
+      "posted_at": "Friday, 07 August 2026 - 05:17 AM EDT",
+      "scraped_at": "2026-10-05T21:32:04Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1163",
+      "files_changed": [
+        {
+          "path": "client/locale/en/response.json",
+          "count": 3
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/locale/en/response.json\n(3 changes)\nDated: Friday, 07 August 2026 - 05:17 AM EDT | Game Version 1.1.0.0.46657\nclient/locale/en/response.json\n['data']\n    ['bundle.6a6346b2964f57808d4971fc.name']\n-    (Old) BEAR Winged Infantry\n+    (New) BEAR Watch\n    ['bundle.6a6346b2964f57808d4971fc.subtitle']\n-    (Old) Based on real RUAF unit attire\n+    (New) Based on Russian internal troops attire\n    ['bundle.6a6346b2964f57808d4971fc.description']\n-    (Old) A combat outfit set for BEAR characters, inspired by the legendary branch of the Russian Armed Forces. Ideal for combat operations behind enemy lines.\n-\n-        ● The set includes:\n-           Upper: BEAR Winged Infantry\n-           Lower: BEAR Winged Infantry\n-        ● Better value than purchasing gear items separately\n-        ● The set is designed for BEAR characters. Owners of The Unheard Edition or The Unheard Steam Edition gain access to the set for both PMC factions.\n-        ● Customization items are purely cosmetic.\n+    (New) A combat outfit set for BEAR characters, inspired by the legendary branch of the Russian Armed Forces. Ideal for combat operations behind enemy lines.\n+\n+        ● The set includes:\n+           Upper: BEAR Watch\n+           Lower: BEAR Watch\n+        ● Better value than purchasing gear items separately\n+        ● The set is designed for BEAR characters. Owners of The Unheard Edition or The Unheard Steam Edition gain access to the set for both PMC factions.\n+        ● Customization items are purely cosmetic.\n← Back to all changes",
+      "summary_ko": "베어(BEAR) 전투복 번들 이름과 설명이 'Winged Infantry'에서 'Watch'로 변경되었습니다.",
+      "tags": [
+        "아이템"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data.bundle.6a6346b2964f57808d4971fc.name",
+          "before_ko": "BEAR Winged Infantry",
+          "after_ko": "BEAR Watch",
+          "explanation_ko": "번들 이름은 인벤토리와 상점에서 해당 전투복 세트를 표시하는 텍스트입니다. 기존의 'Winged Infantry'에서 'Watch'로 바뀌어, 해당 세트의 명칭이 변경되었습니다.",
+          "impact_ko": "아이템 이름이 바뀌어 인벤토리·상점 표시가 달라집니다."
+        },
+        {
+          "key_path": "data.bundle.6a6346b2964f57808d4971fc.subtitle",
+          "before_ko": "Based on real RUAF unit attire",
+          "after_ko": "Based on Russian internal troops attire",
+          "explanation_ko": "서브타이틀은 번들의 배경 스토리를 간략히 설명합니다. RUAF(러시아 공군)에서 러시아 내무군으로 문구가 수정되었습니다.",
+          "impact_ko": "번들 설명이 약간 바뀌어 배경 스토리 인식에 차이가 있습니다."
+        },
+        {
+          "key_path": "data.bundle.6a6346b2964f57808d4971fc.description",
+          "before_ko": "A combat outfit set for BEAR characters, inspired by the legendary branch of the Russian Armed Forces. Ideal for combat operations behind enemy lines.\n\n        ● The set includes:\n           Upper: BEAR Winged Infantry\n           Lower: BEAR Winged Infantry\n        ● Better value than purchasing gear items separately\n        ● The set is designed for BEAR characters. Owners of The Unheard Edition or The Unheard Steam Edition gain access to the set for both PMC factions.\n        ● Customization items are purely cosmetic.",
+          "after_ko": "A combat outfit set for BEAR characters, inspired by the legendary branch of the Russian Armed Forces. Ideal for combat operations behind enemy lines.\n\n        ● The set includes:\n           Upper: BEAR Watch\n           Lower: BEAR Watch\n        ● Better value than purchasing gear items separately\n        ● The set is designed for BEAR characters. Owners of The Unheard Edition or The Unheard Steam Edition gain access to the set for both PMC factions.\n        ● Customization items are purely cosmetic.",
+          "explanation_ko": "번들 상세 설명은 아이템의 구성과 특성을 안내합니다. 상하의 명칭이 'Winged Infantry'에서 'Watch'로 바뀌어, 실제 아이템 이름과 일치하도록 수정되었습니다.",
+          "impact_ko": "아이템 설명에 표시되는 이름이 바뀌어 혼동이 줄어듭니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 패치노트에 해당 번들 이름 변경 내용이 언급되지 않아 잠수함(비공식) 패치로 판단됩니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "backfilled": true,
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(토글 키 1개) — 값이 더 갱신됨.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 3,
+        "recurring_keys": 1,
+        "later_changes": 2
       }
     },
     {
