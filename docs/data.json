@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T21:33:07Z",
-  "count": 64,
+  "generated_at": "2026-10-06T19:38:01Z",
+  "count": 66,
   "entries": [
     {
       "entry_id": "1225",
@@ -2030,12 +2030,12 @@
       "interpreter": "groq:openai/gpt-oss-120b",
       "is_submarine": true,
       "backfilled": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
-      "recurring_event": false,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 28개 중 25개가 값이 이전 상태로 되돌아오는 토글 키(89%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
       "stability_stats": {
         "changed_keys": 28,
-        "recurring_keys": 0,
+        "recurring_keys": 25,
         "later_changes": 0
       }
     },
@@ -2436,12 +2436,12 @@
       "interpreter": "groq:openai/gpt-oss-120b",
       "is_submarine": true,
       "backfilled": true,
-      "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 22회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
-      "recurring_event": false,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 22개 중 20개가 값이 이전 상태로 되돌아오는 토글 키(91%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
       "stability_stats": {
         "changed_keys": 22,
-        "recurring_keys": 0,
+        "recurring_keys": 20,
         "later_changes": 22
       }
     },
@@ -2644,12 +2644,12 @@
       "interpreter": "groq:openai/gpt-oss-120b",
       "is_submarine": true,
       "backfilled": true,
-      "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 44회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
-      "recurring_event": false,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 24개 중 21개가 값이 이전 상태로 되돌아오는 토글 키(88%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
       "stability_stats": {
         "changed_keys": 24,
-        "recurring_keys": 0,
+        "recurring_keys": 21,
         "later_changes": 44
       }
     },
@@ -2867,12 +2867,12 @@
       "interpreter": "groq:openai/gpt-oss-120b",
       "is_submarine": true,
       "backfilled": true,
-      "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 66회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
-      "recurring_event": false,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 34개 중 33개가 값이 이전 상태로 되돌아오는 토글 키(97%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
       "stability_stats": {
         "changed_keys": 34,
-        "recurring_keys": 0,
+        "recurring_keys": 33,
         "later_changes": 66
       }
     },
@@ -3186,6 +3186,323 @@
         "changed_keys": 3,
         "recurring_keys": 1,
         "later_changes": 2
+      }
+    },
+    {
+      "entry_id": "1162",
+      "eft_version": "1.1.0.0.46657",
+      "posted_at": "Thursday, 06 August 2026 - 04:34 PM EDT",
+      "scraped_at": "2026-10-06T19:36:49Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1162",
+      "files_changed": [
+        {
+          "path": "client/globals/response.json",
+          "count": 8
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/globals/response.json\n(8 changes)\nDated: Thursday, 06 August 2026 - 04:34 PM EDT | Game Version 1.1.0.0.46657\nclient/globals/response.json\n['data']\n    ['config']\n        ['RestrictionsInRaid']\n            ['252 (Financial documents)']\n                ['MaxInRaid']\n-                (Old) 10\n+                (New) 3 (-70.00%)\n            ['253 (PMC personnel files)']\n                ['MaxInRaid']\n-                (Old) 10\n+                (New) 3 (-70.00%)\n            ['254 (Project documentation)']\n                ['MaxInRaid']\n-                (Old) 10\n+                (New) 3 (-70.00%)\n            ['255 (Blueprints and technical documentation)']\n                ['MaxInRaid']\n-                (Old) 10\n+                (New) 3 (-70.00%)\n            ['256 (Test documentation)']\n                ['MaxInRaid']\n-                (Old) 10\n+                (New) 3 (-70.00%)\n            ['257 (User documentation)']\n                ['MaxInRaid']\n-                (Old) 10\n+                (New) 3 (-70.00%)\n            ['258 (Medical documents)']\n                ['MaxInRaid']\n-                (Old) 10\n+                (New) 3 (-70.00%)\n            ['259 (Technical documentation)']\n                ['MaxInRaid']\n-                (Old) 10\n+                (New) 3 (-70.00%)\n← Back to all changes",
+      "summary_ko": "레이드에서 획득 가능한 각종 문서 아이템의 최대 수량이 10개에서 3개로 크게 감소했습니다.",
+      "tags": [
+        "아이템",
+        "밸런스"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data.config.RestrictionsInRaid.252 (Financial documents).MaxInRaid",
+          "before_ko": "10개",
+          "after_ko": "3개",
+          "explanation_ko": "레드 라이트(재무 문서) 아이템은 레이드 중에 최대 10개까지 소지할 수 있었으나, 이제 최대 3개로 제한됩니다. 이는 해당 문서들의 드랍량을 제한해 인벤토리와 퀘스트 진행에 영향을 줍니다.",
+          "impact_ko": "레드 라이트 문서를 많이 모으던 플레이어는 레이드당 획득량이 크게 줄어들어 퀘스트 진행이 느려집니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.253 (PMC personnel files).MaxInRaid",
+          "before_ko": "10개",
+          "after_ko": "3개",
+          "explanation_ko": "PMC 인원 파일 아이템의 레이드 내 최대 보유량이 10개에서 3개로 감소했습니다. 이는 해당 아이템을 통한 퀘스트와 거래에 영향을 미칩니다.",
+          "impact_ko": "PMC 인원 파일을 수집하는 플레이어는 레이드당 획득량이 감소합니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.254 (Project documentation).MaxInRaid",
+          "before_ko": "10개",
+          "after_ko": "3개",
+          "explanation_ko": "프로젝트 문서 아이템의 최대 보유량이 10개에서 3개로 줄어들어, 레이드에서의 수집 효율이 낮아집니다.",
+          "impact_ko": "프로젝트 문서 관련 퀘스트 진행 속도가 느려집니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.255 (Blueprints and technical documentation).MaxInRaid",
+          "before_ko": "10개",
+          "after_ko": "3개",
+          "explanation_ko": "청사진 및 기술 문서 아이템의 레이드 내 최대 수량이 10개에서 3개로 제한됩니다.",
+          "impact_ko": "청사진을 많이 모으던 플레이어는 레이드당 획득량이 크게 감소합니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.256 (Test documentation).MaxInRaid",
+          "before_ko": "10개",
+          "after_ko": "3개",
+          "explanation_ko": "테스트 문서 아이템의 최대 보유량이 10개에서 3개로 감소했습니다.",
+          "impact_ko": "테스트 문서 수집이 어려워집니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.257 (User documentation).MaxInRaid",
+          "before_ko": "10개",
+          "after_ko": "3개",
+          "explanation_ko": "사용자 문서 아이템의 레이드 내 최대 수량이 10개에서 3개로 제한됩니다.",
+          "impact_ko": "사용자 문서 관련 퀘스트 진행이 느려집니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.258 (Medical documents).MaxInRaid",
+          "before_ko": "10개",
+          "after_ko": "3개",
+          "explanation_ko": "의료 문서 아이템의 최대 보유량이 10개에서 3개로 감소했습니다.",
+          "impact_ko": "의료 문서 수집이 제한됩니다."
+        },
+        {
+          "key_path": "data.config.RestrictionsInRaid.259 (Technical documentation).MaxInRaid",
+          "before_ko": "10개",
+          "after_ko": "3개",
+          "explanation_ko": "기술 문서 아이템의 레이드 내 최대 수량이 10개에서 3개로 줄어들었습니다.",
+          "impact_ko": "기술 문서 관련 퀘스트 진행이 느려집니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 패치노트에 문서 아이템 최대 수량 조정 내용이 언급되지 않아 잠수함(비공식) 패치로 판단됩니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "backfilled": true,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 8개 중 8개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
+      "stability_stats": {
+        "changed_keys": 8,
+        "recurring_keys": 8,
+        "later_changes": 8
+      }
+    },
+    {
+      "entry_id": "1161",
+      "eft_version": "1.1.0.0.46657",
+      "posted_at": "Thursday, 06 August 2026 - 04:26 PM EDT",
+      "scraped_at": "2026-10-06T19:36:53Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1161",
+      "files_changed": [
+        {
+          "path": "client/locations/response.json",
+          "count": 26
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/locations/response.json\n(26 changes)\nDated: Thursday, 06 August 2026 - 04:26 PM EDT | Game Version 1.1.0.0.46657\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Factory Day']\n            ['maxItemCountInLocation']\n                ['4 (Project documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['5 (Blueprints and technical documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['Customs']\n            ['maxItemCountInLocation']\n                ['11 (Project documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['12 (Financial documents)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['Woods']\n            ['maxItemCountInLocation']\n                ['4 (Test documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['5 (Technical documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['Lighthouse']\n            ['maxItemCountInLocation']\n                ['9 (PMC personnel files)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['10 (Technical documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['Shoreline']\n            ['maxItemCountInLocation']\n                ['5 (Test documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['6 (Technical documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['Reserve']\n            ['maxItemCountInLocation']\n                ['11 (PMC personnel files)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['12 (Project documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['Interchange']\n            ['maxItemCountInLocation']\n                ['5 (Blueprints and technical documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['6 (Financial documents)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['Streets']\n            ['maxItemCountInLocation']\n                ['18 (Financial documents)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['19 (User documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['Factory Night']\n            ['maxItemCountInLocation']\n                ['5 (Project documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n+                (New) ['6 (Blueprints and technical documentation)']: {\n+                      \"Value\": 1,\n+                      \"TemplateId\": \"Blueprints and technical documentation\"\n+                    }\n        ['Labs']\n            ['maxItemCountInLocation']\n                ['4 (User documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['5 (Medical documents)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['Ground Zero (1-20)']\n            ['maxItemCountInLocation']\n                ['4 (User documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['5 (Medical documents)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['Ground Zero (21+)']\n            ['maxItemCountInLocation']\n                ['5 (Medical documents)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['6 (User documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n        ['The Labyrinth']\n            ['maxItemCountInLocation']\n                ['16 (Blueprints and technical documentation)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 2 (-33.33%)\n                ['17 (Medical documents)']\n                    ['Value']\n-                    (Old) 3\n+                    (New) 1 (-66.67%)\n← Back to all changes",
+      "summary_ko": "다수 맵의 문서·청사진·재무 관련 아이템 최대 스폰 수가 3→2 또는 3→1 로 감소했습니다.",
+      "tags": [
+        "아이템",
+        "밸런스",
+        "맵"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data.locations.Factory Day.maxItemCountInLocation.4 (Project documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "팩토리 낮 시간대에서 프로젝트 문서 아이템이 최대 3개까지 스폰되던 것이 2개로 제한됩니다.",
+          "impact_ko": "해당 문서 아이템을 찾을 확률이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Factory Day.maxItemCountInLocation.5 (Blueprints and technical documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "팩토리 낮 시간대에서 청사진·기술 문서 아이템의 최대 스폰 수가 3개에서 1개로 크게 줄어듭니다.",
+          "impact_ko": "해당 아이템을 얻기 위한 라운드가 크게 늘어납니다."
+        },
+        {
+          "key_path": "data.locations.Customs.maxItemCountInLocation.11 (Project documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "커스텀스 맵에서 프로젝트 문서 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Customs.maxItemCountInLocation.12 (Financial documents).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "커스텀스에서 재무 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 얻기 어려워집니다."
+        },
+        {
+          "key_path": "data.locations.Woods.maxItemCountInLocation.4 (Test documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "우즈 맵에서 테스트 문서 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Woods.maxItemCountInLocation.5 (Technical documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "우즈에서 기술 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 찾기 어려워집니다."
+        },
+        {
+          "key_path": "data.locations.Lighthouse.maxItemCountInLocation.9 (PMC personnel files).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "라이트하우스에서 PMC 인원 파일 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Lighthouse.maxItemCountInLocation.10 (Technical documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "라이트하우스에서 기술 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 얻기 어려워집니다."
+        },
+        {
+          "key_path": "data.locations.Shoreline.maxItemCountInLocation.5 (Test documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "쇼어라인에서 테스트 문서 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Shoreline.maxItemCountInLocation.6 (Technical documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "쇼어라인에서 기술 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 찾기 어려워집니다."
+        },
+        {
+          "key_path": "data.locations.Reserve.maxItemCountInLocation.11 (PMC personnel files).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "리저브에서 PMC 인원 파일 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Reserve.maxItemCountInLocation.12 (Project documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "리저브에서 프로젝트 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 얻기 어려워집니다."
+        },
+        {
+          "key_path": "data.locations.Interchange.maxItemCountInLocation.5 (Blueprints and technical documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "인터체인지에서 청사진·기술 문서 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Interchange.maxItemCountInLocation.6 (Financial documents).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "인터체인지에서 재무 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 얻기 어려워집니다."
+        },
+        {
+          "key_path": "data.locations.Streets.maxItemCountInLocation.18 (Financial documents).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "스트리트스에서 재무 문서 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Streets.maxItemCountInLocation.19 (User documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "스트리트스에서 사용자 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 찾기 어려워집니다."
+        },
+        {
+          "key_path": "data.locations.Factory Night.maxItemCountInLocation.5 (Project documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "팩토리 야간에서 프로젝트 문서 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Factory Night.maxItemCountInLocation.6 (Blueprints and technical documentation).Value",
+          "before_ko": "새로 추가",
+          "after_ko": "1개",
+          "explanation_ko": "팩토리 야간에 청사진·기술 문서 아이템이 새롭게 1개 스폰되도록 추가되었습니다.",
+          "impact_ko": "새 아이템을 획득할 수 있는 기회가 생겼습니다."
+        },
+        {
+          "key_path": "data.locations.Labs.maxItemCountInLocation.4 (User documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "랩스에서 사용자 문서 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Labs.maxItemCountInLocation.5 (Medical documents).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "랩스에서 의료 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 얻기 어려워집니다."
+        },
+        {
+          "key_path": "data.locations.Ground Zero (1-20).maxItemCountInLocation.4 (User documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "그라운드 제로(1-20) 구역에서 사용자 문서 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Ground Zero (1-20).maxItemCountInLocation.5 (Medical documents).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "그라운드 제로(1-20) 구역에서 의료 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 얻기 어려워집니다."
+        },
+        {
+          "key_path": "data.locations.Ground Zero (21+).maxItemCountInLocation.5 (Medical documents).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "그라운드 제로(21+) 구역에서 의료 문서 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.Ground Zero (21+).maxItemCountInLocation.6 (User documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "그라운드 제로(21+) 구역에서 사용자 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 얻기 어려워집니다."
+        },
+        {
+          "key_path": "data.locations.The Labyrinth.maxItemCountInLocation.16 (Blueprints and technical documentation).Value",
+          "before_ko": "3개",
+          "after_ko": "2개",
+          "explanation_ko": "라비린스에서 청사진·기술 문서 아이템의 최대 스폰 수가 3→2 로 감소합니다.",
+          "impact_ko": "스폰량이 약 33% 감소합니다."
+        },
+        {
+          "key_path": "data.locations.The Labyrinth.maxItemCountInLocation.17 (Medical documents).Value",
+          "before_ko": "3개",
+          "after_ko": "1개",
+          "explanation_ko": "라비린스에서 의료 문서 아이템의 최대 스폰 수가 3→1 로 크게 감소합니다.",
+          "impact_ko": "해당 아이템을 얻기 어려워집니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 패치노트에 해당 아이템 스폰 수 조정 내용이 언급되지 않아 잠수함(비공식) 패치로 판단됩니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "backfilled": true,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 25개 중 25개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
+      "stability_stats": {
+        "changed_keys": 25,
+        "recurring_keys": 25,
+        "later_changes": 91
       }
     },
     {
