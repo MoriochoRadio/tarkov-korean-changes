@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-10T18:46:40Z",
-  "count": 79,
+  "generated_at": "2026-10-11T19:03:36Z",
+  "count": 81,
   "entries": [
     {
       "entry_id": "1230",
@@ -4723,6 +4723,147 @@
       }
     },
     {
+      "entry_id": "1152",
+      "eft_version": "1.1.0.0.46608",
+      "posted_at": "Monday, 03 August 2026 - 01:46 PM EDT",
+      "scraped_at": "2026-10-11T19:02:29Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1152",
+      "files_changed": [
+        {
+          "path": "client/locale/en/response.json",
+          "count": 1
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/locale/en/response.json\n(1 change)\nDated: Monday, 03 August 2026 - 01:46 PM EDT | Game Version 1.1.0.0.46608\nclient/locale/en/response.json\n['data']\n+    (New) ['UI/Season/AvailableRewards']: Claim Seasonal rewards\n← Back to all changes",
+      "summary_ko": "시즌 보상 UI에 'Claim Seasonal rewards' 항목이 추가되었습니다.",
+      "tags": [
+        "UI"
+      ],
+      "severity": "trivial",
+      "changes": [
+        {
+          "key_path": "data.UI/Season/AvailableRewards",
+          "before_ko": "해당 키가 존재하지 않음",
+          "after_ko": "새로운 문자열 값 \"Claim Seasonal rewards\"가 추가됨",
+          "explanation_ko": "이 키는 시즌 보상을 클레임(수령)할 수 있는 UI 버튼 또는 텍스트를 정의합니다. 새로 추가된 문자열은 플레이어가 시즌 보상을 받을 때 표시되는 문구입니다. 시즌 시스템이 도입된 1.1.0.0 업데이트와 연계된 UI 개선입니다.",
+          "impact_ko": "플레이어는 시즌 보상을 수령할 때 명확한 안내 문구를 확인할 수 있어 UI 가독성이 향상됩니다."
+        }
+      ],
+      "patch_note": {
+        "matched": true,
+        "title": "Seasons system and Season One",
+        "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46608_(3_August_2026)",
+        "reason_ko": "해당 변경은 시즌 시스템 도입과 관련된 UI 업데이트이며, 1.1.0.0.46608 패치노트에 언급된 내용과 일치합니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": false,
+      "backfilled": true,
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 1,
+        "recurring_keys": 0,
+        "later_changes": 8
+      }
+    },
+    {
+      "entry_id": "1151",
+      "eft_version": "1.1.0.0.46608",
+      "posted_at": "Monday, 03 August 2026 - 01:07 PM EDT",
+      "scraped_at": "2026-10-11T19:02:39Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1151",
+      "files_changed": [
+        {
+          "path": "client/items/response.json",
+          "count": 3176
+        },
+        {
+          "path": "client/globals/response.json",
+          "count": 277
+        },
+        {
+          "path": "client/settings/response.json",
+          "count": 1
+        },
+        {
+          "path": "client/locale/en/response.json",
+          "count": 1586
+        },
+        {
+          "path": "client/locations/response.json",
+          "count": 1193
+        },
+        {
+          "path": "client/customization/response.json",
+          "count": 49
+        },
+        {
+          "path": "client/hideout/areas/response.json",
+          "count": 78
+        },
+        {
+          "path": "client/achievement/list/response.json",
+          "count": 80
+        },
+        {
+          "path": "client/hideout/production/recipes/response.json",
+          "count": 15
+        },
+        {
+          "path": "client/trading/api/traderSettings/response.json",
+          "count": 494
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/items/response.json\n(3176 changes)\nclient/globals/response.json\n(277 changes)\nclient/settings/response.json\n(1 change)\nclient/locale/en/response.json\n(1586 changes)\nclient/locations/response.json\n(1193 changes)\nclient/customization/response.json\n(49 changes)\nclient/hideout/areas/response.json\n(78 changes)\nclient/achievement/list/response.json\n(80 changes)\nclient/hideout/production/recipes/response.json\n(15 changes)\nclient/trading/api/traderSettings/response.json\n(494 changes)\nDated: Monday, 03 August 2026 - 01:07 PM EDT | Game Version 1.1.0.0.46608\nclient/items/response.json\n['data']\n+    (New) ['Norinco QBZ-191 5.8x42 assault rifle']: {\n+          \"_id\": \"Norinco QBZ-191 5.8x42 assault rifle\",\n+          \"_name\": \"weapon_norinco_qbz191_58x42\",\n+          \"_type\": \"Item\",\n+          \"_props\": {\n+            \"Name\": \"weapon_norinco_qbz191_58x42\",\n+            \"Grids\": [],\n+            \"Slots\": [\n+              {\n+                \"_id\": \"69f9ebbcaae020b0db02f65e\",\n+                \"_name\": \"mod_pistol_grip\",\n+                \"_props\": {\n+                  \"filters\": [\n+                    {\n+                      \"Shift\": 0,\n+                      \"Filter\": [\n+                        \"QBZ-191 pistol grip\"\n+                      ]\n+                    }\n+                  ]\n+                },\n+                \"_proto\": \"55d30c4c4bdc2db4468b457e\",\n+                \"_parent\": \"Norinco QBZ-191 5.8x42 assault rifle\",\n+                \"_required\": true,\n+                \"_isPlateSlot\": false,\n+                \"_isPatronSlot\": false,\n+                \"_mergeSlotWithChildren\": false\n+              },\n+              {\n+                \"_id\": \"69f9ebbcaae020b0db02f65f\",\n+                \"_name\": \"mod_magazine\",\n+                \"_props\": {\n+                  \"filters\": [\n+                    {\n+                      \"Filter\": [\n+                        \"QBZ-191 5.8x42 30-round magazine\"\n+                      ],\n+                      \"AnimationIndex\": -1\n+                    }\n+                  ]\n+                },\n+                \"_proto\": \"55d30c394bdc2dae468b4577\",\n+                \"_parent\": \"Norinco QBZ-191 5.8x42 assault rifle\",\n+                \"_required\": false,\n+                \"_isPlateSlot\": false,\n+                \"_isPatronSlot\": false,\n+                \"_mergeSlotWithChildren\": false\n+              },\n+              {\n+                \"_id\": \"69f9ebbcaae020b0db02f660\",\n+                \"_name\": \"mod_reciever\",\n+                \"_props\": {\n+                  \"filters\": [\n+                    {\n+                      \"Shift\": 0,\n+                      \"Filter\": [\n+                        \"QBZ-191 5.8x42 upper receiver\"\n+                      ]\n+                    }\n+                  ]\n+                },\n+                \"_proto\": \"55d30c4c4bdc2db4468b457e\",\n+                \"_parent\": \"Norinco QBZ-191 5.8x42 assault rifle\",\n+                \"_required\": true,\n+                \"_isPlateSlot\": false,\n+                \"_isPatronSlot\": false,\n+                \"_mergeSlotWithChildren\": false\n+              },\n+              {\n+                \"_id\": \"69f9ebbcaae020b0db02f661\",\n+                \"_name\": \"mod_stock\",\n+                \"_props\": {\n+                  \"filters\": [\n+                    {\n+                      \"Shift\": 0,\n+                      \"Filter\": [\n+                        \"QBZ-191 buffer tube\"\n+                      ]\n+                    }\n+                  ]\n+                },\n+                \"_proto\": \"55d30c4c4bdc2db4468b457e\",\n+                \"_parent\": \"Norinco QBZ-191 5.8x42 assault rifle\",\n+                \"_required\": true,\n+                \"_isPlateSlot\": false,\n+                \"_isPatronSlot\": false,\n+                \"_mergeSlotWithChildren\": false\n+              }\n+            ],\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"assets/content/weapons/qbz191/weapon_norinco_qbz191_58x42_container.bundle\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 0.625,\n+            \"defAmmo\": \"5.8x42mm DBP191\",\n+            \"AimPlane\": 0.16,\n+            \"AllowJam\": true,\n+            \"Chambers\": [\n+              {\n+                \"_id\": \"69f9ebbcaae020b0db02f663\",\n+                \"_name\": \"patron_in_weapon\",\n+                \"_props\": {\n+                  \"filters\": [\n+                    {\n+                      \"Filter\": [\n+                        \"5.8x42mm DBP191\",\n+                        \"5.8x42mm DBX95\",\n+                        \"5.8x42mm DVC12\",\n+                        \"5.8x42mm DVX12\"\n+                      ]\n+                    }\n+                  ]\n+                },\n+                \"_proto\": \"55d4af244bdc2d962f8b4571\",\n+                \"_parent\": \"Norinco QBZ-191 5.8x42 assault rifle\",\n+                \"_required\": false,\n+                \"_isPlateSlot\": false,\n+                \"_isPatronSlot\": true,\n+                \"_mergeSlotWithChildren\": false\n+              }\n+            ],\n+            \"Foldable\": false,\n+            \"IsOneoff\": false,\n+            \"Velocity\": 0,\n+            \"bEffDist\": 500,\n+            \"AllowFeed\": true,\n+            \"ItemSound\": \"weap_ar\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Not_exist\",\n+            \"ShortName\": \"weapon_norinco_qbz191_58x42\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"bFirerate\": 750,\n+            \"bHearDist\": 80,\n+            \"weapClass\": \"assaultRifle\",\n+            \"AllowSlide\": true,\n+            \"BoltAction\": false,\n+            \"CameraSnap\": 3.5,\n+            \"Durability\": 100,\n+            \"Ergonomics\": 48,\n+            \"FoldedSlot\": \"\",\n+            \"IsFlareGun\": false,\n+            \"ReloadMode\": \"ExternalMagazine\",\n+            \"RepairCost\": 410,\n+            \"Unlootable\": false,\n+            \"defMagType\": \"QBZ-191 5.8x42 30-round magazine\",\n+            \"Description\": \"weapon_norinco_qbz191_58x42\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsMountable\": true,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RecoilAngle\": 90,\n+            \"RepairSpeed\": 15,\n+            \"Retractable\": false,\n+            \"ammoCaliber\": \"Caliber58x42\",\n+            \"isBoltCatch\": true,\n+            \"weapUseType\": \"primary\",\n+            \"AllowMisfire\": true,\n+            \"DeviationMax\": 23,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"RecoilCamera\": 0.05,\n+            \"RecoilCenter\": {\n+              \"x\": 0,\n+              \"y\": -0.24,\n+              \"z\": 0\n+            },\n+            \"StackMaxSize\": 1,\n+            \"isFastReload\": true,\n+            \"weapFireType\": [\n+              \"single\",\n+              \"fullauto\"\n+            ],\n+            \"AllowOverheat\": true,\n+            \"AudioSettings\": {\n+              \"IndoorConfig\": {\n+                \"Volume\": 0.92,\n+                \"MaxDistance\": 200\n+              },\n+              \"OutdoorConfig\": {\n+                \"Volume\": 0.92,\n+                \"MaxDistance\": 600\n+              },\n+              \"IndoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 120\n+              },\n+              \"OutdoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 300\n+              }\n+            },\n+            \"CoolFactorGun\": 3.168,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"HeatFactorGun\": 1,\n+            \"IsUnremovable\": false,\n+            \"MaxDurability\": 100,\n+            \"RecoilForceUp\": 114,\n+            \"SightingRange\": 100,\n+            \"durabSpawnMax\": 75,\n+            \"durabSpawnMin\": 25,\n+            \"isChamberLoad\": true,\n+            \"AimSensitivity\": 0.65,\n+            \"CenterOfImpact\": 0.01,\n+            \"DeviationCurve\": 1.35,\n+            \"ExtraSizeRight\": 0,\n+            \"IronSightRange\": 100,\n+            \"LootExperience\": 5,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"RecoilPosZMult\": 1,\n+            \"ResetAfterShot\": false,\n+            \"RotationCenter\": {\n+              \"x\": 0,\n+              \"y\": -0.1,\n+              \"z\": 0\n+            },\n+            \"SingleFireRate\": 450,\n+            \"BackgroundColor\": \"black\",\n+            \"BurstShotsCount\": 3,\n+            \"CompactHandling\": false,\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"ManualBoltCatch\": false,\n+            \"RecoilForceBack\": 330,\n+            \"RecolDispersion\": 11,\n+            \"SizeReduceRight\": 0,\n+            \"UseAltMountBone\": false,\n+            \"blockLeftStance\": false,\n+            \"CanSellOnRagfair\": false,\n+            \"ConflictingItems\": [],\n+            \"HeatFactorByShot\": 1.14,\n+            \"IsBeltMachineGun\": false,\n+            \"MountingPosition\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RepairComplexity\": 0,\n+            \"chamberAmmoCount\": 1,\n+            \"CoolFactorGunMods\": 1,\n+            \"ExamineExperience\": 8,\n+            \"ExaminedByDefault\": true,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsGrenadeLauncher\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"OperatingResource\": 4900,\n+            \"StackObjectsCount\": 1,\n+            \"WeaponAimSettings\": {\n+              \"Enable\": true,\n+              \"ValuesIn\": [\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"WeaponRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 1.17823243,\n+                    \"CurveValueMultiply\": 0.9,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": -39.3647041,\n+                          \"outTangent\": -39.3647041\n+                        },\n+                        {\n+                          \"time\": 0.198826119,\n+                          \"value\": -5.77205133,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.466249824,\n+                          \"value\": 0.627868652,\n+                          \"inTangent\": 12.662178,\n+                          \"outTangent\": 12.662178\n+                        },\n+                        {\n+                          \"time\": 0.686102867,\n+                          \"value\": -0.4387561,\n+                          \"inTangent\": -2.09781384,\n+                          \"outTangent\": -2.09781384\n+                        },\n+                        {\n+                          \"time\": 0.8339976,\n+                          \"value\": 0.131106019,\n+                          \"inTangent\": 1.64734387,\n+                          \"outTangent\": 1.64734387\n+                        },\n+                        {\n+                          \"time\": 0.938807666,\n+                          \"value\": 0.00154807232,\n+                          \"inTangent\": -0.399133116,\n+                          \"outTangent\": -0.399133116\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    }\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"CameraRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Z\",\n+                    \"CurveTimeMultiply\": 1.17823243,\n+                    \"CurveValueMultiply\": 0.6,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.224359,\n+                          \"value\": -0.0141991377,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.468763351,\n+                          \"value\": 0.151956558,\n+                          \"inTangent\": 0.0505164042,\n+                          \"outTangent\": 0.0505164042\n+                        },\n+                        {\n+                          \"time\": 0.591701031,\n+                          \"value\": -0.6009915,\n+                          \"inTangent\": -0.0395019837,\n+                          \"outTangent\": -0.0395019837\n+                        },\n+                        {\n+                          \"time\": 0.7048073,\n+                          \"value\": 0.293425322,\n+                          \"inTangent\": -0.222413734,\n+                          \"outTangent\": -0.222413734\n+                        },\n+                        {\n+                          \"time\": 0.871717334,\n+                          \"value\": -0.155875266,\n+                          \"inTangent\": -0.354983717,\n+                          \"outTangent\": -0.354983717\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    }\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"WeaponPosition\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 1.17823243,\n+                    \"CurveValueMultiply\": 0.011,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.234397173,\n+                          \"value\": 2.850071,\n+                          \"inTangent\": -6.16255665,\n+                          \"outTangent\": -6.16255665\n+                        },\n+                        {\n+                          \"time\": 0.528661966,\n+                          \"value\": -0.8223095,\n+                          \"inTangent\": -0.261309981,\n+                          \"outTangent\": -0.261309981\n+                        },\n+                        {\n+                          \"time\": 0.714210331,\n+                          \"value\": 0.162280083,\n+                          \"inTangent\": 1.17206132,\n+                          \"outTangent\": 1.17206132\n+                        },\n+                        {\n+                          \"time\": 0.849540949,\n+                          \"value\": -0.0956378,\n+                          \"inTangent\": -0.5332806,\n+                          \"outTangent\": -0.5332806\n+                        },\n+                        {\n+                          \"time\": 0.946271241,\n+                          \"value\": -0.00876756,\n+                          \"inTangent\": 0.381214023,\n+                          \"outTangent\": 0.381214023\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    }\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"WeaponPosition\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Z\",\n+                    \"CurveTimeMultiply\": 1.17823243,\n+                    \"CurveValueMultiply\": 0.01,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.241812944,\n+                          \"value\": -0.2199998,\n+                          \"inTangent\": -0.522106647,\n+                          \"outTangent\": -0.522106647\n+                        },\n+                        {\n+                          \"time\": 0.590457857,\n+                          \"value\": 0.005137112,\n+                          \"inTangent\": 0.0906705558,\n+                          \"outTangent\": 0.0906705558\n+                        },\n+                        {\n+                          \"time\": 0.7816034,\n+                          \"value\": -0.0156357288,\n+                          \"inTangent\": -0.08216339,\n+                          \"outTangent\": -0.08216339\n+                        },\n+                        {\n+                          \"time\": 0.9254989,\n+                          \"value\": -0.002296797,\n+                          \"inTangent\": 0.0509902,\n+                          \"outTangent\": 0.0509902\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    }\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"WeaponRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"X\",\n+                    \"CurveTimeMultiply\": 1.17823243,\n+                    \"CurveValueMultiply\": 1,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.192387685,\n+                          \"value\": 2.18671679,\n+                          \"inTangent\": 2.82592654,\n+                          \"outTangent\": 2.82592654\n+                        },\n+                        {\n+                          \"time\": 0.233928636,\n+                          \"value\": 2.20708323,\n+                          \"inTangent\": -2.00547147,\n+                          \"outTangent\": -2.00547147\n+                        },\n+                        {\n+                          \"time\": 0.583491,\n+                          \"value\": -0.168893814,\n+                          \"inTangent\": -0.222413734,\n+                          \"outTangent\": -0.222413734\n+                        },\n+                        {\n+                          \"time\": 0.750457,\n+                          \"value\": 0.0429691225,\n+                          \"inTangent\": 0.3595771,\n+                          \"outTangent\": 0.3595771\n+                        },\n+                        {\n+                          \"time\": 0.877593756,\n+                          \"value\": -0.00434474461,\n+                          \"inTangent\": -0.3374718,\n+                          \"outTangent\": -0.3374718\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0\n\n…(원문이 매우 커서 잘렸습니다 — 전체는 원본 링크에서 확인)",
+      "summary_ko": "신규 돌격소총 '노린코 QBZ-191 5.8x42'가 아이템 데이터에 추가되어 무기 스탯과 부품 슬롯이 정의되었습니다.",
+      "tags": [
+        "아이템",
+        "밸런스"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "client/items/response.json.Norinco QBZ-191 5.8x42 assault rifle.Ergonomics",
+          "before_ko": "해당 키가 존재하지 않아 이전에 이 무기가 없었습니다.",
+          "after_ko": "Ergonomics 값이 48로 설정되었습니다.",
+          "explanation_ko": "Ergonomics는 무기를 조작할 때의 인체공학 수치로, 값이 높을수록 조준·조작이 편해집니다. 48은 중간 수준으로, 기존 러시아제 AK 계열보다 약간 높은 편입니다.",
+          "impact_ko": "플레이어는 이 무기를 사용할 때 조작성이 기존 무기보다 약간 개선됩니다."
+        },
+        {
+          "key_path": "client/items/response.json.Norinco QBZ-191 5.8x42 assault rifle.RecoilForceBack",
+          "before_ko": "해당 키가 없었습니다.",
+          "after_ko": "RecoilForceBack 값이 330으로 설정되었습니다.",
+          "explanation_ko": "RecoilForceBack은 반동이 뒤로 얼마나 강하게 작용하는지를 나타내며, 수치가 클수록 반동이 크게 느껴집니다. 330은 평균적인 돌격소총 수준입니다.",
+          "impact_ko": "반동 제어가 평균 수준이므로, 숙련도에 따라 사격 정확도에 큰 차이가 없습니다."
+        },
+        {
+          "key_path": "client/items/response.json.Norinco QBZ-191 5.8x42 assault rifle.Slot.mod_magazine._required",
+          "before_ko": "해당 슬롯이 없었습니다.",
+          "after_ko": "mod_magazine 슬롯이 필수가 아니도록 설정되었습니다(_required: false).",
+          "explanation_ko": "이 슬롯은 30발 탄창을 장착하는 부품이며, 필수가 아니므로 기본 무기 상태에서도 탄창 없이 사용할 수 있습니다(실제 게임에서는 탄창이 없으면 발사 불가).",
+          "impact_ko": "무기 커스터마이징 자유도가 약간 늘어나지만, 실제 사용에는 큰 차이가 없습니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 패치노트에 신규 무기 추가 내용이 언급되지 않아 잠수함(비공개) 패치로 판단됩니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "backfilled": true,
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 42회 변경됨(토글 키 49개) — 값이 더 갱신됨.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 2884,
+        "recurring_keys": 49,
+        "later_changes": 42
+      }
+    },
+    {
       "entry_id": "1148",
       "eft_version": "1.0.6.5.46221",
       "posted_at": "Thursday, 30 July 2026 - 03:01 AM EDT",
@@ -4835,12 +4976,12 @@
       },
       "is_submarine": true,
       "stability": "recurring",
-      "stability_detail_ko": "변경 키 47개 중 30개가 값이 이전 상태로 되돌아오는 토글 키(64%) — 반복/이벤트성으로 자동 판정.",
+      "stability_detail_ko": "변경 키 47개 중 46개가 값이 이전 상태로 되돌아오는 토글 키(98%) — 반복/이벤트성으로 자동 판정.",
       "recurring_event": true,
       "stability_stats": {
         "changed_keys": 47,
-        "recurring_keys": 30,
-        "later_changes": 34
+        "recurring_keys": 46,
+        "later_changes": 80
       }
     },
     {
@@ -5203,13 +5344,13 @@
         "reason_ko": "이 변경사항은 공식 패치노트에 언급되지 않았고 상인 데이터만 조정되었으므로 잠수함 패치로 보임."
       },
       "is_submarine": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 3,
         "recurring_keys": 0,
-        "later_changes": 0
+        "later_changes": 1
       }
     },
     {
@@ -5514,12 +5655,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 2,
         "recurring_keys": 0,
-        "later_changes": 8
+        "later_changes": 9
       }
     },
     {
@@ -5591,12 +5732,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 84,
         "recurring_keys": 2,
-        "later_changes": 11
+        "later_changes": 12
       }
     },
     {
@@ -5877,7 +6018,7 @@
       "stability_stats": {
         "changed_keys": 41,
         "recurring_keys": 21,
-        "later_changes": 8
+        "later_changes": 12
       }
     },
     {
@@ -6112,12 +6253,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 43회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 49회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 51,
         "recurring_keys": 22,
-        "later_changes": 43
+        "later_changes": 49
       }
     },
     {
@@ -6558,12 +6699,12 @@
       "backfilled": true,
       "recurring_event": false,
       "raw_text": "Files Changed:\nclient/hideout/production/recipes/response.json\n(1 change)\nDated: Tuesday, 26 May 2026 - 05:46 AM EDT | Game Version 1.0.5.0.45272\nclient/hideout/production/recipes/response.json\n['data']\n    ['recipes']\n+        (New) ['_id(6a1568b4a9185da666070a24), Lavatory(lvl 1) -> RDG-2B smoke grenade']: {\n+              \"_id\": \"6a1568b4a9185da666070a24\",\n+              \"count\": 6,\n+              \"locked\": false,\n+              \"areaType\": \"Lavatory (2)\",\n+              \"isEncoded\": false,\n+              \"continuous\": false,\n+              \"endProduct\": \"RDG-2B smoke grenade\",\n+              \"requirements\": [\n+                {\n+                  \"type\": \"Area\",\n+                  \"areaType\": \"Lavatory (2)\",\n+                  \"requiredLevel\": 1\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Pack of chlorine\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Hunting matches\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Duct tape\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Toilet paper\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                }\n+              ],\n+              \"productionTime\": 3600.0,\n+              \"isCodeProduction\": false,\n+              \"productionLimitCount\": 0,\n+              \"needFuelForAllProductionTime\": false\n+            }\n← Back to all changes",
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 0
+        "later_changes": 1
       }
     },
     {
@@ -6621,12 +6762,12 @@
       "backfilled": true,
       "recurring_event": false,
       "raw_text": "Files Changed:\nclient/items/response.json\n(24 changes)\nclient/globals/response.json\n(12 changes)\nDated: Tuesday, 21 April 2026 - 06:02 AM EDT | Game Version 1.0.4.5.44573\nclient/items/response.json\n['data']\n    ['Atlant Armour Titan Aramid helmet (Rudiarius)']\n        ['_props']\n            ['BlocksEarpiece']\n-            (Old) 1\n+            (New) 0 (-100.00%)\n            ['ConflictingItems']\n+                (New) ['22']: Peltor ComTac II headset (OD Green)\n+                (New) ['23']: MSA Sordin Supreme PRO-X/L headset\n+                (New) ['24']: Ops-Core FAST RAC Headset\n+                (New) ['25']: TW EXFIL Peltor ComTac V headset (OD Green)\n+                (New) ['26']: TW EXFIL Peltor ComTac VI headset (Coyote Brown)\n+                (New) ['27']: Peltor ComTac VI headset (Black)\n+                (New) ['28']: TW EXFIL Peltor ComTac VI headset (Black)\n+                (New) ['29']: Peltor ComTac VI headset (Ranger Green)\n+                (New) ['30']: TW EXFIL Peltor ComTac VI headset (Ranger Green)\n+                (New) ['31']: Peltor ComTac IV Hybrid headset (Coyote Brown)\n+                (New) ['32']: Peltor ComTac V headset (OD Green)\n+                (New) ['33']: Peltor ComTac VI headset (Coyote Brown)\n+                (New) ['34']: GSSh-01 active headset\n+                (New) ['35']: Safariland Liberator HP 2.0 Hearing Protection Headset (FDE)\n+                (New) ['36']: Safariland Liberator HP 2.0 Hearing Protection Headset (Black)\n+                (New) ['37']: Safariland Liberator HP 2.0 Hearing Protection Headset (MultiCam Black)\n+                (New) ['38']: Safariland Liberator HP 2.0 Hearing Protection Headset (MultiCam)\n+                (New) ['39']: OPSMEN Earmor M32 headset\n+                (New) ['40']: OPSMEN Earmor M32 headset (White)\n+                (New) ['41']: Peltor Tactical Sport headset\n+                (New) ['42']: Walker's Razor Digital headset\n+                (New) ['43']: Walker's Razor Digital headset (Molon Labe)\n+                (New) ['44']: Walker's XCEL 500BT Digital headset\nclient/globals/response.json\n['data']\n    ['ItemPresets']\n        ['69d4389bfbed7b921804a35a']\n            ['_parent']\n-            (Old) 69d4389bfbed7b921804a366\n+            (New) 69e7413ee5ec88c29100f8a4\n            ['_items']\n                ['2']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a368\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Sofr_armor_back\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a6\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_back\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['4']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36a\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Soft_armor_right\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a8\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_right\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['1']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a367\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Soft_armor_front\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a5\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_front\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['10']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a370\",\n-                      \"_tpl\": \"Granit Br4 ballistic plate\",\n-                      \"slotId\": \"Back_plate\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ae\",\n+                      \"_tpl\": \"Granit Br4 ballistic plate\",\n+                      \"slotId\": \"Back_plate\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['5']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36b\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Groin\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a9\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Groin\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['3']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a369\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Soft_armor_left\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a7\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_left\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['8']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36e\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Shoulder_r\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ac\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Shoulder_r\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['0']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a366\",\n-                      \"_tpl\": \"FORT Gladiator-S plate carrier (Death is Inevitable)\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a4\",\n+                      \"_tpl\": \"FORT Gladiator-S plate carrier (Death is Inevitable)\"\n+                    }\n                ['7']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36d\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Shoulder_l\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ab\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Shoulder_l\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['6']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36c\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Collar\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8aa\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Collar\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['9']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36f\",\n-                      \"_tpl\": \"Granit Br4 ballistic plate\",\n-                      \"slotId\": \"Front_plate\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ad\",\n+                      \"_tpl\": \"Granit Br4 ballistic plate\",\n+                      \"slotId\": \"Front_plate\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n← Back to all changes",
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "stability_stats": {
         "changed_keys": 14,
         "recurring_keys": 0,
-        "later_changes": 0
+        "later_changes": 1
       }
     },
     {
