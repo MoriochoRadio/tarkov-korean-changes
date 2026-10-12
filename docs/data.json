@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T19:03:36Z",
-  "count": 81,
+  "generated_at": "2026-10-12T22:11:46Z",
+  "count": 83,
   "entries": [
     {
       "entry_id": "1230",
@@ -4855,12 +4855,252 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 42회 변경됨(토글 키 49개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
-        "changed_keys": 2884,
-        "recurring_keys": 49,
-        "later_changes": 42
+        "changed_keys": 1,
+        "recurring_keys": 0,
+        "later_changes": 4
+      }
+    },
+    {
+      "entry_id": "1150",
+      "eft_version": "1.0.6.5.46221",
+      "posted_at": "Saturday, 01 August 2026 - 05:02 AM EDT",
+      "scraped_at": "2026-10-12T22:10:36Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1150",
+      "files_changed": [
+        {
+          "path": "client/items/response.json",
+          "count": 6
+        },
+        {
+          "path": "client/locale/en/response.json",
+          "count": 3
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/items/response.json\n(6 changes)\nclient/locale/en/response.json\n(3 changes)\nDated: Saturday, 01 August 2026 - 05:02 AM EDT | Game Version 1.0.6.5.46221\nclient/items/response.json\n['data']\n+    (New) ['.50 AE FMJ Bull']: {\n+          \"_id\": \".50 AE FMJ Bull\",\n+          \"_name\": \"patron_127x33_fmj_b\",\n+          \"_type\": \"Item\",\n+          \"_props\": {\n+            \"Name\": \"patron_127x33_fmj_b\",\n+            \"Width\": 1,\n+            \"Damage\": 113,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"assets/content/items/ammo/patrons/patron_127x33_fmj.bundle\",\n+              \"rcid\": \"\"\n+            },\n+            \"Tracer\": false,\n+            \"Weight\": 0.036,\n+            \"Caliber\": \"Caliber127x33\",\n+            \"ammoRec\": 35,\n+            \"ammoSfx\": \"standart\",\n+            \"ammoAccr\": 0,\n+            \"ammoDist\": 0,\n+            \"ammoHear\": 0,\n+            \"ammoType\": \"bullet\",\n+            \"Blindness\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"Contusion\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"ItemSound\": \"ammo_singleround\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Not_exist\",\n+            \"ShortName\": \"patron_127x33_fmj_b\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"FlareTypes\": [],\n+            \"HeatFactor\": 8.38,\n+            \"RepairCost\": 0,\n+            \"ShowBullet\": false,\n+            \"Unlootable\": false,\n+            \"casingMass\": 10,\n+            \"casingName\": \"\",\n+            \"ArmorDamage\": 50,\n+            \"Description\": \"patron_127x33_fmj_b\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RepairSpeed\": 0,\n+            \"TracerColor\": \"red\",\n+            \"DiscardLimit\": -1,\n+            \"FragmentType\": \"MON-50 Shrapnel\",\n+            \"HideEntrails\": false,\n+            \"InitialSpeed\": 635,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 50,\n+            \"casingSounds\": \"pistol_big\",\n+            \"Deterioration\": 1,\n+            \"ExplosionType\": \"\",\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"MisfireChance\": 0.07,\n+            \"BulletMassGram\": 19.4,\n+            \"ExtraSizeRight\": 0,\n+            \"FragmentsCount\": 0,\n+            \"FuzeArmTimeSec\": 0,\n+            \"LootExperience\": 0,\n+            \"MalfFeedChance\": 0.12,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"RicochetChance\": 0.08,\n+            \"StackMaxRandom\": 25,\n+            \"StackMinRandom\": 5,\n+            \"TracerDistance\": 0,\n+            \"AmmoLifeTimeSec\": 5,\n+            \"BackgroundColor\": \"yellow\",\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"ProjectileCount\": 1,\n+            \"ammoShiftChance\": 0,\n+            \"buckshotBullets\": 0,\n+            \"AmmoTooltipClass\": \"Universal\",\n+            \"CanSellOnRagfair\": false,\n+            \"ConflictingItems\": [],\n+            \"PenetrationPower\": 57,\n+            \"SpeedRetardation\": 0.0001,\n+            \"casingEjectPower\": 1,\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExplosionStrength\": 0,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"MalfMisfireChance\": 0.335,\n+            \"MaxFragmentsCount\": 1,\n+            \"MinFragmentsCount\": 1,\n+            \"StackObjectsCount\": 1,\n+            \"airDropTemplateId\": \"\",\n+            \"HeavyBleedingDelta\": 0.85,\n+            \"IsLockedafterEquip\": false,\n+            \"LightBleedingDelta\": 0,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"BallisticCoeficient\": 0.131,\n+            \"CanRequireOnRagfair\": false,\n+            \"FragmentationChance\": 0.01,\n+            \"IsLightAndSoundShot\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"HasGrenaderComponent\": false,\n+            \"MaxExplosionDistance\": 0,\n+            \"MinExplosionDistance\": 0,\n+            \"PenetrationDamageMod\": 0.2,\n+            \"RemoveShellAfterFire\": false,\n+            \"StaminaBurnPerDamage\": 0.21,\n+            \"LightAndSoundShotAngle\": 0,\n+            \"ShowHitEffectOnExplode\": false,\n+            \"AnimationVariantsNumber\": 0,\n+            \"IsSecretExitRequirement\": false,\n+            \"BulletDiameterMilimeters\": 12.7,\n+            \"DurabilityBurnModificator\": 4.9,\n+            \"PenetrationChanceObstacle\": 0.31,\n+            \"PenetrationPowerDiviation\": 0.136,\n+            \"RagFairCommissionModifier\": 1,\n+            \"ArmorDistanceDistanceDamage\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"LightAndSoundShotSelfContusionTime\": 0,\n+            \"LightAndSoundShotSelfContusionStrength\": 0,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_proto\": \"54527c774bdc2d3f668b4568\",\n+          \"_parent\": \"Ammo\"\n+        }\n    ['Magnum Research Desert Eagle Mk XIX .50 AE pistol']\n        ['_props']\n            ['Chambers']\n                ['0 (patron_in_weapon)']\n                    ['_props']\n                        ['filters']\n                            ['0']\n                                ['Filter']\n+                                    (New) ['4']: .50 AE FMJ Bull\n    ['Desert Eagle .50 AE 7-round magazine']\n        ['_props']\n            ['Cartridges']\n                ['0 (cartridges)']\n                    ['_props']\n                        ['filters']\n                            ['0']\n                                ['Filter']\n+                                    (New) ['4']: .50 AE FMJ Bull\n    ['Magnum Research Desert Eagle L6 .50 AE pistol']\n        ['_props']\n            ['Chambers']\n                ['0 (patron_in_weapon)']\n                    ['_props']\n                        ['filters']\n                            ['0']\n                                ['Filter']\n+                                    (New) ['4']: .50 AE FMJ Bull\n    ['Magnum Research Desert Eagle L6 .50 AE pistol (WTS)']\n        ['_props']\n            ['Chambers']\n                ['0 (patron_in_weapon)']\n                    ['_props']\n                        ['filters']\n                            ['0']\n                                ['Filter']\n+                                    (New) ['4']: .50 AE FMJ Bull\n    ['Magnum Research Desert Eagle L5 .50 AE pistol']\n        ['_props']\n            ['Chambers']\n                ['0 (patron_in_weapon)']\n                    ['_props']\n                        ['filters']\n                            ['0']\n                                ['Filter']\n+                                    (New) ['4']: .50 AE FMJ Bull\nclient/locale/en/response.json\n['data']\n+    (New) ['6a60f36fb3d057447a095aee Name']: .50 AE FMJ Bull\n+    (New) ['6a60f36fb3d057447a095aee ShortName']: FMJ B\n+    (New) ['6a60f36fb3d057447a095aee Description']: It looks like a normal .50 AE FMJ cartridge. But if you take it in your hands, you realize: something is not right here. The weight of the cartridge itself and the powder charge is larger than usual. The date and place of production are unknown.  The Mechanic warns: use of suspicious ammunition can be extremely dangerous. There was one case in Kentucky...\n← Back to all changes",
+      "summary_ko": ".50 AE FMJ Bull 탄약이 신규 추가되고, Desert Eagle 관련 탄창 및 무기에 장전 가능하도록 필터가 업데이트되었습니다.",
+      "tags": [
+        "아이템",
+        "밸런스"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data['.50 AE FMJ Bull']",
+          "before_ko": "해당 키가 존재하지 않아 해당 탄약을 사용할 수 없었습니다.",
+          "after_ko": "새로운 탄약 아이템이 추가되어 .50 AE FMJ Bull 탄이 게임 내에 존재합니다.",
+          "explanation_ko": "이 항목은 .50 AE 구경의 FMJ(전탄) 탄약으로, 데미지 113, 관통력 57, 무게 0.036kg 등 상세 스탯이 정의됩니다. 기존에 없던 탄약이므로 무기에 장전하거나 거래가 가능해집니다.",
+          "impact_ko": "Desert Eagle 사용자가 새로운 고데미 탄을 사용해 전투 효율이 상승합니다."
+        },
+        {
+          "key_path": "data['Magnum Research Desert Eagle Mk XIX .50 AE pistol']._props.Chambers[0].filters[0].Filter[4]",
+          "before_ko": "필터에 .50 AE FMJ Bull 항목이 없었습니다.",
+          "after_ko": "필터에 .50 AE FMJ Bull이 추가되어 해당 무기에 장전 가능하게 되었습니다.",
+          "explanation_ko": "Chambers 필터는 무기에 장전 가능한 탄약 종류를 정의합니다. 새 탄약이 추가되면 해당 무기의 탄창에 이 탄을 넣을 수 있게 됩니다.",
+          "impact_ko": "무기 사용 시 선택 가능한 탄약 종류가 늘어나 전술 선택 폭이 확대됩니다."
+        },
+        {
+          "key_path": "data['Desert Eagle .50 AE 7-round magazine']._props.Cartridges[0].filters[0].Filter[4]",
+          "before_ko": "탄창 필터에 .50 AE FMJ Bull이 없었습니다.",
+          "after_ko": "탄창 필터에 .50 AE FMJ Bull이 추가되어 탄창에 이 탄을 장전할 수 있게 되었습니다.",
+          "explanation_ko": "Cartridges 필터는 탄창에 들어갈 수 있는 탄약을 지정합니다. 새 탄약이 포함되면 탄창을 충전할 때 선택 가능해집니다.",
+          "impact_ko": "탄창 충전 시 새로운 고데미 탄을 사용할 수 있어 전투 지속력이 향상됩니다."
+        },
+        {
+          "key_path": "data['Magnum Research Desert Eagle L6 .50 AE pistol']._props.Chambers[0].filters[0].Filter[4]",
+          "before_ko": "필터에 .50 AE FMJ Bull이 없었습니다.",
+          "after_ko": "필터에 .50 AE FMJ Bull이 추가되었습니다.",
+          "explanation_ko": "해당 무기의 탄창에 새 탄약을 장전할 수 있게 함으로써 무기 활용도가 높아집니다.",
+          "impact_ko": "무기 선택 시 추가 탄약 옵션이 제공됩니다."
+        },
+        {
+          "key_path": "data['Magnum Research Desert Eagle L6 .50 AE pistol (WTS)']._props.Chambers[0].filters[0].Filter[4]",
+          "before_ko": "필터에 .50 AE FMJ Bull이 없었습니다.",
+          "after_ko": "필터에 .50 AE FMJ Bull이 추가되었습니다.",
+          "explanation_ko": "WTS(Weapon Trade System) 버전에도 동일하게 새 탄약이 적용됩니다.",
+          "impact_ko": "거래용 무기에서도 새로운 탄약을 사용할 수 있습니다."
+        },
+        {
+          "key_path": "data['Magnum Research Desert Eagle L5 .50 AE pistol']._props.Chambers[0].filters[0].Filter[4]",
+          "before_ko": "필터에 .50 AE FMJ Bull이 없었습니다.",
+          "after_ko": "필터에 .50 AE FMJ Bull이 추가되었습니다.",
+          "explanation_ko": "L5 모델에도 새 탄약이 장전 가능하도록 업데이트되었습니다.",
+          "impact_ko": "모델별 탄약 호환성이 일관됩니다."
+        },
+        {
+          "key_path": "locale/en/data['6a60f36fb3d057447a095aee Name']",
+          "before_ko": "해당 이름이 존재하지 않아 UI에 표시되지 않았습니다.",
+          "after_ko": "이름이 \" .50 AE FMJ Bull\" 로 추가되었습니다.",
+          "explanation_ko": "아이템 이름은 인벤토리와 상점 UI에 표시됩니다. 새 이름이 등록돼 플레이어가 탄약을 식별할 수 있습니다.",
+          "impact_ko": "인벤토리에서 새 탄약을 쉽게 구분할 수 있습니다."
+        },
+        {
+          "key_path": "locale/en/data['6a60f36fb3d057447a095aee ShortName']",
+          "before_ko": "짧은 이름이 없었습니다.",
+          "after_ko": "짧은 이름이 \"FMJ B\" 로 설정되었습니다.",
+          "explanation_ko": "짧은 이름은 UI 공간이 제한된 곳에서 표시됩니다.",
+          "impact_ko": "UI 가독성이 향상됩니다."
+        },
+        {
+          "key_path": "locale/en/data['6a60f36fb3d057447a095aee Description']",
+          "before_ko": "설명이 없었습니다.",
+          "after_ko": "설명이 추가되어 탄약의 특이점과 위험성을 안내합니다.",
+          "explanation_ko": "설명 텍스트는 아이템 상세 정보에 표시돼 플레이어에게 사용 시 주의를 알립니다.",
+          "impact_ko": "플레이어가 탄약 사용 위험성을 인지하게 됩니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 패치노트에 해당 탄약 추가 내용이 언급되지 않아 잠수함(비공식) 패치로 판단됩니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "backfilled": true,
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 7,
+        "recurring_keys": 0,
+        "later_changes": 14
+      }
+    },
+    {
+      "entry_id": "1149",
+      "eft_version": "1.0.6.5.46221",
+      "posted_at": "Friday, 31 July 2026 - 07:57 AM EDT",
+      "scraped_at": "2026-10-12T22:10:40Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1149",
+      "files_changed": [
+        {
+          "path": "client/locale/en/response.json",
+          "count": 1
+        },
+        {
+          "path": "client/trading/api/traderSettings/response.json",
+          "count": 12
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/locale/en/response.json\n(1 change)\nclient/trading/api/traderSettings/response.json\n(12 changes)\nDated: Friday, 31 July 2026 - 07:57 AM EDT | Game Version 1.0.6.5.46221\nclient/trading/api/traderSettings/response.json\n['data']\n    ['Prapor']\n        ['items_sell']\n            ['1']\n                ['id_list']\n+                    (New) ['96']: 23x75mm Shrapnel-25 buckshot ammo pack (5 pcs)\n+                    (New) ['97']: 5.45x39mm BT gs ammo pack (120 pcs)\n    ['Therapist']\n        ['items_sell']\n            ['1']\n                ['id_list']\n+                    (New) ['26']: Item case\n+                    (New) ['27']: eTG-change regenerative stimulant injector\n    ['Peacekeeper']\n        ['items_sell']\n            ['1']\n                ['id_list']\n+                    (New) ['103']: 40x46mm M441 (HE) grenade\n+                    (New) ['104']: 5.56x45mm M856A1 ammo pack (100 pcs)\n    ['Mechanic']\n        ['items_sell']\n            ['1']\n                ['id_list']\n+                    (New) ['112']: Weapon case\n+                    (New) ['116']: .50 BMG M33 ammo pack (10 pcs)\n    ['Ragman']\n        ['items_sell']\n            ['1']\n                ['id_list']\n+                    (New) ['34']: GAC 4sss2 ballistic plate\n+                    (New) ['35']: Atomic Defense CQCM ballistic mask (Black)\n+                    (New) ['36']: GAC 3s15m ballistic plate\n    ['Jaeger']\n        ['items_sell']\n            ['1']\n                ['id_list']\n+                    (New) ['110']: .338 Lapua Magnum FMJ ammo pack (20 pcs)\nclient/locale/en/response.json\n['data']\n+    (New) ['6a60e683b3d057447a095ac0']:\n← Back to all changes",
+      "summary_ko": "여러 트레이더의 판매 아이템 목록에 새로운 탄약·장비·케이스 등이 추가되고, 영어 로케일에 새로운 키가 삽입되었습니다.",
+      "tags": [
+        "아이템",
+        "거래상"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data.Prapor.items_sell.1.id_list.96",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": "23x75mm Shrapnel-25 buckshot ammo pack (5 pcs) 추가",
+          "explanation_ko": "프라포르가 판매하는 아이템 목록에 23x75mm 파편식 샷건 탄약 팩(5개)이 새로 들어갔습니다. 기존에 구매할 수 없던 탄약이므로 전투 시 탄약 선택 폭이 넓어집니다.",
+          "impact_ko": "샷건 사용자가 새로운 탄약을 구매해 전투 효율을 높일 수 있습니다."
+        },
+        {
+          "key_path": "data.Prapor.items_sell.1.id_list.97",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": "5.45x39mm BT gs ammo pack (120 pcs) 추가",
+          "explanation_ko": "프라포르 판매 목록에 5.45x39mm BT 탄약 팩(120개)이 추가되었습니다. BT 탄약은 높은 관통력을 가지고 있어 전투에서 유리합니다.",
+          "impact_ko": "5.45mm 무기 사용자에게 대용량 탄약 구매 옵션이 제공됩니다."
+        },
+        {
+          "key_path": "data.Therapist.items_sell.1.id_list.26",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": "Item case 추가",
+          "explanation_ko": "테라피스트가 판매하는 아이템에 아이템 케이스가 새로 포함되었습니다. 케이스는 아이템 보관 및 정리에 사용됩니다.",
+          "impact_ko": "인벤토리 정리와 보관 효율이 향상됩니다."
+        },
+        {
+          "key_path": "data.Therapist.items_sell.1.id_list.27",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": "eTG-change regenerative stimulant injector 추가",
+          "explanation_ko": "테라피스트 판매 목록에 재생 스테뮬런트 인젝터가 추가돼, 체력 회복에 사용되는 아이템을 구매할 수 있게 되었습니다.",
+          "impact_ko": "전투 중 체력 회복 수단이 다양해집니다."
+        },
+        {
+          "key_path": "data.Peacekeeper.items_sell.1.id_list.103",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": "40x46mm M441 (HE) grenade 추가",
+          "explanation_ko": "피스키퍼가 판매하는 아이템에 40x46mm M441 고폭 수류탄이 추가되었습니다. 폭발 반경과 피해가 높은 수류탄으로 전투에서 활용도가 높습니다.",
+          "impact_ko": "플레이어가 강력한 수류탄을 구매해 전투 전술을 강화할 수 있습니다."
+        },
+        {
+          "key_path": "data.Peacekeeper.items_sell.1.id_list.104",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": "5.56x45mm M856A1 ammo pack (100 pcs) 추가",
+          "explanation_ko": "피스키퍼 판매 목록에 5.56x45mm M856A1 탄약 팩(100개)이 새로 들어갔습니다. M856A1은 일반적인 5.56mm 탄약보다 관통력이 높습니다.",
+          "impact_ko": "5.56mm 무기 사용자에게 고관통 탄약 선택지가 늘어납니다."
+        },
+        {
+          "key_path": "data.Mechanic.items_sell.1.id_list.112",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": "Weapon case 추가",
+          "explanation_ko": "메카닉이 판매하는 아이템에 무기 케이스가 추가되었습니다. 무기 케이스는 무기 보관 및 이동 시 손상을 방지합니다.",
+          "impact_ko": "무기 보관 및 운반 시 안전성이 향상됩니다."
+        },
+        {
+          "key_path": "data.Mechanic.items_sell.1.id_list.116",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": ".50 BMG M33 ammo pack (10 pcs) 추가",
+          "explanation_ko": "메카닉 판매 목록에 .50 BMG M33 탄약 팩(10개)이 새로 포함되었습니다. .50 BMG는 고위력 저격용 탄약으로, 강력한 피해를 줍니다.",
+          "impact_ko": "고위력 저격 무기 사용자가 대용량 탄약을 구매할 수 있게 됩니다."
+        },
+        {
+          "key_path": "data.Ragman.items_sell.1.id_list.34",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": "GAC 4sss2 ballistic plate 추가",
+          "explanation_ko": "라그맨이 판매하는 방탄 플레이트에 GAC 4sss2가 추가되었습니다. 높은 방탄 성능을 제공해 생존 확률을 높입니다.",
+          "impact_ko": "플레이트를 교체해 방어력을 강화할 수 있습니다."
+        },
+        {
+          "key_path": "data.Ragman.items_sell.1.id_list.35",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": "Atomic Defense CQCM ballistic mask (Black) 추가",
+          "explanation_ko": "라그맨 판매 목록에 블랙 색상의 Atomic Defense CQCM 방탄 마스크가 새로 들어갔습니다. 머리 보호에 특화된 아이템입니다.",
+          "impact_ko": "머리 부위 방어력이 향상됩니다."
+        },
+        {
+          "key_path": "data.Ragman.items_sell.1.id_list.36",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": "GAC 3s15m ballistic plate 추가",
+          "explanation_ko": "라그맨이 판매하는 방탄 플레이트에 GAC 3s15m이 추가되었습니다. 기존 플레이트보다 다른 방탄 수치를 제공할 수 있습니다.",
+          "impact_ko": "플레이트 선택 폭이 넓어져 전투 스타일에 맞는 방어구를 고를 수 있습니다."
+        },
+        {
+          "key_path": "data.Jaeger.items_sell.1.id_list.110",
+          "before_ko": "해당 아이디가 존재하지 않음",
+          "after_ko": ".338 Lapua Magnum FMJ ammo pack (20 pcs) 추가",
+          "explanation_ko": "예거가 판매하는 아이템에 .338 Lapua Magnum FMJ 탄약 팩(20개)이 추가되었습니다. 장거리 저격에 강력한 탄약입니다.",
+          "impact_ko": "장거리 저격수에게 고관통 탄약 옵션이 제공됩니다."
+        },
+        {
+          "key_path": "data.6a60e683b3d057447a095ac0",
+          "before_ko": "키가 존재하지 않음",
+          "after_ko": "새로운 로케일 문자열(내용 미확인) 추가",
+          "explanation_ko": "영어 로케일 파일에 새로운 키가 삽입되어, UI 혹은 툴팁 등에서 새로운 텍스트가 표시될 수 있습니다.",
+          "impact_ko": "해당 텍스트가 UI에 나타나면 플레이어가 새로운 정보를 확인할 수 있습니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 패치노트와 일치하는 내용이 없으며, 잠수함(서버) 업데이트로 판단됩니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "backfilled": true,
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 7,
+        "recurring_keys": 0,
+        "later_changes": 10
       }
     },
     {
@@ -4976,12 +5216,12 @@
       },
       "is_submarine": true,
       "stability": "recurring",
-      "stability_detail_ko": "변경 키 47개 중 46개가 값이 이전 상태로 되돌아오는 토글 키(98%) — 반복/이벤트성으로 자동 판정.",
+      "stability_detail_ko": "변경 키 47개 중 30개가 값이 이전 상태로 되돌아오는 토글 키(64%) — 반복/이벤트성으로 자동 판정.",
       "recurring_event": true,
       "stability_stats": {
         "changed_keys": 47,
-        "recurring_keys": 46,
-        "later_changes": 80
+        "recurring_keys": 30,
+        "later_changes": 34
       }
     },
     {
@@ -5655,12 +5895,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 2,
         "recurring_keys": 0,
-        "later_changes": 9
+        "later_changes": 11
       }
     },
     {
@@ -5732,12 +5972,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 84,
         "recurring_keys": 2,
-        "later_changes": 12
+        "later_changes": 14
       }
     },
     {
@@ -6018,7 +6258,7 @@
       "stability_stats": {
         "changed_keys": 41,
         "recurring_keys": 21,
-        "later_changes": 12
+        "later_changes": 8
       }
     },
     {
@@ -6253,12 +6493,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 49회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 46회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 51,
         "recurring_keys": 22,
-        "later_changes": 49
+        "later_changes": 46
       }
     },
     {
@@ -6699,12 +6939,12 @@
       "backfilled": true,
       "recurring_event": false,
       "raw_text": "Files Changed:\nclient/hideout/production/recipes/response.json\n(1 change)\nDated: Tuesday, 26 May 2026 - 05:46 AM EDT | Game Version 1.0.5.0.45272\nclient/hideout/production/recipes/response.json\n['data']\n    ['recipes']\n+        (New) ['_id(6a1568b4a9185da666070a24), Lavatory(lvl 1) -> RDG-2B smoke grenade']: {\n+              \"_id\": \"6a1568b4a9185da666070a24\",\n+              \"count\": 6,\n+              \"locked\": false,\n+              \"areaType\": \"Lavatory (2)\",\n+              \"isEncoded\": false,\n+              \"continuous\": false,\n+              \"endProduct\": \"RDG-2B smoke grenade\",\n+              \"requirements\": [\n+                {\n+                  \"type\": \"Area\",\n+                  \"areaType\": \"Lavatory (2)\",\n+                  \"requiredLevel\": 1\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Pack of chlorine\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Hunting matches\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Duct tape\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Toilet paper\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                }\n+              ],\n+              \"productionTime\": 3600.0,\n+              \"isCodeProduction\": false,\n+              \"productionLimitCount\": 0,\n+              \"needFuelForAllProductionTime\": false\n+            }\n← Back to all changes",
-      "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability": "stable",
+      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 1
+        "later_changes": 0
       }
     },
     {
@@ -6762,12 +7002,12 @@
       "backfilled": true,
       "recurring_event": false,
       "raw_text": "Files Changed:\nclient/items/response.json\n(24 changes)\nclient/globals/response.json\n(12 changes)\nDated: Tuesday, 21 April 2026 - 06:02 AM EDT | Game Version 1.0.4.5.44573\nclient/items/response.json\n['data']\n    ['Atlant Armour Titan Aramid helmet (Rudiarius)']\n        ['_props']\n            ['BlocksEarpiece']\n-            (Old) 1\n+            (New) 0 (-100.00%)\n            ['ConflictingItems']\n+                (New) ['22']: Peltor ComTac II headset (OD Green)\n+                (New) ['23']: MSA Sordin Supreme PRO-X/L headset\n+                (New) ['24']: Ops-Core FAST RAC Headset\n+                (New) ['25']: TW EXFIL Peltor ComTac V headset (OD Green)\n+                (New) ['26']: TW EXFIL Peltor ComTac VI headset (Coyote Brown)\n+                (New) ['27']: Peltor ComTac VI headset (Black)\n+                (New) ['28']: TW EXFIL Peltor ComTac VI headset (Black)\n+                (New) ['29']: Peltor ComTac VI headset (Ranger Green)\n+                (New) ['30']: TW EXFIL Peltor ComTac VI headset (Ranger Green)\n+                (New) ['31']: Peltor ComTac IV Hybrid headset (Coyote Brown)\n+                (New) ['32']: Peltor ComTac V headset (OD Green)\n+                (New) ['33']: Peltor ComTac VI headset (Coyote Brown)\n+                (New) ['34']: GSSh-01 active headset\n+                (New) ['35']: Safariland Liberator HP 2.0 Hearing Protection Headset (FDE)\n+                (New) ['36']: Safariland Liberator HP 2.0 Hearing Protection Headset (Black)\n+                (New) ['37']: Safariland Liberator HP 2.0 Hearing Protection Headset (MultiCam Black)\n+                (New) ['38']: Safariland Liberator HP 2.0 Hearing Protection Headset (MultiCam)\n+                (New) ['39']: OPSMEN Earmor M32 headset\n+                (New) ['40']: OPSMEN Earmor M32 headset (White)\n+                (New) ['41']: Peltor Tactical Sport headset\n+                (New) ['42']: Walker's Razor Digital headset\n+                (New) ['43']: Walker's Razor Digital headset (Molon Labe)\n+                (New) ['44']: Walker's XCEL 500BT Digital headset\nclient/globals/response.json\n['data']\n    ['ItemPresets']\n        ['69d4389bfbed7b921804a35a']\n            ['_parent']\n-            (Old) 69d4389bfbed7b921804a366\n+            (New) 69e7413ee5ec88c29100f8a4\n            ['_items']\n                ['2']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a368\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Sofr_armor_back\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a6\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_back\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['4']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36a\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Soft_armor_right\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a8\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_right\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['1']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a367\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Soft_armor_front\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a5\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_front\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['10']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a370\",\n-                      \"_tpl\": \"Granit Br4 ballistic plate\",\n-                      \"slotId\": \"Back_plate\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ae\",\n+                      \"_tpl\": \"Granit Br4 ballistic plate\",\n+                      \"slotId\": \"Back_plate\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['5']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36b\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Groin\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a9\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Groin\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['3']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a369\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Soft_armor_left\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a7\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Soft_armor_left\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['8']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36e\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Shoulder_r\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ac\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Shoulder_r\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['0']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a366\",\n-                      \"_tpl\": \"FORT Gladiator-S plate carrier (Death is Inevitable)\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8a4\",\n+                      \"_tpl\": \"FORT Gladiator-S plate carrier (Death is Inevitable)\"\n+                    }\n                ['7']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36d\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Shoulder_l\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ab\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Shoulder_l\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['6']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36c\",\n-                      \"_tpl\": \"Aramid insert\",\n-                      \"slotId\": \"Collar\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8aa\",\n+                      \"_tpl\": \"Aramid insert\",\n+                      \"slotId\": \"Collar\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n                ['9']\n-                (Old) {\n-                      \"_id\": \"69d4389bfbed7b921804a36f\",\n-                      \"_tpl\": \"Granit Br4 ballistic plate\",\n-                      \"slotId\": \"Front_plate\",\n-                      \"parentId\": \"69d4389bfbed7b921804a366\"\n-                    }\n+                (New) {\n+                      \"_id\": \"69e7413ee5ec88c29100f8ad\",\n+                      \"_tpl\": \"Granit Br4 ballistic plate\",\n+                      \"slotId\": \"Front_plate\",\n+                      \"parentId\": \"69e7413ee5ec88c29100f8a4\"\n+                    }\n← Back to all changes",
-      "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability": "stable",
+      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
       "stability_stats": {
         "changed_keys": 14,
         "recurring_keys": 0,
-        "later_changes": 1
+        "later_changes": 0
       }
     },
     {
