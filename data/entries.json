@@ -711,12 +711,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 46회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 47회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 51,
       "recurring_keys": 22,
-      "later_changes": 46
+      "later_changes": 47
     }
   },
   {
@@ -1228,12 +1228,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 84,
       "recurring_keys": 2,
-      "later_changes": 14
+      "later_changes": 15
     }
   },
   {
@@ -1300,12 +1300,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 2,
       "recurring_keys": 0,
-      "later_changes": 11
+      "later_changes": 12
     }
   },
   {
@@ -2148,12 +2148,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 2
+      "later_changes": 3
     }
   },
   {
@@ -3193,12 +3193,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 7회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 3,
       "recurring_keys": 0,
-      "later_changes": 6
+      "later_changes": 7
     }
   },
   {
@@ -3784,12 +3784,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 8,
       "recurring_keys": 2,
-      "later_changes": 4
+      "later_changes": 5
     }
   },
   {
@@ -4153,12 +4153,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 8
+      "later_changes": 9
     }
   },
   {
@@ -4277,12 +4277,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 8,
       "recurring_keys": 0,
-      "later_changes": 5
+      "later_changes": 6
     }
   },
   {
@@ -5766,12 +5766,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 17,
       "recurring_keys": 6,
-      "later_changes": 11
+      "later_changes": 12
     }
   },
   {
@@ -5971,13 +5971,13 @@
     },
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": false,
-    "stability": "stable",
-    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+    "stability": "superseded",
+    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 10,
       "recurring_keys": 0,
-      "later_changes": 0
+      "later_changes": 1
     }
   },
   {
@@ -6421,12 +6421,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 11,
       "recurring_keys": 0,
-      "later_changes": 10
+      "later_changes": 11
     }
   },
   {
@@ -6793,12 +6793,12 @@
     "is_submarine": false,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 8
+      "later_changes": 9
     }
   },
   {
@@ -6995,12 +6995,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 14
+      "later_changes": 15
     }
   },
   {
@@ -7129,12 +7129,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 10
+      "later_changes": 11
     }
   },
   {
@@ -7143,8 +7143,76 @@
     "posted_at": "Thursday, 15 October 2026 - 08:09 AM EDT",
     "scraped_at": "2026-10-15T18:25:17Z",
     "source_url": "https://changes.tarkov-changes.com/view/1231",
+    "files_changed": [
+      {
+        "path": "client/locale/en/response.json",
+        "count": 1
+      }
+    ],
+    "raw_text": "Files Changed:\nclient/locale/en/response.json\n(1 change)\nDated: Thursday, 15 October 2026 - 08:09 AM EDT | Game Version 1.2.0.0.47965\nclient/locale/en/response.json\n['data']\n+    (New) ['discount.6acfb145bafe2a0e5bbae24e.name']:\n← Back to all changes",
+    "summary_ko": "새로운 할인 항목 키가 추가되었습니다.",
+    "tags": [
+      "아이템",
+      "거래상"
+    ],
+    "severity": "minor",
+    "changes": [
+      {
+        "key_path": "data.discount.6acfb145bafe2a0e5bbae24e.name",
+        "before_ko": "해당 키가 존재하지 않았음",
+        "after_ko": "새로운 할인 이름 키가 추가됨",
+        "explanation_ko": "이 키는 특정 아이템에 대한 할인 이름을 정의하는 문자열을 저장합니다. 새로 추가된 고유 해시값(6acfb145bafe2a0e5bbae24e)은 새로운 할인 프로모션이나 이벤트와 연결될 가능성이 있습니다. 게임 내 상점 UI에서 해당 할인 이름이 표시될 것입니다.",
+        "impact_ko": "플레이어는 새로운 할인 항목을 확인하고 구매 시 가격 혜택을 받을 수 있습니다."
+      }
+    ],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "공식 패치노트에 해당 할인 키 추가 내용이 언급되지 않아 잠수함(비공개) 패치로 판단됩니다."
+    },
+    "interpreter": "groq:openai/gpt-oss-120b",
+    "is_submarine": true,
+    "stability": "stable",
+    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+    "recurring_event": false,
+    "stability_stats": {
+      "changed_keys": 1,
+      "recurring_keys": 0,
+      "later_changes": 0
+    }
+  },
+  {
+    "entry_id": "1232",
+    "eft_version": "1.2.5.0.48146",
+    "posted_at": "Friday, 16 October 2026 - 03:43 AM EDT",
+    "scraped_at": "2026-10-16T18:12:37Z",
+    "source_url": "https://changes.tarkov-changes.com/view/1232",
     "files_changed": [],
-    "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 5h 43m.\nLogin with Discord\n to check if you have access to early content.\n1.2.0.0.47965\n - Thursday, 15 October 2026 - 08:09 AM EDT\n            1 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 12:17 PM EDT\n            2 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 11:09 AM EDT\n            4 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:26 AM EDT\n            13 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:17 AM EDT\n            10 change(s) detected\n1.2.0.0.47888\n - Tuesday, 06 October 2026 - 08:21 PM EDT\n            1462 change(s) detected\n1.1.5.1.47510\n - Friday, 02 October 2026 - 06:09 AM EDT\n            3 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 05:00 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 04:51 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Tuesday, 29 September 2026 - 11:41 AM EDT\n            63 change(s) detected\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Tuesday, 01 September 2026 - 02:15 PM EDT\n            6 change(s) detected\n1.1.0.1.46911\n - Monday, 24 August 2026 - 04:46 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Sunday, 23 August 2026 - 10:55 AM EDT\n            22 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 07:26 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 04:52 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 03:26 PM EDT\n            11 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 09:09 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 13 August 2026 - 02:17 PM EDT\n            14 change(s) detected\n1.1.0.1.46699\n - Thursday, 13 August 2026 - 08:00 AM EDT\n            10 change(s) detected\n1.1.0.1.46699\n - Wednesday, 12 August 2026 - 05:09 AM EDT\n            28 change(s) detected\n1.1.0.1.46699\n - Monday, 10 August 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:43 AM EDT\n            12 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:26 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Saturday, 08 August 2026 - 05:00 PM EDT\n            24 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 02:34 PM EDT\n            35 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 11:51 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 09:17 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 05:17 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:34 PM EDT\n            8 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:26 PM EDT\n            26 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 01:26 PM EDT\n            41 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 08:17 AM EDT\n            65 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:09 PM EDT\n            1 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:00 PM EDT\n            26 change(s) detected\n1.1.0.0.46624\n - Wednesday, 05 August 2026 - 06:08 AM EDT\n            14 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 10:43 AM EDT\n            38 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 05:00 AM EDT\n            1 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 04:43 AM EDT\n            2 change(s) detected\n1.1.0.0.46608\n - Monday, 03 August 2026 - 01:46 PM EDT\n            1 change(s) detected\n1.1.0.0.46608\n - Monday, 03 August 2026 - 01:07 PM EDT\n            6949 change(s) detected\n1.0.6.5.46221\n - Saturday, 01 August 2026 - 05:02 AM EDT\n            9 change(s) detected",
+    "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 1h 30m.\nLogin with Discord\n to check if you have access to early content.\n1.2.5.0.48146\n - Friday, 16 October 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 03:43 AM EDT\n            1039 change(s) detected\n1.2.0.0.47965\n - Thursday, 15 October 2026 - 08:09 AM EDT\n            1 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 12:17 PM EDT\n            2 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 11:09 AM EDT\n            4 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:26 AM EDT\n            13 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:17 AM EDT\n            10 change(s) detected\n1.2.0.0.47888\n - Tuesday, 06 October 2026 - 08:21 PM EDT\n            1462 change(s) detected\n1.1.5.1.47510\n - Friday, 02 October 2026 - 06:09 AM EDT\n            3 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 05:00 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 04:51 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Tuesday, 29 September 2026 - 11:41 AM EDT\n            63 change(s) detected\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Tuesday, 01 September 2026 - 02:15 PM EDT\n            6 change(s) detected\n1.1.0.1.46911\n - Monday, 24 August 2026 - 04:46 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Sunday, 23 August 2026 - 10:55 AM EDT\n            22 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 07:26 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 04:52 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 03:26 PM EDT\n            11 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 09:09 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 13 August 2026 - 02:17 PM EDT\n            14 change(s) detected\n1.1.0.1.46699\n - Thursday, 13 August 2026 - 08:00 AM EDT\n            10 change(s) detected\n1.1.0.1.46699\n - Wednesday, 12 August 2026 - 05:09 AM EDT\n            28 change(s) detected\n1.1.0.1.46699\n - Monday, 10 August 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:43 AM EDT\n            12 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:26 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Saturday, 08 August 2026 - 05:00 PM EDT\n            24 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 02:34 PM EDT\n            35 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 11:51 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 09:17 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 05:17 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:34 PM EDT\n            8 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:26 PM EDT\n            26 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 01:26 PM EDT\n            41 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 08:17 AM EDT\n            65 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:09 PM EDT\n            1 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:00 PM EDT\n            26 change(s) detected\n1.1.0.0.46624\n - Wednesday, 05 August 2026 - 06:08 AM EDT\n            14 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 10:43 AM EDT\n            38 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 05:00 AM EDT\n            1 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 04:43 AM EDT\n            2 change(s) detected\n1.1.0.0.46608\n - Monday, 03 August 2026 - 01:46 PM EDT\n            1 change(s) detected",
+    "locked": true,
+    "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
+    "tags": [
+      "공개대기"
+    ],
+    "severity": "trivial",
+    "changes": [],
+    "patch_note": {
+      "matched": false,
+      "title": null,
+      "url": null,
+      "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+    },
+    "is_submarine": null
+  },
+  {
+    "entry_id": "1233",
+    "eft_version": "1.2.5.0.48146",
+    "posted_at": "Friday, 16 October 2026 - 07:17 AM EDT",
+    "scraped_at": "2026-10-16T18:12:38Z",
+    "source_url": "https://changes.tarkov-changes.com/view/1233",
+    "files_changed": [],
+    "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 5h 5m.\nLogin with Discord\n to check if you have access to early content.\n1.2.5.0.48146\n - Friday, 16 October 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 03:43 AM EDT\n            1039 change(s) detected\n1.2.0.0.47965\n - Thursday, 15 October 2026 - 08:09 AM EDT\n            1 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 12:17 PM EDT\n            2 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 11:09 AM EDT\n            4 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:26 AM EDT\n            13 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:17 AM EDT\n            10 change(s) detected\n1.2.0.0.47888\n - Tuesday, 06 October 2026 - 08:21 PM EDT\n            1462 change(s) detected\n1.1.5.1.47510\n - Friday, 02 October 2026 - 06:09 AM EDT\n            3 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 05:00 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 04:51 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Tuesday, 29 September 2026 - 11:41 AM EDT\n            63 change(s) detected\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Tuesday, 01 September 2026 - 02:15 PM EDT\n            6 change(s) detected\n1.1.0.1.46911\n - Monday, 24 August 2026 - 04:46 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Sunday, 23 August 2026 - 10:55 AM EDT\n            22 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 07:26 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 04:52 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 03:26 PM EDT\n            11 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 09:09 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 13 August 2026 - 02:17 PM EDT\n            14 change(s) detected\n1.1.0.1.46699\n - Thursday, 13 August 2026 - 08:00 AM EDT\n            10 change(s) detected\n1.1.0.1.46699\n - Wednesday, 12 August 2026 - 05:09 AM EDT\n            28 change(s) detected\n1.1.0.1.46699\n - Monday, 10 August 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:43 AM EDT\n            12 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:26 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Saturday, 08 August 2026 - 05:00 PM EDT\n            24 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 02:34 PM EDT\n            35 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 11:51 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 09:17 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 05:17 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:34 PM EDT\n            8 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:26 PM EDT\n            26 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 01:26 PM EDT\n            41 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 08:17 AM EDT\n            65 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:09 PM EDT\n            1 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:00 PM EDT\n            26 change(s) detected\n1.1.0.0.46624\n - Wednesday, 05 August 2026 - 06:08 AM EDT\n            14 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 10:43 AM EDT\n            38 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 05:00 AM EDT\n            1 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 04:43 AM EDT\n            2 change(s) detected\n1.1.0.0.46608\n - Monday, 03 August 2026 - 01:46 PM EDT\n            1 change(s) detected",
     "locked": true,
     "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
     "tags": [
