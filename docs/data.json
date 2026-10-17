@@ -1,29 +1,96 @@
 {
-  "generated_at": "2026-10-16T18:12:43Z",
-  "count": 86,
+  "generated_at": "2026-10-17T17:24:20Z",
+  "count": 87,
   "entries": [
+    {
+      "entry_id": "1234",
+      "eft_version": "1.2.5.0.48146",
+      "posted_at": "Friday, 16 October 2026 - 02:17 PM EDT",
+      "scraped_at": "2026-10-17T17:22:13Z",
+      "source_url": "https://changes.tarkov-changes.com/view/1234",
+      "files_changed": [
+        {
+          "path": "client/trading/api/traderSettings/response.json",
+          "count": 1
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/trading/api/traderSettings/response.json\n(1 change)\nDated: Friday, 16 October 2026 - 02:17 PM EDT | Game Version 1.2.5.0.48146\nclient/trading/api/traderSettings/response.json\n['data']\n    ['Therapist']\n        ['items_sell']\n            ['2']\n                ['id_list']\n+                    (New) ['16']: TerraGroup Labs access keycard\n← Back to all changes",
+      "summary_ko": "Therapist 상인이 판매 아이템 목록에 TerraGroup Labs access keycard가 새로 추가되었습니다.",
+      "tags": [
+        "아이템",
+        "거래상"
+      ],
+      "severity": "minor",
+      "changes": [
+        {
+          "key_path": "data.Therapist.items_sell.2.id_list.16",
+          "before_ko": "해당 슬롯에 TerraGroup Labs access keycard가 없었습니다.",
+          "after_ko": "TerraGroup Labs access keycard(ID 16)가 추가되었습니다.",
+          "explanation_ko": "Therapist는 플레이어가 아이템을 구매할 수 있는 상인 중 하나이며, items_sell 배열의 2번째 슬롯은 특정 아이템 그룹을 정의합니다. 이번에 ID 16인 TerraGroup Labs access keycard가 이 그룹에 포함되어 판매 대상이 됩니다.",
+          "impact_ko": "플레이어는 Therapist에게서 TerraGroup Labs access keycard를 직접 구매할 수 있게 됩니다."
+        }
+      ],
+      "patch_note": {
+        "matched": false,
+        "title": null,
+        "url": null,
+        "reason_ko": "공식 패치노트에 해당 아이템 추가 내용이 언급되지 않아 잠수함(비공식) 패치로 판단됩니다."
+      },
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "stability": "stable",
+      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 1,
+        "recurring_keys": 0,
+        "later_changes": 0
+      }
+    },
     {
       "entry_id": "1233",
       "eft_version": "1.2.5.0.48146",
       "posted_at": "Friday, 16 October 2026 - 07:17 AM EDT",
       "scraped_at": "2026-10-16T18:12:38Z",
       "source_url": "https://changes.tarkov-changes.com/view/1233",
-      "files_changed": [],
-      "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 5h 5m.\nLogin with Discord\n to check if you have access to early content.\n1.2.5.0.48146\n - Friday, 16 October 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 03:43 AM EDT\n            1039 change(s) detected\n1.2.0.0.47965\n - Thursday, 15 October 2026 - 08:09 AM EDT\n            1 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 12:17 PM EDT\n            2 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 11:09 AM EDT\n            4 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:26 AM EDT\n            13 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:17 AM EDT\n            10 change(s) detected\n1.2.0.0.47888\n - Tuesday, 06 October 2026 - 08:21 PM EDT\n            1462 change(s) detected\n1.1.5.1.47510\n - Friday, 02 October 2026 - 06:09 AM EDT\n            3 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 05:00 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 04:51 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Tuesday, 29 September 2026 - 11:41 AM EDT\n            63 change(s) detected\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Tuesday, 01 September 2026 - 02:15 PM EDT\n            6 change(s) detected\n1.1.0.1.46911\n - Monday, 24 August 2026 - 04:46 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Sunday, 23 August 2026 - 10:55 AM EDT\n            22 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 07:26 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 04:52 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 03:26 PM EDT\n            11 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 09:09 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 13 August 2026 - 02:17 PM EDT\n            14 change(s) detected\n1.1.0.1.46699\n - Thursday, 13 August 2026 - 08:00 AM EDT\n            10 change(s) detected\n1.1.0.1.46699\n - Wednesday, 12 August 2026 - 05:09 AM EDT\n            28 change(s) detected\n1.1.0.1.46699\n - Monday, 10 August 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:43 AM EDT\n            12 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:26 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Saturday, 08 August 2026 - 05:00 PM EDT\n            24 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 02:34 PM EDT\n            35 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 11:51 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 09:17 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 05:17 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:34 PM EDT\n            8 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:26 PM EDT\n            26 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 01:26 PM EDT\n            41 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 08:17 AM EDT\n            65 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:09 PM EDT\n            1 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:00 PM EDT\n            26 change(s) detected\n1.1.0.0.46624\n - Wednesday, 05 August 2026 - 06:08 AM EDT\n            14 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 10:43 AM EDT\n            38 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 05:00 AM EDT\n            1 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 04:43 AM EDT\n            2 change(s) detected\n1.1.0.0.46608\n - Monday, 03 August 2026 - 01:46 PM EDT\n            1 change(s) detected",
-      "locked": true,
-      "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
+      "files_changed": [
+        {
+          "path": "client/survey/response.json",
+          "count": 1
+        }
+      ],
+      "raw_text": "Files Changed:\nclient/survey/response.json\n(1 change)\nDated: Friday, 16 October 2026 - 07:17 AM EDT | Game Version 1.2.5.0.48146\nclient/survey/response.json\n['data']\n-(Old) None (\n)\n+(New) {\n+      \"locale\": {\n+        \"en\": {\n+          \"time\": \"\",\n+          \"title\": \"This survey is focused on the Leagues system.\",\n+          \"farewell\": \"You will receive a participation reward in your in-game messages after completing the survey. Thank you for helping us make the game better!\",\n+          \"leagues_xp\": \"Which sources of experience are the most convenient for progressing in Leagues? \",\n+          \"description\": \"Wed like to hear your opinion on the current Leagues system, weekly competitions, Ranking up and down, leaderboards, and rewards.\\n\\nYour responses will help us understand which elements of the Leagues system players find most interesting and which changes we should consider as we continue to develop it.\\n\",\n+          \"leagues_text\": \"What changes or new features would you like to see in the League system?\",\n+          \"leagues_rankup\": \"How do you feel about the current Rank Up and Down system?\",\n+          \"leagues_changes\": \"What changes would you like to see in future League seasons? \",\n+          \"leagues_rewards\": \"Which League rewards interest you the most? \",\n+          \"leagues_sources\": \"Which sources of experience do you think should be excluded from Rank progression? \",\n+          \"leagues_xp_hint\": \"(Multiple answers possible)\",\n+          \"leagues_gamemode\": \"Which mode do you play most often? \",\n+          \"leagues_interest\": \"How interested are you in the League system in Escape from Tarkov overall?\",\n+          \"leagues_text_hint\": \"Describe the mechanics, rules, ways to earn experience, rewards, or other features youd like to see in future Leagues.\",\n+          \"leagues_motivation\": \"What primarily motivates you to participate in Leagues? \",\n+          \"leagues_rankup_hint\": \"\",\n+          \"leagues_changes_hint\": \"(Multiple answers possible)\",\n+          \"leagues_rewards_hint\": \"(Multiple answers possible)\",\n+          \"leagues_sources_hint\": \"(Multiple answers possible)\",\n+          \"leagues_gamemode_hint\": \"(Multiple answers possible)\",\n+          \"leagues_interest_hint\": \"\",\n+          \"leagues_motivation_hint\": \"(Multiple answers possible)\",\n+          \"leagues_xp_qa_leagues_xp_1\": \"Eliminating PMCs\",\n+          \"leagues_xp_qa_leagues_xp_2\": \"Eliminating Scavs\",\n+          \"leagues_xp_qa_leagues_xp_3\": \"Eliminating Bosses\",\n+          \"leagues_xp_qa_leagues_xp_4\": \"Completing tasks\",\n+          \"leagues_xp_qa_leagues_xp_5\": \"Examining items\",\n+          \"leagues_xp_qa_leagues_xp_6\": \"Other actions that grant experience\",\n+          \"leagues_xp_qa_leagues_xp_7\": \"Cannot answer\",\n+          \"leagues_rankup_qa_leagues_rankup_1\": \"Completely satisfied\",\n+          \"leagues_rankup_qa_leagues_rankup_2\": \"Rather satisfied\",\n+          \"leagues_rankup_qa_leagues_rankup_3\": \"Neutral\",\n+          \"leagues_rankup_qa_leagues_rankup_4\": \"Rather dissatisfied\",\n+          \"leagues_rankup_qa_leagues_rankup_5\": \"Completely dissatisfied\",\n+          \"leagues_rankup_qa_leagues_rankup_6\": \"Cannot answer\",\n+          \"leagues_changes_qa_leagues_changes_1\": \"More Ranks\",\n+          \"leagues_changes_qa_leagues_changes_2\": \"More unique rewards\",\n+          \"leagues_changes_qa_leagues_changes_3\": \"More ways to earn experience\",\n+          \"leagues_changes_qa_leagues_changes_4\": \"Remove experience gained from completing tasks\",\n+          \"leagues_changes_qa_leagues_changes_5\": \"Change the number of players allowed in a group\",\n+          \"leagues_changes_qa_leagues_changes_6\": \"Change the number of players who Rank up\",\n+          \"leagues_changes_qa_leagues_changes_7\": \"Change the number of players who retain their Rank\",\n+          \"leagues_changes_qa_leagues_changes_8\": \"Change the number of players who Rank down\",\n+          \"leagues_changes_qa_leagues_changes_9\": \"Increase the number of days spent at each Rank (more than 7 days)\",\n+          \"leagues_rewards_qa_leagues_rewards_1\": \"Bas-relief (as Hideout item)\",\n+          \"leagues_rewards_qa_leagues_rewards_2\": \"Hideout customization\",\n+          \"leagues_rewards_qa_leagues_rewards_3\": \"Dogtag\",\n+          \"leagues_rewards_qa_leagues_rewards_4\": \"Clothing\",\n+          \"leagues_rewards_qa_leagues_rewards_5\": \"Knives and other melee weapons\",\n+          \"leagues_rewards_qa_leagues_rewards_6\": \"Posters\",\n+          \"leagues_rewards_qa_leagues_rewards_7\": \"Other\",\n+          \"leagues_rewards_qa_leagues_rewards_8\": \"Cannot answer\",\n+          \"leagues_sources_qa_leagues_sources_1\": \"Eliminating PMCs\",\n+          \"leagues_sources_qa_leagues_sources_2\": \"Eliminating Scavs\",\n+          \"leagues_sources_qa_leagues_sources_3\": \"Eliminating Bosses\",\n+          \"leagues_sources_qa_leagues_sources_4\": \"Completing tasks\",\n+          \"leagues_sources_qa_leagues_sources_5\": \"Examining items\",\n+          \"leagues_sources_qa_leagues_sources_6\": \"Other actions that grant experience\",\n+          \"leagues_sources_qa_leagues_sources_7\": \"Nothing should be excluded\",\n+          \"leagues_sources_qa_leagues_sources_8\": \"Cannot answer\",\n+          \"leagues_changes_qa_leagues_changes_10\": \"Decrease the number of days spent at each Rank (fewer than 7 days)\",\n+          \"leagues_changes_qa_leagues_changes_11\": \"Add experience synchronization with Arena\",\n+          \"leagues_changes_qa_leagues_changes_12\": \"Additional ways to compete against other players\",\n+          \"leagues_changes_qa_leagues_changes_13\": \"A weekly PvP experience modifier for one of the locations\",\n+          \"leagues_changes_qa_leagues_changes_14\": \"No changes are needed\",\n+          \"leagues_changes_qa_leagues_changes_15\": \"Cannot answer\",\n+          \"leagues_gamemode_qa_leagues_gamemode_1\": \"PvP\",\n+          \"leagues_gamemode_qa_leagues_gamemode_2\": \"PvE\",\n+          \"leagues_gamemode_qa_leagues_gamemode_3\": \"PvP Season\",\n+          \"leagues_interest_qa_leagues_interest_1\": \"Very interested\",\n+          \"leagues_interest_qa_leagues_interest_2\": \"Rather interested\",\n+          \"leagues_interest_qa_leagues_interest_3\": \"Neutral\",\n+          \"leagues_interest_qa_leagues_interest_4\": \"Rather uninterested\",\n+          \"leagues_interest_qa_leagues_interest_5\": \"Not interested at all\",\n+          \"leagues_interest_qa_leagues_interest_6\": \"Cannot answer\",\n+          \"leagues_motivation_qa_leagues_motivation_1\": \"Increasing my Rank\",\n+          \"leagues_motivation_qa_leagues_motivation_2\": \"Earning unique rewards\",\n+          \"leagues_motivation_qa_leagues_motivation_3\": \"Competing against other players\",\n+          \"leagues_motivation_qa_leagues_motivation_4\": \"Testing my skills\",\n+          \"leagues_motivation_qa_leagues_motivation_5\": \"Having an additional goal each week\",\n+          \"leagues_motivation_qa_leagues_motivation_6\": \"Reaching all Ranks\",\n+          \"leagues_motivation_qa_leagues_motivation_7\": \"Cannot answer\"\n+        },\n+        \"ru\": {\n+          \"time\": \"\",\n+          \"title\": \"Игрокам Escape from Tarkov доступен новый внутриигровой опрос, посвященный системе Лиг.\",\n+          \"farewell\": \"За участие в опросе вы получите награду на внутриигровую почту. Спасибо, что помогаете нам становиться лучше!\",\n+          \"leagues_xp\": \"Какие источники опыта наиболее удобны для продвижения в Лигах?\",\n+          \"description\": \"Мы хотим узнать ваше мнение о текущей системе Лиг, еженедельных соревнованиях, повышении и понижении Рангов, Таблицах лидеров и наградах.\\n\\nВаши ответы помогут нам понять, какие элементы системы Лиг наиболее интересны игрокам и какие изменения стоит учитывать при ее дальнейшем развитии.\\n\",\n+          \"leagues_text\": \"Какие изменения или нововведения вы хотели бы увидеть в системе Лиг?\",\n+          \"leagues_rankup\": \"Как вы относитесь к текущей системе повышения и понижения Ранга?\",\n+          \"leagues_changes\": \"Какие изменения вы хотели бы увидеть в будущих сезонах Лиг? \",\n+          \"leagues_rewards\": \"Какие награды Лиг наиболее интересны для вас? \",\n+          \"leagues_sources\": \"Какие источники опыта, по вашему мнению, следует исключить из прогресса в Рангах? \",\n+          \"leagues_xp_hint\": \"(Можно выбрать несколько вариантов)\",\n+          \"leagues_gamemode\": \"В каком режиме вы играете чаще всего?\",\n+          \"leagues_interest\": \"Насколько вам в целом интересна система Лиг в Escape from Tarkov?\",\n+          \"leagues_text_hint\": \"Опишите, какие механики, правила, способы получения опыта, награды или другие особенности вы хотели бы увидеть в следующих Лигах.\",\n+          \"leagues_motivation\": \"Что в первую очередь мотивирует вас участвовать в Лигах?\",\n+          \"leagues_rankup_hint\": \"\",\n+          \"leagues_changes_hint\": \"(Можно выбрать несколько вариантов)\",\n+          \"leagues_rewards_hint\": \"(Можно выбрать несколько вариантов)\",\n+          \"leagues_sources_hint\": \"(Можно выбрать несколько вариантов)\",\n+          \"leagues_gamemode_hint\": \"(Можно выбрать несколько вариантов)\",\n+          \"leagues_interest_hint\": \"\",\n+          \"leagues_motivation_hint\": \"(Можно выбрать несколько вариантов)\",\n+          \"leagues_xp_qa_leagues_xp_1\": \"Устранение ЧВК\",\n+          \"leagues_xp_qa_leagues_xp_2\": \"Устранение Диких\",\n+          \"leagues_xp_qa_leagues_xp_3\": \"Устранение Боссов\",\n+          \"leagues_xp_qa_leagues_xp_4\": \"Выполнение заданий\",\n+          \"leagues_xp_qa_leagues_xp_5\": \"Исследование предметов\",\n+          \"leagues_xp_qa_leagues_xp_6\": \"Другие действия, приносящие опыт\",\n+          \"leagues_xp_qa_leagues_xp_7\": \"Затрудняюсь ответить\",\n+          \"leagues_rankup_qa_leagues_rankup_1\": \"Полностью устраивает\",\n+          \"leagues_rankup_qa_leagues_rankup_2\": \"Скорее устраивает\",\n+          \"leagues_rankup_qa_leagues_rankup_3\": \"Нейтрально\",\n+          \"leagues_rankup_qa_leagues_rankup_4\": \"Скорее не устраивает\",\n+          \"leagues_rankup_qa_leagues_rankup_5\": \"Совсем не устраивает\",\n+          \"leagues_rankup_qa_leagues_rankup_6\": \"Затрудняюсь ответить\",\n+          \"leagues_changes_qa_leagues_changes_1\": \"Больше Рангов\",\n+          \"leagues_changes_qa_leagues_changes_2\": \"Больше уникальных наград\",\n+          \"leagues_changes_qa_leagues_changes_3\": \"Больше способов заработать опыт\",\n+          \"leagues_changes_qa_leagues_changes_4\": \"Исключение опыта за выполнение заданий\",\n+          \"leagues_changes_qa_leagues_changes_5\": \"Изменение количества игроков в группе\",\n+          \"leagues_changes_qa_leagues_changes_6\": \"Изменение количества игроков, повышающих Ранг\",\n+          \"leagues_changes_qa_leagues_changes_7\": \"Изменение количества игроков, сохраняющих Ранг\",\n+          \"leagues_changes_qa_leagues_changes_8\": \"Изменение количества игроков, понижающих Ранг\",\n+          \"leagues_changes_qa_leagues_changes_9\": \"Увеличить количество дней на каждом Ранге (более 7 дней)\",\n+          \"leagues_rewards_qa_leagues_rewards_1\": \"Барельеф (предмет для Убежища)\",\n+          \"leagues_rewards_qa_leagues_rewards_2\": \"Кастомизация Убежища\",\n+          \"leagues_rewards_qa_leagues_rewards_3\": \"Жетон\",\n+          \"leagues_rewards_qa_leagues_rewards_4\": \"Одежда\",\n+          \"leagues_rewards_qa_leagues_rewards_5\": \"Ножи и другое холодное оружие\",\n+          \"leagues_rewards_qa_leagues_rewards_6\": \"Постеры\",\n+          \"leagues_rewards_qa_leagues_rewards_7\": \"Другое\",\n+          \"leagues_rewards_qa_leagues_rewards_8\": \"Затрудняюсь ответить\",\n+          \"leagues_sources_qa_leagues_sources_1\": \"Устранение ЧВК\",\n+          \"leagues_sources_qa_leagues_sources_2\": \"Устранение Диких\",\n+          \"leagues_sources_qa_leagues_sources_3\": \"Устранение Боссов\",\n+          \"leagues_sources_qa_leagues_sources_4\": \"Выполнение заданий\",\n+          \"leagues_sources_qa_leagues_sources_5\": \"Исследование предметов\",\n+          \"leagues_sources_qa_leagues_sources_6\": \"Другие действия, приносящие опыт\",\n+          \"leagues_sources_qa_leagues_sources_7\": \"Ничего не нужно исключать\",\n+          \"leagues_sources_qa_leagues_sources_8\": \"Затрудняюсь ответить\",\n+          \"leagues_changes_qa_leagues_changes_10\": \"Уменьшить количество дней на каждом Ранге (менее 7 дней)\",\n+          \"leagues_changes_qa_leagues_changes_11\": \"Добавить синхронизацию опыта из Арены\",\n+          \"leagues_changes_qa_leagues_changes_12\": \"Дополнительные способы соревноваться с другими игроками\",\n+          \"leagues_changes_qa_leagues_changes_13\": \"Еженедельный модификатор к PvP опыту на одной из локаций\",\n+          \"leagues_changes_qa_leagues_changes_14\": \"Ничего менять не нужно\",\n+          \"leagues_changes_qa_leagues_changes_15\": \"Затрудняюсь ответить\",\n+          \"leagues_gamemode_qa_leagues_gamemode_1\": \"PVP\",\n+          \"leagues_gamemode_qa_leagues_gamemode_2\": \"PVE\",\n+          \"leagues_gamemode_qa_leagues_gamemode_3\": \"PVP Season\",\n+          \"leagues_interest_qa_leagues_interest_1\": \"Очень интересна\",\n+          \"leagues_interest_qa_leagues_interest_2\": \"Скорее интересна\",\n+          \"leagues_interest_qa_leagues_interest_3\": \"Нейтрально\",\n+          \"leagues_interest_qa_leagues_interest_4\": \"Скорее неинтересна\",\n+          \"leagues_interest_qa_leagues_interest_5\": \"Совсем неинтересна\",\n+          \"leagues_interest_qa_leagues_interest_6\": \"Затрудняюсь ответить\",\n+          \"leagues_motivation_qa_leagues_motivation_1\": \"Повышение Ранга\",\n+          \"leagues_motivation_qa_leagues_motivation_2\": \"Получение уникальных наград\",\n+          \"leagues_motivation_qa_leagues_motivation_3\": \"Соревнование с другими игроками\",\n+          \"leagues_motivation_qa_leagues_motivation_4\": \"Возможность проверить свои навыки\",\n+          \"leagues_motivation_qa_leagues_motivation_5\": \"Дополнительная цель на каждую неделю\",\n+          \"leagues_motivation_qa_leagues_motivation_6\": \"Желание пройти все Ранги\",\n+          \"leagues_motivation_qa_leagues_motivation_7\": \"Затрудняюсь ответить\"\n+        }\n+      },\n+      \"survey\": {\n+        \"id\": 22,\n+        \"isNew\": true,\n+        \"pages\": [\n+          [\n+            0,\n+            1,\n+            2,\n+            3,\n+            4,\n+            5,\n+            6,\n+            7,\n+            8\n+          ]\n+        ],\n+        \"questions\": [\n+          {\n+            \"id\": 0,\n+            \"answers\": [\n+              {\n+                \"id\": 0,\n+                \"localeKey\": \"leagues_gamemode_qa_leagues_gamemode_1\",\n+                \"sortIndex\": 0,\n+                \"questionId\": 0\n+              },\n+              {\n+                \"id\": 1,\n+                \"localeKey\": \"leagues_gamemode_qa_leagues_gamemode_2\",\n+                \"sortIndex\": 1,\n+                \"questionId\": 0\n+              },\n+              {\n+                \"id\": 2,\n+                \"localeKey\": \"leagues_gamemode_qa_leagues_gamemode_3\",\n+                \"sortIndex\": 2,\n+                \"questionId\": 0\n+              }\n+            ],\n+            \"sortIndex\": 0,\n+            \"answerType\": \"MultiOption\",\n+            \"isRequired\": true,\n+            \"answerLimit\": 3,\n+            \"hintLocaleKey\": \"leagues_gamemode_hint\",\n+            \"titleLocaleKey\": \"leagues_gamemode\"\n+          },\n+          {\n+            \"id\": 1,\n+            \"answers\": [\n+              {\n+                \"id\": 0,\n+                \"localeKey\": \"leagues_interest_qa_leagues_interest_1\",\n+                \"sortIndex\": 0,\n+                \"questionId\": 1\n+              },\n+              {\n+                \"id\": 1,\n+                \"localeKey\": \"leagues_interest_qa_leagues_interest_2\",\n+                \"sortIndex\": 1,\n+                \"questionId\": 1\n+              },\n+              {\n+                \"id\": 2,\n+                \"localeKey\": \"leagues_interest_qa_leagues_interest_3\",\n+                \"sortIndex\": 2,\n+                \"questionId\": 1\n+              },\n+              {\n+                \"id\": 3,\n+                \"localeKey\": \"leagues_interest_qa_leagues_interest_4\",\n+                \"sortIndex\": 3,\n+                \"questionId\": 1\n+              },\n+              {\n+                \"id\": 4,\n+                \"localeKey\": \"leagues_interest_qa_leagues_interest_5\",\n+                \"sortIndex\": 4,\n+                \"questionId\": 1\n+              },\n+              {\n+                \"id\": 5,\n+                \"localeKey\": \"leagues_interest_qa_leagues_interest_6\",\n+                \"sortIndex\": 5,\n+                \"questionId\": 1\n+              }\n+            ],\n+            \"sortIndex\": 1,\n+            \"answerType\": \"SingleOption\",\n+            \"isRequired\": true,\n+            \"answerLimit\": 1,\n+            \"hintLocaleKey\": \"leagues_interest_hint\",\n+            \"titleLocaleKey\": \"leagues_interest\"\n+          },\n+          {\n+            \"id\": 2,\n+            \"answers\": [\n+              {\n+                \"id\": 0,\n+                \"localeKey\": \"leagues_motivation_qa_leagues_motivation_1\",\n+                \"sortIndex\": 0,\n+                \"questionId\": 2\n+              },\n+              {\n+                \"id\": 1,\n+                \"localeKey\": \"leagues_motivation_qa_leagues_motivation_2\",\n+                \"sortIndex\": 1,\n+                \"questionId\": 2\n+              },\n+              {\n+                \"id\": 2,\n+                \"localeKey\": \"leagues_motivation_qa_leagues_motivation_3\",\n+                \"sortIndex\": 2,\n+                \"questionId\": 2\n+              },\n+              {\n+                \"id\": 3,\n+                \"localeKey\": \"leagues_motivation_qa_leagues_motivation_4\",\n+                \"sortIndex\": 3,\n+                \"questionId\": 2\n+              },\n+              {\n+                \"id\": 4,\n+                \"localeKey\": \"leagues_motivation_qa_leagues_motivation_5\",\n+                \"sortIndex\": 4,\n+                \"questionId\": 2\n+              },\n+              {\n+                \"id\": 5,\n+                \"localeKey\": \"leagues_motivation_qa_leagues_motivation_6\",\n+                \"sortIndex\": 5,\n+                \"questionId\": 2\n+              },\n+              {\n+                \"id\": 6,\n+                \"localeKey\": \"leagues_motivation_qa_leagues_motivation_7\",\n+                \"sortIndex\": 6,\n+                \"questionId\": 2\n+              }\n+            ],\n+            \"sortIndex\": 2,\n+            \"answerType\": \"MultiOption\",\n+            \"isRequired\": true,\n+            \"answerLimit\": 6,\n+            \"hintLocaleKey\": \"leagues_motivation_hint\",\n+            \"titleLocaleKey\": \"leagues_motivation\"\n+          },\n+          {\n+            \"id\": 3,\n+            \"answers\": [\n+              {\n+                \"id\": 0,\n+                \"localeKey\": \"leagues_rankup_qa_leagues_rankup_1\",\n+                \"sortIndex\": 0,\n+                \"questionId\": 3\n+              },\n+              {\n+                \"id\": 1,\n+                \"localeKey\": \"leagues_rankup_qa_leagues_rankup_2\",\n+                \"sortIndex\": 1,\n+                \"questionId\": 3\n+              },\n+              {\n+                \"id\": 2,\n+                \"localeKey\": \"leagues_rankup_qa_leagues_rankup_3\",\n+                \"sortIndex\": 2,\n+                \"questionId\": 3\n+              },\n+              {\n+                \"id\": 3,\n+                \"localeKey\": \"leagues_rankup_qa_leagues_rankup_4\",\n+                \"sortIndex\": 3,\n+                \"questionId\": 3\n+              },\n+              {\n+                \"id\": 4,\n+                \"localeKey\": \"leagues_rankup_qa_leagues_rankup_5\",\n+                \"sortIndex\": 4,\n+                \"questionId\": 3\n+              },\n+              {\n+                \"id\": 5,\n+                \"localeKey\": \"leagues_rankup_qa_leagues_rankup_6\",\n+                \"sortIndex\": 5,\n+                \"questionId\": 3\n+              }\n+            ],\n+            \"sortIndex\": 3,\n+            \"answerType\": \"SingleOption\",\n+            \"isRequired\": true,\n+            \"answerLimit\": 1,\n+            \"hintLocaleKey\": \"leagues_rankup_hint\",\n+            \"titleLocaleKey\": \"leagues_rankup\"\n+          },\n+          {\n+            \"id\": 4,\n+            \"answers\": [\n+              {\n+                \"id\": 0,\n+                \"localeKey\": \"leagues_rewards_qa_leagues_rewards_1\",\n+               \n\n…(원문이 매우 커서 잘렸습니다 — 전체는 원본 링크에서 확인)",
+      "summary_ko": "새로운 리그(Leagues) 설문조사 데이터가 클라이언트에 추가되었습니다.",
       "tags": [
-        "공개대기"
+        "UI",
+        "기타"
       ],
       "severity": "trivial",
-      "changes": [],
+      "changes": [
+        {
+          "key_path": "data.locale",
+          "before_ko": "설문조사 데이터가 존재하지 않았음",
+          "after_ko": "영어와 러시아어 로케일에 대한 설문조사 텍스트와 질문/답변 옵션이 추가됨",
+          "explanation_ko": "클라이언트가 게임 내에서 플레이어에게 리그 시스템에 관한 설문조사를 표시하도록 하는 JSON 구조가 새로 정의되었습니다. 설문은 경험치 원천, 랭크 상승·하락, 보상, 게임 모드 등 여러 항목을 묻고 다중 선택이 가능하도록 구성됩니다. 이는 게임 밸런스 자체를 바꾸지는 않으며, 플레이어 의견 수집을 위한 UI 요소 추가입니다.",
+          "impact_ko": "플레이어가 설문에 참여할 수 있게 되지만 게임 진행에 직접적인 영향을 주지는 않습니다."
+        }
+      ],
       "patch_note": {
         "matched": false,
         "title": null,
         "url": null,
-        "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+        "reason_ko": "공식 패치노트에는 설문조사 추가 내용이 언급되지 않아 잠수함(비공개) 패치로 판단됩니다."
       },
-      "is_submarine": null
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "stability": "recurring",
+      "stability_detail_ko": "변경 키 1개 중 1개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+      "recurring_event": true,
+      "stability_stats": {
+        "changed_keys": 1,
+        "recurring_keys": 1,
+        "later_changes": 0
+      }
     },
     {
       "entry_id": "1232",
@@ -31,22 +98,86 @@
       "posted_at": "Friday, 16 October 2026 - 03:43 AM EDT",
       "scraped_at": "2026-10-16T18:12:37Z",
       "source_url": "https://changes.tarkov-changes.com/view/1232",
-      "files_changed": [],
-      "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 1h 30m.\nLogin with Discord\n to check if you have access to early content.\n1.2.5.0.48146\n - Friday, 16 October 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 03:43 AM EDT\n            1039 change(s) detected\n1.2.0.0.47965\n - Thursday, 15 October 2026 - 08:09 AM EDT\n            1 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 12:17 PM EDT\n            2 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 11:09 AM EDT\n            4 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:26 AM EDT\n            13 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:17 AM EDT\n            10 change(s) detected\n1.2.0.0.47888\n - Tuesday, 06 October 2026 - 08:21 PM EDT\n            1462 change(s) detected\n1.1.5.1.47510\n - Friday, 02 October 2026 - 06:09 AM EDT\n            3 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 05:00 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 04:51 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Tuesday, 29 September 2026 - 11:41 AM EDT\n            63 change(s) detected\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Tuesday, 01 September 2026 - 02:15 PM EDT\n            6 change(s) detected\n1.1.0.1.46911\n - Monday, 24 August 2026 - 04:46 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Sunday, 23 August 2026 - 10:55 AM EDT\n            22 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 07:26 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 04:52 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 03:26 PM EDT\n            11 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 09:09 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 13 August 2026 - 02:17 PM EDT\n            14 change(s) detected\n1.1.0.1.46699\n - Thursday, 13 August 2026 - 08:00 AM EDT\n            10 change(s) detected\n1.1.0.1.46699\n - Wednesday, 12 August 2026 - 05:09 AM EDT\n            28 change(s) detected\n1.1.0.1.46699\n - Monday, 10 August 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:43 AM EDT\n            12 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:26 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Saturday, 08 August 2026 - 05:00 PM EDT\n            24 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 02:34 PM EDT\n            35 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 11:51 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 09:17 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 05:17 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:34 PM EDT\n            8 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:26 PM EDT\n            26 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 01:26 PM EDT\n            41 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 08:17 AM EDT\n            65 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:09 PM EDT\n            1 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:00 PM EDT\n            26 change(s) detected\n1.1.0.0.46624\n - Wednesday, 05 August 2026 - 06:08 AM EDT\n            14 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 10:43 AM EDT\n            38 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 05:00 AM EDT\n            1 change(s) detected\n1.1.0.0.46624\n - Tuesday, 04 August 2026 - 04:43 AM EDT\n            2 change(s) detected\n1.1.0.0.46608\n - Monday, 03 August 2026 - 01:46 PM EDT\n            1 change(s) detected",
-      "locked": true,
-      "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
-      "tags": [
-        "공개대기"
+      "files_changed": [
+        {
+          "path": "client/items/response.json",
+          "count": 5
+        },
+        {
+          "path": "client/globals/response.json",
+          "count": 139
+        },
+        {
+          "path": "client/locale/en/response.json",
+          "count": 39
+        },
+        {
+          "path": "client/locations/response.json",
+          "count": 839
+        },
+        {
+          "path": "client/customization/response.json",
+          "count": 1
+        },
+        {
+          "path": "client/trading/api/traderSettings/response.json",
+          "count": 16
+        }
       ],
-      "severity": "trivial",
-      "changes": [],
+      "raw_text": "Files Changed:\nclient/items/response.json\n(5 changes)\nclient/globals/response.json\n(139 changes)\nclient/locale/en/response.json\n(39 changes)\nclient/locations/response.json\n(839 changes)\nclient/customization/response.json\n(1 change)\nclient/trading/api/traderSettings/response.json\n(16 changes)\nDated: Friday, 16 October 2026 - 03:43 AM EDT | Game Version 1.2.5.0.48146\nclient/items/response.json\n['data']\n+    (New) ['Scourge's smartphone']: {\n+          \"_id\": \"Scourge's smartphone\",\n+          \"_name\": \"item_barter_electr_gphone_scourge\",\n+          \"_type\": \"Item\",\n+          \"_props\": {\n+            \"Name\": \"item_barter_electr_gphone_scourge\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"assets/content/items/barter/phone/item_phone.bundle\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 0.3,\n+            \"Resource\": 0,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Not_exist\",\n+            \"ShortName\": \"item_barter_electr_gphone_scourge\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"Description\": \"item_barter_electr_gphone_scourge\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"MaxResource\": 0,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": 0,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 30,\n+            \"NotShownInSlot\": false,\n+            \"BackgroundColor\": \"violet\",\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"AnimationVariantsNumber\": 0,\n+            \"IsSecretExitRequirement\": false,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Electronics\"\n+        }\n+    (New) ['Precursor container']: {\n+          \"_id\": \"Precursor container\",\n+          \"_name\": \"item_barter_medical_precursor\",\n+          \"_type\": \"Item\",\n+          \"_props\": {\n+            \"Name\": \"item_barter_medical_precursor\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"assets/content/items/quest/item_quest_chemcontainer/item_quest_chemcontainer.bundle\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 0.1,\n+            \"Resource\": 0,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Superrare\",\n+            \"ShortName\": \"item_barter_medical_precursor\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"Description\": \"item_barter_medical_precursor\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"MaxResource\": 0,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": 0,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 100,\n+            \"NotShownInSlot\": false,\n+            \"BackgroundColor\": \"violet\",\n+            \"DiscardingBlock\": false,\n+            \"DogTagQualities\": false,\n+            \"IsUndiscardable\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"ExamineExperience\": 100,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": true,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"AnimationVariantsNumber\": 0,\n+            \"IsSecretExitRequirement\": false,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_proto\": \"Bottle of saline solution\",\n+          \"_parent\": \"Other\"\n+        }\n+    (New) ['TerraGroup employee's suitcase']: {\n+          \"_id\": \"TerraGroup employee's suitcase\",\n+          \"_name\": \"item_container_event_scourge_suitcase\",\n+          \"_type\": \"Item\",\n+          \"_props\": {\n+            \"Name\": \"item_container_event_scourge_suitcase\",\n+            \"Grids\": [\n+              {\n+                \"_id\": \"6ac4e0e576842fabb501d5d1\",\n+                \"_name\": \"main\",\n+                \"_props\": {\n+                  \"cellsH\": 10,\n+                  \"cellsV\": 10,\n+                  \"filters\": [\n+                    {\n+                      \"Filter\": [],\n+                      \"ExcludedFilter\": [\n+                        \"54009119af1c881c07000029\"\n+                      ]\n+                    }\n+                  ],\n+                  \"maxCount\": 99,\n+                  \"minCount\": 1,\n+                  \"maxWeight\": 0,\n+                  \"isSortingTable\": true\n+                },\n+                \"_proto\": \"55d329c24bdc2d892f8b4567\",\n+                \"_parent\": \"TerraGroup employee's suitcase\"\n+              }\n+            ],\n+            \"Slots\": [],\n+            \"Width\": 4,\n+            \"Height\": 4,\n+            \"Prefab\": {\n+              \"path\": \"assets/content/items/quest/item_quest_container_carbon_case/item_quest_container_carbon_case.bundle\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 6,\n+            \"ItemSound\": \"container_case\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Superrare\",\n+            \"ShortName\": \"item_container_event_scourge_suitcase\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"Description\": \"item_container_event_scourge_suitcase\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RepairSpeed\": 0,\n+            \"SearchSound\": \"drawer_metal_looting\",\n+            \"DiscardLimit\": 0,\n+            \"HideEntrails\": true,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 20,\n+            \"NotShownInSlot\": false,\n+            \"BackgroundColor\": \"blue\",\n+            \"BlocksArmorVest\": false,\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"CanSellOnRagfair\": false,\n+            \"ConflictingItems\": [],\n+            \"ExamineExperience\": 100,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": true,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"AnimationVariantsNumber\": 0,\n+            \"CanPutIntoDuringTheRaid\": true,\n+            \"ForbidMissingVitalParts\": false,\n+            \"IsSecretExitRequirement\": false,\n+            \"ForbidNonEmptyContainers\": false,\n+            \"RagFairCommissionModifier\": 1,\n+            \"CantRemoveFromSlotsDuringRaid\": [],\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_proto\": \"Duffle bag\",\n+          \"_parent\": \"RandomLootContainer\"\n+        }\n+    (New) ['TerraGroup employee's package']: {\n+          \"_id\": \"TerraGroup employee's package\",\n+          \"_name\": \"item_container_event_scourge_box\",\n+          \"_type\": \"Item\",\n+          \"_props\": {\n+            \"Name\": \"item_container_event_scourge_box\",\n+            \"Grids\": [\n+              {\n+                \"_id\": \"6ac4eccad8aa0d51df019975\",\n+                \"_name\": \"main\",\n+                \"_props\": {\n+                  \"cellsH\": 10,\n+                  \"cellsV\": 10,\n+                  \"filters\": [\n+                    {\n+                      \"Filter\": [],\n+                      \"ExcludedFilter\": [\n+                        \"54009119af1c881c07000029\"\n+                      ]\n+                    }\n+                  ],\n+                  \"maxCount\": 99,\n+                  \"minCount\": 1,\n+                  \"maxWeight\": 0,\n+                  \"isSortingTable\": false\n+                },\n+                \"_proto\": \"55d329c24bdc2d892f8b4567\",\n+                \"_parent\": \"TerraGroup employee's package\"\n+              }\n+            ],\n+            \"Slots\": [],\n+            \"Width\": 2,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"assets/content/items/quest/item_quest_parcel/item_quest_parcel.bundle\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 6,\n+            \"ItemSound\": \"container_plastic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Superrare\",\n+            \"ShortName\": \"item_container_event_scourge_box\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"Description\": \"item_container_event_scourge_box\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RepairSpeed\": 0,\n+            \"SearchSound\": \"drawer_metal_looting\",\n+            \"DiscardLimit\": 0,\n+            \"HideEntrails\": true,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 100,\n+            \"NotShownInSlot\": false,\n+            \"BackgroundColor\": \"blue\",\n+            \"BlocksArmorVest\": false,\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"CanSellOnRagfair\": false,\n+            \"ConflictingItems\": [],\n+            \"ExamineExperience\": 100,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": true,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"AnimationVariantsNumber\": 0,\n+            \"CanPutIntoDuringTheRaid\": true,\n+            \"ForbidMissingVitalParts\": false,\n+            \"IsSecretExitRequirement\": false,\n+            \"ForbidNonEmptyContainers\": false,\n+            \"RagFairCommissionModifier\": 1,\n+            \"CantRemoveFromSlotsDuringRaid\": [],\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_proto\": \"Duffle bag\",\n+          \"_parent\": \"RandomLootContainer\"\n+        }\n+    (New) ['SSD with shipment data']: {\n+          \"_id\": \"SSD with shipment data\",\n+          \"_name\": \"item_quest_hdd_ssd_scourge\",\n+          \"_type\": \"Item\",\n+          \"_props\": {\n+            \"Name\": \"item_quest_hdd_ssd_scourge\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"assets/content/items/barter/ssd/item_barter_electr_ssd.bundle\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 0.04,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": true,\n+            \"RarityPvE\": \"Not_exist\",\n+            \"ShortName\": \"item_quest_hdd_ssd_scourge\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"Description\": \"item_quest_hdd_ssd_scourge\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": 0,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 10,\n+            \"NotShownInSlot\": false,\n+            \"BackgroundColor\": \"yellow\",\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"CanSellOnRagfair\": false,\n+            \"ConflictingItems\": [],\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": true,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": true,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 1,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"AnimationVariantsNumber\": 0,\n+            \"IsSecretExitRequirement\": false,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_proto\": \"Broken GPhone smartphone\",\n+          \"_parent\": \"Info\"\n+        }\nclient/customization/response.json\n['data']\n+    (New) ['6acf6e6e35ee26cb5b0a5ab1']: {\n+          \"_id\": \"6acf6e6e35ee26cb5b0a5ab1\",\n+          \"_name\": \"BossScourge\",\n+          \"_type\": \"Item\",\n+          \"_props\": {\n+            \"Name\": \"BossScourge\",\n+            \"Side\": [\n+              \"Savage\"\n+            ],\n+            \"Prefab\": \"BossScourge\",\n+            \"ShortName\": \"BossScourge\",\n+            \"Description\": \"BossScourge\",\n+            \"IsNotRandom\": true,\n+            \"ProfileVersions\": [],\n+            \"AvailableAsDefault\": false,\n+            \"ShopCustomizationUrl\": \"\",\n+            \"ProfileVersionsIgnoresSide\": []\n+          },\n+          \"_proto\": \"5fc100cf95572123ae738483\",\n+          \"_parent\": \"5fc100cf95572123ae738483\"\n+        }\nclient/globals/response.json\n['data']\n    ['config']\n        ['Customization']\n            ['SavageBody']\n+                (New) ['bear_upper_sso']: {\n+                      \"body\": \"bear_upper_SpNa\",\n+                      \"hands\": \"6945414191974a958a07de8e\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['bear_upper_nord']: {\n+                      \"body\": \"bear_upper_SpNa\",\n+                      \"hands\": \"67506abae23c30f949061906\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['bear_upper_polo']: {\n+                      \"body\": \"642ed297ac11c9eaf10d87e8\",\n+                      \"hands\": \"6436d9ec6c06444bf7033a4e\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['bear_upper_phoenix']: {\n+                      \"body\": \"66acec1dc94f4bf5bc063a16\",\n+                      \"hands\": \"66ace88c46fb07947008645b\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['pmc_upper_bp_saiga']: {\n+                      \"body\": \"67ac7f3ca6749cd1690ae1d9\",\n+                      \"hands\": \"67ac82465f7251f49d0e9b0f\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['usec_upper_corsair']: {\n+                      \"body\": \"692eb1c940d144d02606c2ff\",\n+                      \"hands\": \"692eb247311ead1025025616\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['bear_upper_goptac_2']: {\n+                      \"body\": \"bear_upper_g99\",\n+                      \"hands\": \"69a95f899220537f52033778\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['pmc_upper_mannequin']: {\n+                      \"body\": \"6644d2ffd85107e63500a61c\",\n+                      \"hands\": \"5cc2e68f14c02e28b47de290\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['usec_upper_clawgear']: {\n+                      \"body\": \"66acbe49dc61999a6a03d4d6\",\n+                      \"hands\": \"66b4d4ccd9281f8de00c6e02\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['usec_upper_crusader']: {\n+                      \"body\": \"6943e6381175f307df0259de\",\n+                      \"hands\": \"6943e69bba7b8a2d1c09025d\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['usec_upper_goptac_2']: {\n+                      \"body\": \"usec_upper_acu\",\n+                      \"hands\": \"69a96f08c08d716baa0385cd\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['bear_upper_gladiator']: {\n+                      \"body\": \"6430119aac11c9eaf10d881b\",\n+                      \"hands\": \"6437ef59881906a7fe086aae\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleAnimator\": false\n+                    }\n+                (New) ['bear_upper_hawaii_01']: {\n+                      \"body\": \"bear_upper_g99\",\n+                      \"hands\": \"6847e3cc13183100990dd1c8\",\n+                      \"isNotRandom\": true,\n+                      \"isSupportingSimpleA\n\n…(원문이 매우 커서 잘렸습니다 — 전체는 원본 링크에서 확인)",
+      "summary_ko": "새로운 이벤트 아이템 및 컨테이너 4종이 추가되고, 관련 아이템 속성이 다수 정의되었습니다.",
+      "tags": [
+        "아이템",
+        "퀘스트",
+        "거래상"
+      ],
+      "severity": "major",
+      "changes": [
+        {
+          "key_path": "client/items/response.json['Scourge's smartphone']",
+          "before_ko": "존재하지 않음(새로운 아이템)",
+          "after_ko": "스마트폰 아이템이 추가됨. 무게 0.3kg, 1칸 차지, 라그페어 판매 가능, 경험치 30획득.",
+          "explanation_ko": "이 아이템은 이벤트 전용 교환 아이템으로, 퀘스트 진행이나 바터 거래에 사용됩니다. 라그페어에서 판매가 가능해 경제 활동에 활용될 수 있습니다.",
+          "impact_ko": "플레이어는 새로운 교환 아이템을 활용해 퀘스트 진행 및 수익 창출이 가능해집니다."
+        },
+        {
+          "key_path": "client/items/response.json['Precursor container']",
+          "before_ko": "존재하지 않음(새로운 아이템)",
+          "after_ko": "전구체(Precursor) 컨테이너가 추가됨. 무게 0.1kg, 슈퍼레어 등급, 보험 비활성화, 경험치 100획득.",
+          "explanation_ko": "퀘스트 아이템으로, 전구체를 보관하거나 교환할 때 사용됩니다. 보험이 비활성화돼 파손 시 보상이 없습니다.",
+          "impact_ko": "전구체 관련 퀘스트 진행 시 새로운 보관 수단을 제공하지만, 파손 위험이 존재합니다."
+        },
+        {
+          "key_path": "client/items/response.json['TerraGroup employee's suitcase']",
+          "before_ko": "존재하지 않음(새로운 아이템)",
+          "after_ko": "10x10 그리드(100칸) 컨테이너가 추가됨. 무게 6kg, 슈퍼레어, 보험 비활성화, 라그페어 판매 불가.",
+          "explanation_ko": "대형 컨테이너로, 레이드 중에 아이템을 대량 보관하거나 정리할 수 있습니다. 라그페어에 판매할 수 없으며, 보험이 비활성화돼 파손 시 손실 위험이 있습니다.",
+          "impact_ko": "플레이어는 레이드 내 물품 정리와 보관에 유용한 대형 컨테이너를 사용할 수 있게 됩니다."
+        },
+        {
+          "key_path": "client/items/response.json['TerraGroup employee's package']",
+          "before_ko": "존재하지 않음(새로운 아이템)",
+          "after_ko": "10x10 그리드(100칸) 작은 패키지가 추가됨. 무게 6kg, 슈퍼레어, 보험 비활성화, 라그페어 판매 불가.",
+          "explanation_ko": "대형 수트케이스와 유사하지만 크기가 작아 이동성이 높습니다. 보험이 비활성화돼 파손 시 보상이 없습니다.",
+          "impact_ko": "플레이어는 이동 중에도 대량 아이템을 보관할 수 있는 새로운 옵션을 얻게 됩니다."
+        }
+      ],
       "patch_note": {
         "matched": false,
         "title": null,
         "url": null,
-        "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+        "reason_ko": "공식 패치노트에는 아이템 추가 내용이 언급되지 않아 잠수함(비공식) 패치로 판단됩니다."
       },
-      "is_submarine": null
+      "interpreter": "groq:openai/gpt-oss-120b",
+      "is_submarine": true,
+      "stability": "stable",
+      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "recurring_event": false,
+      "stability_stats": {
+        "changed_keys": 756,
+        "recurring_keys": 0,
+        "later_changes": 0
+      }
     },
     {
       "entry_id": "1231",
@@ -84,13 +215,13 @@
       },
       "interpreter": "groq:openai/gpt-oss-120b",
       "is_submarine": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 0
+        "later_changes": 1
       }
     },
     {
@@ -402,12 +533,12 @@
       "interpreter": "groq:openai/gpt-oss-120b",
       "is_submarine": false,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 10,
         "recurring_keys": 0,
-        "later_changes": 1
+        "later_changes": 2
       }
     },
     {
@@ -498,13 +629,13 @@
       "interpreter": "groq:openai/gpt-oss-120b",
       "is_submarine": false,
       "severity_note_ko": "변경 총 1462건 — 규모 기준 자동 상향",
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 0
+        "later_changes": 1
       }
     },
     {
@@ -983,13 +1114,13 @@
       },
       "interpreter": "groq:openai/gpt-oss-120b",
       "is_submarine": true,
-      "stability": "stable",
-      "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+      "stability": "superseded",
+      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(토글 키 19개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 63,
         "recurring_keys": 19,
-        "later_changes": 0
+        "later_changes": 1
       }
     },
     {
@@ -1159,7 +1290,7 @@
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 1,
-        "later_changes": 0
+        "later_changes": 1
       }
     },
     {
@@ -1222,12 +1353,12 @@
       "is_submarine": true,
       "severity_note_ko": "변경 총 1953건 — 규모 기준 자동 상향",
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 1
+        "later_changes": 2
       }
     },
     {
@@ -1363,7 +1494,7 @@
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 1,
-        "later_changes": 1
+        "later_changes": 2
       }
     },
     {
@@ -1550,12 +1681,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 233,
         "recurring_keys": 0,
-        "later_changes": 2
+        "later_changes": 3
       }
     },
     {
@@ -1705,12 +1836,12 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 7회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 3,
         "recurring_keys": 0,
-        "later_changes": 7
+        "later_changes": 9
       }
     },
     {
@@ -2131,12 +2262,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 3
+        "later_changes": 4
       }
     },
     {
@@ -2314,12 +2445,12 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 8,
         "recurring_keys": 2,
-        "later_changes": 5
+        "later_changes": 6
       }
     },
     {
@@ -2624,12 +2755,12 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 7,
         "recurring_keys": 0,
-        "later_changes": 9
+        "later_changes": 10
       }
     },
     {
@@ -2748,12 +2879,12 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 7회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 8,
         "recurring_keys": 0,
-        "later_changes": 6
+        "later_changes": 7
       }
     },
     {
@@ -4140,12 +4271,12 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 17,
         "recurring_keys": 6,
-        "later_changes": 12
+        "later_changes": 13
       }
     },
     {
@@ -4478,12 +4609,12 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 11,
         "recurring_keys": 0,
-        "later_changes": 11
+        "later_changes": 12
       }
     },
     {
@@ -4850,12 +4981,12 @@
       "is_submarine": false,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 9
+        "later_changes": 10
       }
     },
     {
@@ -4946,12 +5077,12 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 0,
-        "later_changes": 4
+        "later_changes": 5
       }
     },
     {
@@ -5052,12 +5183,12 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 17회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 7,
         "recurring_keys": 0,
-        "later_changes": 15
+        "later_changes": 17
       }
     },
     {
@@ -5186,12 +5317,12 @@
       "is_submarine": true,
       "backfilled": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 7,
         "recurring_keys": 0,
-        "later_changes": 11
+        "later_changes": 12
       }
     },
     {
@@ -5235,7 +5366,7 @@
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 1,
-        "later_changes": 2
+        "later_changes": 3
       }
     },
     {
@@ -5535,7 +5666,7 @@
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 1,
-        "later_changes": 3
+        "later_changes": 4
       }
     },
     {
@@ -5676,12 +5807,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 3,
         "recurring_keys": 0,
-        "later_changes": 1
+        "later_changes": 2
       }
     },
     {
@@ -5986,12 +6117,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 2,
         "recurring_keys": 0,
-        "later_changes": 12
+        "later_changes": 13
       }
     },
     {
@@ -6063,12 +6194,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 84,
         "recurring_keys": 2,
-        "later_changes": 15
+        "later_changes": 16
       }
     },
     {
@@ -6111,7 +6242,7 @@
       "stability_stats": {
         "changed_keys": 1,
         "recurring_keys": 1,
-        "later_changes": 4
+        "later_changes": 5
       }
     },
     {
@@ -6584,12 +6715,12 @@
       },
       "is_submarine": true,
       "stability": "superseded",
-      "stability_detail_ko": "이후 동일 키가 다시 47회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+      "stability_detail_ko": "이후 동일 키가 다시 48회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
       "recurring_event": false,
       "stability_stats": {
         "changed_keys": 51,
         "recurring_keys": 22,
-        "later_changes": 47
+        "later_changes": 48
       }
     },
     {
