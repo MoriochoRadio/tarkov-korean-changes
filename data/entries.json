@@ -711,12 +711,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 47회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 48회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 51,
       "recurring_keys": 22,
-      "later_changes": 47
+      "later_changes": 48
     }
   },
   {
@@ -1228,12 +1228,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 84,
       "recurring_keys": 2,
-      "later_changes": 15
+      "later_changes": 16
     }
   },
   {
@@ -1300,12 +1300,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 2,
       "recurring_keys": 0,
-      "later_changes": 12
+      "later_changes": 13
     }
   },
   {
@@ -2148,12 +2148,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 3
+      "later_changes": 4
     }
   },
   {
@@ -3193,12 +3193,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 3,
       "recurring_keys": 0,
-      "later_changes": 8
+      "later_changes": 9
     }
   },
   {
@@ -3784,12 +3784,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 8,
       "recurring_keys": 2,
-      "later_changes": 5
+      "later_changes": 6
     }
   },
   {
@@ -4153,12 +4153,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 9
+      "later_changes": 10
     }
   },
   {
@@ -4277,12 +4277,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 7회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 8,
       "recurring_keys": 0,
-      "later_changes": 6
+      "later_changes": 7
     }
   },
   {
@@ -5766,12 +5766,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 17,
       "recurring_keys": 6,
-      "later_changes": 12
+      "later_changes": 13
     }
   },
   {
@@ -5972,12 +5972,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": false,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 10,
       "recurring_keys": 0,
-      "later_changes": 1
+      "later_changes": 2
     }
   },
   {
@@ -6421,12 +6421,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 11,
       "recurring_keys": 0,
-      "later_changes": 11
+      "later_changes": 12
     }
   },
   {
@@ -6793,12 +6793,12 @@
     "is_submarine": false,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 9
+      "later_changes": 10
     }
   },
   {
@@ -6995,12 +6995,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 17회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 16
+      "later_changes": 17
     }
   },
   {
@@ -7129,12 +7129,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 11
+      "later_changes": 12
     }
   },
   {
@@ -7173,13 +7173,13 @@
     },
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
-    "stability": "stable",
-    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+    "stability": "superseded",
+    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 0
+      "later_changes": 1
     }
   },
   {
@@ -7416,22 +7416,43 @@
     "posted_at": "Tuesday, 20 October 2026 - 05:09 AM EDT",
     "scraped_at": "2026-10-20T18:33:28Z",
     "source_url": "https://changes.tarkov-changes.com/view/1236",
-    "files_changed": [],
-    "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 2h 35m.\nLogin with Discord\n to check if you have access to early content.\n1.2.5.0.48146\n - Tuesday, 20 October 2026 - 05:34 AM EDT\n            12 change(s) detected\n1.2.5.0.48146\n - Tuesday, 20 October 2026 - 05:09 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Monday, 19 October 2026 - 08:51 AM EDT\n            2 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 02:17 PM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 03:43 AM EDT\n            1039 change(s) detected\n1.2.0.0.47965\n - Thursday, 15 October 2026 - 08:09 AM EDT\n            1 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 12:17 PM EDT\n            2 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 11:09 AM EDT\n            4 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:26 AM EDT\n            13 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:17 AM EDT\n            10 change(s) detected\n1.2.0.0.47888\n - Tuesday, 06 October 2026 - 08:21 PM EDT\n            1462 change(s) detected\n1.1.5.1.47510\n - Friday, 02 October 2026 - 06:09 AM EDT\n            3 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 05:00 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 04:51 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Tuesday, 29 September 2026 - 11:41 AM EDT\n            63 change(s) detected\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Tuesday, 01 September 2026 - 02:15 PM EDT\n            6 change(s) detected\n1.1.0.1.46911\n - Monday, 24 August 2026 - 04:46 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Sunday, 23 August 2026 - 10:55 AM EDT\n            22 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 07:26 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 04:52 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 03:26 PM EDT\n            11 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 09:09 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 13 August 2026 - 02:17 PM EDT\n            14 change(s) detected\n1.1.0.1.46699\n - Thursday, 13 August 2026 - 08:00 AM EDT\n            10 change(s) detected\n1.1.0.1.46699\n - Wednesday, 12 August 2026 - 05:09 AM EDT\n            28 change(s) detected\n1.1.0.1.46699\n - Monday, 10 August 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:43 AM EDT\n            12 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:26 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Saturday, 08 August 2026 - 05:00 PM EDT\n            24 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 02:34 PM EDT\n            35 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 11:51 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 09:17 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 05:17 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:34 PM EDT\n            8 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:26 PM EDT\n            26 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 01:26 PM EDT\n            41 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 08:17 AM EDT\n            65 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:09 PM EDT\n            1 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:00 PM EDT\n            26 change(s) detected\n1.1.0.0.46624\n - Wednesday, 05 August 2026 - 06:08 AM EDT\n            14 change(s) detected",
-    "locked": true,
-    "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
+    "files_changed": [
+      {
+        "path": "client/achievement/list/response.json",
+        "count": 1
+      }
+    ],
+    "raw_text": "Files Changed:\nclient/achievement/list/response.json\n(1 change)\nDated: Tuesday, 20 October 2026 - 05:09 AM EDT | Game Version 1.2.5.0.48146\nclient/achievement/list/response.json\n['data']\n    ['elements']\n+        (New) ['6ad61d4b93495b6d53062150']: {\n+              \"id\": \"6ad61d4b93495b6d53062150\",\n+              \"side\": \"All\",\n+              \"index\": 99999,\n+              \"hidden\": false,\n+              \"prefab\": \"\",\n+              \"rarity\": \"Legendary\",\n+              \"rewards\": [],\n+              \"imageUrl\": \"/files/achievement/6ad61c6d85b42a1f05069429.png\",\n+              \"assetPath\": \"\",\n+              \"conditions\": {\n+                \"fail\": [],\n+                \"availableForFinish\": [\n+                  {\n+                    \"id\": \"6ad61cfec3a33b7d98fa17db\",\n+                    \"index\": 0,\n+                    \"props\": {\n+                      \"index\": 0,\n+                      \"dialogId\": null,\n+                      \"parentId\": \"\",\n+                      \"entryPoint\": null,\n+                      \"fromTraderId\": null,\n+                      \"dynamicLocale\": false,\n+                      \"globalQuestCounterId\": \"\",\n+                      \"visibilityConditions\": []\n+                    },\n+                    \"dialogId\": null,\n+                    \"parentId\": \"\",\n+                    \"entryPoint\": null,\n+                    \"questNoteId\": null,\n+                    \"fromTraderId\": null,\n+                    \"conditionType\": \"Block\",\n+                    \"dynamicLocale\": false,\n+                    \"globalQuestCounterId\": \"\",\n+                    \"visibilityConditions\": []\n+                  }\n+                ]\n+              },\n+              \"showProgress\": false,\n+              \"showConditions\": false,\n+              \"instantComplete\": false,\n+              \"progressBarEnabled\": false,\n+              \"showNotificationsInGame\": false\n+            }\n← Back to all changes",
+    "summary_ko": "새로운 레전드 등급 업적이 추가되었습니다.",
     "tags": [
-      "공개대기"
+      "기타"
     ],
     "severity": "trivial",
-    "changes": [],
+    "changes": [
+      {
+        "key_path": "data.elements.6ad61d4b93495b6d53062150",
+        "before_ko": "해당 키가 존재하지 않아 업적이 없었습니다.",
+        "after_ko": "새로운 업적이 추가되어 ID, 사이드, 인덱스, 가시성, 등급, 이미지 등 정보가 정의되었습니다.",
+        "explanation_ko": "이 항목은 업적(achievement) 데이터베이스에 새로운 레전드(Legendary) 등급 업적을 등록합니다. 보상은 없으며, 진행 표시와 알림도 비활성화돼 플레이어에게 별도 표시가 없습니다. 업적은 모든 진영(All)에서 달성 가능하도록 설정되었습니다.",
+        "impact_ko": "게임 진행에 직접적인 영향을 주지는 않으며, 달성 시 표시되는 업적이 하나 늘어납니다."
+      }
+    ],
     "patch_note": {
       "matched": false,
       "title": null,
       "url": null,
-      "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+      "reason_ko": "공식 패치노트에 해당 업적 추가 내용이 언급되지 않아 잠수함(비공식) 패치로 판단됩니다."
     },
-    "is_submarine": null
+    "interpreter": "groq:openai/gpt-oss-120b",
+    "is_submarine": true,
+    "stability": "recurring",
+    "stability_detail_ko": "변경 키 1개 중 1개가 값이 이전 상태로 되돌아오는 토글 키(100%) — 반복/이벤트성으로 자동 판정.",
+    "recurring_event": true,
+    "stability_stats": {
+      "changed_keys": 1,
+      "recurring_keys": 1,
+      "later_changes": 0
+    }
   },
   {
     "entry_id": "1237",
@@ -7439,21 +7460,132 @@
     "posted_at": "Tuesday, 20 October 2026 - 05:34 AM EDT",
     "scraped_at": "2026-10-20T18:33:28Z",
     "source_url": "https://changes.tarkov-changes.com/view/1237",
-    "files_changed": [],
-    "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 3h 1m.\nLogin with Discord\n to check if you have access to early content.\n1.2.5.0.48146\n - Tuesday, 20 October 2026 - 05:34 AM EDT\n            12 change(s) detected\n1.2.5.0.48146\n - Tuesday, 20 October 2026 - 05:09 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Monday, 19 October 2026 - 08:51 AM EDT\n            2 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 02:17 PM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 03:43 AM EDT\n            1039 change(s) detected\n1.2.0.0.47965\n - Thursday, 15 October 2026 - 08:09 AM EDT\n            1 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 12:17 PM EDT\n            2 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 11:09 AM EDT\n            4 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:26 AM EDT\n            13 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:17 AM EDT\n            10 change(s) detected\n1.2.0.0.47888\n - Tuesday, 06 October 2026 - 08:21 PM EDT\n            1462 change(s) detected\n1.1.5.1.47510\n - Friday, 02 October 2026 - 06:09 AM EDT\n            3 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 05:00 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 04:51 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Tuesday, 29 September 2026 - 11:41 AM EDT\n            63 change(s) detected\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Tuesday, 01 September 2026 - 02:15 PM EDT\n            6 change(s) detected\n1.1.0.1.46911\n - Monday, 24 August 2026 - 04:46 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Sunday, 23 August 2026 - 10:55 AM EDT\n            22 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 07:26 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 20 August 2026 - 04:52 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 03:26 PM EDT\n            11 change(s) detected\n1.1.0.1.46777\n - Wednesday, 19 August 2026 - 09:09 AM EDT\n            1 change(s) detected\n1.1.0.1.46777\n - Thursday, 13 August 2026 - 02:17 PM EDT\n            14 change(s) detected\n1.1.0.1.46699\n - Thursday, 13 August 2026 - 08:00 AM EDT\n            10 change(s) detected\n1.1.0.1.46699\n - Wednesday, 12 August 2026 - 05:09 AM EDT\n            28 change(s) detected\n1.1.0.1.46699\n - Monday, 10 August 2026 - 09:09 AM EDT\n            7 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:43 AM EDT\n            12 change(s) detected\n1.1.0.0.46657\n - Monday, 10 August 2026 - 06:26 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Saturday, 08 August 2026 - 05:00 PM EDT\n            24 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 02:34 PM EDT\n            35 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 11:51 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 09:17 AM EDT\n            22 change(s) detected\n1.1.0.0.46657\n - Friday, 07 August 2026 - 05:17 AM EDT\n            3 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:34 PM EDT\n            8 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 04:26 PM EDT\n            26 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 01:26 PM EDT\n            41 change(s) detected\n1.1.0.0.46657\n - Thursday, 06 August 2026 - 08:17 AM EDT\n            65 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:09 PM EDT\n            1 change(s) detected\n1.1.0.0.46657\n - Wednesday, 05 August 2026 - 12:00 PM EDT\n            26 change(s) detected\n1.1.0.0.46624\n - Wednesday, 05 August 2026 - 06:08 AM EDT\n            14 change(s) detected",
-    "locked": true,
-    "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
-    "tags": [
-      "공개대기"
+    "files_changed": [
+      {
+        "path": "client/globals/response.json",
+        "count": 8
+      },
+      {
+        "path": "client/locale/en/response.json",
+        "count": 3
+      },
+      {
+        "path": "client/locations/response.json",
+        "count": 1
+      }
     ],
-    "severity": "trivial",
-    "changes": [],
+    "raw_text": "Files Changed:\nclient/globals/response.json\n(8 changes)\nclient/locale/en/response.json\n(3 changes)\nclient/locations/response.json\n(1 change)\nDated: Tuesday, 20 October 2026 - 05:34 AM EDT | Game Version 1.2.5.0.48146\nclient/globals/response.json\n['data']\n    ['bot_presets']\n        ['41']\n            ['VisibleAngle']\n-            (Old) 180\n+            (New) 120 (-33.33%)\n            ['ScatteringPerMeter']\n-            (Old) 0.065\n+            (New) 0.085 (+30.77%)\n            ['SCATTERING_DIST_MODIF']\n-            (Old) 0.5\n+            (New) 0.7 (+40.00%)\n            ['VISIBILITY_CHANGE_SPEED']\n-            (Old) 3\n+            (New) 2 (-33.33%)\n        ['42']\n            ['VisibleAngle']\n-            (Old) 180\n+            (New) 120 (-33.33%)\n            ['ScatteringPerMeter']\n-            (Old) 0.065\n+            (New) 0.085 (+30.77%)\n            ['SCATTERING_DIST_MODIF']\n-            (Old) 0.5\n+            (New) 0.7 (+40.00%)\n            ['VISIBILITY_CHANGE_SPEED']\n-            (Old) 3\n+            (New) 2 (-33.33%)\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Labs']\n            ['BossLocationSpawn']\n                ['bossScourgeEventLab']\n                    ['SpawnMode']\n-                        (Removed) ['1']: pve\nclient/locale/en/response.json\n['data']\n+    (New) ['6ad61d4b93495b6d53062150 name']: Scourging\n+    (New) ['6ad61d4b93495b6d53062150 description']: Figure out what Ref was searching for in The Lab and complete the Scourge Incursion event task line\n+    (New) ['6ad61d4b93495b6d53062150 successMessage']:\n← Back to all changes",
+    "summary_ko": "봇 시야각 감소·탄흔 증가·감지 속도 감소와 함께 라보라토리 보스 스폰 모드가 제거되고 새로운 Scourging 퀘스트가 추가되었습니다.",
+    "tags": [
+      "밸런스",
+      "맵",
+      "퀘스트"
+    ],
+    "severity": "minor",
+    "changes": [
+      {
+        "key_path": "data.bot_presets.41.VisibleAngle",
+        "before_ko": "180도",
+        "after_ko": "120도 (33.33% 감소)",
+        "explanation_ko": "봇이 플레이어를 탐지할 수 있는 시야각을 의미합니다. 각도가 작아지면 봇이 멀리 있는 플레이어를 놓치기 쉬워집니다.",
+        "impact_ko": "플레이어가 봇에게 발견되는 빈도가 감소합니다."
+      },
+      {
+        "key_path": "data.bot_presets.41.ScatteringPerMeter",
+        "before_ko": "0.065",
+        "after_ko": "0.085 (30.77% 증가)",
+        "explanation_ko": "거리당 탄흔(스프레드) 증가량을 나타냅니다. 값이 커지면 멀리서 사격할수록 탄이 퍼집니다.",
+        "impact_ko": "원거리 전투에서 정확도가 낮아집니다."
+      },
+      {
+        "key_path": "data.bot_presets.41.SCATTERING_DIST_MODIF",
+        "before_ko": "0.5",
+        "after_ko": "0.7 (40.00% 증가)",
+        "explanation_ko": "탄흔 적용 거리 보정값으로, 값이 높을수록 더 큰 거리에서 스프레드가 크게 적용됩니다.",
+        "impact_ko": "원거리 전투 시 적중률이 더욱 감소합니다."
+      },
+      {
+        "key_path": "data.bot_presets.41.VISIBILITY_CHANGE_SPEED",
+        "before_ko": "3",
+        "after_ko": "2 (33.33% 감소)",
+        "explanation_ko": "봇이 시야에 들어온 대상의 가시성을 얼마나 빨리 변화시키는지를 나타냅니다. 값이 낮아지면 감지 속도가 느려집니다.",
+        "impact_ko": "플레이어가 봇에게 탐지되는 속도가 느려집니다."
+      },
+      {
+        "key_path": "data.bot_presets.42.VisibleAngle",
+        "before_ko": "180도",
+        "after_ko": "120도 (33.33% 감소)",
+        "explanation_ko": "봇 42의 탐지 시야각을 조정한 것으로, 41과 동일하게 시야가 좁아집니다.",
+        "impact_ko": "봇 42에게도 탐지 난이도가 상승합니다."
+      },
+      {
+        "key_path": "data.bot_presets.42.ScatteringPerMeter",
+        "before_ko": "0.065",
+        "after_ko": "0.085 (30.77% 증가)",
+        "explanation_ko": "봇 42의 거리당 스프레드 증가량이 상승했습니다.",
+        "impact_ko": "봇 42와의 원거리 교전이 더 어려워집니다."
+      },
+      {
+        "key_path": "data.bot_presets.42.SCATTERING_DIST_MODIF",
+        "before_ko": "0.5",
+        "after_ko": "0.7 (40.00% 증가)",
+        "explanation_ko": "봇 42의 스프레드 적용 거리 보정값이 증가했습니다.",
+        "impact_ko": "봇 42와의 장거리 전투에서 정확도가 감소합니다."
+      },
+      {
+        "key_path": "data.bot_presets.42.VISIBILITY_CHANGE_SPEED",
+        "before_ko": "3",
+        "after_ko": "2 (33.33% 감소)",
+        "explanation_ko": "봇 42의 감지 속도가 느려졌습니다.",
+        "impact_ko": "플레이어가 봇 42에게 탐지되는 속도가 감소합니다."
+      },
+      {
+        "key_path": "data.locations.Labs.BossLocationSpawn.bossScourgeEventLab.SpawnMode",
+        "before_ko": "['1']: pve",
+        "after_ko": "제거됨",
+        "explanation_ko": "라보라토리 내 Scourge 보스의 스폰 모드 설정이 삭제되었습니다.",
+        "impact_ko": "해당 보스가 기존 방식으로 스폰되지 않게 됩니다."
+      },
+      {
+        "key_path": "data.locale.en.6ad61d4b93495b6d53062150 name",
+        "before_ko": "없음",
+        "after_ko": "Scourging",
+        "explanation_ko": "새로운 퀘스트 ‘Scourging’의 이름이 추가되었습니다.",
+        "impact_ko": "새 퀘스트가 게임에 등장합니다."
+      },
+      {
+        "key_path": "data.locale.en.6ad61d4b93495b6d53062150 description",
+        "before_ko": "없음",
+        "after_ko": "Figure out what Ref was searching for in The Lab and complete the Scourge Incursion event task line",
+        "explanation_ko": "퀘스트 설명이 추가되어, 플레이어가 라보라토리에서 Ref가 찾던 물건을 찾아 Scourge 침공 이벤트를 완료해야 함을 알립니다.",
+        "impact_ko": "퀘스트 목표가 명확히 제시됩니다."
+      },
+      {
+        "key_path": "data.locale.en.6ad61d4b93495b6d53062150 successMessage",
+        "before_ko": "없음",
+        "after_ko": "(새로운 성공 메시지 필드가 추가됨)",
+        "explanation_ko": "퀘스트 완료 시 표시될 메시지를 정의하는 필드가 추가되었습니다.",
+        "impact_ko": "퀘스트 완료 시 새로운 텍스트가 표시됩니다."
+      }
+    ],
     "patch_note": {
-      "matched": false,
-      "title": null,
-      "url": null,
-      "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+      "matched": true,
+      "title": "1.2.5.0.48146 (20 October 2026)",
+      "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(20_October_2026)",
+      "reason_ko": "공식 패치노트에 적힌 ‘감지 속도 감소’, ‘거리당 스프레드 증가’, ‘시야각 감소’와 본 diff의 내용이 일치합니다."
     },
-    "is_submarine": null
+    "interpreter": "groq:openai/gpt-oss-120b",
+    "unverified_numbers": [
+      "33.33"
+    ],
+    "is_submarine": false,
+    "stability": "stable",
+    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+    "recurring_event": false,
+    "stability_stats": {
+      "changed_keys": 9,
+      "recurring_keys": 0,
+      "later_changes": 0
+    }
   }
 ]
