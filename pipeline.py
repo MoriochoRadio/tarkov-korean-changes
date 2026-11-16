@@ -52,6 +52,8 @@ RAW_TEXT_FEED_LIMIT = 20_000    # docs/data.json(사이트 전송) 상한
 TRUNC_NOTICE = "\n\n…(원문이 매우 커서 잘렸습니다 — 전체는 원본 링크에서 확인)"
 
 HELD_TAG = "해석대기"  # LLM 실패로 보류된 항목 표식 — 원문은 이미 있으므로 재수집 없이 재해석
+# 원본 diff 가 게임 서버의 Cloudflare 오류 응답(502 등)인 항목 — 해석하지 않고 보류(재수집해도 같다)
+SOURCE_ERROR_TAG = "수집오류"
 RAW_KEYS = ("entry_id", "eft_version", "posted_at", "scraped_at", "source_url",
             "files_changed", "raw_text")
 STABILITY_FIELDS = ("stability", "stability_detail_ko", "recurring_event", "stability_stats")
@@ -68,6 +70,14 @@ LLM_GAP_SEC = 60
 # 사람 조치가 필요한 상황(수집 장기 실패 등). interpret.NEEDS_HUMAN 과 합쳐 런 끝에 보고하고,
 # ALERT_FILE 이 지정되면(워크플로) 거기에 기록 → 커밋·배포 뒤 마지막 단계가 런을 실패시킨다.
 ALERTS: list[str] = []
+# 잠금 안내도 없는데 diff 도 못 찾은 view id — '아직 잠김'이 아니라 원본 페이지 구조 변경(파서 고장) 신호.
+# 2026-10-28~30 개편 때 이것을 '아직 잠김'으로 취급해 STALE_HELD_DAYS 뒤에야 드러났다 → 그날 바로 알린다.
+STRUCTURE_SUSPECTS: list[str] = []
+
+
+def _structure_suspect(eid) -> None:
+    if str(eid) not in STRUCTURE_SUSPECTS:
+        STRUCTURE_SUSPECTS.append(str(eid))
 
 
 def clip_raw(text: str | None, limit: int) -> str:
@@ -147,6 +157,8 @@ def reprocess_locked(entries: list[dict], notes: list[dict], skip: set[str] | No
         eid = e.get("entry_id")
         if skip and str(eid) in skip:
             continue
+        if SOURCE_ERROR_TAG in (e.get("tags") or []):
+            continue  # 원본 diff 자체가 오류 응답 — 재수집·재해석해도 같다(사람 확인 대기)
         stored = e.get("raw_text") or ""
         if (HELD_TAG in (e.get("tags") or []) and scraper.has_diff(stored)
                 and not scraper.is_locked(stored)):
@@ -161,9 +173,19 @@ def reprocess_locked(entries: list[dict], notes: list[dict], skip: set[str] | No
                 print(f"[reprocess] {eid}: 재수집 실패(유지) — {ex}")
                 continue
             rt = raw.get("raw_text", "")
-            if scraper.is_locked(rt) or not scraper.has_diff(rt):
+            if scraper.is_locked(rt):
                 print(f"[reprocess] {eid}: 아직 잠김 — 유지")
                 continue
+            if not scraper.has_diff(rt):
+                print(f"[reprocess] {eid}: 잠금 안내가 없는데 변경 본문도 없음 — 구조 변경 의심, 유지")
+                _structure_suspect(eid)
+                continue
+        if scraper.is_source_error(raw.get("raw_text")):
+            held = _source_error_entry(raw)
+            held["scraped_at"] = e.get("scraped_at") or held.get("scraped_at")
+            entries[i] = held
+            changed = True
+            continue
         try:
             processed = interpret_paced(raw, notes)
         except Exception as ex:  # noqa: BLE001
@@ -350,16 +372,40 @@ def _held_entry(raw: dict) -> dict:
     return held
 
 
+def _source_error_entry(raw: dict) -> dict:
+    """원본 diff 가 Cloudflare 오류 응답(예: 2026-09-30 1223 의 'Error 502: Bad gateway')인 변경 —
+    실제 게임 변경이 아니므로 LLM 해석 없이 '원본 수집 오류'로 보류하고 사람에게 알린다."""
+    eid = raw.get("entry_id")
+    held = make_locked_entry(raw)
+    held["summary_ko"] = ("⚠️ 원본 수집 오류 — 원본 사이트가 기록한 변경 내용이 게임 서버의 "
+                          "Cloudflare 오류 응답(502 등)이라 실제 변경으로 보지 않고 해석을 보류했습니다.")
+    held["tags"] = [SOURCE_ERROR_TAG]
+    held["patch_note"]["reason_ko"] = "원본 수집 오류(Cloudflare 오류 응답)로 분석하지 않았습니다."
+    print(f"[source-error] {eid}: diff 가 Cloudflare 오류 응답 — 해석하지 않고 원본 수집 오류로 보류")
+    ALERTS.append(f"{eid}: 원본 수집 오류(diff 가 Cloudflare 오류 응답) — 해석 보류함, "
+                  "실제 변경인지·앞뒤 복구 변경과 함께 확인 필요")
+    return held
+
+
 def store_new(entries: list[dict], raw: dict, get_notes) -> list[dict]:
     """새 변경 1건: 잠겨 있으면 '공개 대기', LLM 실패면 '해석 대기'로 보류, 아니면 해석해 저장."""
     eid = raw.get("entry_id")
-    if scraper.is_locked(raw.get("raw_text", "")):
+    rt = raw.get("raw_text", "")
+    if scraper.is_locked(rt) or not scraper.has_diff(rt):
+        if not scraper.is_locked(rt):
+            # 잠금 안내도 diff 도 없음 — 파서가 원본 구조를 못 읽는 것. 쓰레기 해석 대신 보류하고 알린다.
+            print(f"[scrape] {eid}: 잠금 안내가 없는데 변경 본문도 없음 — 구조 변경 의심, 보류")
+            _structure_suspect(eid)
         if any(e.get("entry_id") == eid for e in entries):
             print(f"[lock] {eid}: 접근 제한 — 기존 레코드 유지")
             return entries
         # 접근 제한 상태 — LLM 호출 없이 '공개 대기'로 보류(쓸데없는 placeholder 해석 방지)
         entries.append(make_locked_entry(raw))
         print(f"[lock] {eid}({raw.get('posted_at')}) 접근 제한 — 공개 대기로 보류")
+        return entries
+    if scraper.is_source_error(rt):
+        entries = [e for e in entries if e.get("entry_id") != eid]
+        entries.append(_source_error_entry(raw))
         return entries
     try:
         processed = interpret_paced(raw, get_notes())
@@ -444,8 +490,18 @@ def backfill(entries: list[dict], listing: list[dict], get_notes,
             print(f"[backfill] {eid}: 수집 실패 — 다음 실행에서 다시 시도: {ex}")
             break
         rt = raw.get("raw_text", "")
-        if scraper.is_locked(rt) or not scraper.has_diff(rt):
-            print(f"[backfill] {eid}: 잠김/변경 본문 없음 — 건너뜀")
+        if scraper.is_locked(rt):
+            print(f"[backfill] {eid}: 잠김 — 건너뜀")
+            continue
+        if not scraper.has_diff(rt):
+            print(f"[backfill] {eid}: 잠금 안내가 없는데 변경 본문도 없음 — 구조 변경 의심, 건너뜀")
+            _structure_suspect(eid)
+            continue
+        if scraper.is_source_error(rt):
+            # 재수집해도 같은 내용 — 보류 레코드로 남겨 매 실행 다시 받지 않게 한다
+            held = _source_error_entry(raw)
+            held["backfilled"] = True
+            entries.append(held)
             continue
         try:
             processed = interpret_paced(raw, get_notes())
@@ -564,6 +620,8 @@ def stale_held(entries: list[dict], days: int = STALE_HELD_DAYS) -> list[str]:
     for e in entries:
         if not e.get("locked"):
             continue
+        if SOURCE_ERROR_TAG in (e.get("tags") or []):
+            continue  # 재시도로 풀릴 일이 없는 보류 — 생길 때 한 번 알렸다(매일 실패시키지 않음)
         try:
             t = datetime.strptime(e.get("scraped_at") or "", "%Y-%m-%dT%H:%M:%SZ")
         except ValueError:
@@ -579,6 +637,9 @@ def report_alerts(entries: list[dict]) -> None:
 
     일시 오류는 여기 오지 않는다(재시도·보류로 흡수). 신규 변경이 없는 날도 정상.
     """
+    if STRUCTURE_SUSPECTS:
+        ALERTS.append("원본 페이지 구조 변경 의심 — 파서 확인 필요(scripts/scrape.py parse/has_diff): "
+                      f"잠금 안내가 없는데 변경 본문을 못 찾은 view {', '.join(STRUCTURE_SUSPECTS)}")
     stale = stale_held(entries)
     if stale:
         ALERTS.append(f"보류 항목이 {STALE_HELD_DAYS}일 넘게 풀리지 않음: {', '.join(stale)}")

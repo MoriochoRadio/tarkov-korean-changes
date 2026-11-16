@@ -118,29 +118,72 @@ def parse_list(html: str) -> list[dict]:
     return rows
 
 
+def _text_lines(node) -> str:
+    """노드의 텍스트를 줄 단위로(빈 줄 제거, 줄 끝 공백 제거 — 들여쓰기는 보존)."""
+    lines = [ln.rstrip() for ln in node.get_text("\n").splitlines()]
+    return "\n".join(ln for ln in lines if ln.strip() != "")
+
+
+def _file_counts(soup) -> list[dict]:
+    """2026-10-28~30 개편 이후 /view 페이지는 파일별 변경 수를
+    <script type="application/json" data-file-counts>{"client/items/response.json": 3, ...}</script>
+    에 담는다(화면의 'Files Changed'·'(N changes)' 문구는 사라짐). 없거나 깨졌으면 빈 목록."""
+    tag = soup.select_one("script[data-file-counts]")
+    if tag is None:
+        return []
+    try:
+        data = json.loads(tag.get_text() or "{}")
+    except ValueError:
+        return []
+    if not isinstance(data, dict):
+        return []
+    out = []
+    for path, cnt in data.items():
+        try:
+            out.append({"path": str(path), "count": int(cnt)})
+        except (TypeError, ValueError):
+            continue
+    return out
+
+
+def _old_style_header(files: list[dict]) -> str:
+    """옛 페이지의 'Files Changed:' 머리말 형식 — 저장된 과거 raw_text·하류 로직과 호환."""
+    out = ["Files Changed:"]
+    for f in files:
+        n = f["count"]
+        out += [f["path"], f"({n} change{'' if n == 1 else 's'})"]
+    return "\n".join(out)
+
+
 def parse(html: str, source_url: str = SOURCE_URL) -> dict:
     soup = BeautifulSoup(html, "html.parser")
+    # 개편 후 파일별 변경 수는 script 안에 있으므로 script 를 지우기 전에 읽는다
+    new_files = _file_counts(soup)
     # 화면에 보이는 텍스트만 추출(스크립트/스타일 제거)
     for tag in soup(["script", "style", "noscript"]):
         tag.decompose()
-    text = soup.get_text("\n")
-    # 빈 줄 정리
-    lines = [ln.rstrip() for ln in text.splitlines()]
-    lines = [ln for ln in lines if ln.strip() != ""]
-    body = "\n".join(lines)
+    body = _text_lines(soup)
 
     eft_version = _search(r"EFT Version[:\s]*([0-9][0-9.]+)", body)
     posted_at = _search(rf"Dated[:\s]*({_DATE_PAT})", body)
 
-    files_changed = []
-    for m in re.finditer(r"([\w./-]+\.json)\s*\((\d+)\s*changes?\)", body):
-        files_changed.append({"path": m.group(1), "count": int(m.group(2))})
+    files_changed = new_files
+    if not files_changed:  # 옛 형식: "client/x/response.json (3 changes)"
+        for m in re.finditer(r"([\w./-]+\.json)\s*\((\d+)\s*changes?\)", body):
+            files_changed.append({"path": m.group(1), "count": int(m.group(2))})
 
-    # diff 본문: "Files Changed" 이후 부분을 우선 사용, 없으면 전체 본문
-    diff_text = body
-    idx = body.find("Files Changed")
-    if idx != -1:
-        diff_text = body[idx:]
+    diff_box = soup.select_one("div.diff-content")
+    diff_body = _text_lines(diff_box) if diff_box is not None else ""
+    if diff_body and not is_locked(body):
+        # 개편 후: diff 본문은 div.diff-content 안에만 있다. 검색·필터 UI 문구와 하단
+        # '← Back to all changes' 가 섞이지 않게 그 안만 쓰고, 옛 머리말을 붙여 형식을 맞춘다.
+        diff_text = _old_style_header(files_changed) + "\n" + diff_body
+    else:
+        # 옛 형식(또는 잠금 안내): "Files Changed" 이후 부분을 우선 사용, 없으면 전체 본문
+        diff_text = body
+        idx = body.find("Files Changed")
+        if idx != -1:
+            diff_text = body[idx:]
 
     # /view/{id} 링크가 있으면 entry_id 로 사용
     entry_id = None
@@ -191,9 +234,31 @@ def is_locked(raw_text: str | None) -> bool:
     return any(marker in raw_text for marker in LOCK_MARKERS)
 
 
+# 개편 후 구조 신호: diff 머리줄 "Dated: … | Game Version …" + 실제 변경 줄 "+(New) …"/"-(Old) …"
+_DIFF_HEAD_RE = re.compile(r"Dated:.*\|\s*Game Version")
+_DIFF_LINE_RE = re.compile(r"^[ \t]*[+\-][ \t]*\((?:Old|New|Added|Removed)\)", re.M)
+
+
 def has_diff(raw_text: str | None) -> bool:
-    """실제 변경 본문(Files Changed 섹션)이 들어있는지."""
-    return bool(raw_text) and "Files Changed" in raw_text
+    """실제 변경 본문이 들어있는지 — 옛 'Files Changed' 섹션 또는 개편 후 diff 구조."""
+    if not raw_text:
+        return False
+    if "Files Changed" in raw_text:
+        return True
+    return bool(_DIFF_HEAD_RE.search(raw_text) and _DIFF_LINE_RE.search(raw_text))
+
+
+# 게임 서버가 Cloudflare 오류 응답(502 등)을 돌려준 순간을 원본 사이트가 '변경'으로 기록한 흔적
+# (2026-09-30 1223: +(New) ['title']: Error 502: Bad gateway, ['ray_id'] …). 실제 게임 변경이 아니다.
+_CF_ERROR_RE = re.compile(r"error\s*5\d\d\b|ray_id|bad gateway|cloudflare_error")
+
+
+def is_source_error(raw_text: str | None) -> bool:
+    """diff 본문이 Cloudflare 오류 응답으로 채워진 '원본 수집 오류'인지(해석하지 않고 보류할 대상)."""
+    if not raw_text:
+        return False
+    low = raw_text.lower()
+    return "cloudflare" in low and bool(_CF_ERROR_RE.search(low))
 
 
 def scrape(url: str = SOURCE_URL) -> dict:

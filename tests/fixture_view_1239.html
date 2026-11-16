@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Changes - Tarkov Silent Changes</title>
+    <meta property="og:title" content="Tarkov Silent Changes">
+    <meta property="og:site_name" content="Tarkov Silent Changes">
+    <meta property="og:type" content="website">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #101010;
+            color: #ffffff;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            padding: 20px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        a {
+            color: #77aaff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #99ccff;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #77aaff;
+        }
+
+        .nav {
+            width: 100%;
+            max-width: 1400px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #444;
+            font-size: 1.1em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav a, .nav span {
+            white-space: nowrap;
+        }
+
+        .nav .user-info {
+            margin-left: auto;
+            color: #aaa;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 1400px;
+        }
+
+        h1 {
+            color: #eee;
+            border-bottom: 2px solid #555;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: #eee;
+            border-bottom: 1px solid #555;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .version-info {
+            background-color: #1a1a1a;
+            border-left: 4px solid #77aaff;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .version-info p {
+            margin: 5px 0;
+        }
+
+        .version-info strong {
+            color: #77aaff;
+        }
+
+        .changelog-item {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #444;
+        }
+
+        .changelog-item h3 {
+            color: #77aaff;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .changelog-item .time {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .diff-content {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            background-color: #0a0a0a;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin-top: 15px;
+        }
+
+        .diff-line {
+            margin: 2px 0;
+            padding: 2px 5px;
+            white-space: pre-wrap;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        }
+
+        .diff-added {
+            color: #4ade80;
+            background-color: rgba(74, 222, 128, 0.1);
+        }
+
+        .diff-removed {
+            color: #f87171;
+            background-color: rgba(248, 113, 113, 0.1);
+        }
+
+        .diff-changed {
+            color: #fbbf24;
+            background-color: rgba(251, 191, 36, 0.1);
+        }
+
+        .diff-header {
+            color: #60a5fa;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .locale-name {
+            color: #a78bfa;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        .tags {
+            margin: 10px 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #2a2a2a;
+            color: #77aaff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-right: 8px;
+            font-size: 0.9em;
+            border: 1px solid #444;
+        }
+
+        .file-changes-summary {
+            background-color: #0a0a0a;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+            border-left: 3px solid #77aaff;
+        }
+
+        .file-changes-summary ul {
+            list-style: none;
+            margin-top: 8px;
+        }
+
+        .file-changes-summary li {
+            padding: 3px 0;
+            color: #ccc;
+        }
+
+        .change-count {
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .raw-file-list {
+            list-style: none;
+        }
+
+        .raw-file-filter {
+            background-color: #0a0a0a;
+            border: 1px solid #444;
+            border-radius: 4px;
+            color: #fff;
+            font-family: inherit;
+            font-size: 1em;
+            margin-bottom: 15px;
+            padding: 10px 12px;
+            width: 100%;
+        }
+
+        .raw-file-filter:focus {
+            border-color: #77aaff;
+            outline: none;
+        }
+
+        .raw-file-list li {
+            background-color: #1a1a1a;
+            border-left: 3px solid #77aaff;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            padding: 10px 15px;
+            overflow-wrap: anywhere;
+        }
+
+        .raw-file-content {
+            background-color: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #ddd;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.45;
+            margin-top: 15px;
+            max-height: calc(100vh - 260px);
+            overflow: auto;
+            padding: 15px;
+            tab-size: 4;
+            white-space: pre;
+        }
+
+        .diff-block {
+            background-color: #0a0a0a;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 3px solid #555;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        }
+
+        .diff-block h3, .diff-block h4 {
+            color: #60a5fa;
+            margin: 10px 0;
+        }
+
+        .pulls-list {
+            list-style: none;
+        }
+
+        .pulls-list li {
+            background-color: #1a1a1a;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border-left: 4px solid #77aaff;
+        }
+
+        .pulls-list li:hover {
+            background-color: #222;
+        }
+
+        .pulls-list .pull-info {
+            color: #aaa;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #666;
+            padding: 60px 20px;
+            font-size: 1.2em;
+        }
+
+        .error {
+            background-color: #2a1a1a;
+            border-left: 4px solid #f87171;
+            padding: 20px;
+            border-radius: 4px;
+            color: #f87171;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 500px;
+            margin: 100px auto;
+            text-align: center;
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 8px;
+            border: 2px solid #77aaff;
+        }
+
+        .login-box h1 {
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .login-box .btn {
+            display: inline-block;
+            background-color: #5865F2;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 6px;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: background-color 0.2s;
+        }
+
+        .login-box .btn:hover {
+            background-color: #4752C4;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .nav {
+                font-size: 1em;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="/latest">Latest Changes</a>
+        <a href="/list">Previous Changes</a>
+        <a href="https://discord.gg/rENmTJCHAf" target="_blank" rel="noopener noreferrer">Join the Discord</a>
+        
+        <a href="/auth/login">Login with Discord</a>
+        
+    </div>
+    
+
+    <div class="content">
+        
+<h1>Changes from Tuesday, 27 October 2026 - 08:43 AM EDT</h1>
+
+<div class="version-info">
+    <p><strong>EFT Version:</strong> 1.2.5.0.48146</p>
+    <p><strong>Pull Time:</strong> Tuesday, 27 October 2026 - 08:43 AM EDT</p>
+    
+</div>
+
+
+    
+    <div data-diff-explorer>
+    <script type="application/json" data-file-counts>{"client/items/response.json": 3, "client/locations/response.json": 1}</script>
+    <div class="explorer-toolbar" data-explorer-ui hidden>
+        <div class="explorer-controls">
+            <label>Search files and diff text<input data-search type="search" placeholder="Item name, ID, property, value, or file…"></label>
+            <label>Files containing<select data-type><option value="">Any change type</option><option value="added">Added lines (+)</option><option value="removed">Removed lines (−)</option><option value="changed">Changed lines (~)</option></select></label>
+            <label>Sort files<select data-sort><option value="original">Report order</option><option value="most">Most changes first</option><option value="least">Fewest changes first</option><option value="name">File name A–Z</option></select></label>
+        </div>
+        <div class="explorer-actions">
+            <span class="explorer-status" data-status role="status" aria-live="polite"></span>
+            <button type="button" data-next-match>Next match</button>
+            <button type="button" data-expand>Expand all</button>
+            <button type="button" data-collapse>Collapse all</button>
+            <button type="button" data-wrap aria-pressed="true">Wrap lines</button>
+            <button type="button" data-reset>Reset filters</button>
+        </div>
+    </div>
+    <div class="explorer-layout">
+        <nav class="explorer-files" data-file-nav aria-label="Changed files" hidden><h2>CHANGED FILES</h2><div data-file-links></div></nav>
+        <div class="explorer-report">
+            <div class="explorer-empty" data-empty hidden>No files match your filters. Try another search or reset filters.</div>
+            <div class="diff-content"><h2>Dated: Tuesday, 27 October 2026 - 08:43 AM EDT | Game Version 1.2.5.0.48146</h2>
+<br>
+<h3>client/items/response.json</h3>
+<div class="diff-block">
+<div class="diff-line">[&#x27;data&#x27;]</div>
+<div class="diff-line">    [&#x27;Precursor container&#x27;]</div>
+<div class="diff-line">        [&#x27;_props&#x27;]</div>
+<div class="diff-line">            [&#x27;RarityPvE&#x27;]</div>
+<div class="diff-line diff-removed">-            (Old) Superrare</div>
+<div class="diff-line diff-added">+            (New) Not_exist</div>
+<div class="diff-line">    [&#x27;TerraGroup employee&#x27;s suitcase&#x27;]</div>
+<div class="diff-line">        [&#x27;_props&#x27;]</div>
+<div class="diff-line">            [&#x27;RarityPvE&#x27;]</div>
+<div class="diff-line diff-removed">-            (Old) Superrare</div>
+<div class="diff-line diff-added">+            (New) Not_exist</div>
+<div class="diff-line">    [&#x27;TerraGroup employee&#x27;s package&#x27;]</div>
+<div class="diff-line">        [&#x27;_props&#x27;]</div>
+<div class="diff-line">            [&#x27;RarityPvE&#x27;]</div>
+<div class="diff-line diff-removed">-            (Old) Superrare</div>
+<div class="diff-line diff-added">+            (New) Not_exist</div>
+</div>
+<br>
+<h3>client/locations/response.json</h3>
+<div class="diff-block">
+<div class="diff-line">[&#x27;data&#x27;]</div>
+<div class="diff-line">    [&#x27;locations&#x27;]</div>
+<div class="diff-line">        [&#x27;Labs&#x27;]</div>
+<div class="diff-line">            [&#x27;BossLocationSpawn&#x27;]</div>
+<div class="diff-line diff-removed">-                (Removed) [&#x27;bossScourgeEventLab&#x27;]: {</div>
+<div class="diff-line diff-removed">-                      &quot;Time&quot;: -1,</div>
+<div class="diff-line diff-removed">-                      &quot;Delay&quot;: 0,</div>
+<div class="diff-line diff-removed">-                      &quot;BossName&quot;: &quot;bossScourgeEventLab&quot;,</div>
+<div class="diff-line diff-removed">-                      &quot;BossZone&quot;: &quot;BotZoneArmory,BotZoneGreenOffice&quot;,</div>
+<div class="diff-line diff-removed">-                      &quot;Supports&quot;: null,</div>
+<div class="diff-line diff-removed">-                      &quot;SpawnMode&quot;: [</div>
+<div class="diff-line diff-removed">-                        &quot;pvp-season&quot;,</div>
+<div class="diff-line diff-removed">-                        &quot;regular&quot;</div>
+<div class="diff-line diff-removed">-                      ],</div>
+<div class="diff-line diff-removed">-                      &quot;TriggerId&quot;: &quot;&quot;,</div>
+<div class="diff-line diff-removed">-                      &quot;BossChance&quot;: 100,</div>
+<div class="diff-line diff-removed">-                      &quot;BossPlayer&quot;: false,</div>
+<div class="diff-line diff-removed">-                      &quot;TriggerName&quot;: &quot;&quot;,</div>
+<div class="diff-line diff-removed">-                      &quot;BossDifficult&quot;: &quot;normal&quot;,</div>
+<div class="diff-line diff-removed">-                      &quot;IgnoreMaxBots&quot;: false,</div>
+<div class="diff-line diff-removed">-                      &quot;BossEscortType&quot;: &quot;followerScourgeEventLab&quot;,</div>
+<div class="diff-line diff-removed">-                      &quot;RandomTimeSpawn&quot;: false,</div>
+<div class="diff-line diff-removed">-                      &quot;ShowOnTarkovMap&quot;: true,</div>
+<div class="diff-line diff-removed">-                      &quot;BossEscortAmount&quot;: &quot;4,4,4&quot;,</div>
+<div class="diff-line diff-removed">-                      &quot;ShowOnTarkovMapPvE&quot;: true,</div>
+<div class="diff-line diff-removed">-                      &quot;BossEscortDifficult&quot;: &quot;normal&quot;</div>
+<div class="diff-line diff-removed">-                    }</div>
+</div>
+<br></div>
+        </div>
+    </div>
+</div>
+    
+
+
+<div style="margin-top: 30px;">
+    <a href="/list">← Back to all changes</a>
+</div>
+
+<style>
+.diff-explorer { --panel: #191d24; --border: #343c49; font-family: system-ui, sans-serif; }
+.diff-explorer [hidden] { display: none !important; }
+.explorer-toolbar { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin-bottom: 20px; }
+.explorer-toolbar label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #b4c0d1; }
+.explorer-controls { display: grid; grid-template-columns: minmax(200px, 2fr) repeat(2, minmax(150px, 1fr)); gap: 12px; }
+.diff-explorer input, .diff-explorer select, .diff-explorer button { font: inherit; color: #e7edf6; background: #10141b; border: 1px solid #465267; border-radius: 6px; padding: 9px 12px; }
+.diff-explorer input::placeholder { color: #96a2b4; }
+.diff-explorer button { cursor: pointer; }
+.diff-explorer button:disabled { opacity: .45; cursor: default; }
+.diff-explorer button:hover { background: #29364b; }
+.diff-explorer :focus-visible { outline: 2px solid #8abaff; outline-offset: 3px; }
+.explorer-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; }
+.explorer-status { color: #bac7d9; margin-right: auto; font-size: 14px; }
+.diff-explorer .explorer-layout { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 20px; align-items: start; }
+.explorer-files { position: sticky; top: 16px; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 12px; max-height: 80vh; overflow: auto; }
+.explorer-files h2 { margin: 0 0 10px; padding: 0; border: 0; font-size: 14px; color: #b4c0d1; }
+.explorer-files a { display: flex; gap: 8px; justify-content: space-between; padding: 10px 8px; border-radius: 5px; font-size: 13px; overflow-wrap: anywhere; }
+.explorer-files a:hover, .explorer-files a[aria-current] { background: #263348; text-decoration: none; }
+.explorer-files .file-count { color: #bec9d9; flex-shrink: 0; }
+.explorer-report { min-width: 0; }
+.explorer-report .diff-content { margin: 0; padding: 0; background: transparent; overflow: visible; }
+.explorer-report > .diff-content > h2 { font-size: 14px; color: #a9b7cc; margin: 0 0 16px; border: 0; }
+.explorer-file { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 14px; background: #13171e; scroll-margin-top: 16px; overflow: hidden; }
+.explorer-file summary { cursor: pointer; padding: 14px 16px; background: var(--panel); overflow-wrap: anywhere; color: #9cc2ff; font: 600 14px/1.5 system-ui, sans-serif; }
+.explorer-file summary .file-count { color: #aab8cb; font-weight: 400; margin-left: 12px; }
+.explorer-file .diff-block { margin: 0; border: 0; padding: 12px; overflow-x: auto; border-radius: 0; font-size: 13px; }
+.explorer-file .diff-line { overflow-wrap: anywhere; }
+.explorer-report.no-wrap .diff-line { white-space: pre; overflow-wrap: normal; }
+.diff-explorer mark { background: #f4d36a; color: #17130a; border-radius: 2px; }
+.explorer-empty { padding: 40px 20px; text-align: center; color: #bdc9da; border: 1px dashed #465267; border-radius: 8px; }
+@media (max-width: 900px) { .diff-explorer .explorer-layout { grid-template-columns: 1fr; } .explorer-files { position: static; max-height: 230px; } .explorer-controls { grid-template-columns: 1fr; } }
+</style>
+<script>
+(() => {
+    document.querySelectorAll('[data-diff-explorer]').forEach((root, explorerIndex) => {
+        const report = root.querySelector('.diff-content');
+        if (!report) return;
+        const counts = JSON.parse(root.querySelector('[data-file-counts]').textContent);
+        const sections = [];
+        let current = null;
+        // File headings are emitted by the existing Markdown renderer.
+        [...report.children].forEach(node => {
+            if (node.tagName === 'H3') {
+                const name = node.textContent;
+                const detail = document.createElement('details');
+                detail.className = 'explorer-file';
+                detail.id = `diff-${explorerIndex}-file-${sections.length}`;
+                detail.open = true;
+                const summary = document.createElement('summary');
+                summary.append(document.createTextNode(name));
+                const count = document.createElement('span');
+                count.className = 'file-count';
+                const total = Number(counts[name]) || 0;
+                count.textContent = `${total.toLocaleString()} changes`;
+                summary.append(count);
+                detail.append(summary);
+                node.replaceWith(detail);
+                current = {name, total, detail, index: sections.length, lines: []};
+                sections.push(current);
+            } else if (current) {
+                current.detail.append(node);
+            }
+        });
+        if (!sections.length) return;
+        root.querySelector('[data-explorer-ui]').hidden = false;
+        root.querySelector('[data-file-nav]').hidden = false;
+        root.classList.add('diff-explorer');
+        const search = root.querySelector('[data-search]');
+        const type = root.querySelector('[data-type]');
+        const sort = root.querySelector('[data-sort]');
+        const nav = root.querySelector('[data-file-links]');
+        const status = root.querySelector('[data-status]');
+        const empty = root.querySelector('[data-empty]');
+        const content = root.querySelector('.explorer-report');
+        sections.forEach(section => {
+            section.lines = [...section.detail.querySelectorAll('.diff-line')].map(node => ({node, text: node.textContent}));
+            section.text = section.detail.textContent.toLowerCase();
+            section.link = document.createElement('a');
+            section.link.href = '#' + section.detail.id;
+            const label = document.createElement('span');
+            label.textContent = section.name;
+            const badge = document.createElement('span');
+            badge.className = 'file-count';
+            badge.textContent = section.total.toLocaleString();
+            section.link.append(label, badge);
+            section.link.addEventListener('click', () => {
+                section.detail.open = true;
+                sections.forEach(s => s.link.removeAttribute('aria-current'));
+                section.link.setAttribute('aria-current', 'true');
+            });
+        });
+        function update() {
+            const query = search.value.trim().toLowerCase();
+            const ordered = [...sections].sort((a, b) => {
+                if (sort.value === 'most') return b.total - a.total || a.index - b.index;
+                if (sort.value === 'least') return a.total - b.total || a.index - b.index;
+                if (sort.value === 'name') return a.name.localeCompare(b.name);
+                return a.index - b.index;
+            });
+            let visible = 0;
+            let total = 0;
+            ordered.forEach(section => {
+                const matches = (!query || section.text.includes(query)) &&
+                    (!type.value || section.detail.querySelector('.diff-' + type.value));
+                section.detail.hidden = !matches;
+                section.link.hidden = !matches;
+                if (matches) { visible++; total += section.total; }
+                // Retain the complete file for context, and highlight literal search hits safely.
+                section.lines.forEach(({node, text}) => {
+                    node.textContent = '';
+                    const lower = text.toLowerCase();
+                    let start = 0;
+                    let hit = query ? lower.indexOf(query) : -1;
+                    while (hit !== -1) {
+                        node.append(document.createTextNode(text.slice(start, hit)));
+                        const mark = document.createElement('mark');
+                        mark.textContent = text.slice(hit, hit + query.length);
+                        node.append(mark);
+                        start = hit + query.length;
+                        hit = lower.indexOf(query, start);
+                    }
+                    node.append(document.createTextNode(text.slice(start)));
+                });
+                report.append(section.detail);
+                nav.append(section.link);
+            });
+            status.textContent = `${visible} of ${sections.length} files · ${total.toLocaleString()} changes in matching files`;
+            empty.hidden = visible !== 0;
+            const hitCount = root.querySelectorAll('.explorer-file:not([hidden]) mark').length;
+            root.querySelector('[data-next-match]').disabled = hitCount === 0;
+            root.querySelector('[data-next-match]').textContent = hitCount ? `Next match (${hitCount})` : 'Next match';
+        }
+        let timer;
+        search.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(update, 150); });
+        type.addEventListener('change', update);
+        sort.addEventListener('change', update);
+        root.querySelector('[data-reset]').addEventListener('click', () => {
+            clearTimeout(timer); search.value = ''; type.value = ''; sort.value = 'original'; update(); search.focus();
+        });
+        root.querySelector('[data-expand]').addEventListener('click', () => sections.filter(s => !s.detail.hidden).forEach(s => s.detail.open = true));
+        root.querySelector('[data-collapse]').addEventListener('click', () => sections.filter(s => !s.detail.hidden).forEach(s => s.detail.open = false));
+        root.querySelector('[data-wrap]').addEventListener('click', event => {
+            const unwrapped = content.classList.toggle('no-wrap');
+            event.currentTarget.setAttribute('aria-pressed', String(!unwrapped));
+        });
+        const matchButton = root.querySelector('[data-next-match]');
+        let matchIndex = -1;
+        matchButton.addEventListener('click', () => {
+            const marks = [...root.querySelectorAll('.explorer-file:not([hidden]) mark')];
+            if (!marks.length) return;
+            matchIndex = (matchIndex + 1) % marks.length;
+            const mark = marks[matchIndex];
+            mark.closest('details').open = true;
+            mark.scrollIntoView({block: 'center'});
+        });
+        search.addEventListener('input', () => { matchIndex = -1; });
+        update();
+    });
+})();
+</script>
+
+    </div>
+</body>
+</html>
