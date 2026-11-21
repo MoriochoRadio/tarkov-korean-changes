@@ -711,12 +711,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 61회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 62회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 51,
       "recurring_keys": 22,
-      "later_changes": 61
+      "later_changes": 62
     }
   },
   {
@@ -1228,12 +1228,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 18회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 19회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 84,
       "recurring_keys": 2,
-      "later_changes": 18
+      "later_changes": 19
     }
   },
   {
@@ -1300,12 +1300,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 2,
       "recurring_keys": 0,
-      "later_changes": 15
+      "later_changes": 16
     }
   },
   {
@@ -2148,12 +2148,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 7회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 6
+      "later_changes": 7
     }
   },
   {
@@ -3193,12 +3193,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 3,
       "recurring_keys": 0,
-      "later_changes": 12
+      "later_changes": 13
     }
   },
   {
@@ -3666,12 +3666,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 8,
       "recurring_keys": 2,
-      "later_changes": 8
+      "later_changes": 9
     }
   },
   {
@@ -4035,12 +4035,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 12
+      "later_changes": 13
     }
   },
   {
@@ -4159,12 +4159,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 8,
       "recurring_keys": 0,
-      "later_changes": 9
+      "later_changes": 10
     }
   },
   {
@@ -5648,12 +5648,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 17,
       "recurring_keys": 6,
-      "later_changes": 15
+      "later_changes": 16
     }
   },
   {
@@ -5854,12 +5854,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": false,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 10,
       "recurring_keys": 0,
-      "later_changes": 4
+      "later_changes": 5
     }
   },
   {
@@ -6303,12 +6303,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 11,
       "recurring_keys": 0,
-      "later_changes": 14
+      "later_changes": 15
     }
   },
   {
@@ -6675,12 +6675,12 @@
     "is_submarine": false,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 12회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 12
+      "later_changes": 13
     }
   },
   {
@@ -6877,12 +6877,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 20회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 21회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 20
+      "later_changes": 21
     }
   },
   {
@@ -7011,12 +7011,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 14
+      "later_changes": 15
     }
   },
   {
@@ -7056,12 +7056,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 3
+      "later_changes": 4
     }
   },
   {
@@ -7462,12 +7462,12 @@
     ],
     "is_submarine": false,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 9,
       "recurring_keys": 0,
-      "later_changes": 2
+      "later_changes": 3
     }
   },
   {
@@ -8005,12 +8005,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 74회 변경됨(토글 키 11개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 75회 변경됨(토글 키 11개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 27,
       "recurring_keys": 11,
-      "later_changes": 74
+      "later_changes": 75
     }
   },
   {
@@ -8421,12 +8421,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 279회 변경됨(토글 키 29개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 286회 변경됨(토글 키 31개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 152,
-      "recurring_keys": 29,
-      "later_changes": 279
+      "recurring_keys": 31,
+      "later_changes": 286
     }
   },
   {
@@ -8533,12 +8533,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 207회 변경됨(토글 키 26개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 214회 변경됨(토글 키 28개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 69,
-      "recurring_keys": 26,
-      "later_changes": 207
+      "recurring_keys": 28,
+      "later_changes": 214
     }
   },
   {
@@ -8642,12 +8642,12 @@
     ],
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 138회 변경됨(토글 키 26개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 145회 변경됨(토글 키 28개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 69,
-      "recurring_keys": 26,
-      "later_changes": 138
+      "recurring_keys": 28,
+      "later_changes": 145
     }
   },
   {
@@ -8746,12 +8746,12 @@
     ],
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 84회 변경됨(토글 키 37개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 91회 변경됨(토글 키 39개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 97,
-      "recurring_keys": 37,
-      "later_changes": 84
+      "recurring_keys": 39,
+      "later_changes": 91
     }
   },
   {
@@ -8790,12 +8790,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 1
+      "later_changes": 2
     }
   },
   {
@@ -8989,12 +8989,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 17회 변경됨(토글 키 4개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 10,
-      "recurring_keys": 2,
-      "later_changes": 10
+      "recurring_keys": 4,
+      "later_changes": 17
     }
   },
   {
@@ -9067,13 +9067,13 @@
     },
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
-    "stability": "stable",
-    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+    "stability": "superseded",
+    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 0
+      "later_changes": 1
     }
   },
   {
@@ -9306,12 +9306,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(토글 키 3개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 36,
-      "recurring_keys": 2,
-      "later_changes": 3
+      "recurring_keys": 3,
+      "later_changes": 6
     }
   },
   {
@@ -9556,13 +9556,13 @@
     },
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
-    "stability": "stable",
-    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
-    "recurring_event": false,
+    "stability": "recurring",
+    "stability_detail_ko": "변경 키 7개 중 4개가 값이 이전 상태로 되돌아오는 토글 키(57%) — 반복/이벤트성으로 자동 판정.",
+    "recurring_event": true,
     "stability_stats": {
       "changed_keys": 7,
-      "recurring_keys": 2,
-      "later_changes": 0
+      "recurring_keys": 4,
+      "later_changes": 7
     }
   },
   {
@@ -9571,21 +9571,143 @@
     "posted_at": "Friday, 20 November 2026 - 07:52 AM EST",
     "scraped_at": "2026-11-20T21:53:34Z",
     "source_url": "https://changes.tarkov-changes.com/view/1260",
-    "files_changed": [],
-    "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 2h 58m.\nLogin with Discord\n to check if you have access to early content.\n1.3.0.2.48779\n - Friday, 20 November 2026 - 07:52 AM EST\n            14 change(s) detected\n1.3.0.1.48558\n - Monday, 16 November 2026 - 09:37 AM EST\n            7 change(s) detected\n1.3.0.1.48558\n - Friday, 13 November 2026 - 06:00 AM EST\n            1 change(s) detected\n1.3.0.1.48558\n - Thursday, 12 November 2026 - 01:06 PM EST\n            1 change(s) detected\n1.3.0.1.48558\n - Thursday, 12 November 2026 - 12:48 PM EST\n            42 change(s) detected\n1.3.0.1.48558\n - Thursday, 12 November 2026 - 09:50 AM EST\n            6 change(s) detected\n1.3.0.1.48558\n - Thursday, 12 November 2026 - 05:22 AM EST\n            11 change(s) detected\n1.3.0.0.48484\n - Monday, 09 November 2026 - 10:30 AM EST\n            84 change(s) detected\n1.3.0.0.48484\n - Thursday, 05 November 2026 - 10:25 AM EST\n            1 change(s) detected\n1.3.0.0.48484\n - Tuesday, 03 November 2026 - 03:19 PM EST\n            102 change(s) detected\n1.3.0.0.48484\n - Monday, 02 November 2026 - 07:02 AM EST\n            69 change(s) detected\n1.3.0.0.48484\n - Saturday, 31 October 2026 - 12:33 PM EDT\n            69 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 12:32 PM EDT\n            152 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 10:41 AM EDT\n            2 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 07:58 AM EDT\n            1 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 06:33 AM EDT\n            5 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 05:50 AM EDT\n            27 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 04:58 AM EDT\n            5 change(s) detected\n1.3.0.0.48484\n - Thursday, 29 October 2026 - 02:35 PM EDT\n            1 change(s) detected\n1.3.0.0.48484\n - Thursday, 29 October 2026 - 01:10 PM EDT\n            2 change(s) detected\n1.3.0.0.48484\n - Thursday, 29 October 2026 - 11:21 AM EDT\n            1364 change(s) detected\n1.2.5.0.48146\n - Tuesday, 27 October 2026 - 08:43 AM EDT\n            4 change(s) detected\n1.2.5.0.48146\n - Sunday, 25 October 2026 - 09:00 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Tuesday, 20 October 2026 - 05:34 AM EDT\n            12 change(s) detected\n1.2.5.0.48146\n - Tuesday, 20 October 2026 - 05:09 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Monday, 19 October 2026 - 08:51 AM EDT\n            2 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 02:17 PM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 03:43 AM EDT\n            1039 change(s) detected\n1.2.0.0.47965\n - Thursday, 15 October 2026 - 08:09 AM EDT\n            1 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 12:17 PM EDT\n            2 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 11:09 AM EDT\n            4 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:26 AM EDT\n            13 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:17 AM EDT\n            10 change(s) detected\n1.2.0.0.47888\n - Tuesday, 06 October 2026 - 08:21 PM EDT\n            1462 change(s) detected\n1.1.5.1.47510\n - Friday, 02 October 2026 - 06:09 AM EDT\n            3 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 05:00 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 04:51 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Tuesday, 29 September 2026 - 11:41 AM EDT\n            63 change(s) detected\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Tuesday, 01 September 2026 - 02:15 PM EDT\n            6 change(s) detected\n1.1.0.1.46911\n - Monday, 24 August 2026 - 04:46 AM EDT\n            1 change(s) detected",
-    "locked": true,
-    "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
-    "tags": [
-      "공개대기"
+    "files_changed": [
+      {
+        "path": "client/globals/response.json",
+        "count": 7
+      },
+      {
+        "path": "client/locale/en/response.json",
+        "count": 1
+      },
+      {
+        "path": "client/locations/response.json",
+        "count": 6
+      }
     ],
-    "severity": "trivial",
-    "changes": [],
+    "raw_text": "Files Changed:\nclient/globals/response.json\n(7 changes)\nclient/locale/en/response.json\n(1 change)\nclient/locations/response.json\n(6 changes)\nDated: Friday, 20 November 2026 - 07:52 AM EST | Game Version 1.3.0.2.48779\nclient/globals/response.json\n['data']\n    ['LocationInfection']\n        ['Woods']\n-        (Old) 5\n+        (New) 20 (+300.00%)\n        ['bigmap']\n-        (Old) 5\n+        (New) 45 (+800.00%)\n        ['Sandbox']\n-        (Old) 5\n+        (New) 15 (+200.00%)\n        ['Shoreline']\n-        (Old) 5\n+        (New) 25 (+400.00%)\n        ['Lighthouse']\n-        (Old) 5\n+        (New) 15 (+200.00%)\n        ['RezervBase']\n-        (Old) 5\n+        (New) 15 (+200.00%)\n        ['TarkovStreets']\n-        (Old) 5\n+        (New) 25 (+400.00%)\nclient/locations/response.json\n['data']\n    ['locations']\n        ['Woods']\n            ['BotLocationModifier']\n                ['AdditionalHostilitySettings']\n+                    (New) ['8']: {\n+                          \"BotRole\": \"bossKnight\",\n+                          \"AlwaysEnemies\": [\n+                            \"infectedScreamer\",\n+                            \"pmcBEAR\",\n+                            \"pmcUSEC\",\n+                            \"pmcBotBlackDivSeason\"\n+                          ],\n+                          \"AlwaysFriends\": [\n+                            \"exUsec\",\n+                            \"exUsecFree\",\n+                            \"followerBigPipe\",\n+                            \"followerBirdEye\",\n+                            \"assaultGroup\",\n+                            \"assault\",\n+                            \"marksman\",\n+                            \"bossKojaniy\"\n+                          ],\n+                          \"SavagePlayerBehaviour\": \"AlwaysEnemies\"\n+                        }\n            ['BossLocationSpawn']\n                ['Goons (Knight)']\n                    ['SpawnMode']\n-                        (Removed) ['2']: pvp-season\n        ['Shoreline']\n            ['BotLocationModifier']\n                ['AdditionalHostilitySettings']\n+                    (New) ['8']: {\n+                          \"BotRole\": \"bossKnight\",\n+                          \"AlwaysEnemies\": [\n+                            \"infectedScreamer\",\n+                            \"pmcBEAR\",\n+                            \"pmcUSEC\",\n+                            \"pmcBotBlackDivSeason\"\n+                          ],\n+                          \"AlwaysFriends\": [\n+                            \"exUsec\",\n+                            \"exUsecFree\",\n+                            \"followerBigPipe\",\n+                            \"followerBirdEye\",\n+                            \"assaultGroup\",\n+                            \"assault\",\n+                            \"marksman\",\n+                            \"bossSanitar\"\n+                          ],\n+                          \"SavagePlayerBehaviour\": \"AlwaysEnemies\"\n+                        }\n            ['BossLocationSpawn']\n                ['Goons (Knight)']\n                    ['SpawnMode']\n-                        (Removed) ['2']: pvp-season\n        ['Customs']\n            ['BossLocationSpawn']\n                ['Goons (Knight)']\n                    ['SpawnMode']\n-                        (Removed) ['2']: pvp-season\n        ['Lighthouse']\n            ['BossLocationSpawn']\n                ['Goons (Knight)']\n                    ['SpawnMode']\n-                        (Removed) ['2']: pvp-season\nclient/locale/en/response.json\n['data']\n+    (New) ['6afd7093a477a79f9d05e383 name']: Keep Them in Line",
+    "summary_ko": "다수 맵의 감염 확률이 크게 상승하고, 보스 나이트(BossKnight) 적대 설정이 추가·변경되며, 일부 보스 스폰 모드가 제거되고 새로운 UI 문자열이 추가되었습니다.",
+    "tags": [
+      "밸런스",
+      "맵",
+      "UI"
+    ],
+    "severity": "major",
+    "changes": [
+      {
+        "key_path": "data.LocationInfection.Woods",
+        "before_ko": "감염 확률 5%",
+        "after_ko": "감염 확률 20% (5 → 20)",
+        "explanation_ko": "Woods 맵에서 플레이어가 감염될 확률을 나타내는 값입니다. 기존 5%에서 20%로 4배 상승했습니다.",
+        "impact_ko": "Woods에서 감염 위험이 크게 증가합니다."
+      },
+      {
+        "key_path": "data.LocationInfection.bigmap",
+        "before_ko": "감염 확률 5%",
+        "after_ko": "감염 확률 45% (5 → 45)",
+        "explanation_ko": "대형 맵(bigmap) 전체에서 감염 확률을 정의합니다. 5%에서 45%로 크게 올랐습니다.",
+        "impact_ko": "대형 맵에서 감염 위험이 크게 높아집니다."
+      },
+      {
+        "key_path": "data.LocationInfection.Sandbox",
+        "before_ko": "감염 확률 5%",
+        "after_ko": "감염 확률 15% (5 → 15)",
+        "explanation_ko": "Sandbox 맵의 감염 확률이 5%에서 15%로 증가했습니다.",
+        "impact_ko": "Sandbox에서 감염 위험이 3배 증가합니다."
+      },
+      {
+        "key_path": "data.LocationInfection.Shoreline",
+        "before_ko": "감염 확률 5%",
+        "after_ko": "감염 확률 25% (5 → 25)",
+        "explanation_ko": "Shoreline 맵의 감염 확률이 5%에서 25%로 상승했습니다.",
+        "impact_ko": "Shoreline에서 감염 위험이 크게 늘어납니다."
+      },
+      {
+        "key_path": "data.LocationInfection.Lighthouse",
+        "before_ko": "감염 확률 5%",
+        "after_ko": "감염 확률 15% (5 → 15)",
+        "explanation_ko": "Lighthouse 맵의 감염 확률이 5%에서 15%로 증가했습니다.",
+        "impact_ko": "Lighthouse에서 감염 위험이 3배 증가합니다."
+      },
+      {
+        "key_path": "data.LocationInfection.RezervBase",
+        "before_ko": "감염 확률 5%",
+        "after_ko": "감염 확률 15% (5 → 15)",
+        "explanation_ko": "RezervBase 맵의 감염 확률이 5%에서 15%로 상승했습니다.",
+        "impact_ko": "RezervBase에서 감염 위험이 증가합니다."
+      },
+      {
+        "key_path": "data.LocationInfection.TarkovStreets",
+        "before_ko": "감염 확률 5%",
+        "after_ko": "감염 확률 25% (5 → 25)",
+        "explanation_ko": "TarkovStreets 맵의 감염 확률이 5%에서 25%로 증가했습니다.",
+        "impact_ko": "TarkovStreets에서 감염 위험이 크게 늘어납니다."
+      },
+      {
+        "key_path": "data.locations.Woods.BotLocationModifier.AdditionalHostilitySettings[8]",
+        "before_ko": "없음",
+        "after_ko": "보스 나이트(bossKnight)와 여러 적·우호 관계가 정의된 설정 추가",
+        "explanation_ko": "Woods 맵에 새로운 적대 설정이 추가돼 보스 나이트가 항상 적으로, 특정 PMC와 감염 스크리머 등을 적으로 지정합니다. 동시에 일부 NPC가 우호적으로 설정됩니다.",
+        "impact_ko": "보스 나이트와 관련된 전투가 더 빈번해지고 적대 관계가 명확해집니다."
+      },
+      {
+        "key_path": "data.locations.Shoreline.BotLocationModifier.AdditionalHostilitySettings[8]",
+        "before_ko": "없음",
+        "after_ko": "보스 나이트(bossKnight)와 여러 적·우호 관계가 정의된 설정 추가",
+        "explanation_ko": "Shoreline에서도 동일한 보스 나이트 적대 설정이 적용됩니다. 우호 NPC 목록에 bossSanitar가 포함됩니다.",
+        "impact_ko": "Shoreline에서 보스 나이트와의 전투가 강화됩니다."
+      },
+      {
+        "key_path": "data.locations.Woods.BossLocationSpawn.Goons (Knight).SpawnMode[2]",
+        "before_ko": "pvp-season 모드 존재",
+        "after_ko": "해당 스폰 모드 삭제",
+        "explanation_ko": "Woods 맵의 보스 나이트 고용군(Goons) 스폰 모드 중 pvp-season 옵션이 제거되었습니다.",
+        "impact_ko": "해당 맵에서 시즌 전용 스폰이 사라집니다."
+      },
+      {
+        "key_path": "data.locations.Shoreline.BossLocationSpawn.Goons (Knight).SpawnMode[2]",
+        "before_ko": "pvp-season 모드 존재",
+        "after_ko": "해당 스폰 모드 삭제",
+        "explanation_ko": "Shoreline 맵에서도 pvp-season 스폰 모드가 제거되었습니다.",
+        "impact_ko": "Shoreline에서 시즌 전용 보스 고용군 스폰이 사라집니다."
+      },
+      {
+        "key_path": "data.locations.Customs.BossLocationSpawn.Goons (Knight).SpawnMode[2]",
+        "before_ko": "pvp-season 모드 존재",
+        "after_ko": "해당 스폰 모드 삭제",
+        "explanation_ko": "Customs 맵의 보스 나이트 고용군 스폰 모드 중 pvp-season 옵션이 제거되었습니다.",
+        "impact_ko": "Customs에서 시즌 전용 스폰이 사라집니다."
+      },
+      {
+        "key_path": "data.locations.Lighthouse.BossLocationSpawn.Goons (Knight).SpawnMode[2]",
+        "before_ko": "pvp-season 모드 존재",
+        "after_ko": "해당 스폰 모드 삭제",
+        "explanation_ko": "Lighthouse 맵에서도 pvp-season 스폰 모드가 제거되었습니다.",
+        "impact_ko": "Lighthouse에서 시즌 전용 스폰이 사라집니다."
+      },
+      {
+        "key_path": "data.6afd7093a477a79f9d05e383 name",
+        "before_ko": "없음",
+        "after_ko": "\"Keep Them in Line\" 문자열 추가",
+        "explanation_ko": "UI/텍스트에 새로운 문구 \"Keep Them in Line\"이 추가되었습니다. 정확한 사용 위치는 추정됩니다.",
+        "impact_ko": "새로운 UI 문구가 표시됩니다."
+      }
+    ],
     "patch_note": {
       "matched": false,
       "title": null,
       "url": null,
-      "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+      "reason_ko": "공식 패치노트와 일치하는 공지가 없으며, 해당 변경은 비공식(잠수함) 패치로 판단됩니다."
     },
-    "is_submarine": null
+    "interpreter": "groq:openai/gpt-oss-120b",
+    "is_submarine": true,
+    "stability": "stable",
+    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+    "recurring_event": false,
+    "stability_stats": {
+      "changed_keys": 10,
+      "recurring_keys": 4,
+      "later_changes": 0
+    }
   }
 ]
