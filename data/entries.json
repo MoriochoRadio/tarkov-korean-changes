@@ -228,12 +228,12 @@
     "backfilled": true,
     "recurring_event": false,
     "raw_text": "Files Changed:\nclient/hideout/production/recipes/response.json\n(1 change)\nDated: Tuesday, 26 May 2026 - 05:46 AM EDT | Game Version 1.0.5.0.45272\nclient/hideout/production/recipes/response.json\n['data']\n    ['recipes']\n+        (New) ['_id(6a1568b4a9185da666070a24), Lavatory(lvl 1) -> RDG-2B smoke grenade']: {\n+              \"_id\": \"6a1568b4a9185da666070a24\",\n+              \"count\": 6,\n+              \"locked\": false,\n+              \"areaType\": \"Lavatory (2)\",\n+              \"isEncoded\": false,\n+              \"continuous\": false,\n+              \"endProduct\": \"RDG-2B smoke grenade\",\n+              \"requirements\": [\n+                {\n+                  \"type\": \"Area\",\n+                  \"areaType\": \"Lavatory (2)\",\n+                  \"requiredLevel\": 1\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Pack of chlorine\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Hunting matches\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Duct tape\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Toilet paper\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                }\n+              ],\n+              \"productionTime\": 3600.0,\n+              \"isCodeProduction\": false,\n+              \"productionLimitCount\": 0,\n+              \"needFuelForAllProductionTime\": false\n+            }\n← Back to all changes",
-    "stability": "stable",
-    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+    "stability": "superseded",
+    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 0
+      "later_changes": 1
     }
   },
   {
@@ -711,12 +711,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 62회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 71회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 51,
       "recurring_keys": 22,
-      "later_changes": 62
+      "later_changes": 71
     }
   },
   {
@@ -944,12 +944,12 @@
     },
     "is_submarine": true,
     "stability": "recurring",
-    "stability_detail_ko": "변경 키 41개 중 21개가 값이 이전 상태로 되돌아오는 토글 키(51%) — 반복/이벤트성으로 자동 판정.",
+    "stability_detail_ko": "변경 키 41개 중 25개가 값이 이전 상태로 되돌아오는 토글 키(61%) — 반복/이벤트성으로 자동 판정.",
     "recurring_event": true,
     "stability_stats": {
       "changed_keys": 41,
-      "recurring_keys": 21,
-      "later_changes": 18
+      "recurring_keys": 25,
+      "later_changes": 30
     }
   },
   {
@@ -1228,12 +1228,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 19회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 20회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 84,
       "recurring_keys": 2,
-      "later_changes": 19
+      "later_changes": 20
     }
   },
   {
@@ -1300,12 +1300,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 17회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 2,
       "recurring_keys": 0,
-      "later_changes": 16
+      "later_changes": 17
     }
   },
   {
@@ -1989,7 +1989,7 @@
     "stability_stats": {
       "changed_keys": 47,
       "recurring_keys": 30,
-      "later_changes": 110
+      "later_changes": 117
     }
   },
   {
@@ -2148,12 +2148,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 7회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 7
+      "later_changes": 8
     }
   },
   {
@@ -2421,12 +2421,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 24회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 233,
       "recurring_keys": 0,
-      "later_changes": 4
+      "later_changes": 24
     }
   },
   {
@@ -2719,12 +2719,12 @@
     "is_submarine": true,
     "severity_note_ko": "변경 총 1953건 — 규모 기준 자동 상향",
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 3
+      "later_changes": 4
     }
   },
   {
@@ -3193,12 +3193,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 3,
       "recurring_keys": 0,
-      "later_changes": 13
+      "later_changes": 15
     }
   },
   {
@@ -3390,7 +3390,7 @@
     "stability_stats": {
       "changed_keys": 22,
       "recurring_keys": 22,
-      "later_changes": 80
+      "later_changes": 87
     }
   },
   {
@@ -3666,12 +3666,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 8,
       "recurring_keys": 2,
-      "later_changes": 9
+      "later_changes": 10
     }
   },
   {
@@ -4035,12 +4035,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 13
+      "later_changes": 14
     }
   },
   {
@@ -4159,12 +4159,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 8,
       "recurring_keys": 0,
-      "later_changes": 10
+      "later_changes": 11
     }
   },
   {
@@ -5510,12 +5510,12 @@
     "is_submarine": false,
     "severity_note_ko": "변경 총 1462건 — 규모 기준 자동 상향",
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 2
+      "later_changes": 3
     }
   },
   {
@@ -5648,12 +5648,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 17회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 17,
       "recurring_keys": 6,
-      "later_changes": 16
+      "later_changes": 17
     }
   },
   {
@@ -5741,12 +5741,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 19,
       "recurring_keys": 2,
-      "later_changes": 8
+      "later_changes": 9
     }
   },
   {
@@ -5854,12 +5854,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": false,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 10,
       "recurring_keys": 0,
-      "later_changes": 5
+      "later_changes": 6
     }
   },
   {
@@ -6303,12 +6303,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 11,
       "recurring_keys": 0,
-      "later_changes": 15
+      "later_changes": 16
     }
   },
   {
@@ -6543,7 +6543,7 @@
     "stability_stats": {
       "changed_keys": 38,
       "recurring_keys": 38,
-      "later_changes": 118
+      "later_changes": 125
     }
   },
   {
@@ -6675,12 +6675,12 @@
     "is_submarine": false,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 13
+      "later_changes": 14
     }
   },
   {
@@ -6771,12 +6771,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 7회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 6
+      "later_changes": 7
     }
   },
   {
@@ -6877,12 +6877,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 21회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 23회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 21
+      "later_changes": 23
     }
   },
   {
@@ -7011,12 +7011,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 15
+      "later_changes": 16
     }
   },
   {
@@ -7056,12 +7056,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 4
+      "later_changes": 5
     }
   },
   {
@@ -7143,12 +7143,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 223,
       "recurring_keys": 0,
-      "later_changes": 1
+      "later_changes": 2
     }
   },
   {
@@ -7462,12 +7462,12 @@
     ],
     "is_submarine": false,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 9,
       "recurring_keys": 0,
-      "later_changes": 3
+      "later_changes": 4
     }
   },
   {
@@ -7676,12 +7676,12 @@
     "is_submarine": true,
     "severity_note_ko": "변경 총 1364건 — 규모 기준 자동 상향",
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(토글 키 1개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(토글 키 1개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 11,
       "recurring_keys": 1,
-      "later_changes": 1
+      "later_changes": 2
     }
   },
   {
@@ -8005,12 +8005,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 75회 변경됨(토글 키 11개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 76회 변경됨(토글 키 11개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 27,
       "recurring_keys": 11,
-      "later_changes": 75
+      "later_changes": 76
     }
   },
   {
@@ -8421,12 +8421,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 286회 변경됨(토글 키 31개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 294회 변경됨(토글 키 31개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 152,
       "recurring_keys": 31,
-      "later_changes": 286
+      "later_changes": 294
     }
   },
   {
@@ -8533,12 +8533,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 214회 변경됨(토글 키 28개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 222회 변경됨(토글 키 28개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 69,
       "recurring_keys": 28,
-      "later_changes": 214
+      "later_changes": 222
     }
   },
   {
@@ -8642,12 +8642,12 @@
     ],
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 145회 변경됨(토글 키 28개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 153회 변경됨(토글 키 28개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 69,
       "recurring_keys": 28,
-      "later_changes": 145
+      "later_changes": 153
     }
   },
   {
@@ -8746,12 +8746,12 @@
     ],
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 91회 변경됨(토글 키 39개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 100회 변경됨(토글 키 39개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 97,
       "recurring_keys": 39,
-      "later_changes": 91
+      "later_changes": 100
     }
   },
   {
@@ -8790,12 +8790,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 2
+      "later_changes": 3
     }
   },
   {
@@ -8869,13 +8869,13 @@
     },
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
-    "stability": "stable",
-    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+    "stability": "superseded",
+    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(토글 키 33개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 69,
       "recurring_keys": 33,
-      "later_changes": 0
+      "later_changes": 3
     }
   },
   {
@@ -8989,12 +8989,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 17회 변경됨(토글 키 4개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 21회 변경됨(토글 키 4개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 10,
       "recurring_keys": 4,
-      "later_changes": 17
+      "later_changes": 21
     }
   },
   {
@@ -9068,12 +9068,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 1
+      "later_changes": 2
     }
   },
   {
@@ -9306,12 +9306,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(토글 키 3개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(토글 키 3개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 36,
       "recurring_keys": 3,
-      "later_changes": 6
+      "later_changes": 8
     }
   },
   {
@@ -9562,7 +9562,7 @@
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 4,
-      "later_changes": 7
+      "later_changes": 11
     }
   },
   {
@@ -9701,13 +9701,13 @@
     },
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
-    "stability": "stable",
-    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+    "stability": "superseded",
+    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(토글 키 4개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 10,
       "recurring_keys": 4,
-      "later_changes": 0
+      "later_changes": 5
     }
   },
   {
@@ -9768,21 +9768,96 @@
     "posted_at": "Tuesday, 24 November 2026 - 12:21 PM EST",
     "scraped_at": "2026-11-24T23:33:12Z",
     "source_url": "https://changes.tarkov-changes.com/view/1262",
-    "files_changed": [],
-    "raw_text": "Previous Changes - Tarkov Silent Changes\nLatest Changes\nPrevious Changes\nJoin the Discord\nLogin with Discord\nPrevious Changes\n⚠️ Access Restricted\nYou are not logged in. Content available 12 hours after posting. Wait 5h 47m.\nLogin with Discord\n to check if you have access to early content.\n1.3.5.0.48914\n - Tuesday, 24 November 2026 - 12:21 PM EST\n            6883 change(s) detected\n1.3.0.2.48779\n - Monday, 23 November 2026 - 04:05 AM EST\n            1 change(s) detected\n1.3.0.2.48779\n - Friday, 20 November 2026 - 07:52 AM EST\n            14 change(s) detected\n1.3.0.1.48558\n - Monday, 16 November 2026 - 09:37 AM EST\n            7 change(s) detected\n1.3.0.1.48558\n - Friday, 13 November 2026 - 06:00 AM EST\n            1 change(s) detected\n1.3.0.1.48558\n - Thursday, 12 November 2026 - 01:06 PM EST\n            1 change(s) detected\n1.3.0.1.48558\n - Thursday, 12 November 2026 - 12:48 PM EST\n            42 change(s) detected\n1.3.0.1.48558\n - Thursday, 12 November 2026 - 09:50 AM EST\n            6 change(s) detected\n1.3.0.1.48558\n - Thursday, 12 November 2026 - 05:22 AM EST\n            11 change(s) detected\n1.3.0.0.48484\n - Monday, 09 November 2026 - 10:30 AM EST\n            84 change(s) detected\n1.3.0.0.48484\n - Thursday, 05 November 2026 - 10:25 AM EST\n            1 change(s) detected\n1.3.0.0.48484\n - Tuesday, 03 November 2026 - 03:19 PM EST\n            102 change(s) detected\n1.3.0.0.48484\n - Monday, 02 November 2026 - 07:02 AM EST\n            69 change(s) detected\n1.3.0.0.48484\n - Saturday, 31 October 2026 - 12:33 PM EDT\n            69 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 12:32 PM EDT\n            152 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 10:41 AM EDT\n            2 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 07:58 AM EDT\n            1 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 06:33 AM EDT\n            5 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 05:50 AM EDT\n            27 change(s) detected\n1.3.0.0.48484\n - Friday, 30 October 2026 - 04:58 AM EDT\n            5 change(s) detected\n1.3.0.0.48484\n - Thursday, 29 October 2026 - 02:35 PM EDT\n            1 change(s) detected\n1.3.0.0.48484\n - Thursday, 29 October 2026 - 01:10 PM EDT\n            2 change(s) detected\n1.3.0.0.48484\n - Thursday, 29 October 2026 - 11:21 AM EDT\n            1364 change(s) detected\n1.2.5.0.48146\n - Tuesday, 27 October 2026 - 08:43 AM EDT\n            4 change(s) detected\n1.2.5.0.48146\n - Sunday, 25 October 2026 - 09:00 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Tuesday, 20 October 2026 - 05:34 AM EDT\n            12 change(s) detected\n1.2.5.0.48146\n - Tuesday, 20 October 2026 - 05:09 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Monday, 19 October 2026 - 08:51 AM EDT\n            2 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 02:17 PM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 07:17 AM EDT\n            1 change(s) detected\n1.2.5.0.48146\n - Friday, 16 October 2026 - 03:43 AM EDT\n            1039 change(s) detected\n1.2.0.0.47965\n - Thursday, 15 October 2026 - 08:09 AM EDT\n            1 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 12:17 PM EDT\n            2 change(s) detected\n1.2.0.0.47965\n - Friday, 09 October 2026 - 11:09 AM EDT\n            4 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:26 AM EDT\n            13 change(s) detected\n1.2.0.0.47888\n - Thursday, 08 October 2026 - 09:17 AM EDT\n            10 change(s) detected\n1.2.0.0.47888\n - Tuesday, 06 October 2026 - 08:21 PM EDT\n            1462 change(s) detected\n1.1.5.1.47510\n - Friday, 02 October 2026 - 06:09 AM EDT\n            3 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 05:00 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Wednesday, 30 September 2026 - 04:51 AM EDT\n            18 change(s) detected\n1.1.5.1.47510\n - Tuesday, 29 September 2026 - 11:41 AM EDT\n            63 change(s) detected\n1.1.5.1.47510\n - Saturday, 26 September 2026 - 09:48 AM EDT\n            12 change(s) detected\n1.1.5.1.47510\n - Friday, 18 September 2026 - 05:03 PM EDT\n            1 change(s) detected\n1.1.5.1.47473\n - Friday, 18 September 2026 - 11:02 AM EDT\n            1953 change(s) detected\n1.1.5.0.47426\n - Wednesday, 16 September 2026 - 05:29 PM EDT\n            640 change(s) detected\n1.1.5.0.47242\n - Friday, 11 September 2026 - 11:09 AM EDT\n            1 change(s) detected\n1.1.5.0.47242\n - Wednesday, 09 September 2026 - 11:12 AM EDT\n            10 change(s) detected\n1.1.5.0.47242\n - Tuesday, 08 September 2026 - 10:55 AM EDT\n            2054 change(s) detected\n1.1.0.1.46911\n - Thursday, 03 September 2026 - 06:41 AM EDT\n            1 change(s) detected\n1.1.0.1.46911\n - Wednesday, 02 September 2026 - 05:01 AM EDT\n            1 change(s) detected",
-    "locked": true,
-    "summary_ko": "🔒 공개 대기 중 — 원본이 게시 후 12시간 동안 비공개입니다. 잠금이 풀리면 다음 갱신 때 자동으로 한글 해석이 채워집니다.",
-    "tags": [
-      "공개대기"
+    "files_changed": [
+      {
+        "path": "client/globals/response.json",
+        "count": 13
+      },
+      {
+        "path": "client/hideout/production/recipes/response.json",
+        "count": 4
+      },
+      {
+        "path": "client/items/response.json",
+        "count": 6620
+      },
+      {
+        "path": "client/locale/en/response.json",
+        "count": 46
+      },
+      {
+        "path": "client/locations/response.json",
+        "count": 141
+      },
+      {
+        "path": "client/settings/response.json",
+        "count": 1
+      },
+      {
+        "path": "client/trading/api/traderSettings/response.json",
+        "count": 58
+      }
     ],
-    "severity": "trivial",
-    "changes": [],
+    "raw_text": "Files Changed:\nclient/globals/response.json\n(13 changes)\nclient/hideout/production/recipes/response.json\n(4 changes)\nclient/items/response.json\n(6620 changes)\nclient/locale/en/response.json\n(46 changes)\nclient/locations/response.json\n(141 changes)\nclient/settings/response.json\n(1 change)\nclient/trading/api/traderSettings/response.json\n(58 changes)\nDated: Tuesday, 24 November 2026 - 12:21 PM EST | Game Version 1.3.5.0.48914\nclient/items/response.json\n['data']\n+    (New) ['QuestItem']: {\n+          \"_id\": \"QuestItem\",\n+          \"_name\": \"QuestItem\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 20,\n+            \"NotShownInSlot\": false,\n+            \"BackgroundColor\": \"blue\",\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"AnimationVariantsNumber\": 0,\n+            \"IsSecretExitRequirement\": false,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_proto\": \"54009119af1c881c07000029\",\n+          \"_parent\": \"54009119af1c881c07000029\"\n+        }\n+    (New) ['Tarko']: {\n+          \"_id\": \"Tarko\",\n+          \"_name\": \"Tarko\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"Resource\": 0,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"MaxResource\": 0,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": 0,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 20,\n+            \"NotShownInSlot\": false,\n+            \"BackgroundColor\": \"blue\",\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"AnimationVariantsNumber\": 0,\n+            \"IsSecretExitRequirement\": false,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Barter item\"\n+        }\n+    (New) ['Dogtags']: {\n+          \"_id\": \"Dogtags\",\n+          \"_name\": \"Dogtags\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"Resource\": 0,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"MaxResource\": 0,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": 0,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 20,\n+            \"NotShownInSlot\": false,\n+            \"BackgroundColor\": \"blue\",\n+            \"DiscardingBlock\": false,\n+            \"DogTagQualities\": false,\n+            \"IsUndiscardable\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"AnimationVariantsNumber\": 0,\n+            \"IsSecretExitRequirement\": false,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Barter item\"\n+        }\n+    (New) ['SecretExit']: {\n+          \"_id\": \"SecretExit\",\n+          \"_name\": \"SecretExit\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 20,\n+            \"NotShownInSlot\": false,\n+            \"BackgroundColor\": \"blue\",\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"AnimationVariantsNumber\": 0,\n+            \"IsSecretExitRequirement\": false,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_proto\": \"54009119af1c881c07000029\",\n+          \"_parent\": \"54009119af1c881c07000029\"\n+        }\n+    (New) ['StationaryWeapon']: {\n+          \"_id\": \"StationaryWeapon\",\n+          \"_name\": \"StationaryWeapon\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Grids\": [],\n+            \"Slots\": [],\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"defAmmo\": \"Ammo\",\n+            \"AimPlane\": 0,\n+            \"AllowJam\": false,\n+            \"Chambers\": [],\n+            \"Foldable\": false,\n+            \"IsOneoff\": false,\n+            \"Velocity\": 0,\n+            \"bEffDist\": 1,\n+            \"AllowFeed\": false,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"bFirerate\": 900,\n+            \"bHearDist\": 1,\n+            \"weapClass\": \"smg\",\n+            \"AllowSlide\": false,\n+            \"BoltAction\": false,\n+            \"CameraSnap\": 3,\n+            \"Durability\": 100,\n+            \"Ergonomics\": 10,\n+            \"FoldedSlot\": \"\",\n+            \"IsFlareGun\": false,\n+            \"ReloadMode\": \"ExternalMagazine\",\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"defMagType\": \"Magazine\",\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsMountable\": false,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RecoilAngle\": 90,\n+            \"RepairSpeed\": 0,\n+            \"Retractable\": false,\n+            \"ammoCaliber\": \"Caliber9x18PM\",\n+            \"isBoltCatch\": false,\n+            \"weapUseType\": \"primary\",\n+            \"AllowMisfire\": false,\n+            \"DeviationMax\": 100,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"RecoilCamera\": -0.3,\n+            \"RecoilCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 1\n+            },\n+            \"StackMaxSize\": 1,\n+            \"isFastReload\": false,\n+            \"weapFireType\": [],\n+            \"AllowOverheat\": false,\n+            \"AudioSettings\": {\n+              \"IndoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 200\n+              },\n+              \"OutdoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 600\n+              },\n+              \"IndoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 120\n+              },\n+              \"OutdoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 300\n+              }\n+            },\n+            \"CoolFactorGun\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"HeatFactorGun\": 1,\n+            \"IsUnremovable\": false,\n+            \"MaxDurability\": 100,\n+            \"RecoilForceUp\": 1000,\n+            \"SightingRange\": 100,\n+            \"durabSpawnMax\": 0,\n+            \"durabSpawnMin\": 0,\n+            \"isChamberLoad\": true,\n+            \"AimSensitivity\": 0.65,\n+            \"CenterOfImpact\": 0.01,\n+            \"DeviationCurve\": 1,\n+            \"ExtraSizeRight\": 0,\n+            \"IronSightRange\": 25,\n+            \"LootExperience\": 20,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"RecoilPosZMult\": 1,\n+            \"ResetAfterShot\": false,\n+            \"RotationCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"SingleFireRate\": 720,\n+            \"BackgroundColor\": \"blue\",\n+            \"BurstShotsCount\": 3,\n+            \"CompactHandling\": false,\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"ManualBoltCatch\": false,\n+            \"RecoilForceBack\": 1000,\n+            \"RecolDispersion\": 0,\n+            \"SizeReduceRight\": 0,\n+            \"UseAltMountBone\": false,\n+            \"blockLeftStance\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"HeatFactorByShot\": 1,\n+            \"IsBeltMachineGun\": false,\n+            \"MountingPosition\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RepairComplexity\": 0,\n+            \"chamberAmmoCount\": 1,\n+            \"CoolFactorGunMods\": 1,\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsGrenadeLauncher\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"OperatingResource\": 0,\n+            \"StackObjectsCount\": 1,\n+            \"WeaponAimSettings\": {\n+              \"Enable\": false,\n+              \"ValuesIn\": [],\n+              \"ValuesOut\": []\n+            },\n+            \"shotgunDispersion\": 10,\n+            \"CanQueueSecondShot\": true,\n+            \"HipInnaccuracyGain\": 0.16,\n+            \"IsLockedafterEquip\": false,\n+            \"IsStationaryWeapon\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"ShotsGroupSettings\": [\n+              {\n+                \"EndShotIndex\": 200,\n+                \"StartShotIndex\": 1,\n+                \"ShotRecoilRadianRange\": {\n+                  \"x\": 6,\n+                  \"y\": -6,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilPositionStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 0,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilRotationStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 0,\n+                  \"z\": 0\n+                }\n+              }\n+            ],\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"WithAnimatorAiming\": false,\n+            \"CanRequireOnRagfair\": false,\n+            \"DurabilityBurnRatio\": 1,\n+            \"RagfairLevelToTrade\": 0,\n+            \"MaxRepairDegradation\": 0.01,\n+            \"MinRepairDegradation\": 0,\n+            \"WeaponRecoilSettings\": {\n+              \"Enable\": true,\n+              \"Values\": [\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 1.5,\n+                    \"CurveValueMultiply\": 0.7,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsPosition\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 3,\n+                    \"CurveValueMultiply\": 0.007,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"CameraRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Z\",\n+                    \"CurveTimeMultiply\": 2,\n+                    \"CurveValueMultiply\": 0.2,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                }\n+              ]\n+            },\n+            \"BaseMalfunctionChance\": 0,\n+            \"CanUnloadAmmoByPlayer\": true,\n+            \"NoFiremodeOnBoltcatch\": false,\n+            \"RecoilStableIndexShot\": 4,\n+            \"RotationCenterNoStock\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"TacticalReloadFixation\": 0.95,\n+            \"TacticalReloadStiffnes\": {\n+              \"x\": 0.95,\n+              \"y\": 0.33,\n+              \"z\": 0.95\n+            },\n+            \"AnimationVariantsNumber\": 0,\n+            \"CameraToWeaponAngleStep\": 0.1,\n+            \"CanPutIntoDuringTheRaid\": true,\n+            \"ForbidMissingVitalParts\": false,\n+            \"IsSecretExitRequirement\": false,\n+            \"MaxRepairKitDegradation\": 0,\n+            \"MinRepairKitDegradation\": 0,\n+            \"ForbidNonEmptyContainers\": false,\n+            \"MountCameraSnapMultiplier\": 3,\n+            \"RagFairCommissionModifier\": 1,\n+            \"RecoilDampingHandRotation\": 0.93,\n+            \"DoubleActionAccuracyPenalty\": 1.5,\n+            \"HipAccuracyRestorationDelay\": 0.2,\n+            \"HipAccuracyRestorationSpeed\": 7,\n+            \"ProgressRecoilAngleOnStable\": {\n+              \"x\": 0,\n+              \"y\": 30,\n+              \"z\": 0\n+            },\n+            \"AdjustCollimatorsToTrajectory\": false,\n+            \"CameraToWeaponAngleSpeedRange\": {\n+              \"x\": 0.1,\n+              \"y\": 0.2,\n+              \"z\": 0\n+            },\n+            \"CantRemoveFromSlotsDuringRaid\": [],\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"MountVerticalRecoilMultiplier\": 0.85,\n+            \"RecoilReturnSpeedHandRotation\": 1,\n+            \"RecoilStableAngleIncreaseStep\": 2.5,\n+            \"MountReturnSpeedHandMultiplier\": 1,\n+            \"MountHorizontalRecoilMultiplier\": 0.6,\n+            \"MustBoltBeOpennedForExternalReload\": false,\n+            \"MustBoltBeOpennedForInternalReload\": false,\n+            \"RecoilReturnPathOffsetHandRotation\": 0.015,\n+            \"PostRecoilVerticalRangeHandRotation\": {\n+              \"x\": -2,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RecoilReturnPathDampingHandRotation\": 0.55,\n+            \"RecoilCategoryMultiplierHandRotation\": 0.19,\n+            \"MountingVerticalOutOfBreathMultiplier\": 0.8,\n+            \"PostRecoilHorizontalRangeHandRotation\": {\n+              \"x\": -2.4,\n+              \"y\": 2.4,\n+              \"z\": 0\n+            },\n+            \"MountingHorizontalOutOfBreathMultiplier\": 0.4,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Weapon\"\n+        }\n+    (New) ['RevolverPistol']: {\n+          \"_id\": \"RevolverPistol\",\n+          \"_name\": \"RevolverPistol\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Grids\": [],\n+            \"Slots\": [],\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"defAmmo\": \"Ammo\",\n+            \"AimPlane\": 0,\n+            \"AllowJam\": false,\n+            \"Chambers\": [],\n+            \"Foldable\": false,\n+            \"IsOneoff\": false,\n+            \"Velocity\": 0,\n+            \"bEffDist\": 1,\n+            \"AllowFeed\": false,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"bFirerate\": 900,\n+            \"bHearDist\": 1,\n+            \"weapClass\": \"smg\",\n+            \"AllowSlide\": false,\n+            \"BoltAction\": false,\n+            \"CameraSnap\": 3,\n+            \"Durability\": 100,\n+            \"Ergonomics\": 10,\n+            \"FoldedSlot\": \"\",\n+            \"IsFlareGun\": false,\n+            \"ReloadMode\": \"ExternalMagazine\",\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"defMagType\": \"Magazine\",\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsMountable\": false,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RecoilAngle\": 90,\n+            \"RepairSpeed\": 0,\n+            \"Retractable\": false,\n+            \"ammoCaliber\": \"Caliber9x18PM\",\n+            \"isBoltCatch\": false,\n+            \"weapUseType\": \"primary\",\n+            \"AllowMisfire\": false,\n+            \"DeviationMax\": 100,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"RecoilCamera\": -0.3,\n+            \"RecoilCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 1\n+            },\n+            \"StackMaxSize\": 1,\n+            \"isFastReload\": false,\n+            \"weapFireType\": [],\n+            \"AllowOverheat\": false,\n+            \"AudioSettings\": {\n+              \"IndoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 200\n+              },\n+              \"OutdoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 600\n+              },\n+              \"IndoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 120\n+              },\n+              \"OutdoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 300\n+              }\n+            },\n+            \"CoolFactorGun\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"HeatFactorGun\": 1,\n+            \"IsUnremovable\": false,\n+            \"MaxDurability\": 100,\n+            \"RecoilForceUp\": 50,\n+            \"SightingRange\": 100,\n+            \"durabSpawnMax\": 0,\n+            \"durabSpawnMin\": 0,\n+            \"isChamberLoad\": true,\n+            \"AimSensitivity\": 0.65,\n+            \"CenterOfImpact\": 0.01,\n+            \"DeviationCurve\": 1,\n+            \"ExtraSizeRight\": 0,\n+            \"IronSightRange\": 25,\n+            \"LootExperience\": 20,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"RecoilPosZMult\": 1,\n+            \"ResetAfterShot\": false,\n+            \"RotationCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"SingleFireRate\": 720,\n+            \"BackgroundColor\": \"blue\",\n+            \"BurstShotsCount\": 3,\n+            \"CompactHandling\": false,\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"ManualBoltCatch\": false,\n+            \"RecoilForceBack\": 100,\n+            \"RecolDispersion\": 0,\n+            \"SizeReduceRight\": 0,\n+            \"UseAltMountBone\": false,\n+            \"blockLeftStance\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"HeatFactorByShot\": 1,\n+            \"IsBeltMachineGun\": false,\n+            \"MountingPosition\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RepairComplexity\": 0,\n+            \"chamberAmmoCount\": 1,\n+            \"CoolFactorGunMods\": 1,\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsGrenadeLauncher\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"OperatingResource\": 0,\n+            \"StackObjectsCount\": 1,\n+            \"WeaponAimSettings\": {\n+              \"Enable\": false,\n+              \"ValuesIn\": [],\n+              \"ValuesOut\": []\n+            },\n+            \"shotgunDispersion\": 10,\n+            \"CanQueueSecondShot\": true,\n+            \"HipInnaccuracyGain\": 0.16,\n+            \"IsLockedafterEquip\": false,\n+            \"IsStationaryWeapon\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"ShotsGroupSettings\": [\n+              {\n+                \"EndShotIndex\": 99,\n+                \"StartShotIndex\": 4,\n+                \"ShotRecoilRadianRange\": {\n+                  \"x\": -20,\n+                  \"y\": 20,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilPositionStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 0,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilRotationStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 2,\n+                  \"z\": 0\n+                }\n+              }\n+            ],\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"WithAnimatorAiming\": false,\n+            \"CanRequireOnRagfair\": false,\n+            \"DurabilityBurnRatio\": 1,\n+            \"RagfairLevelToTrade\": 0,\n+            \"MaxRepairDegradation\": 0.01,\n+            \"MinRepairDegradation\": 0,\n+            \"WeaponRecoilSettings\": {\n+              \"Enable\": true,\n+              \"Values\": [\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 1.5,\n+                    \"CurveValueMultiply\": 0.7,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsPosition\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 3,\n+                    \"CurveValueMultiply\": 0.007,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"CameraRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Z\",\n+                    \"CurveTimeMultiply\": 2,\n+                    \"CurveValueMultiply\": 0.2,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                }\n+              ]\n+            },\n+            \"BaseMalfunctionChance\": 0,\n+            \"CanUnloadAmmoByPlayer\": true,\n+            \"NoFiremodeOnBoltcatch\": false,\n+            \"RecoilStableIndexShot\": 4,\n+            \"RotationCenterNoStock\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"TacticalReloadFixation\": 0.95,\n+            \"TacticalReloadStiffnes\": {\n+              \"x\": 0.95,\n+              \"y\": 0.33,\n+              \"z\": 0.95\n+            },\n+            \"AnimationVariantsNumber\": 0,\n+            \"CameraToWeaponAngleStep\": 0.01,\n+            \"CanPutIntoDuringTheRaid\": true,\n+            \"ForbidMissingVitalParts\": false,\n+            \"IsSecretExitRequirement\": false,\n+            \"MaxRepairKitDegradation\": 0,\n+            \"MinRepairKitDegradation\": 0,\n+            \"ForbidNonEmptyContainers\": false,\n+            \"MountCameraSnapMultiplier\": 3,\n+            \"RagFairCommissionModifier\": 1,\n+            \"RecoilDampingHandRotation\": 0.89,\n+            \"DoubleActionAccuracyPenalty\": 1.5,\n+            \"HipAccuracyRestorationDelay\": 0.2,\n+            \"HipAccuracyRestorationSpeed\": 7,\n+            \"ProgressRecoilAngleOnStable\": {\n+              \"x\": 0,\n+              \"y\": 30,\n+              \"z\": 0\n+            },\n+            \"AdjustCollimatorsToTrajectory\": false,\n+            \"CameraToWeaponAngleSpeedRange\": {\n+              \"x\": 0.1,\n+              \"y\": 0.2,\n+              \"z\": 0\n+            },\n+            \"CantRemoveFromSlotsDuringRaid\": [],\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"MountVerticalRecoilMultiplier\": 0.85,\n+            \"RecoilReturnSpeedHandRotation\": 1,\n+            \"RecoilStableAngleIncreaseStep\": 2.5,\n+            \"MountReturnSpeedHandMultiplier\": 1,\n+            \"MountHorizontalRecoilMultiplier\": 0.6,\n+            \"MustBoltBeOpennedForExternalReload\": false,\n+            \"MustBoltBeOpennedForInternalReload\": false,\n+            \"RecoilReturnPathOffsetHandRotation\": 0.01,\n+            \"PostRecoilVerticalRangeHandRotation\": {\n+              \"x\": -1.1,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RecoilReturnPathDampingHandRotation\": 0.57,\n+            \"RecoilCategoryMultiplierHandRotation\": 0.26,\n+            \"MountingVerticalOutOfBreathMultiplier\": 0.8,\n+            \"PostRecoilHorizontalRangeHandRotation\": {\n+              \"x\": -1.8,\n+              \"y\": 1.8,\n+              \"z\": 0\n+            },\n+            \"MountingHorizontalOutOfBreathMultiplier\": 0.4,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Revolver\"\n+        }\n+    (New) ['RevolverShotgun']: {\n+          \"_id\": \"RevolverShotgun\",\n+          \"_name\": \"RevolverShotgun\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Grids\": [],\n+            \"Slots\": [],\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"defAmmo\": \"Ammo\",\n+            \"AimPlane\": 0,\n+            \"AllowJam\": false,\n+            \"Chambers\": [],\n+            \"Foldable\": false,\n+            \"IsOneoff\": false,\n+            \"Velocity\": 0,\n+            \"bEffDist\": 1,\n+            \"AllowFeed\": false,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"bFirerate\": 900,\n+            \"bHearDist\": 1,\n+            \"weapClass\": \"smg\",\n+            \"AllowSlide\": false,\n+            \"BoltAction\": false,\n+            \"CameraSnap\": 3,\n+            \"Durability\": 100,\n+            \"Ergonomics\": 10,\n+            \"FoldedSlot\": \"\",\n+            \"IsFlareGun\": false,\n+            \"ReloadMode\": \"ExternalMagazine\",\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"defMagType\": \"Magazine\",\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsMountable\": false,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RecoilAngle\": 90,\n+            \"RepairSpeed\": 0,\n+            \"Retractable\": false,\n+            \"ammoCaliber\": \"Caliber9x18PM\",\n+            \"isBoltCatch\": false,\n+            \"weapUseType\": \"primary\",\n+            \"AllowMisfire\": false,\n+            \"DeviationMax\": 100,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"RecoilCamera\": -0.3,\n+            \"RecoilCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 1\n+            },\n+            \"StackMaxSize\": 1,\n+            \"isFastReload\": false,\n+            \"weapFireType\": [],\n+            \"AllowOverheat\": false,\n+            \"AudioSettings\": {\n+              \"IndoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 200\n+              },\n+              \"OutdoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 600\n+              },\n+              \"IndoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 120\n+              },\n+              \"OutdoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 300\n+              }\n+            },\n+            \"CoolFactorGun\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"HeatFactorGun\": 1,\n+            \"IsUnremovable\": false,\n+            \"MaxDurability\": 100,\n+            \"RecoilForceUp\": 50,\n+            \"SightingRange\": 100,\n+            \"durabSpawnMax\": 0,\n+            \"durabSpawnMin\": 0,\n+            \"isChamberLoad\": true,\n+            \"AimSensitivity\": 0.65,\n+            \"CenterOfImpact\": 0.01,\n+            \"DeviationCurve\": 1,\n+            \"ExtraSizeRight\": 0,\n+            \"IronSightRange\": 25,\n+            \"LootExperience\": 20,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"RecoilPosZMult\": 1,\n+            \"ResetAfterShot\": false,\n+            \"RotationCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"SingleFireRate\": 720,\n+            \"BackgroundColor\": \"blue\",\n+            \"BurstShotsCount\": 3,\n+            \"CompactHandling\": false,\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"ManualBoltCatch\": false,\n+            \"RecoilForceBack\": 100,\n+            \"RecolDispersion\": 0,\n+            \"SizeReduceRight\": 0,\n+            \"UseAltMountBone\": false,\n+            \"blockLeftStance\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"HeatFactorByShot\": 1,\n+            \"IsBeltMachineGun\": false,\n+            \"MountingPosition\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RepairComplexity\": 0,\n+            \"chamberAmmoCount\": 1,\n+            \"CoolFactorGunMods\": 1,\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsGrenadeLauncher\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"OperatingResource\": 0,\n+            \"StackObjectsCount\": 1,\n+            \"WeaponAimSettings\": {\n+              \"Enable\": false,\n+              \"ValuesIn\": [],\n+              \"ValuesOut\": []\n+            },\n+            \"shotgunDispersion\": 10,\n+            \"CanQueueSecondShot\": true,\n+            \"HipInnaccuracyGain\": 0.16,\n+            \"IsLockedafterEquip\": false,\n+            \"IsStationaryWeapon\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"ShotsGroupSettings\": [\n+              {\n+                \"EndShotIndex\": 99,\n+                \"StartShotIndex\": 4,\n+                \"ShotRecoilRadianRange\": {\n+                  \"x\": -20,\n+                  \"y\": 20,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilPositionStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 0,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilRotationStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 2,\n+                  \"z\": 0\n+                }\n+              }\n+            ],\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"WithAnimatorAiming\": false,\n+            \"CanRequireOnRagfair\": false,\n+            \"DurabilityBurnRatio\": 1,\n+            \"RagfairLevelToTrade\": 0,\n+            \"MaxRepairDegradation\": 0.01,\n+            \"MinRepairDegradation\": 0,\n+            \"WeaponRecoilSettings\": {\n+              \"Enable\": true,\n+              \"Values\": [\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 1.5,\n+                    \"CurveValueMultiply\": 0.7,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsPosition\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 3,\n+                    \"CurveValueMultiply\": 0.007,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"CameraRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Z\",\n+                    \"CurveTimeMultiply\": 2,\n+                    \"CurveValueMultiply\": 0.2,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                }\n+              ]\n+            },\n+            \"BaseMalfunctionChance\": 0,\n+            \"CanUnloadAmmoByPlayer\": true,\n+            \"NoFiremodeOnBoltcatch\": false,\n+            \"RecoilStableIndexShot\": 4,\n+            \"RotationCenterNoStock\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"TacticalReloadFixation\": 0.95,\n+            \"TacticalReloadStiffnes\": {\n+              \"x\": 0.95,\n+              \"y\": 0.33,\n+              \"z\": 0.95\n+            },\n+            \"AnimationVariantsNumber\": 0,\n+            \"CameraToWeaponAngleStep\": 0.01,\n+            \"CanPutIntoDuringTheRaid\": true,\n+            \"ForbidMissingVitalParts\": false,\n+            \"IsSecretExitRequirement\": false,\n+            \"MaxRepairKitDegradation\": 0,\n+            \"MinRepairKitDegradation\": 0,\n+            \"ForbidNonEmptyContainers\": false,\n+            \"MountCameraSnapMultiplier\": 3,\n+            \"RagFairCommissionModifier\": 1,\n+            \"RecoilDampingHandRotation\": 0.89,\n+            \"DoubleActionAccuracyPenalty\": 1.5,\n+            \"HipAccuracyRestorationDelay\": 0.2,\n+            \"HipAccuracyRestorationSpeed\": 7,\n+            \"ProgressRecoilAngleOnStable\": {\n+              \"x\": 0,\n+              \"y\": 30,\n+              \"z\": 0\n+            },\n+            \"AdjustCollimatorsToTrajectory\": false,\n+            \"CameraToWeaponAngleSpeedRange\": {\n+              \"x\": 0.1,\n+              \"y\": 0.2,\n+              \"z\": 0\n+            },\n+            \"CantRemoveFromSlotsDuringRaid\": [],\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"MountVerticalRecoilMultiplier\": 0.85,\n+            \"RecoilReturnSpeedHandRotation\": 1,\n+            \"RecoilStableAngleIncreaseStep\": 2.5,\n+            \"MountReturnSpeedHandMultiplier\": 1,\n+            \"MountHorizontalRecoilMultiplier\": 0.6,\n+            \"MustBoltBeOpennedForExternalReload\": false,\n+            \"MustBoltBeOpennedForInternalReload\": false,\n+            \"RecoilReturnPathOffsetHandRotation\": 0.01,\n+            \"PostRecoilVerticalRangeHandRotation\": {\n+              \"x\": -1.1,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RecoilReturnPathDampingHandRotation\": 0.57,\n+            \"RecoilCategoryMultiplierHandRotation\": 0.26,\n+            \"MountingVerticalOutOfBreathMultiplier\": 0.8,\n+            \"PostRecoilHorizontalRangeHandRotation\": {\n+              \"x\": -1.8,\n+              \"y\": 1.8,\n+              \"z\": 0\n+            },\n+            \"MountingHorizontalOutOfBreathMultiplier\": 0.4,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Revolver\"\n+        }\n+    (New) ['RevolverLauncher']: {\n+          \"_id\": \"RevolverLauncher\",\n+          \"_name\": \"RevolverLauncher\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Grids\": [],\n+            \"Slots\": [],\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"defAmmo\": \"Ammo\",\n+            \"AimPlane\": 0,\n+            \"AllowJam\": false,\n+            \"Chambers\": [],\n+            \"Foldable\": false,\n+            \"IsOneoff\": false,\n+            \"Velocity\": 0,\n+            \"bEffDist\": 1,\n+            \"AllowFeed\": false,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"bFirerate\": 900,\n+            \"bHearDist\": 1,\n+            \"weapClass\": \"smg\",\n+            \"AllowSlide\": false,\n+            \"BoltAction\": false,\n+            \"CameraSnap\": 3,\n+            \"Durability\": 100,\n+            \"Ergonomics\": 10,\n+            \"FoldedSlot\": \"\",\n+            \"IsFlareGun\": false,\n+            \"ReloadMode\": \"ExternalMagazine\",\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"defMagType\": \"Magazine\",\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsMountable\": false,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RecoilAngle\": 90,\n+            \"RepairSpeed\": 0,\n+            \"Retractable\": false,\n+            \"ammoCaliber\": \"Caliber9x18PM\",\n+            \"isBoltCatch\": false,\n+            \"weapUseType\": \"primary\",\n+            \"AllowMisfire\": false,\n+            \"DeviationMax\": 100,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"RecoilCamera\": -0.3,\n+            \"RecoilCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 1\n+            },\n+            \"StackMaxSize\": 1,\n+            \"isFastReload\": false,\n+            \"weapFireType\": [],\n+            \"AllowOverheat\": false,\n+            \"AudioSettings\": {\n+              \"IndoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 200\n+              },\n+              \"OutdoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 600\n+              },\n+              \"IndoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 120\n+              },\n+              \"OutdoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 300\n+              }\n+            },\n+            \"CoolFactorGun\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"HeatFactorGun\": 1,\n+            \"IsUnremovable\": false,\n+            \"MaxDurability\": 100,\n+            \"RecoilForceUp\": 50,\n+            \"SightingRange\": 100,\n+            \"durabSpawnMax\": 0,\n+            \"durabSpawnMin\": 0,\n+            \"isChamberLoad\": true,\n+            \"AimSensitivity\": 0.65,\n+            \"CenterOfImpact\": 0.01,\n+            \"DeviationCurve\": 1,\n+            \"ExtraSizeRight\": 0,\n+            \"IronSightRange\": 25,\n+            \"LootExperience\": 20,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"RecoilPosZMult\": 1,\n+            \"ResetAfterShot\": false,\n+            \"RotationCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"SingleFireRate\": 720,\n+            \"BackgroundColor\": \"blue\",\n+            \"BurstShotsCount\": 3,\n+            \"CompactHandling\": false,\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"ManualBoltCatch\": false,\n+            \"RecoilForceBack\": 100,\n+            \"RecolDispersion\": 0,\n+            \"SizeReduceRight\": 0,\n+            \"UseAltMountBone\": false,\n+            \"blockLeftStance\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"HeatFactorByShot\": 1,\n+            \"IsBeltMachineGun\": false,\n+            \"MountingPosition\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RepairComplexity\": 0,\n+            \"chamberAmmoCount\": 1,\n+            \"CoolFactorGunMods\": 1,\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsGrenadeLauncher\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"OperatingResource\": 0,\n+            \"StackObjectsCount\": 1,\n+            \"WeaponAimSettings\": {\n+              \"Enable\": false,\n+              \"ValuesIn\": [],\n+              \"ValuesOut\": []\n+            },\n+            \"shotgunDispersion\": 10,\n+            \"CanQueueSecondShot\": true,\n+            \"HipInnaccuracyGain\": 0.16,\n+            \"IsLockedafterEquip\": false,\n+            \"IsStationaryWeapon\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"ShotsGroupSettings\": [\n+              {\n+                \"EndShotIndex\": 99,\n+                \"StartShotIndex\": 4,\n+                \"ShotRecoilRadianRange\": {\n+                  \"x\": -20,\n+                  \"y\": 20,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilPositionStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 0,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilRotationStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 2,\n+                  \"z\": 0\n+                }\n+              }\n+            ],\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"WithAnimatorAiming\": false,\n+            \"CanRequireOnRagfair\": false,\n+            \"DurabilityBurnRatio\": 1,\n+            \"RagfairLevelToTrade\": 0,\n+            \"MaxRepairDegradation\": 0.01,\n+            \"MinRepairDegradation\": 0,\n+            \"WeaponRecoilSettings\": {\n+              \"Enable\": true,\n+              \"Values\": [\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 1.5,\n+                    \"CurveValueMultiply\": 0.7,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsPosition\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 3,\n+                    \"CurveValueMultiply\": 0.007,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"CameraRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Z\",\n+                    \"CurveTimeMultiply\": 2,\n+                    \"CurveValueMultiply\": 0.2,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                }\n+              ]\n+            },\n+            \"BaseMalfunctionChance\": 0,\n+            \"CanUnloadAmmoByPlayer\": true,\n+            \"NoFiremodeOnBoltcatch\": false,\n+            \"RecoilStableIndexShot\": 4,\n+            \"RotationCenterNoStock\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"TacticalReloadFixation\": 0.95,\n+            \"TacticalReloadStiffnes\": {\n+              \"x\": 0.95,\n+              \"y\": 0.33,\n+              \"z\": 0.95\n+            },\n+            \"AnimationVariantsNumber\": 0,\n+            \"CameraToWeaponAngleStep\": 0.01,\n+            \"CanPutIntoDuringTheRaid\": true,\n+            \"ForbidMissingVitalParts\": false,\n+            \"IsSecretExitRequirement\": false,\n+            \"MaxRepairKitDegradation\": 0,\n+            \"MinRepairKitDegradation\": 0,\n+            \"ForbidNonEmptyContainers\": false,\n+            \"MountCameraSnapMultiplier\": 3,\n+            \"RagFairCommissionModifier\": 1,\n+            \"RecoilDampingHandRotation\": 0.89,\n+            \"DoubleActionAccuracyPenalty\": 1.5,\n+            \"HipAccuracyRestorationDelay\": 0.2,\n+            \"HipAccuracyRestorationSpeed\": 7,\n+            \"ProgressRecoilAngleOnStable\": {\n+              \"x\": 0,\n+              \"y\": 30,\n+              \"z\": 0\n+            },\n+            \"AdjustCollimatorsToTrajectory\": false,\n+            \"CameraToWeaponAngleSpeedRange\": {\n+              \"x\": 0.1,\n+              \"y\": 0.2,\n+              \"z\": 0\n+            },\n+            \"CantRemoveFromSlotsDuringRaid\": [],\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"MountVerticalRecoilMultiplier\": 0.85,\n+            \"RecoilReturnSpeedHandRotation\": 1,\n+            \"RecoilStableAngleIncreaseStep\": 2.5,\n+            \"MountReturnSpeedHandMultiplier\": 1,\n+            \"MountHorizontalRecoilMultiplier\": 0.6,\n+            \"MustBoltBeOpennedForExternalReload\": false,\n+            \"MustBoltBeOpennedForInternalReload\": false,\n+            \"RecoilReturnPathOffsetHandRotation\": 0.01,\n+            \"PostRecoilVerticalRangeHandRotation\": {\n+              \"x\": -1.1,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RecoilReturnPathDampingHandRotation\": 0.57,\n+            \"RecoilCategoryMultiplierHandRotation\": 0.26,\n+            \"MountingVerticalOutOfBreathMultiplier\": 0.8,\n+            \"PostRecoilHorizontalRangeHandRotation\": {\n+              \"x\": -1.8,\n+              \"y\": 1.8,\n+              \"z\": 0\n+            },\n+            \"MountingHorizontalOutOfBreathMultiplier\": 0.4,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Revolver\"\n+        }\n+    (New) ['LMG']: {\n+          \"_id\": \"LMG\",\n+          \"_name\": \"LMG\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Grids\": [],\n+            \"Slots\": [],\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"defAmmo\": \"Ammo\",\n+            \"AimPlane\": 0,\n+            \"AllowJam\": false,\n+            \"Chambers\": [],\n+            \"Foldable\": false,\n+            \"IsOneoff\": false,\n+            \"Velocity\": 0,\n+            \"bEffDist\": 1,\n+            \"AllowFeed\": false,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"bFirerate\": 900,\n+            \"bHearDist\": 1,\n+            \"weapClass\": \"smg\",\n+            \"AllowSlide\": false,\n+            \"BoltAction\": false,\n+            \"CameraSnap\": 3,\n+            \"Durability\": 100,\n+            \"Ergonomics\": 10,\n+            \"FoldedSlot\": \"\",\n+            \"IsFlareGun\": false,\n+            \"ReloadMode\": \"ExternalMagazine\",\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"defMagType\": \"Magazine\",\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsMountable\": false,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RecoilAngle\": 90,\n+            \"RepairSpeed\": 0,\n+            \"Retractable\": false,\n+            \"ammoCaliber\": \"Caliber9x18PM\",\n+            \"isBoltCatch\": false,\n+            \"weapUseType\": \"primary\",\n+            \"AllowMisfire\": false,\n+            \"DeviationMax\": 100,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"RecoilCamera\": -0.3,\n+            \"RecoilCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 1\n+            },\n+            \"StackMaxSize\": 1,\n+            \"isFastReload\": false,\n+            \"weapFireType\": [],\n+            \"AllowOverheat\": false,\n+            \"AudioSettings\": {\n+              \"IndoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 200\n+              },\n+              \"OutdoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 600\n+              },\n+              \"IndoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 120\n+              },\n+              \"OutdoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 300\n+              }\n+            },\n+            \"CoolFactorGun\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"HeatFactorGun\": 1,\n+            \"IsUnremovable\": false,\n+            \"MaxDurability\": 100,\n+            \"RecoilForceUp\": 1000,\n+            \"SightingRange\": 100,\n+            \"durabSpawnMax\": 0,\n+            \"durabSpawnMin\": 0,\n+            \"isChamberLoad\": true,\n+            \"AimSensitivity\": 0.65,\n+            \"CenterOfImpact\": 0.01,\n+            \"DeviationCurve\": 1,\n+            \"ExtraSizeRight\": 0,\n+            \"IronSightRange\": 25,\n+            \"LootExperience\": 20,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"RecoilPosZMult\": 1,\n+            \"ResetAfterShot\": false,\n+            \"RotationCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"SingleFireRate\": 720,\n+            \"BackgroundColor\": \"blue\",\n+            \"BurstShotsCount\": 3,\n+            \"CompactHandling\": false,\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"ManualBoltCatch\": false,\n+            \"RecoilForceBack\": 1000,\n+            \"RecolDispersion\": 0,\n+            \"SizeReduceRight\": 0,\n+            \"UseAltMountBone\": false,\n+            \"blockLeftStance\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"HeatFactorByShot\": 1,\n+            \"IsBeltMachineGun\": false,\n+            \"MountingPosition\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RepairComplexity\": 0,\n+            \"chamberAmmoCount\": 1,\n+            \"CoolFactorGunMods\": 1,\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsGrenadeLauncher\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"OperatingResource\": 0,\n+            \"StackObjectsCount\": 1,\n+            \"WeaponAimSettings\": {\n+              \"Enable\": false,\n+              \"ValuesIn\": [],\n+              \"ValuesOut\": []\n+            },\n+            \"shotgunDispersion\": 10,\n+            \"CanQueueSecondShot\": true,\n+            \"HipInnaccuracyGain\": 0.16,\n+            \"IsLockedafterEquip\": false,\n+            \"IsStationaryWeapon\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"ShotsGroupSettings\": [\n+              {\n+                \"EndShotIndex\": 200,\n+                \"StartShotIndex\": 1,\n+                \"ShotRecoilRadianRange\": {\n+                  \"x\": 6,\n+                  \"y\": -6,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilPositionStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 0,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilRotationStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 0,\n+                  \"z\": 0\n+                }\n+              }\n+            ],\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"WithAnimatorAiming\": false,\n+            \"CanRequireOnRagfair\": false,\n+            \"DurabilityBurnRatio\": 1,\n+            \"RagfairLevelToTrade\": 0,\n+            \"MaxRepairDegradation\": 0.01,\n+            \"MinRepairDegradation\": 0,\n+            \"WeaponRecoilSettings\": {\n+              \"Enable\": true,\n+              \"Values\": [\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 1.5,\n+                    \"CurveValueMultiply\": 0.7,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsPosition\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 3,\n+                    \"CurveValueMultiply\": 0.007,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"CameraRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Z\",\n+                    \"CurveTimeMultiply\": 2,\n+                    \"CurveValueMultiply\": 0.2,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                }\n+              ]\n+            },\n+            \"BaseMalfunctionChance\": 0,\n+            \"CanUnloadAmmoByPlayer\": true,\n+            \"NoFiremodeOnBoltcatch\": false,\n+            \"RecoilStableIndexShot\": 4,\n+            \"RotationCenterNoStock\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"TacticalReloadFixation\": 0.95,\n+            \"TacticalReloadStiffnes\": {\n+              \"x\": 0.95,\n+              \"y\": 0.33,\n+              \"z\": 0.95\n+            },\n+            \"AnimationVariantsNumber\": 0,\n+            \"CameraToWeaponAngleStep\": 0.1,\n+            \"CanPutIntoDuringTheRaid\": true,\n+            \"ForbidMissingVitalParts\": false,\n+            \"IsSecretExitRequirement\": false,\n+            \"MaxRepairKitDegradation\": 0,\n+            \"MinRepairKitDegradation\": 0,\n+            \"ForbidNonEmptyContainers\": false,\n+            \"MountCameraSnapMultiplier\": 3,\n+            \"RagFairCommissionModifier\": 1,\n+            \"RecoilDampingHandRotation\": 0.93,\n+            \"DoubleActionAccuracyPenalty\": 1.5,\n+            \"HipAccuracyRestorationDelay\": 0.2,\n+            \"HipAccuracyRestorationSpeed\": 7,\n+            \"ProgressRecoilAngleOnStable\": {\n+              \"x\": 0,\n+              \"y\": 30,\n+              \"z\": 0\n+            },\n+            \"AdjustCollimatorsToTrajectory\": false,\n+            \"CameraToWeaponAngleSpeedRange\": {\n+              \"x\": 0.1,\n+              \"y\": 0.2,\n+              \"z\": 0\n+            },\n+            \"CantRemoveFromSlotsDuringRaid\": [],\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"MountVerticalRecoilMultiplier\": 0.85,\n+            \"RecoilReturnSpeedHandRotation\": 1,\n+            \"RecoilStableAngleIncreaseStep\": 2.5,\n+            \"MountReturnSpeedHandMultiplier\": 1,\n+            \"MountHorizontalRecoilMultiplier\": 0.6,\n+            \"MustBoltBeOpennedForExternalReload\": false,\n+            \"MustBoltBeOpennedForInternalReload\": false,\n+            \"RecoilReturnPathOffsetHandRotation\": 0.015,\n+            \"PostRecoilVerticalRangeHandRotation\": {\n+              \"x\": -2,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RecoilReturnPathDampingHandRotation\": 0.55,\n+            \"RecoilCategoryMultiplierHandRotation\": 0.19,\n+            \"MountingVerticalOutOfBreathMultiplier\": 0.8,\n+            \"PostRecoilHorizontalRangeHandRotation\": {\n+              \"x\": -2.4,\n+              \"y\": 2.4,\n+              \"z\": 0\n+            },\n+            \"MountingHorizontalOutOfBreathMultiplier\": 0.4,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Machinegun\"\n+        }\n+    (New) ['SAW']: {\n+          \"_id\": \"SAW\",\n+          \"_name\": \"SAW\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Grids\": [],\n+            \"Slots\": [],\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"defAmmo\": \"Ammo\",\n+            \"AimPlane\": 0,\n+            \"AllowJam\": false,\n+            \"Chambers\": [],\n+            \"Foldable\": false,\n+            \"IsOneoff\": false,\n+            \"Velocity\": 0,\n+            \"bEffDist\": 1,\n+            \"AllowFeed\": false,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"bFirerate\": 900,\n+            \"bHearDist\": 1,\n+            \"weapClass\": \"smg\",\n+            \"AllowSlide\": false,\n+            \"BoltAction\": false,\n+            \"CameraSnap\": 3,\n+            \"Durability\": 100,\n+            \"Ergonomics\": 10,\n+            \"FoldedSlot\": \"\",\n+            \"IsFlareGun\": false,\n+            \"ReloadMode\": \"ExternalMagazine\",\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"defMagType\": \"Magazine\",\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsMountable\": false,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"RecoilAngle\": 90,\n+            \"RepairSpeed\": 0,\n+            \"Retractable\": false,\n+            \"ammoCaliber\": \"Caliber9x18PM\",\n+            \"isBoltCatch\": false,\n+            \"weapUseType\": \"primary\",\n+            \"AllowMisfire\": false,\n+            \"DeviationMax\": 100,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"RecoilCamera\": -0.3,\n+            \"RecoilCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 1\n+            },\n+            \"StackMaxSize\": 1,\n+            \"isFastReload\": false,\n+            \"weapFireType\": [],\n+            \"AllowOverheat\": false,\n+            \"AudioSettings\": {\n+              \"IndoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 200\n+              },\n+              \"OutdoorConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 600\n+              },\n+              \"IndoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 120\n+              },\n+              \"OutdoorSilencedConfig\": {\n+                \"Volume\": 1,\n+                \"MaxDistance\": 300\n+              }\n+            },\n+            \"CoolFactorGun\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"HeatFactorGun\": 1,\n+            \"IsUnremovable\": false,\n+            \"MaxDurability\": 100,\n+            \"RecoilForceUp\": 1000,\n+            \"SightingRange\": 100,\n+            \"durabSpawnMax\": 0,\n+            \"durabSpawnMin\": 0,\n+            \"isChamberLoad\": true,\n+            \"AimSensitivity\": 0.65,\n+            \"CenterOfImpact\": 0.01,\n+            \"DeviationCurve\": 1,\n+            \"ExtraSizeRight\": 0,\n+            \"IronSightRange\": 25,\n+            \"LootExperience\": 20,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"RecoilPosZMult\": 1,\n+            \"ResetAfterShot\": false,\n+            \"RotationCenter\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"SingleFireRate\": 720,\n+            \"BackgroundColor\": \"blue\",\n+            \"BurstShotsCount\": 3,\n+            \"CompactHandling\": false,\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"ManualBoltCatch\": false,\n+            \"RecoilForceBack\": 1000,\n+            \"RecolDispersion\": 0,\n+            \"SizeReduceRight\": 0,\n+            \"UseAltMountBone\": false,\n+            \"blockLeftStance\": false,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"HeatFactorByShot\": 1,\n+            \"IsBeltMachineGun\": false,\n+            \"MountingPosition\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RepairComplexity\": 0,\n+            \"chamberAmmoCount\": 1,\n+            \"CoolFactorGunMods\": 1,\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsGrenadeLauncher\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"OperatingResource\": 0,\n+            \"StackObjectsCount\": 1,\n+            \"WeaponAimSettings\": {\n+              \"Enable\": false,\n+              \"ValuesIn\": [],\n+              \"ValuesOut\": []\n+            },\n+            \"shotgunDispersion\": 10,\n+            \"CanQueueSecondShot\": true,\n+            \"HipInnaccuracyGain\": 0.16,\n+            \"IsLockedafterEquip\": false,\n+            \"IsStationaryWeapon\": false,\n+            \"MergesWithChildren\": false,\n+            \"QuestStashMaxCount\": 0,\n+            \"ShotsGroupSettings\": [\n+              {\n+                \"EndShotIndex\": 200,\n+                \"StartShotIndex\": 1,\n+                \"ShotRecoilRadianRange\": {\n+                  \"x\": 6,\n+                  \"y\": -6,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilPositionStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 0,\n+                  \"z\": 0\n+                },\n+                \"ShotRecoilRotationStrength\": {\n+                  \"x\": 0,\n+                  \"y\": 0,\n+                  \"z\": 0\n+                }\n+              }\n+            ],\n+            \"UnlootableFromSide\": [],\n+            \"UnlootableFromSlot\": \"FirstPrimaryWeapon\",\n+            \"WithAnimatorAiming\": false,\n+            \"CanRequireOnRagfair\": false,\n+            \"DurabilityBurnRatio\": 1,\n+            \"RagfairLevelToTrade\": 0,\n+            \"MaxRepairDegradation\": 0.01,\n+            \"MinRepairDegradation\": 0,\n+            \"WeaponRecoilSettings\": {\n+              \"Enable\": true,\n+              \"Values\": [\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 1.5,\n+                    \"CurveValueMultiply\": 0.7,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"HandsPosition\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Y\",\n+                    \"CurveTimeMultiply\": 3,\n+                    \"CurveValueMultiply\": 0.007,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                },\n+                {\n+                  \"Enable\": true,\n+                  \"Target\": \"CameraRotation\",\n+                  \"Process\": {\n+                    \"ComponentType\": \"Z\",\n+                    \"CurveTimeMultiply\": 2,\n+                    \"CurveValueMultiply\": 0.2,\n+                    \"TransformationCurve\": {\n+                      \"Keys\": [\n+                        {\n+                          \"time\": 0,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.1,\n+                          \"value\": 2,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 0.3,\n+                          \"value\": -0.75,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        },\n+                        {\n+                          \"time\": 1,\n+                          \"value\": 0,\n+                          \"inTangent\": 0,\n+                          \"outTangent\": 0\n+                        }\n+                      ]\n+                    },\n+                    \"CurveAimingValueMultiply\": 0\n+                  }\n+                }\n+              ]\n+            },\n+            \"BaseMalfunctionChance\": 0,\n+            \"CanUnloadAmmoByPlayer\": true,\n+            \"NoFiremodeOnBoltcatch\": false,\n+            \"RecoilStableIndexShot\": 4,\n+            \"RotationCenterNoStock\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"TacticalReloadFixation\": 0.95,\n+            \"TacticalReloadStiffnes\": {\n+              \"x\": 0.95,\n+              \"y\": 0.33,\n+              \"z\": 0.95\n+            },\n+            \"AnimationVariantsNumber\": 0,\n+            \"CameraToWeaponAngleStep\": 0.1,\n+            \"CanPutIntoDuringTheRaid\": true,\n+            \"ForbidMissingVitalParts\": false,\n+            \"IsSecretExitRequirement\": false,\n+            \"MaxRepairKitDegradation\": 0,\n+            \"MinRepairKitDegradation\": 0,\n+            \"ForbidNonEmptyContainers\": false,\n+            \"MountCameraSnapMultiplier\": 3,\n+            \"RagFairCommissionModifier\": 1,\n+            \"RecoilDampingHandRotation\": 0.93,\n+            \"DoubleActionAccuracyPenalty\": 1.5,\n+            \"HipAccuracyRestorationDelay\": 0.2,\n+            \"HipAccuracyRestorationSpeed\": 7,\n+            \"ProgressRecoilAngleOnStable\": {\n+              \"x\": 0,\n+              \"y\": 30,\n+              \"z\": 0\n+            },\n+            \"AdjustCollimatorsToTrajectory\": false,\n+            \"CameraToWeaponAngleSpeedRange\": {\n+              \"x\": 0.1,\n+              \"y\": 0.2,\n+              \"z\": 0\n+            },\n+            \"CantRemoveFromSlotsDuringRaid\": [],\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"MountVerticalRecoilMultiplier\": 0.85,\n+            \"RecoilReturnSpeedHandRotation\": 1,\n+            \"RecoilStableAngleIncreaseStep\": 2.5,\n+            \"MountReturnSpeedHandMultiplier\": 1,\n+            \"MountHorizontalRecoilMultiplier\": 0.6,\n+            \"MustBoltBeOpennedForExternalReload\": false,\n+            \"MustBoltBeOpennedForInternalReload\": false,\n+            \"RecoilReturnPathOffsetHandRotation\": 0.015,\n+            \"PostRecoilVerticalRangeHandRotation\": {\n+              \"x\": -2,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"RecoilReturnPathDampingHandRotation\": 0.55,\n+            \"RecoilCategoryMultiplierHandRotation\": 0.19,\n+            \"MountingVerticalOutOfBreathMultiplier\": 0.8,\n+            \"PostRecoilHorizontalRangeHandRotation\": {\n+              \"x\": -2.4,\n+              \"y\": 2.4,\n+              \"z\": 0\n+            },\n+            \"MountingHorizontalOutOfBreathMultiplier\": 0.4,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Machinegun\"\n+        }\n+    (New) ['OneHandedShortMelee']: {\n+          \"_id\": \"OneHandedShortMelee\",\n+          \"_name\": \"OneHandedShortMelee\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Durability\": 0,\n+            \"RepairCost\": 0,\n+            \"Unlootable\": true,\n+            \"knifeDurab\": 0,\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"MaxResource\": 0,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"MaxDurability\": 0,\n+            \"knifeHitDelay\": 0,\n+            \"DisplayOnModel\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 20,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"knifeHitRadius\": 0,\n+            \"BackgroundColor\": \"blue\",\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"PrimaryDistance\": 1,\n+            \"StabPenetration\": 10,\n+            \"StaminaBurnRate\": 0,\n+            \"StimulatorBuffs\": \"\",\n+            \"knifeHitStabDam\": 0,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"SecondryDistance\": 1,\n+            \"SlashPenetration\": 5,\n+            \"knifeHitSlashDam\": 0,\n+            \"knifeHitStabRate\": 0,\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"knifeHitSlashRate\": 0,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"PrimaryConsumption\": 6,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [\n+              \"Bear\",\n+              \"Usec\"\n+            ],\n+            \"UnlootableFromSlot\": \"Scabbard\",\n+            \"AppliedHeadRotation\": {\n+              \"x\": 2,\n+              \"y\": 4,\n+              \"z\": 0\n+            },\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"SecondryConsumption\": 8,\n+            \"AppliedTrunkRotation\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"MaxRepairDegradation\": 0.01,\n+            \"MinRepairDegradation\": 0,\n+            \"DeflectionConsumption\": 3,\n+            \"AnimationVariantsNumber\": 0,\n+            \"ColliderScaleMultiplier\": {\n+              \"x\": 1,\n+              \"y\": 1,\n+              \"z\": 1\n+            },\n+            \"IsSecretExitRequirement\": false,\n+            \"AdditionalAnimationLayer\": 0,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Knife\"\n+        }\n+    (New) ['OneHandedLongMelee']: {\n+          \"_id\": \"OneHandedLongMelee\",\n+          \"_name\": \"OneHandedLongMelee\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Durability\": 0,\n+            \"RepairCost\": 0,\n+            \"Unlootable\": true,\n+            \"knifeDurab\": 0,\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"MaxResource\": 0,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"MaxDurability\": 0,\n+            \"knifeHitDelay\": 0,\n+            \"DisplayOnModel\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 20,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"knifeHitRadius\": 0,\n+            \"BackgroundColor\": \"blue\",\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"PrimaryDistance\": 1,\n+            \"StabPenetration\": 10,\n+            \"StaminaBurnRate\": 0,\n+            \"StimulatorBuffs\": \"\",\n+            \"knifeHitStabDam\": 0,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"SecondryDistance\": 1,\n+            \"SlashPenetration\": 5,\n+            \"knifeHitSlashDam\": 0,\n+            \"knifeHitStabRate\": 0,\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"knifeHitSlashRate\": 0,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"PrimaryConsumption\": 6,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [\n+              \"Bear\",\n+              \"Usec\"\n+            ],\n+            \"UnlootableFromSlot\": \"Scabbard\",\n+            \"AppliedHeadRotation\": {\n+              \"x\": 2,\n+              \"y\": 4,\n+              \"z\": 0\n+            },\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"SecondryConsumption\": 8,\n+            \"AppliedTrunkRotation\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"MaxRepairDegradation\": 0.01,\n+            \"MinRepairDegradation\": 0,\n+            \"DeflectionConsumption\": 3,\n+            \"AnimationVariantsNumber\": 0,\n+            \"ColliderScaleMultiplier\": {\n+              \"x\": 1,\n+              \"y\": 1,\n+              \"z\": 1\n+            },\n+            \"IsSecretExitRequirement\": false,\n+            \"AdditionalAnimationLayer\": 0,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Knife\"\n+        }\n+    (New) ['TwoHandedMelee']: {\n+          \"_id\": \"TwoHandedMelee\",\n+          \"_name\": \"TwoHandedMelee\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Durability\": 0,\n+            \"RepairCost\": 0,\n+            \"Unlootable\": true,\n+            \"knifeDurab\": 0,\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+            \"IsUngivable\": false,\n+            \"MaxResource\": 0,\n+            \"RepairSpeed\": 0,\n+            \"DiscardLimit\": -1,\n+            \"HideEntrails\": false,\n+            \"IsUnsaleable\": false,\n+            \"LeftHandItem\": false,\n+            \"StackMaxSize\": 1,\n+            \"ExtraSizeDown\": 0,\n+            \"ExtraSizeLeft\": 0,\n+            \"IsUnremovable\": false,\n+            \"MaxDurability\": 0,\n+            \"knifeHitDelay\": 0,\n+            \"DisplayOnModel\": false,\n+            \"ExtraSizeRight\": 0,\n+            \"LootExperience\": 20,\n+            \"MetascoreGroup\": \"Firepower\",\n+            \"NotShownInSlot\": false,\n+            \"knifeHitRadius\": 0,\n+            \"BackgroundColor\": \"blue\",\n+            \"DiscardingBlock\": false,\n+            \"IsUndiscardable\": false,\n+            \"PrimaryDistance\": 1,\n+            \"StabPenetration\": 10,\n+            \"StaminaBurnRate\": 0,\n+            \"StimulatorBuffs\": \"\",\n+            \"knifeHitStabDam\": 0,\n+            \"CanSellOnRagfair\": true,\n+            \"ConflictingItems\": [],\n+            \"SecondryDistance\": 1,\n+            \"SlashPenetration\": 5,\n+            \"knifeHitSlashDam\": 0,\n+            \"knifeHitStabRate\": 0,\n+            \"ExamineExperience\": 10,\n+            \"ExaminedByDefault\": false,\n+            \"ExtraSizeForceAdd\": false,\n+            \"InsuranceDisabled\": false,\n+            \"IsSpecialSlotOnly\": false,\n+            \"StackObjectsCount\": 1,\n+            \"knifeHitSlashRate\": 0,\n+            \"IsLockedafterEquip\": false,\n+            \"MergesWithChildren\": false,\n+            \"PrimaryConsumption\": 6,\n+            \"QuestStashMaxCount\": 0,\n+            \"UnlootableFromSide\": [\n+              \"Bear\",\n+              \"Usec\"\n+            ],\n+            \"UnlootableFromSlot\": \"Scabbard\",\n+            \"AppliedHeadRotation\": {\n+              \"x\": 2,\n+              \"y\": 4,\n+              \"z\": 0\n+            },\n+            \"CanRequireOnRagfair\": false,\n+            \"RagfairLevelToTrade\": 0,\n+            \"SecondryConsumption\": 8,\n+            \"AppliedTrunkRotation\": {\n+              \"x\": 0,\n+              \"y\": 0,\n+              \"z\": 0\n+            },\n+            \"MaxRepairDegradation\": 0.01,\n+            \"MinRepairDegradation\": 0,\n+            \"DeflectionConsumption\": 3,\n+            \"AnimationVariantsNumber\": 0,\n+            \"ColliderScaleMultiplier\": {\n+              \"x\": 1,\n+              \"y\": 1,\n+              \"z\": 1\n+            },\n+            \"IsSecretExitRequirement\": false,\n+            \"AdditionalAnimationLayer\": 0,\n+            \"RagFairCommissionModifier\": 1,\n+            \"IsAlwaysAvailableForInsurance\": false,\n+            \"IsNotDeletableFromQuestStashAfterQuestComplete\": false\n+          },\n+          \"_parent\": \"Knife\"\n+        }\n+    (New) ['Hat']: {\n+          \"_id\": \"Hat\",\n+          \"_name\": \"Hat\",\n+          \"_type\": \"Node\",\n+          \"_props\": {\n+            \"Name\": \"Item\",\n+            \"Grids\": [],\n+            \"Slots\": [],\n+            \"Width\": 1,\n+            \"Height\": 1,\n+            \"Prefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Weight\": 1,\n+            \"HasHinge\": false,\n+            \"ArmorType\": \"None\",\n+            \"ItemSound\": \"generic\",\n+            \"QuestItem\": false,\n+            \"RarityPvE\": \"Common\",\n+            \"ShortName\": \"Item\",\n+            \"UsePrefab\": {\n+              \"path\": \"\",\n+              \"rcid\": \"\"\n+            },\n+            \"Durability\": 0,\n+            \"RepairCost\": 0,\n+            \"Unlootable\": false,\n+            \"armorClass\": \"0\",\n+            \"Description\": \"Item\",\n+            \"ExamineTime\": 1,\n+            \"ExtraSizeUp\": 0,\n+            \"IsUnbuyable\": false,\n+      \n\n…(원문이 매우 커서 잘렸습니다 — 전체는 원본 링크에서 확인)",
+    "summary_ko": "새로운 아이템 노드(QuestItem, Tarko, Dogtags, SecretExit, StationaryWeapon)가 다수 추가되었습니다.",
+    "tags": [
+      "아이템",
+      "밸런스"
+    ],
+    "severity": "major",
+    "changes": [
+      {
+        "key_path": "client/items/response.json['data']['QuestItem']",
+        "before_ko": "존재하지 않음",
+        "after_ko": "새로운 노드 'QuestItem'이 추가되어 기본 아이템 속성(무게 1, 크기 1x1, 일반 희귀도 등)을 가짐",
+        "explanation_ko": "QuestItem은 퀘스트와 연관된 아이템을 정의하기 위한 기본 템플릿으로, 현재는 실제 아이템이 아닌 placeholder 역할을 합니다. 게임 내에서 퀘스트 아이템을 만들 때 이 템플릿을 상속해 사용합니다.",
+        "impact_ko": "퀘스트 아이템 제작 및 커스텀 아이템 모드 개발에 활용될 수 있습니다."
+      },
+      {
+        "key_path": "client/items/response.json['data']['Tarko']",
+        "before_ko": "존재하지 않음",
+        "after_ko": "새로운 노드 'Tarko'가 추가되어 일반 아이템 속성 외에 Resource, MaxResource 등 자원 관련 필드가 포함됨",
+        "explanation_ko": "Tarko는 자원(Resource) 기반 아이템으로 보이며, 현재는 기본값이 0이므로 아직 사용되지 않은 템플릿입니다. 향후 자원 수집·소모 메커니즘에 활용될 가능성이 있습니다.",
+        "impact_ko": "향후 업데이트에서 자원 아이템으로 활용될 경우 기존 플레이에 새로운 수집·소모 루프가 추가될 수 있습니다."
+      },
+      {
+        "key_path": "client/items/response.json['data']['Dogtags']",
+        "before_ko": "존재하지 않음",
+        "after_ko": "새로운 노드 'Dogtags'가 추가되어 기존 'DogTagQualities' 플래그가 false인 기본 설정을 가짐",
+        "explanation_ko": "Dogtags는 플레이어가 사망 시 획득하는 태그 아이템을 정의합니다. 현재는 품질 구분이 비활성화된 기본 형태이며, 향후 품질 시스템과 연동될 수 있습니다.",
+        "impact_ko": "현재는 기능에 큰 변화가 없지만, 향후 품질·보상 시스템과 연결될 경우 보상 체계에 영향을 줄 수 있습니다."
+      },
+      {
+        "key_path": "client/items/response.json['data']['SecretExit']",
+        "before_ko": "존재하지 않음",
+        "after_ko": "새로운 노드 'SecretExit'가 추가되어 비밀 탈출구와 연관된 아이템으로 설정됨",
+        "explanation_ko": "SecretExit는 맵 내 비밀 탈출구를 활성화하거나 표시하는 데 사용되는 아이템으로 보이며, 현재는 일반 아이템 속성만 가지고 있습니다.",
+        "impact_ko": "향후 이벤트나 맵 업데이트에서 비밀 탈출 메커니즘을 도입할 경우 직접적인 활용이 가능해집니다."
+      },
+      {
+        "key_path": "client/items/response.json['data']['StationaryWeapon']",
+        "before_ko": "존재하지 않음",
+        "after_ko": "새로운 노드 'StationaryWeapon'가 추가되어 무기 기본 속성(피해량, 사격 속도, 탄약 종류 등)을 포함함",
+        "explanation_ko": "StationaryWeapon은 고정형 무기(예: 탑승형 기관총)용 템플릿으로, 현재는 SMG 클래스와 9x18PM 탄약을 기본값으로 갖습니다. 향후 맵에 고정 무기가 배치될 때 사용될 가능성이 있습니다.",
+        "impact_ko": "새로운 고정 무기 배치가 추가될 경우 전투 전략에 변화를 줄 수 있습니다."
+      }
+    ],
     "patch_note": {
       "matched": false,
       "title": null,
       "url": null,
-      "reason_ko": "원본 접근 제한으로 아직 분석하지 않았습니다."
+      "reason_ko": "공식 패치노트에 아이템 추가 내용이 언급되지 않아 잠수함(비공식) 패치로 판단됩니다."
     },
-    "is_submarine": null
+    "interpreter": "groq:openai/gpt-oss-120b",
+    "is_submarine": true,
+    "severity_note_ko": "변경 총 6883건 — 규모 기준 자동 상향",
+    "stability": "stable",
+    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
+    "recurring_event": false,
+    "stability_stats": {
+      "changed_keys": 5553,
+      "recurring_keys": 23,
+      "later_changes": 0
+    }
   }
 ]
