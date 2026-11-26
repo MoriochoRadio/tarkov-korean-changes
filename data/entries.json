@@ -228,12 +228,12 @@
     "backfilled": true,
     "recurring_event": false,
     "raw_text": "Files Changed:\nclient/hideout/production/recipes/response.json\n(1 change)\nDated: Tuesday, 26 May 2026 - 05:46 AM EDT | Game Version 1.0.5.0.45272\nclient/hideout/production/recipes/response.json\n['data']\n    ['recipes']\n+        (New) ['_id(6a1568b4a9185da666070a24), Lavatory(lvl 1) -> RDG-2B smoke grenade']: {\n+              \"_id\": \"6a1568b4a9185da666070a24\",\n+              \"count\": 6,\n+              \"locked\": false,\n+              \"areaType\": \"Lavatory (2)\",\n+              \"isEncoded\": false,\n+              \"continuous\": false,\n+              \"endProduct\": \"RDG-2B smoke grenade\",\n+              \"requirements\": [\n+                {\n+                  \"type\": \"Area\",\n+                  \"areaType\": \"Lavatory (2)\",\n+                  \"requiredLevel\": 1\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Pack of chlorine\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Hunting matches\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Duct tape\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                },\n+                {\n+                  \"type\": \"Item\",\n+                  \"count\": 1,\n+                  \"isEncoded\": false,\n+                  \"templateId\": \"Toilet paper\",\n+                  \"isFunctional\": false,\n+                  \"isSpawnedInSession\": false\n+                }\n+              ],\n+              \"productionTime\": 3600.0,\n+              \"isCodeProduction\": false,\n+              \"productionLimitCount\": 0,\n+              \"needFuelForAllProductionTime\": false\n+            }\n← Back to all changes",
-    "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability": "stable",
+    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 1
+      "later_changes": 0
     }
   },
   {
@@ -711,12 +711,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 71회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 62회 변경됨(토글 키 22개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 51,
       "recurring_keys": 22,
-      "later_changes": 71
+      "later_changes": 62
     }
   },
   {
@@ -944,12 +944,12 @@
     },
     "is_submarine": true,
     "stability": "recurring",
-    "stability_detail_ko": "변경 키 41개 중 25개가 값이 이전 상태로 되돌아오는 토글 키(61%) — 반복/이벤트성으로 자동 판정.",
+    "stability_detail_ko": "변경 키 41개 중 21개가 값이 이전 상태로 되돌아오는 토글 키(51%) — 반복/이벤트성으로 자동 판정.",
     "recurring_event": true,
     "stability_stats": {
       "changed_keys": 41,
-      "recurring_keys": 25,
-      "later_changes": 30
+      "recurring_keys": 21,
+      "later_changes": 18
     }
   },
   {
@@ -1228,12 +1228,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 20회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 19회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 84,
       "recurring_keys": 2,
-      "later_changes": 20
+      "later_changes": 19
     }
   },
   {
@@ -1300,12 +1300,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 17회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 2,
       "recurring_keys": 0,
-      "later_changes": 17
+      "later_changes": 16
     }
   },
   {
@@ -1989,7 +1989,7 @@
     "stability_stats": {
       "changed_keys": 47,
       "recurring_keys": 30,
-      "later_changes": 117
+      "later_changes": 110
     }
   },
   {
@@ -2148,12 +2148,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 7회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 8
+      "later_changes": 7
     }
   },
   {
@@ -2421,12 +2421,12 @@
     },
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 24회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 233,
       "recurring_keys": 0,
-      "later_changes": 24
+      "later_changes": 5
     }
   },
   {
@@ -3193,12 +3193,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 3,
       "recurring_keys": 0,
-      "later_changes": 15
+      "later_changes": 14
     }
   },
   {
@@ -3390,7 +3390,7 @@
     "stability_stats": {
       "changed_keys": 22,
       "recurring_keys": 22,
-      "later_changes": 87
+      "later_changes": 80
     }
   },
   {
@@ -3666,12 +3666,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 8,
       "recurring_keys": 2,
-      "later_changes": 10
+      "later_changes": 9
     }
   },
   {
@@ -4035,12 +4035,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 14
+      "later_changes": 13
     }
   },
   {
@@ -4159,12 +4159,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 11회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 10회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 8,
       "recurring_keys": 0,
-      "later_changes": 11
+      "later_changes": 10
     }
   },
   {
@@ -5648,12 +5648,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 17회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(토글 키 6개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 17,
       "recurring_keys": 6,
-      "later_changes": 17
+      "later_changes": 16
     }
   },
   {
@@ -5741,12 +5741,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 9회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(토글 키 2개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 19,
       "recurring_keys": 2,
-      "later_changes": 9
+      "later_changes": 8
     }
   },
   {
@@ -5854,12 +5854,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": false,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 10,
       "recurring_keys": 0,
-      "later_changes": 6
+      "later_changes": 5
     }
   },
   {
@@ -6303,12 +6303,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 11,
       "recurring_keys": 0,
-      "later_changes": 16
+      "later_changes": 15
     }
   },
   {
@@ -6543,7 +6543,7 @@
     "stability_stats": {
       "changed_keys": 38,
       "recurring_keys": 38,
-      "later_changes": 125
+      "later_changes": 118
     }
   },
   {
@@ -6675,12 +6675,12 @@
     "is_submarine": false,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 14회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 13회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 14
+      "later_changes": 13
     }
   },
   {
@@ -6877,12 +6877,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 23회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 22회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 23
+      "later_changes": 22
     }
   },
   {
@@ -7011,12 +7011,12 @@
     "is_submarine": true,
     "backfilled": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 16회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 15회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 0,
-      "later_changes": 16
+      "later_changes": 15
     }
   },
   {
@@ -7056,12 +7056,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 5
+      "later_changes": 4
     }
   },
   {
@@ -7462,12 +7462,12 @@
     ],
     "is_submarine": false,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 4회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 9,
       "recurring_keys": 0,
-      "later_changes": 4
+      "later_changes": 3
     }
   },
   {
@@ -8005,12 +8005,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 76회 변경됨(토글 키 11개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 75회 변경됨(토글 키 11개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 27,
       "recurring_keys": 11,
-      "later_changes": 76
+      "later_changes": 75
     }
   },
   {
@@ -8421,12 +8421,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 294회 변경됨(토글 키 31개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 286회 변경됨(토글 키 31개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 152,
       "recurring_keys": 31,
-      "later_changes": 294
+      "later_changes": 286
     }
   },
   {
@@ -8533,12 +8533,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 222회 변경됨(토글 키 28개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 214회 변경됨(토글 키 28개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 69,
       "recurring_keys": 28,
-      "later_changes": 222
+      "later_changes": 214
     }
   },
   {
@@ -8642,12 +8642,12 @@
     ],
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 153회 변경됨(토글 키 28개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 145회 변경됨(토글 키 28개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 69,
       "recurring_keys": 28,
-      "later_changes": 153
+      "later_changes": 145
     }
   },
   {
@@ -8746,12 +8746,12 @@
     ],
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 100회 변경됨(토글 키 39개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 91회 변경됨(토글 키 39개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 97,
       "recurring_keys": 39,
-      "later_changes": 100
+      "later_changes": 91
     }
   },
   {
@@ -8790,12 +8790,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 3
+      "later_changes": 2
     }
   },
   {
@@ -8869,13 +8869,13 @@
     },
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
-    "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 3회 변경됨(토글 키 33개) — 값이 더 갱신됨.",
+    "stability": "stable",
+    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 69,
       "recurring_keys": 33,
-      "later_changes": 3
+      "later_changes": 0
     }
   },
   {
@@ -8989,12 +8989,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 21회 변경됨(토글 키 4개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 17회 변경됨(토글 키 4개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 10,
       "recurring_keys": 4,
-      "later_changes": 21
+      "later_changes": 17
     }
   },
   {
@@ -9068,12 +9068,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 2회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 1회 변경됨(되돌이는 아님) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 1,
       "recurring_keys": 0,
-      "later_changes": 2
+      "later_changes": 1
     }
   },
   {
@@ -9306,12 +9306,12 @@
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
     "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 8회 변경됨(토글 키 3개) — 값이 더 갱신됨.",
+    "stability_detail_ko": "이후 동일 키가 다시 6회 변경됨(토글 키 3개) — 값이 더 갱신됨.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 36,
       "recurring_keys": 3,
-      "later_changes": 8
+      "later_changes": 6
     }
   },
   {
@@ -9562,7 +9562,7 @@
     "stability_stats": {
       "changed_keys": 7,
       "recurring_keys": 4,
-      "later_changes": 11
+      "later_changes": 7
     }
   },
   {
@@ -9701,13 +9701,13 @@
     },
     "interpreter": "groq:openai/gpt-oss-120b",
     "is_submarine": true,
-    "stability": "superseded",
-    "stability_detail_ko": "이후 동일 키가 다시 5회 변경됨(토글 키 4개) — 값이 더 갱신됨.",
+    "stability": "stable",
+    "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
     "recurring_event": false,
     "stability_stats": {
       "changed_keys": 10,
       "recurring_keys": 4,
-      "later_changes": 5
+      "later_changes": 0
     }
   },
   {
@@ -9855,8 +9855,8 @@
     "stability_detail_ko": "이 변경 이후 동일 키가 다시 바뀐 적 없음 — 현재까지 유지로 추정.",
     "recurring_event": false,
     "stability_stats": {
-      "changed_keys": 5553,
-      "recurring_keys": 23,
+      "changed_keys": 1,
+      "recurring_keys": 0,
       "later_changes": 0
     }
   }
